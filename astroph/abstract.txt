@@ -1,0 +1,13 @@
+We describe the most ambitious survey currently planned in the visible band, the Large Synoptic Survey Telescope (LSST). 
+The LSST design is driven by four main science themes: probing dark energy and dark matter, taking an inventory of the 
+Solar System, exploring the transient optical sky, and mapping the Milky Way. LSST will be a large, wide-field ground-based 
+system designed to obtain multiple images covering the sky that is visible from Cerro Pachon in Northern Chile. The current 
+baseline design, with an 8.4m (6.5m effective) primary mirror, a 9.6 sq. deg. field of view, and a 3.2 Gigapixel camera, will 
+allow about 10,000 sq.deg. of sky to be covered using pairs of 15-second exposures twice per night every three nights on 
+average, with typical 5-sigma depth for point sources of r=24.5. The system is designed to yield high image quality as well 
+as superb astrometric and photometric accuracy. The total survey area will include 30,000 sq.deg. with delta<+34.5, and will 
+be imaged multiple times in six bands, ugrizy, covering the wavelength range 320-1050 nm. The project is scheduled to 
+begin the regular survey operations before the end of this decade. About 90% of the observing time will be devoted to a 
+deep-wide-fast survey mode which will uniformly observe a 18,000 sq.deg. region about 1000 times (summed over all six 
+bands) during the anticipated 10 years of operations, and yield a coadded map to r=27.5. These data will result in databases 
+including 10 billion galaxies and a similar number of stars, and will serve the majority of science programs. (abridged)
