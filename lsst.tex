@@ -920,9 +920,12 @@ carousel dome that is 30 m in diameter (Fig.~\ref{Fig:observatory}). The dome ha
 been designed to reduce dome seeing (local air turbulence that can distort images) 
 and to maintain a uniform thermal environment over the course of the night. 
 The LSST Observatory will be sited atop Cerro Pach\'{o}n in northern Chile,
-near the Gemini South and SOAR telescopes (latitude: S 30$^\circ$ 10$'$ 20.1$"$; 
-longitude: W 70$^\circ$ 48$'$ 0.1$"$; elevation: 2123 m; the median $r$ band
-zenith seeing: 0.65 arcsec).
+near the Gemini South and SOAR telescopes\footnote{Coordinates listed in older versions 
+of this paper were incorrect. We thank E. Mamajek for pointing this error to us.} 
+% old, WRONG: (latitude: S 30$^\circ$ 10$'$ 20.1$"$; longitude: W 70$^\circ$ 48$'$ 0.1$"$; elevation: 2123 m; 
+% from Mamajek (2012, arXiv:1210.1616, Table 3, GPS values): 
+(latitude: S 30$^\circ$ 14$'$ 40.68$"$; longitude: W 70$^\circ$ 44$'$ 57.90$"$; elevation: 2652 m; 
+Mamajek 2012).
 
 
 \begin{figure}
@@ -2059,8 +2062,9 @@ Jones et al. (2007).}
 \begin{figure}
 \hskip -0.1in
 \vskip -0.1in
-\includegraphics[width=1.1\hsize,clip]{shri2.ps}
-\vskip -0.1in
+%\includegraphics[width=1.1\hsize,clip]{shri2.ps}
+\includegraphics[width=1.0\hsize,clip]{taumv.ps}
+%\vskip -0.1in
 \caption{The phase space of cosmic explosive and eruptive transients as
 represented by their absolute $V$ band peak brightness and the 
 event timescale (adapted from Kulkarni et al. 2007). LSST will open up large 
@@ -2702,14 +2706,18 @@ Inc. (AURA) under cooperative agreement with the National Science Foundation.
 We thank Chris Borden, Seth Digel, Tim Knauer and Branimir Sesar for valuable 
 comments.
 
+
 \appendix{\bf Version History }
 
 \vskip 0.06in
-Version 1.0: the first posting (May 15, 2008).
+Version 1.0 (May 15, 2008): the first posting. 
 \vskip 0.06in
-Version 2.0: acknowledged the Decadal Survey 2010 report; updated construction schedule;
+Version 2.0 (June 7, 2011): acknowledged the Decadal Survey 2010 report; updated construction schedule;
 updated expected performance in Table 2; added sections on LSST simulations and data mining;
 updated several figures; updated references; expanded author list. 
+\vskip 0.06in
+Version 3.0 (August 7, 2014): corrected Observatory coordinates 
+
 
 
 % References
@@ -3012,6 +3020,8 @@ updated several figures; updated references; expanded author list.
 \bibitem[()]{} Majewski, S.R., Skrutskie, M.F., Weinberg, M.D. \& Ostheimer, J.C. 2003, 
              Astrophysical Journal, 599, 1082
 
+\bibitem[()]{} Mamajek, E.E. 2012, arXiv:1210.1616
+
 \bibitem[()]{} Mandelbaum, R. Seljak, U., Kauffmann, G., Hirata, C.M. \& Brinkmann, J. 2006, MNRAS, 368, 715
 
 \bibitem[()]{} Martin, D.C., Fanson, J., Schiminovich, D., et al. 2006, Astrophysical Journal, 619, L1
@@ -3158,5 +3168,57 @@ updated several figures; updated references; expanded author list.
 
 
 \end{document}
+
+
+
+
+
+0) ABSTRACT: Ivezic
+
+1) INTRODUCTION: Kahn/Ivezic/Tyson
+
+2) FROM SCIENCE DRIVERS TO REFERENCE DESIGN:
+2.1: The Main Science Drivers: Ivezic
+  -> 2.1.1: Probing Dark Energy and Dark Matter: Jain, Tyson, et al. 
+  2.1.2: Taking an Inventory of the Solar System: Jones & Brown 
+  -> 2.1.3: Exploring the Transient Optical Sky: Walkowitz & Mahabal 
+  -> 2.1.4: Mapping the Milky Way: Willman & Geza
+2.1.5: A Summary and Synthesis of Science-driven Constraints on Data Properties: Ivezic
+2.2: The Main System Design Parameters:  Ivezic
+2.3: System Design Trade-offs: Ivezic
+ ? 2.4: The Filter Complement: Ritz 
+ ? 2.5: The Calibration Methods: Stubbs
+2.6: The LSST  Reference Design 
+ ? 2.6.1: Telescope and Site: Claver
+ ? 2.6.2: Camera: Ritz 
+ ? 2.6.3: Data Management: Juric
+ ? 2.7: Simulating the LSST System: Connolly
+
+3) ANTICIPATED DATA PRODUCTS AND THEIR CHARACTERISTICS
+ ? 3.1: The LSST Operations Simulator: Connolly
+3.2: The Baseline LSST Surveys: Ivezic
+3.3: Detailed Analysis of Simulated Surveys: Ivezic  
+ ? 3.4: Data Products: Juric 
+
+4) EXAMPLES OF LSST SCIENCE PROJECTS 
+ -> 4.1: Probing Dark Energy and Dark Matter: Jain, Tyson, et al. 
+4.2: Taking an Inventory of the Solar System: Jones & Brown 
+-> 4.3: Exploring the Transient Optical Sky: Walkowitz & Mahabal 
+-> 4.4: Mapping the Milky Way: Willman & Geza
+-> 4.5: Additional Science Projects: Brandt
+-> 4.6: Synergy with other projects: Brandt
+
+-> 5) COMMUNITY INVOLVEMENT: Jacoby
+-> 6) EDUCATIONAL AND SOCIETAL IMPACTS: Jacoby
+
+7) SUMMARY AND CONCLUSIONS: Kahn/Ivezic/Tyson
+
+
+
+
+
+
+
+
 
 % latex lsst; dvips -Ppdf -o lsst.ps lsst.dvi; ps2pdf14 lsst.ps lsst.pdf
