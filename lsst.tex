@@ -85,7 +85,8 @@ half the sky in six optical bands, with each sky location visited about 1000 tim
 10 years. The recent 2010 report ``New Worlds, New Horizons in Astronomy and Astrophysics''
 by the Committee for a Decadal Survey of Astronomy and 
 Astrophysics\footnote{http://www.nap.edu/catalog.php?record\_id=12951}
-ranked LSST as its top priority for ground-based projects. 
+ranked LSST as its top priority for ground-based projects, and in May 2014 the National 
+Science Board approved the project for construction. 
 
 The purpose of this paper is to provide an overall summary of the main LSST
 science drivers and how they led to the current system design parameters 
@@ -94,13 +95,12 @@ and to provide a few examples of the science programs that LSST will enable
 (\S~\ref{Sec:science}). The community involvement is discussed in \S~\ref{Sec:community}, 
 and broad educational and societal impacts in \S~\ref{Sec:impact}. Concluding 
 remarks are presented in \S~\ref{Sec:conclusions}. This publication will be maintained 
-at the arXiv.org site\footnote{http://lanl.arxiv.org/abs/0805.2366}, and will also
+at the arXiv.org site\footnote{http://arxiv.org/abs/0805.2366}, and will also
 be available from the LSST website (www.lsst.org). The latest arXiv version of this paper 
 should be consulted and referenced for the most up-to-date information about the 
 LSST system.
 
-
-\newpage
+%\newpage
 \section{FROM SCIENCE DRIVERS TO REFERENCE DESIGN}
 \label{Sec:refdesign}
 
@@ -180,37 +180,34 @@ properties placed by the four main science themes:
 We present a detailed discussion of how these science-driven data properties are
 transformed to system parameters below. 
 
-\subsubsection{Probing Dark Energy and Dark Matter}
 
+\subsubsection{Probing Dark Energy and Dark Matter}
+ 
 Current models of cosmology require the existence of both dark matter and dark
 energy to match observational constraints (Riess et al. 2007; Komatsu et al. 2009; 
-Percival et al. 2010; and references therein). Dark energy affects
-the cosmic history of both the Hubble expansion and mass clustering. If combined, 
-different types of probes of the expansion history and structure formation history can lead 
-to tight constraints \R{(a percent level precision)} on the dark energy equation of state 
-and other cosmological parameters. These \R{tight} constraints arise  
-because each technique depends on the cosmological parameters or errors in a different 
-way. The most powerful probes include weak gravitational lens cosmic shear (WL), baryon 
+Percival et al. 2010; LSST Dark Energy Science Collaboration 2012, and
+references therein). Dark energy affects the cosmic history of both the Hubble expansion 
+and mass clustering. Distinguishing competing hypotheses for dark energy will require 
+percent level measurements of both the history of the cosmic expansion and the growth 
+of dark matter structure. Testing models of dark energy and determining whether General 
+Relativity needs to be modified will therefore be carried out using interlocking combinations
+of probes. The most powerful probes include weak gravitational lens cosmic shear (WL), baryon 
 acoustic oscillations (BAO), and type Ia supernovae (SN) -- all as functions of 
-redshift. Using the cosmic microwave background fluctuations as the normalization, the combination 
-of these probes can yield the needed precision to distinguish among models of dark 
+redshift. Using the cosmic microwave background fluctuations as the normalization, the 
+combination of these probes can yield the needed precision to distinguish among models of dark 
 energy (Zhan 2006, and references therein). In addition, strong galaxy 
 and cluster lensing as a function of cosmic time probes the physics of dark matter,
 because the positions and shapes of multiple images of a source galaxy 
 depend sensitively on the total mass distribution, including the dark matter,
 in the lensing object.
 
-The three major programs from this science theme, WL, BAO and SN,  provide unique and independent 
-constraints on the system design (SciBook Ch.~11--15). 
+The three major programs from this science theme, WL, BAO and SN,  provide unique and 
+independent constraints on the system design (SciBook Ch.~11--15). 
 
 Weak lensing (WL) techniques can be used to map the distribution of mass as a function 
 of redshift and thereby trace the history of both the expansion of the Universe and the 
-growth of structure (e.g., Hu \& Tegmark 1999; for a review see
-Bartelmann \& Schneider 2001). 
-\R{Weak lensing of galaxies as a function of redshift probes 
-both the evolution of structure over cosmic time and}
-\B{One can use WL to}
- determine dimensionless ratios of 
+growth of structure (e.g., Hu \& Tegmark 1999; for a review see Bartelmann \& Schneider 2001). 
+One can use WL to determine dimensionless ratios of 
 angular distances versus cosmic time, providing multiple independent 
 constraints on the nature of dark energy.  These investigations require deep wide-area
 multi-color imaging with stringent requirements on shear systematics in at
@@ -229,7 +226,7 @@ and allows their detection in significant numbers to beyond a redshift of two.
 \R{It is anticipated that} Optimal science analysis of weak lensing will place
 strong constraints on data processing software, such as simultaneous analysis
 of all the available images rather than analyzing a single deep coadded image (Tyson
-et al. 2008a). 
+et al. 2008a; Jee and Tyson, 2011). 
 
 Type Ia supernovae (SN) provided the first evidence that the expansion of the
 Universe is accelerating (Riess et al. 1998; Perlmutter et al. 1999). To fully 
@@ -242,7 +239,9 @@ redshifts from the supernovae themselves. Unlike other cosmological probes,
 even a single object can provide useful constraints and, therefore, a large 
 number of SN across the sky can enable a high angular resolution search for 
 any dependence of dark energy properties on direction, which 
-would be an indicator of new physics. Given the expected SN flux distribution
+would be an indicator of new physics. The results from this method can be compared 
+with the WL+BAO probe of anisotropy (Zhan et al. 2009). 
+Given the expected SN flux distribution
 at the redshifts where dark energy is important, the 
 single visit depth should be at least $r\sim24$. Good image quality is
 required to separate SN photometrically from 
@@ -259,6 +258,17 @@ redshift of 0.7 (from $\sim0.5$ for the main survey), with some objects beyond $
 (Garnavich et al. 2005; Pinto et al. 2005; SciBook Ch.~11). The added statistical leverage 
 on the ``pre-acceleration'' era ($z\ga1$) would improve constraints on the properties of 
 dark energy as a function of redshift.
+
+Finally, there will be powerful cross checks and complementarities with other planned or 
+proposed surveys such as Euclid and WFIRST-AFTA\footnote{http://wfirst.gsfc.nasa.gov}
+(optical-IR from space), DESI\footnote{http://desi.lbl.gov} (spectroscopic BAO with several
+millions of galaxies), and SKA\footnote{https://www.skatelescope.org} (radio).
+Large survey volumes are key to probing dynamical dark energy models (with sub-horizon 
+dark energy clustering or anisotropic stresses). The cross-correlation of three-dimensional
+mass distribution (as probed by HI in SKA, or galaxies in DESI) with the gravitational growth 
+probed by tomographic shear in LSST will be a complementary way to constrain dark energy 
+properties beyond the equation of state. 
+
 
 
 \subsubsection{Taking an Inventory of the Solar System}
@@ -299,44 +309,38 @@ color-based taxonomy of the asteroids.
 
 \subsubsection{ Exploring the Transient Optical Sky}
 
-Recent surveys have shown the power of measuring variability for studying gravitational 
-lensing, searching for supernovae, determining the physical properties of 
-gamma-ray burst sources, probing the structure of active galactic nuclei, studying
-variable stars, and many 
-other subjects at the forefront of astrophysics (SciBook Ch.~8). 
-Wide-area, dense temporal coverage to deep limiting magnitudes would enable the discovery 
-and analysis of rare and exotic objects such as neutron star and black hole 
-binaries, novae and stellar flares, gamma-ray bursts and X-ray flashes, active
-galactic nuclei (AGNs), 
-stellar disruptions by black holes, and possibly new classes of transients, 
-such as binary mergers of black holes (Shields \& Bonning 2008). 
-Such a survey likely would detect numerous microlensing events in 
-the Local Group and perhaps beyond, and open the possibility of discovering 
-planets via transits (e.g., Beaulieu et al. 2006), as well as obtaining spectra of lensed 
-stars in distant galaxies. 
+Recent surveys have shown the power of measuring variability for studying gravitational lensing, searching 
+for supernovae, determining the physical properties of gamma-ray burst sources, probing the structure of 
+active galactic nuclei, extending variable star populations by orders of magnitude, discovering exoplanets 
+and many other subjects at the forefront of astrophysics (SciBook Ch.~8; Djorgovski et al. 2012; Rowe et al. 
+2014). Wide area, dense temporal coverage to deep limiting magnitudes would enable the discovery and 
+analysis of rare and exotic objects such as neutron stars and black hole binaries, novae and stellar flares, 
+gamma-ray bursts and X-ray flashes, active galactic nuclei, stellar disruptions by black holes (Bloom et al. 2011;
+Gezari et al. 2012), and possibly new classes of transients, such as binary mergers of black-holes (Shields \& 
+Bonning 2008; Thronton et al. 2013). Such a survey would likely detect numerous microlensing events in the 
+Local Group and perhaps beyond, and open the possibility of discovering populations of binaries and planets 
+via transits (e.g., Beaulieu et al. 2006; Drake et al. 2010; Choi et al. 201; Batista et al. 2014), as well as obtaining 
+spectra of lensed stars in distant galaxies.
 
-Time-domain science requires large area coverage to enhance the probability 
-of detecting rare events; good time sampling, because light curves are necessary 
-to distinguish certain types of variables and in some cases to infer their
-properties (e.g., determining the intrinsic luminosity of Type Ia supernovae 
-depends on measurements of their rate of decline); accurate color information 
-to assist with the classification of variable objects; good image quality 
-to enable differencing of images, especially in crowded fields; and rapid data 
-reduction, classification and reporting to the community in order to flag 
-interesting objects for spectroscopic and other investigations with separate 
-facilities. 
+Time-domain science requires large area coverage to enhance the probability of detecting rare events; good 
+time sampling, because light curves are necessary to distinguish certain types of variables and in some cases 
+to infer their properties (e.g. determining the intrinsic luminosity of Type Ia supernovae depends on measurements 
+of their rate of decline); accurate color information to assist with the classification of variable objects; good 
+image quality to enable differencing of images, especially in crowded fields; and rapid data reduction, classification 
+and reporting to the community in order to flag interesting objects for spectroscopic and other investigations 
+with separate facilities.
 
-Time scales ranging from 1 min, to serendipitously catch eclipses in ultracompact 
-double-degenerate binary systems (Anderson et al. 2005) or  to constrain the properties 
-of fast faint transients (such as optical flashes associated with gamma-ray
-bursts; Bloom et al. 2008), and transients discovered by the Deep Lens
-Survey (Becker et al. 2004) and the Palomar Transient Factory (Law et al. 2009), 
-to 10 years to study long-period variables and quasars (Kaspi et al. 2007) should 
-be probed over a significant fraction of the sky. It should be possible to measure 
-colors of fast transients, and to reach faint magnitude limits in individual visits 
-(at least $r\sim24.5$). 
-Classification of transients will be aided by inclusion of the photometric
-history of the objects (both pre- and post-``event''). 
+Time series ranging between one minute and ten years cadence should be probed over a significant fraction of 
+the sky. Rapid cadence makes it possible to serendipitously catch very short-lived events, such as eclipses in 
+ultra-compact double degenerate binary systems (Anderson et al. 2005), to constrain the properties of fast faint 
+transients (such as optical flashes associated with gamma-ray bursts; Bloom et al. 2008), to detect electromagnetic 
+counterparts to gravitational waves (Nissanke, Kasliwal \& Georgieva 2013) and to further constrain the properties 
+of transients discovered by the Deep Lens Survey (Becker et al. 2004), Catalina Real-time Transient Survey (Drake et 
+al. 2009) and the Palomar Transient Factory (Law et al. 2009). Decade-long cadence enable the study of long period 
+variables and quasars (Kaspi et al. 2007; Graham et al. 2014). It should be possible to measure colors of fast 
+transients, and to reach faint magnitude limits in individual visits (at least $r\sim24.5$). Classification of transients 
+will be aided by inclusion of the photometric history of the objects, both pre- and post-``event'' (e.g., Mahabal et al. 2011). 
+
 
 %\vskip 0.5in
 \subsubsection{ Mapping the Milky Way}
@@ -389,7 +393,7 @@ between the total depth and the single-visit depth.
 %\subsubsection{A Summary and Synthesis of Science-driven Constraints on Data Properties}
 
 \begin{figure}
-\includegraphics[width=1.0\hsize,clip]{seeing2.pdf}
+\includegraphics[width=1.0\hsize,clip]{seeing2.ps}
 \caption{
 The image quality distribution measured at the Cerro Pach\'{o}n site using a
 DIMM (differential image motion monitor) at $\lambda$ = 500 nm, and corrected 
@@ -663,7 +667,7 @@ to efficiently reject cosmic rays), yielding $\epsilon=77$\%.
 
 \begin{figure}[t]
 \vskip -0.5in
-\includegraphics[width=1.1\hsize,clip]{coaddedDepth.pdf}
+\includegraphics[width=1.1\hsize,clip]{coaddedDepth.ps}
 \vskip -1.1in
 \caption{The coadded depth in the $r$ band (AB magnitudes) vs. the effective aperture and 
 the survey lifetime. It is assumed that 22\% of the total observing time (corrected for
@@ -673,7 +677,7 @@ the surveyed sky area to the field-of-view area is 2,000.}
 \end{figure}
 
 \begin{figure}[t]
-\includegraphics[width=1.0\hsize,clip]{singleDepth.pdf}
+\includegraphics[width=1.0\hsize,clip]{singleDepth.ps}
 \caption{The single-visit depth in the $r$ band (5$\sigma$ detection for 
 point sources, AB magnitudes) vs. revisit time, $n$ (days), as a function of 
 the effective aperture size. With a coverage of 10,000 deg$^2$ in two bands, 
@@ -693,7 +697,7 @@ with 30 seconds per visit) constraints described above.
 
 \subsection{System Design Trade-offs}
 
-We note that the Pan-STARRS project (Kaiser et al. 2002), with similar science
+We note that the Pan-STARRS project (PS1, Kaiser et al. 2002), with similar science
 goals as LSST, has adopted a distributed aperture design, where the total
 system \'etendue is 
 a sum of \'etendue values for an array of small telescopes (the prototype
@@ -767,7 +771,7 @@ in the near infrared.
 
 \begin{figure}
 \hskip -0.13in
-\includegraphics[width=1.1\hsize,clip]{filters_y4.pdf}
+\includegraphics[width=1.1\hsize,clip]{filters_y4.ps}
 \caption{The {\it current} design of the LSST bandpasses. 
 The vertical axis shows the total throughput. The computation includes the atmospheric 
 transmission (assuming an airmass of 1.2 at an altitude of $\sim$56 deg., dotted line), optics, and the 
@@ -800,7 +804,7 @@ refraction would worsen the point spread function for a wider bandpass.
 
 \begin{figure}
 \hskip -0.12in
-\includegraphics[width=1.1\hsize,clip]{modtran1.pdf}
+\includegraphics[width=1.1\hsize,clip]{modtran1.ps}
 \caption{An example of determination of the atmospheric opacity by 
 simultaneously fitting a three-parameter stellar model SED (Kurucz 1979) and 
 six physical parameters of a sophisticated atmospheric model (MODTRAN, Anderson 
@@ -813,7 +817,7 @@ Fig.~\ref{Fig:modtran2}. Adapted from Burke et al. (2007).}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=1.0\hsize,clip]{modtran2.pdf}
+\includegraphics[width=1.0\hsize,clip]{modtran2.ps}
 \caption{The components of the best-fit atmospheric opacity used to
 model the observed stellar spectrum shown in Fig.~\ref{Fig:modtran1}.
 The atmosphere model (MODTRAN, Anderson et al. 1999) includes six
@@ -882,7 +886,7 @@ found in the LSST Science Book (Ch.~2--3).
 
 \begin{figure}
 \vskip -0.5in
-\includegraphics[width=1.0\hsize,clip]{mirrors.pdf}
+\includegraphics[width=1.0\hsize,clip]{mirrors.ps}
 \vskip -0.5in
 \caption{The LSST baseline optical design with its unique 
 monolithic mirror: the primary and tertiary mirrors are positioned such 
@@ -930,7 +934,7 @@ Mamajek 2012).
 
 \begin{figure}
 \vskip -0.65in
-\includegraphics[width=1.0\hsize,clip]{telescopeGreen.pdf}
+\includegraphics[width=1.0\hsize,clip]{telescopeGreen.ps}
 \vskip -0.65in
 \caption{The baseline design (modified three-mirror Paul-Baker) for the 
 LSST telescope.} 
@@ -940,7 +944,7 @@ LSST telescope.}
 
 \begin{figure}
 \vskip -1.3in
-\includegraphics[width=1.0\hsize,clip]{observatoryFull.pdf}
+\includegraphics[width=1.0\hsize,clip]{observatoryFull.ps}
 \vskip -1.4in
 \caption{The LSST Observatory: artist's rendering of the dome enclosure 
 with the attached summit support building on Cerro Pach\'{o}n. The LSST calibration 
@@ -956,7 +960,7 @@ telescope is shown on an adjacent rise to the right.}
 
 \begin{figure}[t!]
 \hskip -1.7in
-\includegraphics[width=1.55\hsize,angle=90.0,clip]{camera2009.pdf}
+\includegraphics[width=1.55\hsize,angle=90.0,clip]{camera2009.ps}
 \vskip -2.5in
 \caption{The cutaway view of LSST camera, with a person to indicate scale size. 
 The camera is positioned in the middle of the telescope and will include a filter 
@@ -966,7 +970,7 @@ mechanism and shuttering capability.}
 
 
 \begin{figure}[ht]
-\includegraphics[width=1.0\hsize,clip]{fov.pdf}
+\includegraphics[width=1.0\hsize,clip]{fov.ps}
 \caption{The LSST focal plane. Each cyan square represents one
 $4096\times4096$ pixel sensor. Nine sensors are assembled into a
 raft; the 21 rafts are outlined in red. There are 189 science sensors, each 
@@ -976,7 +980,7 @@ with 16.8 Mpix, for a total pixel count of 3.2 Gpix.}
 
 \begin{figure}[ht]
 \hskip -1.6in
-\includegraphics[width=1.5\hsize,angle=90.0,clip]{raft.pdf}
+\includegraphics[width=1.5\hsize,angle=90.0,clip]{raft.ps}
 \vskip -2.5in
 \caption{The LSST raft module with integrated front-end electronics
 and thermal connections. Each raft (red square in Fig.~\ref{Fig:fov})
@@ -1025,7 +1029,7 @@ major challenges.
 
 \begin{figure}
 \vskip 0.1in
-\includegraphics[width=1.0\hsize,clip]{DMsandwich.pdf}
+\includegraphics[width=1.0\hsize,clip]{DMsandwich.ps}
 \caption{The three-layered architecture of the data management system 
 (application [purple], middleware [green], and infrastructure [yellow] layers) 
 enables scalability, reliability, and evolutionary capability.} 
@@ -1068,10 +1072,10 @@ it is not taking the risk of pushing the expected technology to the limit.
 
 
 \begin{figure}[t!]
-%\includegraphics[width=1.0\hsize,clip]{DMp1.pdf}
+%\includegraphics[width=1.0\hsize,clip]{DMp1.ps}
 \hskip -0.1in
-\includegraphics[width=1.15\hsize,clip]{DMp2.pdf}
-%\includegraphics[width=1.0\hsize,clip]{DMfig14.pdf}
+\includegraphics[width=1.15\hsize,clip]{DMp2.ps}
+%\includegraphics[width=1.0\hsize,clip]{DMfig14.ps}
 \vskip -0.3in
 \caption{The application layer of the data management system. The arrows indicate
 direction of the data flow. The main pipelines enable nightly processing,
@@ -1081,8 +1085,8 @@ calibration, and data releases.}
 
 \begin{figure}
 %\hskip -0.25in
-\includegraphics[width=1.0\hsize,clip]{DMp4.pdf}
-%\includegraphics[width=1.0\hsize,clip]{DMfig14.pdf}
+\includegraphics[width=1.0\hsize,clip]{DMp4.ps}
+%\includegraphics[width=1.0\hsize,clip]{DMfig14.ps}
 %\vskip -0.4in
 \caption{The structure of nightly (``alert generation'') pipelines. 
 Their main task is to compare new data to the previously accumulated data and search for 
@@ -1092,7 +1096,7 @@ transient, variable and moving objects.}
 
 \begin{figure*}[t!]
 \hskip 0.3in
-\includegraphics[width=0.92\hsize,clip]{DMp3.pdf}
+\includegraphics[width=0.92\hsize,clip]{DMp3.ps}
 \caption{The structure of data release pipelines.
 These pipelines are intended to produce the most completely analyzed data products 
 of the survey, and will consume most of the computing power of the data management 
@@ -1103,7 +1107,7 @@ system.}
 
 \begin{figure*}
 \hskip 0.5in
-\includegraphics[width=0.9\hsize,clip]{DMX2.pdf}
+\includegraphics[width=0.9\hsize,clip]{DMX2.ps}
 \caption{The LSST data flow from the mountain summit/base facility in
 Chile to the data access center and archive centers in the U.S.} 
 \label{Fig:DM2}
@@ -1155,7 +1159,7 @@ recovering variability, to simulated images of a single LSST focal
 plane.
 
 
-\subsection{ The LSST Operations Simulator }
+\subsection{ The LSST Operations Simulator \label{sec:opsim}}
 
 The LSST Operations Simulator was developed to enable a 
 detailed quantitative analysis of the various science tradeoffs described in 
@@ -1369,7 +1373,8 @@ example of a simulated image is shown in Fig.~\ref{Fig:ImSimExample}.
 
 \begin{figure*}
 \vskip -1in
-\includegraphics[width=1.0\hsize,clip]{chip2014.png}
+%\includegraphics[width=1.0\hsize,clip]{chip2014.png}
+\includegraphics[width=1.0\hsize,clip]{chip2014.ps}
 \vskip -1in
 \caption{ A simulated image of a single LSST CCD (covering a
   $13.3\times13.3$ arcmin$^2$ region of the sky). The image is a color
@@ -1384,10 +1389,9 @@ example of a simulated image is shown in Fig.~\ref{Fig:ImSimExample}.
 
 The LSST observing strategy is designed to maximize the scientific
 throughput by minimizing slew and other downtime and by making appropriate
-choices of the filter bands given the real-time weather conditions. We first
-describe an operations simulator that has been developed to evaluate this process and then
-illustrate with two examples how its outputs have been used to predict LSST
-performance. 
+choices of the filter bands given the real-time weather conditions.
+Using simulated surveys produced with Operations Simulator described in \S~\ref{sec:opsim}, 
+we illustrate predictions of LSST performance with two examples. 
 
 
 \subsection{ The Baseline LSST Surveys }
@@ -1409,10 +1413,10 @@ use about 1\% of the time (which still represents 25 nights on a unique
 
 
 \begin{figure}
-%\includegraphics[width=1.0\hsize,clip]{rbandSky.pdf}
-%\includegraphics[width=0.78\hsize,angle=90.0,clip]{rvisits_SciBook.pdf}
+%\includegraphics[width=1.0\hsize,clip]{rbandSky.ps}
+%\includegraphics[width=0.78\hsize,angle=90.0,clip]{rvisits_SciBook.ps}
 \vskip -1.0in
-\includegraphics[width=1.0\hsize,clip]{rBandWhite.pdf}
+\includegraphics[width=1.0\hsize,clip]{rBandWhite.ps}
 \vskip -1.0in
 \caption{The distribution of the $r$ band visits on the sky for one simulated 
 realization of the baseline main survey. The sky is shown in Aitoff projection 
@@ -1502,6 +1506,14 @@ would be extended to redshifts of $z\sim1.2$, with more densely sampled light
 curves than obtained from the universal cadence. Such sequences would also
 serve as excellent tests of our photometric calibration procedures. 
 
+The LSST has already selected four distant extragalactic survey fields\footnote{For
+details, see http://www.lsst.org/News/enews/deep-drilling-201202.html}
+that the project guarantees to observe as Deep Drilling Fields with deeper coverage 
+and more frequent temporal sampling than provided by the standard LSST observing 
+pattern. These fields (Elais S1, XMM-LSS, Extended Chandra Deep Field-South, and
+COSMOS) are  well-studied survey fields with substantial existing multiwavelength 
+coverage and other positive attributes. These four fields are only the first chosen 
+for deep-drilling observations; more such fields will be chosen later.
 
 The baseline universal cadence is by no means the definitive plan for the entire
 survey. Rather, it represents a proof of concept that it is indeed possible to 
@@ -1672,7 +1684,7 @@ observing time on NEO-optimized observations in the NE region.
 
 
 \begin{figure}
-\includegraphics[width=1.0\hsize,clip]{Cneo.pdf}
+\includegraphics[width=1.0\hsize,clip]{Cneo.ps}
 \caption{Completeness of the LSST survey for PHAs brighter than a given absolute
 magnitude (related to the size of the object and albedo; 
 $H$=22 mag is equivalent to a typical 140m asteroid and $H$=24 mag is
@@ -1842,7 +1854,7 @@ will populate new parameters in the database.
 
 \begin{figure}
 \hskip -0.8in
-\includegraphics[width=1.5\hsize,clip]{panels1_2.pdf}
+\includegraphics[width=1.5\hsize,clip]{panels1_2.ps}
 \caption{A comparison of $\sim7.5\times7.5$ arcmin$^2$ images of
 the same area of sky (centered on $\alpha$=9$^h$ 20' 47'' and 
 $\delta$=30$^\circ$ 8' 12'') obtained by the SDSS (top, $r<22.5$) and 
@@ -1858,7 +1870,7 @@ sources).}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=1.0\hsize,clip]{panels2.pdf}
+\includegraphics[width=1.0\hsize,clip]{panels2.ps}
 \caption{A comparison of angular resolution for $20\times20$ arcsec$^2$ images obtained 
 by the SDSS (top, median seeing of 1.5 arcsec) and expected from LSST (bottom,
 seeing of 0.7 arcsec). The images show a lensed SDSS quasar (SDSS J1332+0347,
@@ -1928,9 +1940,9 @@ organized by the four science themes that drive the LSST design
 LSST Science Book.}
  
 \begin{figure}
-%\includegraphics[width=1.0\hsize,clip]{DEellipses1.pdf}
-%\includegraphics[width=0.95\hsize,clip]{DEellipses2.pdf}
-\includegraphics[width=1.0\hsize,clip]{cswb.pdf}
+%\includegraphics[width=1.0\hsize,clip]{DEellipses1.ps}
+%\includegraphics[width=0.95\hsize,clip]{DEellipses2.ps}
+\includegraphics[width=1.0\hsize,clip]{cswb.ps}
 \caption{
 LSST BAO (dashed line), cluster counting (dash-dotted line), 
 supernovae (dotted line), WL (solid line), joint BAO and WL 
@@ -1945,7 +1957,7 @@ the constraints.}
 
 
 \vskip 0.3in
-\subsection{ Probing Dark Energy and Dark Matter }
+\subsection{Probing Dark Energy and Dark Matter }
 
 A unique aspect of LSST as a probe of dark energy and dark matter is the use of 
 multiple cross-checking probes that reach unprecedented precision (see
@@ -1956,7 +1968,12 @@ By simultaneously measuring the growth of large-scale structure,
 and luminosity and angular distances as functions of redshift (via weak lensing, 
 BAO, SN, and cluster counting), LSST data can reveal whether the recent cosmic 
 acceleration is due to dark energy or modified gravity (Lue, Scoccimarro \& Starkman 
-2004; Knox, Song \& Tyson 2006; Ishak, Upadhye \& Spergel 2006; Jain \& Zhang 2008). 
+2004; Knox, Song \& Tyson 2006; Ishak, Upadhye \& Spergel 2006; Jain \& Zhang 2008;
+Oguri \& Takada 2011; Jain et al. 2013). Structure formation involves a balance between 
+gravitational attraction of matter over-densities and the rapid expansion of the background. 
+Thus, quantifying the rate of growth of structures from early times until the present provides 
+additional tests of the energy contents of the Universe and their interactions.
+
 Over a broad range of accessible redshifts, the simple linear model
 for the dark energy equation of state is a poor representation of more
 general dark energy theories. Barnard et al. 
@@ -1965,6 +1982,8 @@ LSST data could lead to a hundred- to thousand-fold increase in precision over
 precursor experiments about to be undertaken, thereby confirming its status as 
 a premier Stage IV experiment\footnote{See the Dark Energy Task Force report 
 (Albrecht et al. 2006) for a definition of Stage IV experiments.}. 
+Fits of multi-parameter dark energy models to the complementary LSST probes of dark 
+energy will constrain alternative models of gravity.
 
 The power and accuracy of LSST dark energy and dark matter probes are derived 
 from samples of several billion galaxies and millions of Type Ia
@@ -1977,11 +1996,11 @@ this sample will be $z\sim$1.2, with the third quartile at $z\sim2$. For a
 subsample of 2 billion galaxies further constrained by flux limits in the 
 $g$ and $z$ bands, the photometric redshift errors will be about two times 
 smaller. It will be possible to further improve photometric redshift calibration
-using non-conventional methods (Newman 2008). 
+using non-conventional methods (Newman 2008; Matthews \& Newman 2010; Menard et al. 2013). 
 
 
 \begin{figure}
-\includegraphics[width=1.0\hsize,clip]{cls.pdf}
+\includegraphics[width=1.0\hsize,clip]{cls.ps}
 \caption{The lensing shear auto power spectra constructed from 5 redshift bins 
 ($l$ is the multipole moment of the distribution on the sky). Only the 5 auto-power 
 spectra of each redshift bin among the available 15 cospectra are displayed, and the 
@@ -1994,7 +2013,7 @@ $l< 100$, and intrinsic ellipticities which dominate at $l> 1000$ (Zhan 2006).}
 
 
 \begin{figure}
-\includegraphics[width=1.0\hsize,clip]{bao.pdf}
+\includegraphics[width=1.0\hsize,clip]{bao.ps}
 \caption{Simulations of the ratio of the measured galaxy power spectrum to 
 a featureless reference power spectrum in various redshift bins (shifted vertically 
 for clarity), for the full LSST survey using conservative photometric redshift
@@ -2008,8 +2027,8 @@ angular diameter distance over this redshift range with an accuracy of $\sim1$\%
 
 
 \begin{figure}
-%\includegraphics[width=1.0\hsize,clip]{dgcon.pdf}
-\includegraphics[width=1.0\hsize,clip]{dges.pdf}
+%\includegraphics[width=1.0\hsize,clip]{dgcon.ps}
+\includegraphics[width=1.0\hsize,clip]{dges.ps}
 \caption{Marginalized $1\sigma$ errors on the comoving distance 
 (open triangles) and growth factor (open circles) parameters from 
 the joint analysis of LSST BAO and WL (galaxy--galaxy, galaxy--shear,
@@ -2041,6 +2060,13 @@ a different redshift bin, averaged over all pairs of billions of galaxies; Jain 
 constraints and provide self-calibration of various systematics (Takada \& Jain 2004; 
 Dolney, Jain \& Takada 2006; Huterer et al 2006). They are also probes of both
 primordial non-Gaussianities and those caused by non-linear structure.
+\item Similarly, weak lens magnification tomography (Morrison et al. 2012) offers a 
+complementary probe of a mix of cosmic geometry and growth of dark matter structure.
+\item The galaxy-mass correlation function of biilions of galaxies (as a function of their 
+photometric redshift) probes the growth of dark matter large-scale structure and is a 
+diagnostic of the underlying cosmology (Choi et al. 2012). Combining this with
+spectroscopic observations of millions of galaxies could probe General Relativity at high 
+redshift (Reyes et al. 2007).
 \item Baryon Acoustic Oscillations in the galaxy angular correlation functions.
 The standard ruler of the sound horizon at decoupling which is imprinted on the mass 
 distribution at all redshifts provides a direct way of measuring the angular diameter
@@ -2068,12 +2094,13 @@ constraint on dark energy (Wang et al. 2005). LSST will find over 200,000 such
 shear peaks on galaxy cluster scales. 
 \item Unique constraints on anisotropy of cosmological parameters over the sky using
 SN, WL and BAO, which will test fundamental cosmological assumptions of homogeneity and isotropy.
+For example, WL$+$BAO and SN can separately probe anisotropy of dark energy (Zhan 2009).
 \item The shape of the power spectrum of dark matter fluctuations measured by
 the LSST weak lensing maps will constrain the sum of neutrino masses with an accuracy 
 of 0.04 eV or better (Cooray 1999; Song \& Knox 2004; Hannestad, Tu \& Wong 2006). 
 The current best limit, as derived from a combination of WMAP, the SDSS power spectrum, 
 SN, and the Ly$\alpha$ forest, is 0.17 eV (Seljak et al. 2006).
-\item Several million  galaxy-galaxy lenses will provide the needed statistics to probe dark matter 
+\item Hundreds of millions galaxy-galaxy lenses will provide the needed statistics to probe dark matter 
 halo profiles and substructure (Mandelbaum et al. 2006). The image fluxes in several thousand well-measured
 lensed quasars will enable constraints of the dark matter mass function on small scales (Dalal \& Kochanek 2002).
 \item The abundance of galaxy clusters as a function of mass and redshift is sensitive to cosmological parameters
@@ -2122,8 +2149,12 @@ Among the Solar System studies, these data will enable:
 asteroids as a function of color-based taxonomy (see Fig.~\ref{Fig:asteroids})
 and size; size distributions of asteroid families (Parker et al. 2008) and their
 correlations with age (Jedicke et al. 2004; Nesvorn\'{y} et al. 2005); dynamical 
-effects (Bottke et al. 2001); and studies of object shapes and structure using 
-light curves (Pravec \& Harris 2000). 
+effects (Bottke et al. 2001); and studies of object shapes and spin states using 
+light curve inversion techniques (Pravec \& Harris 2000; Durech et al. 2009). 
+\item Studies of transient activity in asteroids (active asteroids or main belt comets, 
+Hsieh \& Jewitt 2006),  due to mass loss with associated extended morphology; LSST
+will increase the sample of such objects to $\sim$100 from the few that are currently 
+known (Jewitt et al. 2011; Jewitt 2012).
 \item Studies of the distribution of orbital elements for about 100,000 NEOs as a 
 function of color and size (Rabinowitz 1993; Dandy, Fitzsimmons \& Collander-Brown 2002);
 correlations with the analogous distributions for 
@@ -2149,7 +2180,7 @@ an object like Sedna (Brown, Trujillo \& Rabinowitz 2004) will be detectable at 
 
 
 \begin{figure}
-\includegraphics[width=1.0\hsize,clip]{asteroids.pdf}
+\includegraphics[width=1.0\hsize,clip]{asteroids.ps}
 \caption{An example of color-based asteroid taxonomy. The figure
 shows the distribution of asteroids in the proper semi-major axis vs. $\sin(i)$
 plane for 45,000 asteroids with colors measured by SDSS (Parker et al. 2008). 
@@ -2163,7 +2194,7 @@ and will increase the number of objects by $\sim$2 orders of magnitude.}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=1.0\hsize,clip]{Af9.pdf}
+\includegraphics[width=1.0\hsize,clip]{Af9.ps}
 \caption{The LSST detection limits for distant solar system objects.
 Moving objects with diameters as small as 100m in the main asteroid belt and 
 100km in the Kuiper Belt (TNOs) will be detected. Specialized deeper observations 
@@ -2179,8 +2210,8 @@ Jones et al. (2007).}
 \begin{figure}
 \hskip -0.1in
 \vskip -0.1in
-%\includegraphics[width=1.1\hsize,clip]{shri2.pdf}
-\includegraphics[width=1.0\hsize,clip]{taumv.pdf}
+%\includegraphics[width=1.1\hsize,clip]{shri2.ps}
+\includegraphics[width=1.0\hsize,clip]{taumv.ps}
 %\vskip -0.1in
 \caption{The phase space of cosmic explosive and eruptive transients as
 represented by their absolute $V$ band peak brightness and the 
@@ -2189,8 +2220,6 @@ regions of this phase space for systematic exploration by extending
 time-volume space 1000 times over existing surveys.} 
 \label{Fig:shri}
 \end{figure}
-
-
 
 Time domain science will greatly benefit from LSST's unique capability to simultaneously
 provide large area coverage, dense temporal coverage, accurate color information,
@@ -2201,39 +2230,46 @@ There are many projects that LSST data products will enable:
 
 \begin{itemize}
 \item Detection and measurement of gamma-ray burst afterglows and transients 
-      (e.g., Zhang \& M\'{e}sz\'{a}ros 2004) to high redshift ($\sim$7.5).
-\item Studies of optical bursters (those varying faster than 1 mag hr$^{-1}$) to $r\sim25$ mag. 
+      (e.g., Zhang \& M\'{e}sz\'{a}ros 2004; Zhang et al. 2006; Kann et al. 2010) to high redshift ($\sim$7.5).
+  \item Studies of optical bursters (those varying faster than 1 mag hr$^{-1}$) to $r\sim25$ mag. 
 \item Gravitational micro-lensing in the Local Group and beyond (de Jong, Kuijken \& H\'{e}raudeau 2008).
 \item Studies of known and unusual SN populations and parametrization of their light curves 
-         (e.g., Hoeflich, Wheeler \& Thielemann 1998; Howell et al. 2007).
+         (e.g., Hoeflich, Wheeler \& Thielemann 1998; Wang et al. 2003; Howell et al. 2007;
+          Kowalski et al. 2008; Hicken et al. 2009; Foley, R. J. 2012).
 \item Studies of dwarf novae, including their use as probes of stellar populations and 
-      structure in the Local Group (Neill \& Shara 2005).
+      structure in the Local Group (Neill \& Shara 2005; Shara 2006; Shen \& Bildsten 2009).
 \item A deep search for new populations of novae and supernova progenitors 
-      (Kulkarni et al. 2007; see Fig.\ref{Fig:shri}). 
+      (Smartt 2009; Thompson et al. 2009; Smith et al. 2011; see Fig.\ref{Fig:shri}). 
 \item Search for stellar tidal disruptions by nuclear supermassive black
-       holes (Evans \& Kochanek 1989; Gezari et al. 2008), \B{as well as binary supermassive black holes 
-      in the in-spiral phase (e.g., Cuadra et al. 2009).}
-\item A study of quasar variability using 1-2\% accurate, multicolor light
-      curves for $\sim$2 million quasars, leading to constraints on the accretion physics
-      and nuclear environments (de Vries, Becker \& White 2003; Vanden Berk et al. 2004, MacLeod 
-      et al. 2010). Relations between quasar variability properties and luminosity, redshift, 
+       holes (Evans \& Kochanek 1989; Gezari et al. 2008; Strubbe \& Quataert 2009; Bloom et al. 2011; Gezari 2012), 
+       as well as binary supermassive black holes in the in-spiral phase (e.g., Cuadra et al. 2009).
+       Measurements of rates as function of galaxy type, redshift, and level of nuclear activity
+       to understand the apparent diversity of these events in terms of  total power, effective temperature, 
+       and jet launching efficiency. 
+\item A study of quasar variability using 1-2\% accurate, multicolor light cures for a few million 
+quasars, leading to constraints on the accretion physics and nuclear environments (de Vries, Becker 
+\& White 2003; Vanden Berk et al. 2004, MacLeod et al. 2010). Relations between quasar variability 
+      properties and luminosity, redshift, 
       rest-frame wavelength, time scale, color, radio-jet emission, black-hole 
       mass, and Eddington-normalized luminosity will be defined with massive
-      statistics. Microlensing events will also be monitored in the $\sim$4000 gravitationally-lensed 
+      statistics, including the potential to detect rare but important events such as 
+      jet flares and obscuration events. Microlensing events will also be monitored in the $\sim$4000 gravitationally-lensed 
       quasars discovered by LSST and used to measure the spatial structure of quasar accretion disks.
 \item The superb continuum light curves of AGN will enable economical ``piggyback" 
-      reverberation-mapping efforts using emission lines. These results 
+      reverberation-mapping efforts using emission lines (Doron \& Eliran 2012). These results 
       will greatly broaden the luminosity-redshift plane of reverberation-mapped AGNs
       with black-hole mass estimates. For LSST data alone, the inter-band continuum lags 
       will provide useful structural information. 
-\item LSST data will allow good constraints on AGN lifetimes, or at least the timescales over which 
-         they make distinct accretion-state transitions, due to large sample
-         size and survey lifetime (e.g., Martini \& Schneider 2003).
-\item Optical identifications for transients and variables detected at other wavelengths,
-      from gamma-rays to radio, as well as by means other than electro-magnetic
-      radiation (e.g., LIGO\footnote{http://www.ligo.caltech.edu}, 
-%     LISA\footnote{http://lisa.nasa.gov}, 
-      ICECUBE\footnote{http://icecube.wisc.edu}).
+\item Optical identification for transients and variables detected in other electromagnetic wavebands, 
+from gamma rays to radio. Examples include optical and gamma ray variability in blazars (Hovatta et al. 2014), 
+radio transients associated with tidal disruption flares (Giannios \& Metzger 2011), and radio counterparts to 
+supernovae and GRBs (Gal-Yam et al. 2006). Deep optical observations with LSST may also help illuminate the 
+nature of the still-mysterious Lorimer Bursts (Lorimer et al. 2007; Thornton et al. 2013).
+\item Optical identification of counterparts to non-electromagnetic sources, such as gravitational waves and
+neutrino detections (LIGO\footnote{http://www.ligo.caltech.edu}, ICECUBE\footnote{http://icecube.wisc.edu}). 
+LSST's unique ability to characterize the faint variable sky over large areas will be important not only for detection 
+of associated sources but for eliminating potential false positives (Nissanke, Kasliwal \& Georgieva 2013; 
+Metzger \& Berger 2012).  
 \end{itemize}
 
 
@@ -2305,7 +2341,7 @@ evolved stars in each system.
 
 
 \begin{figure}
-\includegraphics[width=1.0\hsize,clip]{smolcic.pdf}
+\includegraphics[width=1.0\hsize,clip]{smolcic.ps}
 \caption{The $g-r$ vs. $u-g$ color-color diagram for two million stars measured by 
 SDSS (adapted from Smol\v{c}i\'{c} et al. 2004). Accurate multi-color photometry 
 contains information that can be used for source classification and determination of 
@@ -2315,7 +2351,7 @@ enable such measurements for billions of stars.}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=1.0\hsize,clip]{panelsLSST.pdf}
+\includegraphics[width=1.0\hsize,clip]{panelsLSST.ps}
 \caption{
 The median metallicity map for 2.5 million main-sequence F-type stars within 10 kpc 
 from the Sun (adapted from Ivezi\'{c} et al. 2008a). The metallicity is estimated using 
@@ -2331,7 +2367,7 @@ main-sequence F stars.}
 
 
 \begin{figure}
-\includegraphics[width=1.0\hsize,clip]{halo.pdf}
+\includegraphics[width=1.0\hsize,clip]{halo.ps}
 \caption{A simulation of the outer regions of the Milky Way (left), compared to the 
 current state-of-the-art data (right), shown on the same spatial scale. The data panel 
 presents the number density multiplied by the cube of the Galactocentric
@@ -2352,9 +2388,9 @@ non-main-sequence stars.}
 
 \begin{figure}
 \vskip -1in
-\includegraphics[width=1.0\hsize,clip]{musycSDSS.pdf}
+\includegraphics[width=1.0\hsize,clip]{musycSDSS.ps}
 \vskip -1.9in
-\includegraphics[width=1.0\hsize,clip]{musyc.pdf}
+\includegraphics[width=1.0\hsize,clip]{musyc.ps}
 \vskip -1in
 \caption{
 A comparison of an SDSS image (2$\times$4 arcmin$^2$ $gri$ composite) showing a typical galaxy at 
@@ -2429,7 +2465,7 @@ LSST will enable:
 \end{itemize} 
 
 \begin{figure}
-\includegraphics[width=1.0\hsize,clip]{cowan.pdf}
+\includegraphics[width=1.0\hsize,clip]{cowan.ps}
 \caption{A comparison of the distribution of galaxies in  
 luminosity--color--density space measured by SDSS (left) and a model based
 on the Millennium simulation (right). The linearly-spaced contours outline
@@ -2447,7 +2483,7 @@ redshift, to $z\sim$2. Adapted from Cowan \& Ivezi\'{c}
 
 
 \begin{figure}
-\includegraphics[width=1.0\hsize,clip]{panels3.pdf}
+\includegraphics[width=1.0\hsize,clip]{panels3.ps}
 \caption{The LSST will deliver AGN sky densities of 1000-4000 deg$^{-2}$, which is 
 competitive with the deepest pencil-beam surveys to date, such as the Chandra
 Deep Fields (top panel). The total LSST AGN yield, selected using colors and
@@ -2475,7 +2511,8 @@ programs.
 \item Detailed studies of galaxy formation and evolution using their distribution in 
 luminosity-color-morphology space as a function of redshift. For example, LSST will 
 enable studies of the rest-frame UV emission, similar to those based on GALEX data 
-for local galaxies, to a redshift of $\sim$2. These studies project onto many axes:
+for local galaxies, to a redshift of $\sim$2 for an unprecedentedly large number of
+galaxies. These studies project onto many axes:
 \begin{itemize}
   \item the evolution of the galaxy luminosity function with redshift, as a function of 
         morphology and color;
@@ -2489,14 +2526,17 @@ for local galaxies, to a redshift of $\sim$2. These studies project onto many ax
         as a function of redshift (see  Figs.~\ref{Fig:musyc} and \ref{Fig:cowan});
   \item the properties of galaxy groups as a function of cosmic time.
 \end{itemize}
-\item AGN census to very faint luminosity and large redshift limit, yielding
-      at least 10 million objects (see Fig.~\ref{Fig:panels3}). By reaching substantially further 
+\item AGN census to very faint luminosity and large redshift limit (Ivezi\'{c} et al. 2013), yielding
+      at least 10 million objects, and likely 20-40 million objects (see Fig.~\ref{Fig:panels3}). By reaching substantially further 
       down the AGN luminosity function over a very large solid angle, LSST data 
       will test evolutionary cosmic downsizing scenarios, and lead 
       to a much clearer understanding of black-hole growth during the first Gyr. For
       example, LSST should discover $\sim$1000 AGNs at $z\sim6-7.5$,
       representing a dramatic increase over the present samples 
       (Brandt et al. 2007, see also LSST Science Book).
+\item LSST data will allow good constraints on AGN lifetimes, or at least the timescales over which 
+         they make distinct accretion-state transitions, due to large sample
+         size and survey lifetime (e.g., Martini \& Schneider 2003).
 \item The first wide field survey of ultra low surface brightness galaxies, with 
       photometric redshift information. The currently available samples are highly
       incomplete, especially in the Southern Hemisphere (see Fig.~7 in Belokurov et al. 2007a). 
@@ -2506,7 +2546,8 @@ for local galaxies, to a redshift of $\sim$2. These studies project onto many ax
       radio data: \B{LSST will synergistically add value to archives of other observatories.}
       For example, the SDSS detected only 1/3 of all 20cm FIRST sources 
       (Becker et al. 1995) because it was too shallow by $\sim$4 mag for a complete 
-      optical identification. 
+      optical identification. Similarly, deep optical data are required for identification
+      of X-ray sources (Brandt \& Hasinger 2005). 
 \end{itemize}
 
 
@@ -2515,10 +2556,10 @@ for local galaxies, to a redshift of $\sim$2. These studies project onto many ax
 LSST will not operate in isolation and will greatly benefit from other precursor and coeval 
 data at a variety of wavelengths, depths, and timescales. For example, most of the Celestial 
 Sphere will be covered to a limit several magnitudes fainter than LSST saturation 
-($r\sim16$), first by the combination of SDSS, PS1 and SkyMapper (Keller et al. 2001), 
+($r\sim16$), first by the combination of SDSS, PS1, Dark Energy Survey (Flaugher 2006) and SkyMapper (Keller et al. 2001), 
 and then by the Gaia survey. The SkyMapper survey will obtain imaging data in the southern
-sky to similar depths as SDSS, the Pan-STARRS surveys will provide multi-epoch data deeper 
-than SDSS in the northern sky, and the Dark Energy Survey (Flaugher 2006) will scan 
+sky to similar depths as SDSS, the PS1 surveys provided multi-epoch data deeper 
+than SDSS in the northern sky, and the Dark Energy Survey will scan 
 $\sim$5000 deg$^2$ to similar depth as Pan-STARRS in the southern sky. Despite the lack of 
 the $u$ band data and a depth about a magnitude shallower, the Pan-STARRS surveys
 will represent a valuable complement to LSST in providing North sky coverage to a limit 
@@ -2532,11 +2573,10 @@ investigations by numerous other telescopes that will provide
 additional temporal, spectral and spatial resolution coverage. 
 
 LSST will provide a crucial complementary capability to space 
-experiments operating in other bands, such as the planned 
+experiments operating in other bands, such as the ongoing
 %Black Hole Finder Einstein Probe 
-NuSTAR Mission\footnote{http://www.nustar.caltech.edu/}, and the already successful {\it Fermi} 
-Gamma-ray Space Telescope (e.g., Atwood et al. 2010) which plausibly will be continuing its high 
-energy time-domain survey of the sky contemporaneously with LSST. 
+NuSTAR Mission\footnote{http://www.nustar.caltech.edu/}, and {\it Fermi} 
+Gamma-ray Space Telescope (e.g., Atwood et al. 2010). 
 %The Laser Interferometer Space Antenna (LISA) and the 
 The Laser Interferometer Gravitational 
 Wave Observatory (LIGO) may detect ultracompact binaries and black hole mergers through the 
@@ -2544,7 +2584,7 @@ gravitational wave outburst that should be emitted during the final stages of su
 LSST has the potential to measure the electromagnetic signal that accompanies the gravitational wave emission, 
 thereby providing an accurate position on the sky for the system, which is 
 crucial for subsequent observations. LSST will also add new value to the archives for 
-billion-dollar class space missions such as Chandra, XMM-Newton, Spitzer,
+billion-dollar class space missions such as Chandra, XMM-Newton, Spitzer, Herschel,
 etc., because deep optical multi-color data will enable 
 massive photometric  studies of sources from these missions;
 any areas of the sky --whether by design or by serendipity --in which past, present, or future 
@@ -2596,8 +2636,10 @@ investigations will require organized teams of professionals working together
 to optimize science analyses and to assess the importance of systematic 
 uncertainties on the derived results. To meet this need, eleven science
 collaborations have been established by the project in core science
-areas. As of the time of this contribution, there 
-are over 250 participants in these collaborations, mostly from LSST 
+areas. In addition, the LSST Dark Energy Science Collaboration includes
+members with interests in the study of dark energy and related topics in 
+fundamental physics with LSST data. As of the time of this contribution, there are 
+over 700 participants in these collaborations, mostly from LSST 
 member institutions. Periodic
 calls for applications for membership are issued to the professional 
 community at large\footnote{See http://www.noao.edu/lsst/collab\_prop/Scicollab.htm}.
@@ -2613,6 +2655,16 @@ and data systems. The Science Collaborations are expected to play a major role
 in the system optimization during the commissioning period. We will continue 
 this review when the survey starts, and will maintain our design of flexible 
 cadence structure.
+
+The Science Advisory Committee (SAC), chaired by Michael Strauss, provides a formal, and 
+two-way, connection to the external science community served by LSST. This committee takes 
+responsibility for policy questions facing the project and also deals with technical topics of interest 
+to both the science community and the LSST Project. The SAC minutes and notes are available 
+publically. Membership of this committee is as follows: N. Brandt (PSU), H. Ferguson (STScI), 
+C. Hirata (OSU), L. Hunter (UCSC), J. Kalirai (STScI), B. Jain (UPenn), M. Kasliwal (Carnegie), 
+D. Kirkby (UC Irvine), R. Malhotra (UA), R. Mandelbaum (CMU), D. Minniti (U Pontificai, Chile), 
+M. Strauss (Princeton), L. Walkowicz (Princeton), B. Willman (Haverford), and M. Wood-Vasey 
+(U Pittsburgh). The SAC held its first face-to-face meeting in Princeton on April 7, 2014. 
 
 
 
@@ -2724,21 +2776,18 @@ onset of construction, includes structural, thermal, and optical analyses
 of all key hardware subsystems, vendor interactions to determine 
 manufacturability, explicit prototyping of high-risk elements, prototyping 
 and development of data management systems, and extensive systems engineering 
-studies. Over 100 technical personnel at a range of institutions are currently 
+studies. Over 200 technical personnel at a range of institutions are currently 
 engaged in this program. 
 
-In September 2007, LSST passed the NSF Conceptual Design Review for construction, 
-which puts it on track for the Preliminary Design Review in 2011.  
-The casting of the primary/tertiary mirror has been completed\footnote{Please see
-http://www.lsst.org/News/highfire\_event.shtml} and it is currently being polished. 
-The LSST design and development phase will continue for another two years under 
-NSF support along with in-kind contributions and private gifts.  It is 
-proposed that the U.S. Department of Energy support the cost of constructing the 
+In September 2013, LSST passed the NSF Final Design Review for construction, 
+and in May 2014 the National Science Board approved the project.  
+The fabrication of the primary/tertiary mirror has been completed. 
+In 2014 LSST transitioned from the design and development phase to construction.
+The U.S. Department of Energy is supporting the cost of constructing the 
 camera. LSST has high visibility in the high-energy physics community,
 both at universities and government laboratories. The project is scheduled to 
-%have first \B{engineering} light in 2017 and the beginning of science operations in 2018.
-begin the regular survey operations before the end of this decade
-(it will take about five years from the start of federal construction phase
+begin the regular survey operations by 2022
+(it will take about five years from the start of the federal construction phase
 to full system integration and the beginning of commissioning period). 
 
 The LSST survey will open a movie-like window on objects that 
@@ -2747,7 +2796,7 @@ The survey will have a raw data rate of about 15 TB per night (about the same as
 complete Sloan Digital Sky Survey per night), and will collect over 100 PB
 of data over its lifetime, resulting in an incredibly rich and extensive
 public archive that will be a treasure trove for breakthroughs in many areas 
-of astronomy and physics. About 10 billion galaxies and a similar number of stars
+of astronomy and physics. About 20 billion galaxies and a similar number of stars
 will be detected -- {\it for the first time in history, the number of cataloged 
 celestial objects will exceed the number of living people!} About a thousand
 observations of each position across half of the Celestial Sphere will
@@ -2757,28 +2806,30 @@ Mpix/frame) with 30 frames per second, and 270 color images per position
 about eleven uninterrupted months to view this color movie (equivalent
 to about 4,000 feature films). 
 
-The cost estimate for LSST is \R{\$389M} \B{\$455M} for construction and 
-\R{\$37M} \B{\$38M} per year for 
-operations (in \R{2006} \B{2010} U.S. dollars). LSST will be much more 
+The integrated cost of LSST will be {\$638M} for construction [NSF + DOE] , 
+and {\$37M} per year for 
+operations (in 2014 U.S. dollars). This budget includes a significant EPO program.
+Beyond the improved image quality, LSST will be much more cost 
 efficient than the current state-of-the-art massive optical survey, the 
 SDSS. For example, for each \$100 spent, the SDSS obtained 
 single-epoch $ugriz$ photometry for $\sim$200 sources and a spectrum for 
 a single source. In contrast, for \$100 LSST will obtain $ugrizy$ 
-photometry for more than 2,000 sources (to a limit 5 magnitudes deeper 
-than SDSS) and a 1000-point light curve for $\sim$200 sources. Compared
+photometry for about 4,000 sources (to a limit 5 magnitudes deeper 
+than SDSS) and a 1000-point light curve for $\sim$400 sources. Compared
 to the SDSS, LSST will produce about 2,000 times larger data volume with
 an increase in total cost of less than a factor of ten.
 
 LSST has been conceived as a public facility: the database that it will
 produce, and the associated object catalogs that are generated from that
-database, will be made available to the \R{world's} \B{U.S. and Chilean}
+database, will be made available to the U.S. and Chilean
 scientific communities and to the public at large with no proprietary period. 
-\B{We are working with prospective foreign partners to make LSST data more broadly 
-available}. 
+We are working with prospective foreign partners to make all of the LSST data more broadly 
+available worldwide.  As of 2014, scientists in 67 institutions from 28 countries have open access to the data.
 The software which creates the LSST database will be open source. {\it LSST will 
 be a significant milestone in the globalization of the information revolution.}
-LSST will put terabytes of data each night into the hands of anyone that
-wants to explore it, and in some sense will become an internet telescope:
+The vast relational database of 32 trillion observations of 40 billion objects
+will be mined for the unexpected and used for precision experiments in astrophysics.
+LSST will be in some sense an internet telescope:
 the ultimate network peripheral device to explore the Universe, and
 a shared resource for all humanity. 
 
@@ -2787,21 +2838,20 @@ a shared resource for all humanity.
 \centerline{ACKNOWLEDGMENTS}
 
 In 2003, the LSST Corporation was formed as a non-profit 501(c)3 Arizona corporation 
-with headquarters in Tucson, AZ.  Membership has since expanded to more than thirty members including Adler Planetarium,
-Brookhaven National Laboratory, California Institute of Technology,  Carnegie Mellon University, 
-Chile,  Cornell University, Drexel University, Fermi National Accelerator Laboratory, 
-George Mason University,
-Google Inc., Harvard-Smithsonian Center for Astrophysics, Institut de Physique Nuclaire et de 
-Physique des Particules, Johns Hopkins University, Kavli Institute for Particle Astrophysics and 
-Cosmology - Stanford University, Las Cumbres Observatory Global Telescope Network, Inc., 
-Lawrence Livermore National Laboratory, Los Alamos National Laboratory,  National Optical 
-Astronomy Observatory, Princeton University, Purdue University, Research Corporation, 
-Rutgers University, SLAC National Accelerator Laboratory,
-Space Telescope Science Institute, 
+with headquarters in Tucson, AZ.  Membership has since expanded to more than forty members 
+including Adler Planetarium, Brookhaven National Laboratory, California Institute of Technology,  
+Carnegie Mellon University, Chile,  Columbia University, Cornell University, Drexel University, 
+Fermi National Accelerator Laboratory, George Mason University, Google Inc., Harvard-Smithsonian 
+Center for Astrophysics, Institut de Physique Nuclaire et de Physique des Particules, Johns Hopkins 
+University, Kavli Institute for Particle Astrophysics and Cosmology -- Stanford University, Las 
+Cumbres Observatory Global Telescope Network, Inc., Lawrence Livermore National Laboratory, 
+Los Alamos National Laboratory,  National Optical Astronomy Observatory, Oxford University, 
+Princeton University, Purdue University, Research Corporation for Science Advancement, Rutgers 
+University, SLAC National Accelerator Laboratory, Space Telescope Science Institute, 
 Texas A\&M University, The Pennsylvania State University, The University of Arizona, University 
-of California at Davis, University of California at Irvine, University of Illinois at Urbana-Champaign, 
-University of Michigan, University of Pennsylvania, University of Pittsburgh, University of Washington, 
-and Vanderbilt University. 
+of California at Davis, University of California at Irvine, University College London, University of 
+Illinois at Urbana-Champaign, University of Michigan, University of Pennsylvania, University of 
+Pittsburgh, University of Washington, and Vanderbilt and Fisk Universities. 
 
 LSST is a public-private partnership.  Design and development activity is
 supported by in part the National Science Foundation under Scientific
@@ -3294,49 +3344,49 @@ updated system description, refreshed references.
 
 
 
+
+
 New authors: MW person, MikeErac, 
 
-0) ABSTRACT: Ivezic
+DONE --> 0) ABSTRACT: Ivezic
 
-1) INTRODUCTION: Kahn/Ivezic/Tyson
+DONE --> 1) INTRODUCTION: Kahn/Ivezic/Tyson
 
 2) FROM SCIENCE DRIVERS TO REFERENCE DESIGN:
 2.1: The Main Science Drivers: Ivezic
-  -> 2.1.1: Probing Dark Energy and Dark Matter: Jain, Tyson, et al. 
-  2.1.2: Taking an Inventory of the Solar System: Jones & Brown 
-  -> 2.1.3: Exploring the Transient Optical Sky: Walkowitz & Mahabal 
+DONE   -> 2.1.1: Probing Dark Energy and Dark Matter: Jain, Tyson, et al. 
+???  2.1.2: Taking an Inventory of the Solar System: Jones & Brown 
+DONE  -> 2.1.3: Exploring the Transient Optical Sky: Walkowitz & Mahabal 
   -> 2.1.4: Mapping the Milky Way: Willman & Geza
 2.1.5: A Summary and Synthesis of Science-driven Constraints on Data Properties: Ivezic
 2.2: The Main System Design Parameters:  Ivezic
 2.3: System Design Trade-offs: Ivezic
- ? 2.4: The Filter Complement: Ritz 
- ? 2.5: The Calibration Methods: Stubbs
+ ?? 2.4: The Filter Complement: Ritz 
+ ?? 2.5: The Calibration Methods: Stubbs
 2.6: The LSST  Reference Design 
  ? 2.6.1: Telescope and Site: Claver
- ? 2.6.2: Camera: Ritz 
- ? 2.6.3: Data Management: Juric
- ? 2.7: Simulating the LSST System: Connolly
+ ?? 2.6.2: Camera: Ritz 
+ ?? 2.6.3: Data Management: Juric
+DONE (READ) -> 2.7: Simulating the LSST System: Connolly
 
 3) ANTICIPATED DATA PRODUCTS AND THEIR CHARACTERISTICS
- ? 3.1: The LSST Operations Simulator: Connolly
+ DONE (READ) 3.1: The LSST Operations Simulator: Connolly
 3.2: The Baseline LSST Surveys: Ivezic
-3.3: Detailed Analysis of Simulated Surveys: Ivezic  
+3.3: Detailed Analysis of Simulated Surveys: Ivezic      ERROR in trailing correction???
  ? 3.4: Data Products: Juric 
 
 4) EXAMPLES OF LSST SCIENCE PROJECTS 
- -> 4.1: Probing Dark Energy and Dark Matter: Jain, Tyson, et al. 
-4.2: Taking an Inventory of the Solar System: Jones & Brown 
--> 4.3: Exploring the Transient Optical Sky: Walkowitz & Mahabal 
+DONE  -> 4.1: Probing Dark Energy and Dark Matter: Jain, Tyson, et al. 
+ ??? 4.2: Taking an Inventory of the Solar System: Jones & Brown 
+DONE -> 4.3: Exploring the Transient Optical Sky: Walkowitz & Mahabal 
 -> 4.4: Mapping the Milky Way: Willman & Geza
--> 4.5: Additional Science Projects: Brandt
--> 4.6: Synergy with other projects: Brandt
+DONE -> 4.5: Additional Science Projects: Brandt
+DONE -> 4.6: Synergy with other projects: Brandt
 
-OK!  5) COMMUNITY INVOLVEMENT: Jacoby
--> 6) EDUCATIONAL AND SOCIETAL IMPACTS: Jacoby
+DONE 5) COMMUNITY INVOLVEMENT: Jacoby
+DONE -> 6) EDUCATIONAL AND SOCIETAL IMPACTS: Jacoby
 
-7) SUMMARY AND CONCLUSIONS: Kahn/Ivezic/Tyson
-
-
+DONE 7) SUMMARY AND CONCLUSIONS: Kahn/Ivezic/Tyson
 
 
 
