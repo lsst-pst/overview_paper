@@ -1,0 +1,2183 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  22 JUL 2014 20:25
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**lsst
+(./lsst.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+(./emulateapj.cls
+Document Class: emulateapj 
+\bibbaselineskip=\skip41
+(/usr/local/texlive/2012/texmf-dist/tex/latex/revtex4/revtex4.cls
+Document Class: revtex4 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for do
+cumentation)
+ Copyright (c) 2001 The American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <ogawa@teleport.com>
+ Based on work by David Carlisle <david@dcarlisle.demon.co.uk>.
+ltxutil: portions licensed from W. E. Baxter (web@superscript.com)
+Class revtex4 Info: Repairing broken LateX \@sect on input line 596.
+\intertabularlinepenalty=\count79
+\@tbpen=\count80
+\@arstrutbox@hline=\box26
+Class revtex4 Info: Repairing broken LaTeX \@xbitor on input line 1610.
+ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
+\c@linecount=\count81
+\output=\toks14
+\@protection@box=\box27
+\@topmark@saved=\toks15
+\footins@saved=\box28
+\pagesofar=\box29
+\footbox=\box30
+\pagegrid@col=\count82
+Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
+ly upper/lower case changing (DPC)]. on input line 3682.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+\c@affil=\count83
+\absbox=\box31
+\c@part=\count84
+\c@section=\count85
+\c@subsection=\count86
+\c@subsubsection=\count87
+\c@paragraph=\count88
+\c@subparagraph=\count89
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count90
+\c@table=\count91
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip44
+\bibsep=\skip45
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count92
+)
+\widetext@top=\box32
+\widetext@bot=\box33
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/revtex4/revsymb.sty
+Package: revsymb 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documenta
+tion)
+LaTeX Info: Redefining \REV@mathfrak on input line 118.
+))
+
+Class revtex4 Warning: No Society specified, using generic APS style.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/revtex4/aps.rtx
+File: aps.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentatio
+n)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/revtex4/10pt.rtx
+File: 10pt.rtx 2001/08/02 v4.0 (http://publish.aps.org/revtex4/ for documentati
+on)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count93
+))
+\Gin@req@height=\dimen102
+\Gin@req@width=\dimen103
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks17
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+LaTeX Info: Redefining \frak on input line 99.
+LaTeX Info: Redefining \Bbb on input line 101.
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip46
+\LTright=\skip47
+\LTpre=\skip48
+\LTpost=\skip49
+\LTchunksize=\count94
+\LTcapwidth=\dimen104
+\LT@head=\box34
+\LT@firsthead=\box35
+\LT@foot=\box36
+\LT@lastfoot=\box37
+\LT@cols=\count95
+\LT@rows=\count96
+\c@LT@tables=\count97
+\c@LT@chunks=\count98
+\LT@p@ftn=\toks18
+)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/epsf/epsf.sty
+This is `epsf.tex' v2.7.4 <14 February 2011>
+\epsffilein=\read1
+\epsfframemargin=\dimen105
+\epsfframethickness=\dimen106
+\epsfrsize=\dimen107
+\epsftmp=\dimen108
+\epsftsize=\dimen109
+\epsfxsize=\dimen110
+\epsfysize=\dimen111
+\pspoints=\dimen112
+)
+\c@front@matter@foot@note=\count99
+\alt@affil@toks=\toks19
+\alt@affil@toks@count=\toks20
+\keys@width=\skip50
+\c@lastfootnote=\count100
+\c@remember@figure@num=\count101
+\c@remember@table@num=\count102
+\bibindent=\dimen113
+\plot@width=\skip51
+\c@table@save=\count103
+\table@note@skip=\skip52
+\deluxe@table@width=\skip53
+\@d@t@a=\skip54
+\c@deluxe@table@num=\count104
+\abovedeluxetableskip=\skip55
+\belowdeluxetableskip=\skip56
+\lastrowheight=\dimen114
+\DT@p@ftn=\toks21
+\pt@column=\count105
+\pt@ncol=\count106
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(./lsst.aux (./authors.aux) (./abstract.aux)
+
+LaTeX Warning: Label `Kavli' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+
+Package natbib Warning: Citation `' multiply defined.
+
+)
+\openout1 = `lsst.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+Class revtex4 Info: Patching LaTeX tabular. on input line 30.
+Class revtex4 Info: Patching unrecognized longtable package. (Proceeding with f
+ingers crossed) on input line 30.
+Class revtex4 Info: cite was not loaded (OK!) on input line 30.
+Class revtex4 Info: multicol was not loaded (OK!) on input line 30.
+ (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count107
+\scratchdimen=\dimen115
+\scratchbox=\box38
+\nofMPsegments=\count108
+\nofMParguments=\count109
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen116
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
+\everyMPtoPDFconversion=\toks23
+) (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\openout2 = `authors.aux'.
+
+
+(./authors.tex
+\c@address=\count113
+)
+\openout2 = `abstract.aux'.
+
+ (./abstract.tex
+LaTeX Font Info:    Try loading font information for U+lasy on input line 17.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 17.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 17.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+))
+Underfull \hbox (badness 3758) in paragraph at lines 38--38
+| $[]$| \OT1/cmr/m/n/8 IPAC, Cal-i-for-nia In-sti-tute of Tech-nol-ogy, MS 100-
+22,
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 38--38
+| $[]$| \OT1/cmr/m/n/8 De-part-ment of As-tron-omy, Uni-ver-sity of Vir-ginia C
+har-
+ []
+
+[1{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 93.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 93.
+ [2]
+Underfull \hbox (badness 5189) in paragraph at lines 145--145
+[][]| [] []\OT1/cmr/m/n/8 Available at http://www.lsst.org/lsst/SciBook and as
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[][]| [] []\OT1/cmr/m/n/8 See http://www.lsst.org/lsst/news/aas[]215 and
+ []
+
+[3] [4]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+Underfull \hbox (badness 1014) in paragraph at lines 384--389
+\OT1/cmr/m/n/10 con-cerns the for-ma-tion of struc-ture on sub-galactic
+ []
+
+[5]
+Underfull \hbox (badness 1112) in paragraph at lines 394--404
+\OT1/cmr/m/n/10 area cov-er-age, ex-cel-lent im-age qual-ity to max-i-mize
+ []
+
+<seeing2.pdf, id=32, 543.02875pt x 503.8825pt>
+File: seeing2.pdf Graphic file (type pdf)
+ <use seeing2.pdf>
+Package pdftex.def Info: seeing2.pdf used on input line 419.
+(pdftex.def)             Requested size: 245.26653pt x 227.58308pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--426
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--426
+
+ []
+
+[6 <./seeing2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 538--554
+
+ []
+
+[7] <coaddedDepth.pdf, id=47, 574.145pt x 764.8575pt>
+File: coaddedDepth.pdf Graphic file (type pdf)
+ <use coaddedDepth.pdf>
+Package pdftex.def Info: coaddedDepth.pdf used on input line 693.
+(pdftex.def)             Requested size: 269.79466pt x 359.41304pt.
+
+Overfull \hbox (24.52814pt too wide) in paragraph at lines 693--694
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 698--698
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 698--698
+
+ []
+
+<singleDepth.pdf, id=49, 478.78876pt x 494.84875pt>
+File: singleDepth.pdf Graphic file (type pdf)
+ <use singleDepth.pdf>
+Package pdftex.def Info: singleDepth.pdf used on input line 703.
+(pdftex.def)             Requested size: 245.26653pt x 253.49458pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 712--712
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 712--712
+
+ []
+
+[8]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 733.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 733.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+[9 <./coaddedDepth.pdf> <./singleDepth.pdf>]
+<filters_y4.pdf, id=66, 578.16pt x 433.62pt>
+File: filters_y4.pdf Graphic file (type pdf)
+ <use filters_y4.pdf>
+Package pdftex.def Info: filters_y4.pdf used on input line 797.
+(pdftex.def)             Requested size: 269.79466pt x 202.3458pt.
+
+Overfull \hbox (15.13269pt too wide) in paragraph at lines 796--798
+[] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 803--803
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 803--803
+
+ []
+
+<modtran1.pdf, id=68, 578.16pt x 433.62pt>
+File: modtran1.pdf Graphic file (type pdf)
+ <use modtran1.pdf>
+Package pdftex.def Info: modtran1.pdf used on input line 830.
+(pdftex.def)             Requested size: 269.79466pt x 202.3458pt.
+
+Overfull \hbox (15.8561pt too wide) in paragraph at lines 829--831
+[] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 838--838
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 838--838
+
+ []
+
+<modtran2.pdf, id=70, 541.02126pt x 427.5975pt>
+File: modtran2.pdf Graphic file (type pdf)
+ <use modtran2.pdf>
+Package pdftex.def Info: modtran2.pdf used on input line 843.
+(pdftex.def)             Requested size: 245.26653pt x 193.84598pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 852--852
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 852--852
+
+ []
+
+[10 <./filters_y4.pdf> <./modtran1.pdf> <./modtran2.pdf>]
+<mirrors.pdf, id=127, 614.295pt x 794.97pt>
+File: mirrors.pdf Graphic file (type pdf)
+ <use mirrors.pdf>
+Package pdftex.def Info: mirrors.pdf used on input line 912.
+(pdftex.def)             Requested size: 245.26653pt x 317.40012pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 917--917
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 917--917
+
+ []
+
+[11 <./mirrors.pdf>] <telescopeGreen.pdf, id=138, 614.295pt x 794.97pt>
+File: telescopeGreen.pdf Graphic file (type pdf)
+
+<use telescopeGreen.pdf>
+Package pdftex.def Info: telescopeGreen.pdf used on input line 967.
+(pdftex.def)             Requested size: 245.26653pt x 317.40012pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 970--970
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 970--970
+
+ []
+
+<observatoryFull.pdf, id=140, 614.295pt x 794.97pt>
+File: observatoryFull.pdf Graphic file (type pdf)
+ <use observatoryFull.pdf>
+Package pdftex.def Info: observatoryFull.pdf used on input line 977.
+(pdftex.def)             Requested size: 245.26653pt x 317.40012pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 981--981
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 981--981
+
+ []
+
+<camera2009.png, id=142, 928.46875pt x 696.6025pt>
+File: camera2009.png Graphic file (type png)
+ <use camera2009.png>
+Package pdftex.def Info: camera2009.png used on input line 996.
+(pdftex.def)             Requested size: 230.90128pt x 173.23607pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 999--999
+
+ []
+
+<fov.pdf, id=143, 545.03625pt x 511.9125pt>
+File: fov.pdf Graphic file (type pdf)
+ <use fov.pdf>
+Package pdftex.def Info: fov.pdf used on input line 1005.
+(pdftex.def)             Requested size: 245.26653pt x 230.35849pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1009--1009
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1009--1009
+
+ []
+
+<raft.png, id=145, 921.4425pt x 690.58pt>
+File: raft.png Graphic file (type png)
+ <use raft.png>
+Package pdftex.def Info: raft.png used on input line 1017.
+(pdftex.def)             Requested size: 245.26653pt x 183.81421pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1020
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1020
+
+ []
+
+[12 <./telescopeGreen.pdf> <./observatoryFull.pdf> <./fov.pdf> <./camera2009.pn
+g>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1062.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1062.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+<DMsandwich.pdf, id=166, 540.0175pt x 417.56pt>
+File: DMsandwich.pdf Graphic file (type pdf)
+ <use DMsandwich.pdf>
+Package pdftex.def Info: DMsandwich.pdf used on input line 1065.
+(pdftex.def)             Requested size: 245.26653pt x 189.64603pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1068
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1068
+
+ []
+
+<DMp2.pdf, id=168, 682.55pt x 446.66875pt>
+File: DMp2.pdf Graphic file (type pdf)
+ <use DMp2.pdf>
+Package pdftex.def Info: DMp2.pdf used on input line 1110.
+(pdftex.def)             Requested size: 282.055pt x 184.58028pt.
+
+Overfull \hbox (29.56104pt too wide) in paragraph at lines 1109--1112
+[] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1115--1115
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1115--1115
+
+ []
+
+<DMp4.pdf, id=170, 3806.22pt x 1347.0325pt>
+File: DMp4.pdf Graphic file (type pdf)
+ <use DMp4.pdf>
+Package pdftex.def Info: DMp4.pdf used on input line 1121.
+(pdftex.def)             Requested size: 245.26653pt x 86.79968pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1126--1126
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1126--1126
+
+ []
+
+<DMp3.pdf, id=172, 3316.39pt x 1578.89874pt>
+File: DMp3.pdf Graphic file (type pdf)
+ <use DMp3.pdf>
+Package pdftex.def Info: DMp3.pdf used on input line 1132.
+(pdftex.def)             Requested size: 472.0671pt x 224.7304pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1136--1136
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1136--1136
+
+ []
+
+<DMX2.pdf, id=174, 722.7pt x 542.025pt>
+File: DMX2.pdf Graphic file (type pdf)
+ <use DMX2.pdf>
+Package pdftex.def Info: DMX2.pdf used on input line 1143.
+(pdftex.def)             Requested size: 461.80255pt x 346.34895pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1145
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1145
+
+ []
+
+
+Package natbib Warning: Citation `jones2013' on page 13 undefined on input line
+ 1405.
+
+[13 <./raft.png> <./DMsandwich.pdf> <./DMp2.pdf> <./DMp4.pdf>] [14 <./DMp3.pdf>
+] [15 <./DMX2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1405--1405
+[]\OT1/cmr/m/n/10 The frame-work de-scribed above pro-vides a
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 1405--1405
+\OT1/cmr/m/n/10 To gen-er-ate im-ages, pho-tons are drawn from the
+ []
+
+[16] <chip2014.jpg, id=211, 4087.27pt x 4015.0pt>
+File: chip2014.jpg Graphic file (type jpg)
+ <use chip2014.jpg>
+Package pdftex.def Info: chip2014.jpg used on input line 1413.
+(pdftex.def)             Requested size: 307.87358pt x 302.39854pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1417--1417
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1417--1417
+
+ []
+
+<rBandWhite.pdf, id=213, 614.295pt x 794.97pt>
+File: rBandWhite.pdf Graphic file (type pdf)
+ <use rBandWhite.pdf>
+Package pdftex.def Info: rBandWhite.pdf used on input line 1455.
+(pdftex.def)             Requested size: 245.26653pt x 317.40012pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1464--1464
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1464--1464
+
+ []
+
+
+Underfull \hbox (badness 3536) in paragraph at lines 1546--1546
+[][]| [] []\OT1/cmr/m/n/8 For de-tails, see http://www.lsst.org/News/enews/deep
+-
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 1567--1567
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1567--1567
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1568--1581
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1582--1594
+
+ []
+
+[18 <./chip2014.jpg> <./rBandWhite.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1615.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1615.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1694--1694
+[][]| [] []\OT1/cmr/m/n/8 The NASA 2007 NEO study is avail-able from
+ []
+
+[19] <Cneo.pdf, id=233, 541.02126pt x 456.70625pt>
+File: Cneo.pdf Graphic file (type pdf)
+ <use Cneo.pdf>
+Package pdftex.def Info: Cneo.pdf used on input line 1723.
+(pdftex.def)             Requested size: 245.26653pt x 207.04207pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1731--1731
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1731--1731
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1799--1799
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1799--1799
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1800--1811
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1812--1817
+
+ []
+
+[20 <./Cneo.pdf>] <panels1_2.pdf, id=243, 614.295pt x 794.97pt>
+File: panels1_2.pdf Graphic file (type pdf)
+
+<use panels1_2.pdf>
+Package pdftex.def Info: panels1_2.pdf used on input line 1893.
+(pdftex.def)             Requested size: 367.89978pt x 476.1123pt.
+
+Overfull \hbox (64.81705pt too wide) in paragraph at lines 1892--1894
+[] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1904--1904
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1904--1904
+
+ []
+
+<panels2.pdf, id=245, 614.295pt x 794.97pt>
+File: panels2.pdf Graphic file (type pdf)
+ <use panels2.pdf>
+Package pdftex.def Info: panels2.pdf used on input line 1909.
+(pdftex.def)             Requested size: 245.26653pt x 317.40012pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1914--1914
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1914--1914
+
+ []
+
+[21]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1970.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1970.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+<cswb.pdf, id=250, 264.99pt x 247.92625pt>
+File: cswb.pdf Graphic file (type pdf)
+ <use cswb.pdf>
+Package pdftex.def Info: cswb.pdf used on input line 1981.
+(pdftex.def)             Requested size: 245.26653pt x 229.47572pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1990--1990
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1990--1990
+
+ []
+
+[22 <./panels1_2.pdf> <./panels2.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 2012.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 2012.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+<cls.pdf, id=274, 277.035pt x 246.9225pt>
+File: cls.pdf Graphic file (type pdf)
+ <use cls.pdf>
+Package pdftex.def Info: cls.pdf used on input line 2039.
+(pdftex.def)             Requested size: 245.26653pt x 218.60739pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2046--2046
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2046--2046
+
+ []
+
+<bao.pdf, id=276, 545.03625pt x 571.13374pt>
+File: bao.pdf Graphic file (type pdf)
+ <use bao.pdf>
+Package pdftex.def Info: bao.pdf used on input line 2052.
+(pdftex.def)             Requested size: 245.26653pt x 257.00781pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2059--2059
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2059--2059
+
+ []
+
+<dges.pdf, id=278, 265.99374pt x 247.92625pt>
+File: dges.pdf Graphic file (type pdf)
+ <use dges.pdf>
+Package pdftex.def Info: dges.pdf used on input line 2067.
+(pdftex.def)             Requested size: 245.26653pt x 228.61319pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2083--2083
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2083--2083
+
+ []
+
+[23 <./cswb.pdf> <./cls.pdf> <./bao.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 2095.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 2095.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 2099--2101
+ []\OT1/cmr/m/n/10 Similarly, weak lens mag-ni-fi-ca-tion to-mog-ra-phy
+ []
+
+[24 <./dges.pdf>]
+Underfull \hbox (badness 1975) in paragraph at lines 2207--2210
+ \OT1/cmr/m/n/10 family and Oort-cloud comets; six-band sub-
+ []
+
+<asteroids.pdf, id=299, 546.04pt x 478.78876pt>
+File: asteroids.pdf Graphic file (type pdf)
+ <use asteroids.pdf>
+Package pdftex.def Info: asteroids.pdf used on input line 2224.
+(pdftex.def)             Requested size: 245.26653pt x 215.05844pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2233--2233
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2233--2233
+
+ []
+
+<Af9.pdf, id=301, 542.025pt x 509.905pt>
+File: Af9.pdf Graphic file (type pdf)
+ <use Af9.pdf>
+Package pdftex.def Info: Af9.pdf used on input line 2238.
+(pdftex.def)             Requested size: 245.26653pt x 230.73112pt.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2243.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2243--2243
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2243--2243
+
+ []
+
+<taumv.pdf, id=303, 768.8725pt x 613.29124pt>
+File: taumv.pdf Graphic file (type pdf)
+ <use taumv.pdf>
+Package pdftex.def Info: taumv.pdf used on input line 2255.
+(pdftex.def)             Requested size: 245.26653pt x 195.63957pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2261--2261
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2261--2261
+
+ []
+
+[25]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 2271.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 2271.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+[26 <./asteroids.pdf> <./Af9.pdf> <./taumv.pdf>]
+Underfull \hbox (badness 2698) in paragraph at lines 2305--2310
+ []\OT1/cmr/m/n/10 The su-perb con-tin-uum light curves of AGN
+ []
+
+
+Underfull \hbox (badness 2158) in paragraph at lines 2315--2320
+ []\OT1/cmr/m/n/10 Optical iden-ti-fi-ca-tion of coun-ter-parts to non-
+ []
+
+
+Underfull \hbox (badness 2521) in paragraph at lines 2315--2320
+ \OT1/cmr/m/n/10 electromagnetic sources, such as grav-i-ta-tional
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 2315--2320
+ \OT1/cmr/m/n/10 waves and neu-trino de-tec-tions (LIGO[], ICE-
+ []
+
+[27] <MarlaUGR.png, id=330, 803.0pt x 710.655pt>
+File: MarlaUGR.png Graphic file (type png)
+ <use MarlaUGR.png>
+Package pdftex.def Info: MarlaUGR.png used on input line 2378.
+(pdftex.def)             Requested size: 245.26653pt x 217.0585pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2383--2383
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2383--2383
+
+ []
+
+<panelsLSST.png, id=333, 400.49625pt x 395.4775pt>
+File: panelsLSST.png Graphic file (type png)
+ <use panelsLSST.png>
+Package pdftex.def Info: panelsLSST.png used on input line 2391.
+(pdftex.def)             Requested size: 251.43036pt x 248.28317pt.
+
+Overfull \hbox (6.16383pt too wide) in paragraph at lines 2391--2392
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2401--2401
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2401--2401
+
+ []
+
+<BethMWhalo.pdf, id=335, 1027.84pt x 770.88pt>
+File: BethMWhalo.pdf Graphic file (type pdf)
+ <use BethMWhalo.pdf>
+Package pdftex.def Info: BethMWhalo.pdf used on input line 2408.
+(pdftex.def)             Requested size: 318.84723pt x 239.13501pt.
+
+Overfull \hbox (37.44571pt too wide) in paragraph at lines 2407--2409
+[] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2418--2418
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2418--2418
+
+ []
+
+
+Underfull \hbox (badness 3078) in paragraph at lines 2432--2434
+ []\OT1/cmr/m/n/10 The most com-plete search pos-si-ble for halo
+ []
+
+[28 <./MarlaUGR.png> <./panelsLSST.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 2454.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 2454.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+<musycSDSS.pdf, id=343, 614.295pt x 794.97pt>
+File: musycSDSS.pdf Graphic file (type pdf)
+ <use musycSDSS.pdf>
+Package pdftex.def Info: musycSDSS.pdf used on input line 2485.
+(pdftex.def)             Requested size: 245.26653pt x 317.40012pt.
+
+<musyc.pdf, id=345, 614.295pt x 794.97pt>
+File: musyc.pdf Graphic file (type pdf)
+ <use musyc.pdf>
+Package pdftex.def Info: musyc.pdf used on input line 2487.
+(pdftex.def)             Requested size: 245.26653pt x 317.40012pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2494--2494
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2494--2494
+
+ []
+
+[29 <./BethMWhalo.pdf> <./musycSDSS.pdf> <./musyc.pdf>]
+Underfull \hbox (badness 1371) in paragraph at lines 2538--2541
+ []\OT1/cmr/m/n/10 The first wide field sur-vey of ul-tra low sur-
+ []
+
+<cowan.pdf, id=392, 537.00626pt x 255.95625pt>
+File: cowan.pdf Graphic file (type pdf)
+ <use cowan.pdf>
+Package pdftex.def Info: cowan.pdf used on input line 2553.
+(pdftex.def)             Requested size: 245.26653pt x 116.9016pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2565--2565
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2565--2565
+
+ []
+
+<panels3.png, id=394, 438.63875pt x 742.775pt>
+File: panels3.png Graphic file (type png)
+ <use panels3.png>
+Package pdftex.def Info: panels3.png used on input line 2572.
+(pdftex.def)             Requested size: 245.26653pt x 415.3278pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2582--2582
+$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2582--2582
+
+ []
+
+[30 <./cowan.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 2628.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 2628.
+
+
+Class revtex4 Warning: Deferred float stuck during \clearpage processing.
+
+[31 <./panels3.png>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ì in font cmr10!
+ [32] [33]
+Underfull \hbox (badness 1436) in paragraph at lines 2948--2951
+ []\OT1/cmr/m/n/8 Angel, R., Lesser, M. & Sar-lot, R. 2000, in ``Imag-ing the
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 2952--2953
+ []\OT1/cmr/m/n/8 Atwood, W.B., Abdo, A.A., Ack-er-man, M., et al., 2009,
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 2967--2968
+ []\OT1/cmr/m/n/8 Becker, A.C., Wittman, D.M., Boe-shaar, P.C., et al. 2004,
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 2973--2974
+ []\OT1/cmr/m/n/8 Belokurov, V., Zucker, D.B., Evans, N.W., et al. 2007a,
+ []
+
+
+Underfull \hbox (badness 4967) in paragraph at lines 2975--2976
+ []\OT1/cmr/m/n/8 Belokurov, V., Evans, N.W., Moi-seev, A., et al. 2007b,
+ []
+
+
+Underfull \hbox (badness 3907) in paragraph at lines 2982--2983
+ []\OT1/cmr/m/n/8 Bernstein, G.M., Trilling, D.E., Allen, R.L., et al. 2004,
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 3011--3013
+ []\OT1/cmr/m/n/8 Bottke, W.F., Vokrouh-lick^^Sy, D., Bro^^Tz, M., Nesvorn^^Sy,
+ D. &
+ []
+
+
+Underfull \hbox (badness 5787) in paragraph at lines 3027--3028
+ []\OT1/cmr/m/n/8 Budav^^Sari, T., Con-nolly, A.J., Sza-lay, A.S., et al. 2003,
+
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 3031--3033
+ []\OT1/cmr/m/n/8 Burke, D., Ax-el-rod, T., Bartlett, J., et al. 2007, Amer-i-c
+an
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 3071--3072
+ []\OT1/cmr/m/n/8 De Lu-cia, G., Springel, V., White, S.D.M., Cro-ton, D. &
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 3081--3082
+ []\OT1/cmr/m/n/8 Djorgovski, S.G., Ma-ha-bal, A.A., Drake, A.J., et al. 2012,
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 3085--3086
+ []\OT1/cmr/m/n/8 Doressoundiram, A., Peix-inho, N., Moul-let, A., et al. 2007,
+
+ []
+
+
+Underfull \hbox (badness 3977) in paragraph at lines 3091--3092
+ []\OT1/cmr/m/n/8 Drake, A.J., Djor-gov-ski, S.G., Ma-ha-bal, A., et al. 2009,
+ []
+
+[34]
+Underfull \hbox (badness 1975) in paragraph at lines 3120--3121
+ []\OT1/cmr/m/n/8 Gawiser, E., van Dokkum, P.G., Her-rera, D., et al. 2006,
+ []
+
+
+Underfull \hbox (badness 2735) in paragraph at lines 3150--3151
+ []\OT1/cmr/m/n/8 Gunn, J.E., Sieg-mund, W.A., Man-nery, E.J., et al. 2006,
+ []
+
+
+Underfull \hbox (badness 4403) in paragraph at lines 3155--3156
+ []\OT1/cmr/m/n/8 Hartman, J.D., Gaudi, B.S., Hol-man, M.J., et al. 2009,
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 3159--3160
+ []\OT1/cmr/m/n/8 Hicken, M., Wood-Vasey, W.M., Blondin, S., et al. 2009,
+ []
+
+
+Underfull \hbox (badness 1424) in paragraph at lines 3187--3190
+ []\OT1/cmr/m/n/8 Ivezi^^Sc, []Z, Tyson, J.A., Juri^^Sc, M. et al. 2007a, Pro-c
+eed-ings
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 3213--3215
+ []\OT1/cmr/m/n/8 Jedicke, R., Den-neau, L., Grav, T., et al. 2005, Amer-i-can
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 3222--3223
+ []\OT1/cmr/m/n/8 Johnston, K. V., Bul-lock, J. S., Sharma, S., et al. 2008,
+ []
+
+
+Underfull \hbox (badness 3803) in paragraph at lines 3237--3238
+ []\OT1/cmr/m/n/8 Kalirai, J.S., Hansen, B.M.S., Kel-son, D.D., et al. 2008,
+ []
+
+
+Underfull \hbox (badness 5203) in paragraph at lines 3239--3240
+ []\OT1/cmr/m/n/8 Kalirai, J.S., Richer, H.B., Fahlman, G.G., et al. 2001,
+ []
+
+Missing character: There is no ‚ in font cmr8!
+Missing character: There is no Ä in font cmr8!
+Missing character: There is no ù in font cmr8!
+
+Underfull \hbox (badness 5939) in paragraph at lines 3272--3273
+ []\OT1/cmr/m/n/8 Kurucz, R.L. 1993, ``CD-ROM No.13, Cam-bridge, Mass.,
+ []
+
+[35]
+Underfull \hbox (badness 5077) in paragraph at lines 3301--3302
+ []\OT1/cmr/m/n/8 MacLeod, C.L., Ivezi^^Sc, []Z., Kochanek, C.S., et al. 2010,
+ []
+
+
+Underfull \hbox (badness 4254) in paragraph at lines 3314--3315
+ []\OT1/cmr/m/n/8 Martin, D.C., Fan-son, J., Schimi-novich, D., et al. 2006,
+ []
+
+
+Underfull \hbox (badness 3386) in paragraph at lines 3359--3360
+ []\OT1/cmr/m/n/8 Perlmutter, S., Alder-ing, G., Gold-haber, G., et al. 1999,
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 3389--3390
+ []\OT1/cmr/m/n/8 Rossetto, B. M., San-ti-ago, B. X., Gi-rardi, L., et al. 2011
+,
+ []
+
+
+Underfull \hbox (badness 5446) in paragraph at lines 3416--3417
+ []\OT1/cmr/m/n/8 Skrutskie, M.F., Cutri, R.M., Stien-ing, R., et al. 2006,
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 3420--3421
+ []\OT1/cmr/m/n/8 Smith, N., Li, W., Sil-ver-man, J.M., Gane-shalingam, M. &
+ []
+
+
+Underfull \hbox (badness 6758) in paragraph at lines 3445--3446
+ []\OT1/cmr/m/n/8 Thompson, T.A.,Prieto, J.L., Stanek, K.Z., et al. 2009,
+ []
+
+
+Underfull \hbox (badness 5147) in paragraph at lines 3455--3456
+ []\OT1/cmr/m/n/8 Tyson, J.A., Kochan-ski, G.P. & Dell'Antonio, I.P. 1998,
+ []
+
+
+Underfull \hbox (badness 2951) in paragraph at lines 3457--3460
+ []\OT1/cmr/m/n/8 Tyson, J.A., Roat, C., Bosch, J. & Wittman, D. 2008a,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3461--3463
+ []\OT1/cmr/m/n/8 Tyson, J. A., and LSST col-lab-o-ra-tion, 2008b, see
+ []
+
+[36]
+Underfull \hbox (badness 1205) in paragraph at lines 3480--3482
+ []\OT1/cmr/m/n/8 West, A. A., Bochan-ski, J. J., Bowler, B. P., et al. 2011,
+ []
+
+
+Underfull \hbox (badness 4608) in paragraph at lines 3485--3486
+ []\OT1/cmr/m/n/8 Wright, J.T., Marcy, G.W., Howard, A.W., et al. 2012,
+ []
+
+
+Package natbib Warning: There were undefined citations.
+
+
+Package natbib Warning: There were multiply defined citations.
+
+[37] (./lsst.aux (./authors.aux) (./abstract.aux)
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4246 strings out of 493488
+ 55822 string characters out of 3141326
+ 166159 words of memory out of 3000000
+ 7439 multiletter control sequences out of 15000+200000
+ 12573 words of font info for 52 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 39i,9n,29p,1143b,299s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
+sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/
+texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/tex
+live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texliv
+e/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
+012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2012
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2012/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2012/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2012/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2012/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2012/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2012/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2012/texmf-dist/
+fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on lsst.pdf (37 pages, 11502872 bytes).
+PDF statistics:
+ 496 PDF objects out of 1000 (max. 8388607)
+ 286 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 391 words of extra memory for PDF output out of 10000 (max. 10000000)
+
