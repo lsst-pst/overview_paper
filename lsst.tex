@@ -25,7 +25,7 @@
 %\newcommand{\R}[1]{{\color{red} #1}}
 \newcommand{\G}[1]{{\color{red} #1}}
 \newcommand{\B}[1]{{#1}}
-\newcommand{\R}[1]{{\color{red}}}
+\newcommand{\R}[1]{{\color{red} #1}}
 
 \begin{document}
 \title{LSST: from Science Drivers to Reference Design and Anticipated Data Products} 
@@ -36,7 +36,7 @@
 
 
 \section{INTRODUCTION}
- 
+
 Major advances in our understanding of the Universe have historically arisen
 from dramatic improvements in our ability to ``see''. We have developed
 progressively larger telescopes over the past century, allowing us 
@@ -253,7 +253,7 @@ This
 depth, \B{and the corresponding deep surface brightness limit,}
 optimize the number of galaxies with measured shapes in ground-based
 seeing, and allow their detection in significant numbers to beyond a
-redshift of two.  \R{It is anticipated that} Analyzing these data will
+redshift of two.  Analyzing these data will
 require sophisticated data processing techniques.  For example, rather
 than simply coadding all images in a given region of sky, the
 individual exposures, each with their own PSF and noise
@@ -576,23 +576,29 @@ system parameters.
 \hline  
    Quantity                         &     Baseline Design Specification    \\
 \hline  
-Optical Config.                     &  3-mirror modified Paul-Baker        \\
-Mount Config.                       &  Alt-azimuth          \\
-Final f-ratio, aperture             &  f/1.234, 8.4 m                \\
-Field of view, \'etendue            &  9.6 deg$^2$,   319 m$^2$deg$^2$     \\
-Plate Scale                         &  50.9 $\mu$m/arcsec (0.2'' pix)  \\
-Pixel count                         &  3.2 Gigapix  \\
-Wavelength Coverage                 &  320 -- 1050 nm, $ugrizy$                        \\
-Single visit depths$^a$ (5$\sigma$) &  23.9, 25.0, 24.7, 24.0, 23.3, 22.1  \\
-Mean number of visits               &  56, 80, 184, 184, 160, 160  \\ 
-Final (coadded) depths$^a$          &  26.1, 27.4, 27.5, 26.8, 26.1, 24.9 \\
+Optical Config.                           &  3-mirror modified Paul-Baker        \\
+Mount Config.                            &  Alt-azimuth          \\
+Final f-ratio, aperture                 &  f/1.234, 8.4 m                \\
+Field of view, \'etendue              &  9.6 deg$^2$,   319 m$^2$deg$^2$     \\
+Plate Scale                                  &  50.9 $\mu$m/arcsec (0.2'' pix)  \\
+Pixel count                                  &  3.2 Gigapix  \\
+Wavelength Coverage                   &  320 -- 1050 nm, $ugrizy$             \\
+Single visit depths, design $^a$  &  23.9, 25.0, 24.7, 24.0, 23.3, 22.1    \\
+Single visit depths, min.$^b$       &  23.4, 24.6, 24.3, 23.6, 22.9, 21.7    \\
+Mean number of visits$^c$          &  56, 80, 184, 184, 160, 160               \\ 
+Final (coadded) depths$^d$         &  26.1, 27.4, 27.5, 26.8, 26.1, 24.9     \\
 \hline                         
 \end{tabular}
 \\ \vskip 0.05in
-$^a$ The listed values for 5$\sigma$ depths in the $ugrizy$ bands, respectively, 
-are AB magnitudes, and correspond to point sources and zenith observations
-(about 0.2 mag loss of depth is expected for realistic airmass distributions). 
-See Table 2 for more details.   
+$^a$ Design specification from the Science Requirements Document (SRD) for 5$\sigma$ depths 
+in the $ugrizy$ bands, respectively. The listed values are expressed on AB magnitude scale, 
+and correspond to point sources and fiducial zenith observations (about 0.2 mag loss of depth 
+is expected for realistic airmass distributions, see Table 2 for more details).
+$^b$ Minimum specification from the Science Requirements Document for 5$\sigma$ depths.
+$^c$ An illustration of the distribution of the number of visits as a function of bandpass, 
+taken from Table 24 in the SRD.  
+$^d$ Idealized depth of coadded images, based on design specification for 5$\sigma$ depth and 
+the number of visits in the penultimate row (taken from Table 24 in the SRD). 
 \vskip 0.2in          
 \end{table}
 
@@ -972,6 +978,29 @@ from a single substrate.}
 \end{figure}
 
 
+\begin{figure}
+%\vskip -0.65in
+\includegraphics[width=1.0\hsize,clip]{polishing.pdf}
+%\vskip -0.65in
+\caption{The polishing of the primary-tertiary mirror pair at the Steward Observatory Mirror Lab.} 
+\label{Fig:polishing}
+\end{figure}
+
+
+
+
+\begin{figure}
+%\vskip -0.65in
+\includegraphics[width=1.0\hsize,clip]{telescopeGreen.pdf}
+%\vskip -0.65in
+\caption{The baseline design for the 
+LSST telescope.  The small focal ratio allows for a very squat
+telescope, and thus a very stiff structure.  Note the figure of a person for scale.} 
+\label{Fig:telescope}
+\end{figure}
+
+
+
 
 \subsubsection{ Telescope and Site}
 
@@ -999,6 +1028,16 @@ and 2009.  The primary-tertiary mirror pair is currently being polished at the S
 the secondary should start around that time.  
 
 
+\begin{figure}
+%\vskip -1.3in
+\includegraphics[width=1.0\hsize,clip]{observatoryFull.pdf}
+%\vskip -1.4in
+\caption{The LSST Observatory: artist's rendering of the dome enclosure 
+with the attached summit support building on Cerro Pach\'{o}n. The LSST calibration 
+telescope is shown on an adjacent rise to the right.} 
+\label{Fig:observatory}
+\end{figure}
+
 The LSST Observing Facility (Fig.~\ref{Fig:observatory}),
 consisting of the telescope enclosure and summit support building, will be constructed atop Cerro Pach\'{o}n in northern Chile,
 sharing the ridge with the Gemini South and SOAR telescopes\footnote{Coordinates listed in older versions 
@@ -1018,42 +1057,30 @@ building has been oriented with respect to the prevailing winds to shed its turb
 telescope enclosure.  The summit support building includes a coating chamber for recoating the three LSST mirrors and 
 clean room facilities for maintaining and servicing the camera.
 
-\begin{figure}
-%\vskip -0.65in
-\includegraphics[width=1.0\hsize,clip]{polishing.pdf}
-%\vskip -0.65in
-\caption{The polishing of the primary-tertiary mirror pair at the Steward Observatory Mirror Lab.} 
-\label{Fig:polishing}
-\end{figure}
-
-
-
-\begin{figure}
-%\vskip -0.65in
-\includegraphics[width=1.0\hsize,clip]{telescopeGreen.pdf}
-%\vskip -0.65in
-\caption{The baseline design for the 
-LSST telescope.  The small focal ratio allows for a very squat
-telescope, and thus a very stiff structure.  Note the figure of a person for scale.} 
-\label{Fig:telescope}
-\end{figure}
-
-
-
-\begin{figure}
-%\vskip -1.3in
-\includegraphics[width=1.0\hsize,clip]{observatoryFull.pdf}
-%\vskip -1.4in
-\caption{The LSST Observatory: artist's rendering of the dome enclosure 
-with the attached summit support building on Cerro Pach\'{o}n. The LSST calibration 
-telescope is shown on an adjacent rise to the right.} 
-\label{Fig:observatory}
-\end{figure}
 
 
 
 \vskip 0.2in
 \subsubsection{ Camera }
+
+
+The LSST camera provides a 3.2 Gigapixel flat focal plane array, tiled by 189
+4K$\times$4K CCD science sensors with 10 $\mu$m pixels (see Figs.~\ref{Fig:camera}
+and \ref{Fig:fov}). This pixel count is a direct consequence of sampling the 
+9.6 deg$^2$ field-of-view (0.64m diameter) with 0.2$\times$0.2 arcsec$^2$
+pixels (Nyquist sampling in the best expected seeing of $\sim$0.4 arcsec). 
+The sensors are deep depleted high resistivity silicon back-illuminated devices with 
+a highly segmented architecture that enables the entire array to be read in 2 seconds. 
+The detectors are grouped into 3$\times$3 rafts (see Fig.~\ref{Fig:raft}); each 
+contains its own dedicated electronics. The rafts are mounted on a silicon carbide 
+grid inside a vacuum cryostat, with an intricate thermal control system that maintains 
+the CCDs at an operating temperature of 173 K. The entrance window to the
+cryostat is the third (L3) of the three refractive lenses in the camera. The other
+two lenses (L1 and L2) are mounted in an optics structure at the front of the camera 
+body, which also contains a mechanical shutter, and a carousel assembly that holds 
+five large optical filters. The sixth optical filter can 
+replace any of the five via a procedure accomplished during daylight hours. 
+
 
 
 \begin{figure}[t!]
@@ -1087,25 +1114,6 @@ and thermal connections. Each raft (red square in Fig.~\ref{Fig:fov})
 includes 9 sensors, and can be replaced.} 
 \label{Fig:raft}
 \end{figure}
-
-
-The LSST camera provides a 3.2 Gigapixel flat focal plane array, tiled by 189
-4K$\times$4K CCD science sensors with 10 $\mu$m pixels (see Figs.~\ref{Fig:camera}
-and \ref{Fig:fov}). This pixel count is a direct consequence of sampling the 
-9.6 deg$^2$ field-of-view (0.64m diameter) with 0.2$\times$0.2 arcsec$^2$
-pixels (Nyquist sampling in the best expected seeing of $\sim$0.4 arcsec). 
-The sensors are deep depleted high resistivity silicon back-illuminated devices with 
-a highly segmented architecture that enables the entire array to be read in 2 seconds. 
-The detectors are grouped into 3$\times$3 rafts (see Fig.~\ref{Fig:raft}); each 
-contains its own dedicated electronics. The rafts are mounted on a silicon carbide 
-grid inside a vacuum cryostat, with an intricate thermal control system that maintains 
-the CCDs at an operating temperature of 173 K. The entrance window to the
-cryostat is the third (L3) of the three refractive lenses in the camera. The other
-two lenses (L1 and L2) are mounted in an optics structure at the front of the camera 
-body, which also contains a mechanical shutter, and a carousel assembly that holds 
-five large optical filters. The sixth optical filter can 
-replace any of the five via a procedure accomplished during daylight hours. 
-
 
 
 
@@ -1656,31 +1664,42 @@ micro-surveys) will also be considered.
 \caption{The Parameters From Eqs.~\ref{ggg} and \ref{m5}}
 \begin{tabular}{|r|r|r|r|r|r|r|}
 \hline  
-              &   $u$  &   $g$   & $r$   &  $i$  & $z$  & $y$  \\
+                           &   $u$  &   $g$   & $r$   &  $i$  & $z$  & $y$  \\
 \hline  
    $m_{\rm sky}^a$ &   22.9    & 22.3    & 21.2    & 20.5    & 19.6    &  18.6  \\
-   $\theta^b$      &   0.77    & 0.73    & 0.70    & 0.67    &  0.65   &  0.63  \\
-  $\gamma^c$       &   0.037   & 0.038   & 0.039   & 0.039   & 0.040   & 0.040 \\
-  $C_m^d$        &   23.05   & 24.40   & 24.60   & 24.22   & 23.92   & 23.17 \\
-    $k_m^e$       &    0.451   &  0.163   &  0.087   &  0.065   &  0.043   &  0.138 \\
-    $m_5^f$        &   23.9    & 25.0    & 24.7    &  24.0   & 23.3    & 22.1  \\
-    $\Delta m_5^g$ &   0.21    & 0.15   & 0.14    &  0.13   & 0.13    & 0.15  \\
+   $\theta^b$       &   0.77     &  0.73     & 0.70    & 0.67    &  0.65   &  0.63  \\
+   $\gamma^c$   &   0.037   & 0.038    & 0.039   & 0.039   & 0.040   & 0.040 \\
+    $k_m^d$        &    0.451  &  0.163   &  0.087  &  0.065   &  0.043   &  0.138 \\
+\hline
+    $C_m^e$        &   23.05   & 24.40    & 24.60   & 24.22   & 23.92   & 23.17 \\
+    $m_5^f$         &   23.9     &   25.0    & 24.7     &  24.0   & 23.3    & 22.1  \\
+ $\Delta C^{\infty,g}_m$  &  0.38   &  0.15     &  0.08   &  0.06   &   0.04  &  0.03  \\ 
+ $\Delta C_m(2)^h$       &  0.16   &  0.07     &   0.04  &  0.03   &   0.02  &  0.01 \\   
+\hline
+    $\Delta m_5^i$ &   0.21    & 0.15   & 0.14     &  0.13   & 0.13    & 0.15  \\
 \hline                         
 \end{tabular}
   \\ \vskip 0.05in
-  $^a$ The expected median zenith sky brightness at Cerro Pach\'on, derived 
-       from the median dark sky brightness observed by SDSS (AB mag arcsec$^{-2}$). \\
+  \R{Entries for $C_m$, $m_5$, $\Delta C^{\infty}_m$ and $\Delta C_m(2)$ will be updated!} \\
+  $^a$ The expected median zenith sky brightness at Cerro Pach\'on, derived from
+           the median dark sky brightness observed by SDSS (AB mag arcsec$^{-2}$). \\
   $^b$ The expected delivered median zenith seeing (arcsec). For larger
-       airmass, $X$, seeing is proportional to $X^{0.6}$. \\
+           airmass, $X$, seeing is proportional to $X^{0.6}$. \\
   $^c$ The band-dependent parameter from Eq.~\ref{ggg}. \\
-  $^d$ The band-dependent parameter from Eq.~\ref{m5}. \\
-  $^e$ Adopted atmospheric extinction. \\
+  $^d$ Adopted atmospheric extinction. \\
+  $^e$ The band-dependent parameter from Eq.~\ref{m5}. \\
   $^f$ The typical 5$\sigma$ depth for point sources at zenith, assuming exposure time of 
-       2$\times$15 sec, and observing conditions as listed. For larger
-       airmass the 5$\sigma$ depth is brighter; see the bottom row. \\
-  $^g$ The loss of depth at the median airmass of $X=1.2$ due to seeing degradation 
-       and increased atmospheric extinction. \\
+          2$\times$15 sec, and observing conditions as listed. For larger
+          airmass the 5$\sigma$ depth is brighter; see the bottom row. \\
+  $^g$ The loss of depth due to instrumental noise (assuming 9 e$^-$ per pixel and readout). \\
+  $^h$ Additive correction to $C_m$ when exposure time is doubled from its fiducial value 
+          to 60 sec. \\
+  $^i$ The loss of depth at the median airmass of $X=1.2$ due to seeing degradation 
+                 and increased atmospheric extinction. \\
 \end{table}
+
+
+
 
 
 
@@ -1734,21 +1753,50 @@ listed in Table 2. The 5$\sigma$ depth for point sources is determined from
 where $m_{sky}$ is the sky brightness (AB mag arcsec$^{-2}$), $\theta$ is 
 the seeing (FWHM, in arcsec), $t_{vis}$ is the exposure time (seconds),
 $k$ is the atmospheric extinction coefficient, and $X$ is airmass. 
+
+\R{
 The constants $C_m$ depend on the overall throughput of the instrument
-and are 
-\B{computed from the design requirements for $m_5$ listed in the
-LSST Science Requirements Document. The available throughput data for
-optical elements and sensors are consistent with the resulting $C_m$ values 
-listed in Table 2, and the differences in performance between LSST and,
-for example, SDSS are easily understood\footnote{SDSS data 
+and are computed using currently the best available throughput estimates for
+optical elements and sensors. The resulting $C_m$ values are listed in Table 2
+and in all six bands they imply single visit depths (also listed in Table 2) in the range 
+between minimum and design specification values from the Science Requirements
+Document listed in Table 1. 
+The differences in performance between LSST and, for example, SDSS are easily 
+understood\footnote{SDSS data 
 typically reach a 5$\sigma$ depth for point sources of $r=22.5$ 
 with an effective aperture of $D=2.22$m, an exposure time of $t_{vis}=54$ 
 sec, the median $r$ band sky brightness of $r_{sky}=20.9$ mag arcsec$^{-2}$, 
 the median seeing of $\theta=1.5$ arcsec, and the median airmass of $X=1.3$.
+%%% fix numbers: (aperture and throughout) 
 In comparison, the LSST loss of depth is 0.32 mag due to shorter exposures,
 while the gains are 1.17 mag due to larger aperture, 0.83 mag due to better 
-seeing, 0.20 mag due to fainter sky, and 0.10 mag due to better throughput,
-for a net gain of $\sim$2.0 mag.}.}
+seeing, 0.20 mag due to fainter sky, and \R{ FIX ME! 0.10 mag due to better throughput,
+for the net gain of $\sim$2.0 mag.}}.
+
+The structure of eq.~\ref{m5} nicely illustrates decoupling between the system 
+sensitivity which is fully absorbed into $C_m$ and observing conditions
+(system deployment parameters) specified by $m_{sky}$, $\theta$, $t_{vis}$, $k_m$ 
+and $X$. The computation of $C_m$ listed in Table 2 assumed instrumental noise of 
+9 e$^-$ per pixel and per exposure, which has negligible effect on $m_5$ in all bands 
+except for the $u$ band. This loss of depth due to instrumental noise, $\Delta C^{\infty}_m$,
+is listed in Table 2; it also corresponds to additive correction to $C_m$ when the
+exposure time $t_{vis} \rightarrow \infty$. To predict $5\sigma$ depths for 
+exposure time $\tau$ times longer that the fiducial $t_{vis} = 30$ sec., the 
+following correction has to be added to $C_m$ listed in Table 2:
+\begin{equation}
+\label{eq:DCm} 
+ \Delta C_m(\tau) = \Delta C^\infty_m - 1.25\,\log_{10}\left[1 + {10^{(0.8 \, \Delta C^\infty_m)} - 1 \over \tau}  \right].
+\end{equation}
+Of course, $\Delta C_m(\tau=1)=0$. Again, this effect is only substantial in the $u$ 
+band, as demonstrated by $\Delta C_m(\tau = 2)$ listed in Table 2.  
+
+The loss of depth at the airmass of $X=1.2$ due to seeing degradation 
+and increased atmospheric extinction is listed in the last row in Table 2. Note
+that the uncertainty of limiting depth predictions due to unpredictable solar 
+activity (which influences the night sky brightness, Patat 2008) is about 
+0.1-0.2 mag. 
+}
+
 
 
 \subsubsection{   The NEO Completeness Analysis    } 
@@ -1798,14 +1846,9 @@ $>$99\% linking efficiency across all classes of Solar System objects.
 For the LSST baseline cadence, objects
 counted as having well-determined orbits are observed on 20 different nights on average over ten
 years. A more stringent requirement that an object must be detected on at least 
-five nights decreases the completeness by typically 3\%. {\bf
-  SOMETHING IS SCREWY HERE.}  The completeness is also a
-function of the assumed size distribution of NEOs: the flatter the distribution, the 
-higher the completeness. If the latest results for the NEO size
-distribution by A. Harris (priv. comm.) are taken into account, the
-completeness increases by 1-2\%. {\bf IS THIS STATEMENT STILL
-  UP-TO-DATE?} Due to these issues, the completeness
-estimates have a systematic uncertainty of at least 2\%. 
+five nights per lunation decreases the completeness by typically 3\%. 
+The completeness is also a function of the assumed size distribution of NEOs, the flatter the distribution, the 
+higher the completeness, and different assumptions contribute a systematic uncertainty of about 2\%. 
 
 The LSST baseline cadence provides orbits for 82\% of PHAs larger than 140
 meters after 10 years of operations.  This can be increased to 84\%
@@ -2896,41 +2939,6 @@ M. Strauss (Princeton), L. Walkowicz (Adler), B. Willman (Haverford), and M. Woo
 \section{   EDUCATIONAL AND SOCIETAL IMPACTS    }
 \label{Sec:impact}
 
-\R{
-The impact -- and enduring societal significance -- of the LSST will exceed 
-its direct contributions to advances in physics and astronomy. With an open 
-database available in real time to the non-specialist public, LSST has the 
-capacity to literally bring the Universe home to everyone. The ``movie of 
-the Universe'' will offer a new window on the sky for curious minds of all 
-ages. Any interested amateur, anywhere in the world, will be able to log on 
-to their computer and look at the latest images of any part of the 
-sky\footnote{At the angular resolution of LSST, it would take over 3 million 
-HDTV sets (with 1080$\times$1920 pixel resolution) to display a single-epoch 
-LSST image of half the Celestial Sphere (and about 1000 such images will be 
-obtained over 10 years).}. 
-In the context of open source development, as we have witnessed recently in 
-community contributions to Google Sky, the value added for public interest 
-and interaction is enormous. LSST will allow people to see that they are
-part of a dynamic Universe. User-friendly visualization interfaces will 
-enable new research as well as being a vehicle for education and public 
-involvement. Elementary school students in Earth science classes can participate 
-in the discovery of new asteroids. High school and college students can discover 
-supernovae and measure their light curves, thereby learning about both measurement 
-processes and cosmology. The implications for all levels of scientific, engineering, 
-and technical education cannot be overstated. 
-
-The LSST Education and Public Outreach (EPO) program will provide tools for 
-the public, museum visitors, and students not only to examine and understand 
-the achievements of LSST, but also to participate in the process of scientific 
-discovery. With partners and collaborators such as Google, the American Museum of 
-Natural History, the Adler Planetarium, the Las Cumbres Observatory Global 
-Telescope Network, and others, a number of innovative programs have been 
-devised: an internet-based public outreach system called involving citizen-scientists,
-advanced visualization demonstrations at the Hayden and Adler planetaria, formal
-educational programs focused on Solar System science and cosmology, teacher 
-training, and the development of new software EPO tools. LSST is perfectly 
-positioned to bring such a transformative EPO program to fruition. 
-}
 
 \B{
 The impact -- and enduring societal significance -- of the LSST will exceed its direct contributions 
@@ -3602,6 +3610,8 @@ updated system description and science examples, refreshed references.
 \bibitem[()]{} Padmanabhan, N., Schlegel, D., Finkbeiner, D., et al.~2008, Astrophysical Journal, 674, 1217
 
 \bibitem[()]{} Parker, A., Ivezi\'{c}, \v{Z}, Juri\'{c}, M., et al.~2008, Icarus, 198, 138
+
+\bibitem[()]{} Patat, F. 2008, A\&A, 481, 575
 
 \bibitem[()]{} Percival, W.J., Reid, B.A., Eisenstein, D.J., et al.~2010, MNRAS, 401, 2148 
 
