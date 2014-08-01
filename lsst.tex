@@ -325,7 +325,7 @@ for new theoretical models. In addition, collisions in the main asteroid belt be
 still occur, and occasionally eject objects on orbits that may place them on a collision course with Earth. 
 Studying the properties of main belt asteroids at sub-kilometer sizes is important for linking the near-Earth 
 Object (NEO) population with its source in the main belt. About 20\% of NEOs, the potentially hazardous 
-asteroids or PHAs, are in orbits that pass sufficiently close to Earth's orbit, to within 0.05 AU, that perturbations 
+asteroids (PHAs), are in orbits that pass sufficiently close to Earth's orbit, to within 0.05 AU, that perturbations 
 with time scales of a century can lead to intersections and the possibility of collision. In December 2005, 
 the U.S. Congress directed\footnote{For details see http://neo.jpl.nasa.gov/neo/report2007.html} NASA to 
 implement a NEO survey that would catalog 90\% of NEOs with diameters larger than 140 meters by 2020.  
@@ -621,7 +621,7 @@ A larger field-of-view would lead to unacceptable deterioration of the
 image quality. This constraint leaves the primary mirror diameter and survey lifetime 
 as free parameters. The adopted survey lifetime of 10 years is a compromise 
 between a shorter time that leads to an excessively large and expensive mirror (15 m for a 
-3 year-long survey and 12 m for a 5-year long survey) and not as effective proper motion
+3 year survey and 12 m for a 5 year survey) and not as effective proper motion
 measurements, and a smaller telescope that would require more time to complete the 
 survey, with the associated increase in operations cost.
 
@@ -641,7 +641,7 @@ Apart from $z<2$ quasars, practically all populations
 have $k$ at most 0.6 (the Euclidean value), and faint stars 
 and galaxies have $k<0.5$. For more details, please see Nemiroff
 (2003).}. For this reason, the sky area for the main survey is 
-maximized to its practical limit, 20,000 deg$^2$, determined by the 
+maximized to its practical limit, 18,000 deg$^2$, determined by the 
 requirement to avoid airmasses less than 1.5, 
 %$X<1.5$, where approximately $X={\rm sec}(\theta)$  and $\theta$ is
 %the zenith distance), 
@@ -1073,7 +1073,7 @@ telescope is shown on an adjacent rise to the right.}
 \caption{The LSST focal plane. Each cyan square represents one
 $4096\times4096$ pixel sensor. Nine sensors are assembled into a
 raft; the 21 rafts are outlined in red. There are 189 science sensors, each 
-with 16.8 Mpix, for a total pixel count of 3.2 Gpix.} 
+with 16.8 megapixels, for a total of 3.2 gigapixels.} 
 \label{Fig:fov}
 \end{figure}
 
@@ -1116,7 +1116,8 @@ replace any of the five via a procedure accomplished during daylight hours.
 The rapid cadence of the LSST observing program will produce an enormous
 volume of data ($\sim$15 TB of raw imaging data per night), leading to a total database over 
 the ten years of operations of 100 PB for the imaging data, and 50 PB for the catalog database. 
-For comparison, the image volume in SDSS Data Release 7 is 16 TB. 
+For comparison, the image volume in SDSS Data Release 7 (Abazajian et
+al.~2009) is 16 TB. 
 The total LSST data volume after processing will be several hundred PB.
 The computing power required to process the data grows as the survey
 progresses, starting at
@@ -1150,7 +1151,8 @@ completing the image readout.  The data release
 pipelines (see Fig.~\ref{Fig:DM6}), in contrast, are intended to
 produce the most completely analyzed data products of the survey, in
 particular those that measure very faint objects and cover long time
-scales. A new run will begin each year, processing the entire survey data
+scales. A new run will begin each year (with two runs in the first
+year of operations), processing the entire survey data
 set that is available to date. The data release pipelines consume most of the
 computing power of the data management system.  The calibration
 products pipeline produces the wide variety of calibration data
@@ -1167,7 +1169,12 @@ TFlops, equal to the world's most powerful computer in 2007), the continuation o
 current trends suggests that the center will 
 not even qualify for the top 500 list by the time of first light.
 Hence, while LSST is making a novel use of advances in information technology, 
-it is not taking the risk of pushing the expected technology to the limit.  
+it is not taking the risk of pushing expected technology to the limit.  
+
+{\bf THIS SECTION NEEDS UPDATING; I BELIEVE MARIO IS PLANNING TO DO
+  SO.  IN PARTICULAR, WE NEED A DISCUSSION OF LEVEL 1, 2, AND 3, AND
+  AN EMPHASIS THAT THE DATA PROCESSING WILL ALLOW THE BULK OF THE
+  SCIENCE TO BE DONE AT THE CATALOG LEVEL.}
 
 
 \begin{figure}[t!]
@@ -1196,7 +1203,7 @@ transient, variable and moving objects.}
 \begin{figure*}[t!]
 \hskip 0.3in
 \includegraphics[width=0.92\hsize,clip]{DMp3.pdf}
-\caption{The structure of data release pipelines.
+\caption{The structure of the yearly data release pipelines.
 These pipelines are intended to produce the most completely analyzed data products 
 of the survey, and will consume most of the computing power of the data management 
 system.} 
@@ -1244,11 +1251,13 @@ et al.~2010).
 The framework underlying the LSST simulations is designed to be
 extensible and scalable (i.e. capable of being run on a single
 processor or across many-thousand core compute clusters). It comprises
-four primary components: a simulation of the survey scheduler,
+four primary components: a simulation of the survey scheduler
+(\S~\ref{sec:opsim}),
 databases of simulated astrophysical catalogs of stars, galaxies,
-quasars and Solar System objects, a system for generating observations
-based on the pointing of the telescope and a series of algorithms for
-simulating LSST images. Computationally intensive routines are written
+quasars and Solar System objects (\S~\ref{sec:catalogs}), a system for generating observations
+based on the pointing of the telescope, and a system for generating
+realistic LSST images of a given area of sky
+(\S~\ref{sec:imsim}). Computationally intensive routines are written 
 in $C/C^{++}$ with the overall framework and database interactions
 using $Python$.  The purpose of this design is to enable the
 generation of a wide range of data products for use by the
@@ -1258,7 +1267,7 @@ recovering variability, to simulated images of a single LSST focal
 plane.
 
 
-\subsection{ The LSST Operations Simulator \label{sec:opsim}}
+\subsubsection{ The LSST Operations Simulator \label{sec:opsim}}
 
 The LSST Operations Simulator was developed to enable a 
 detailed quantitative analysis of the various science tradeoffs described in 
@@ -1277,18 +1286,21 @@ simulation is to faithfully reproduce a sequence of observations. Thus, for
 example, the simulator correctly represents the variation of limiting
 magnitude between pairs of observations used to detect NEOs and the
 correlation between, for example, seasonal weather patterns and observing
-conditions at any given point on the sky. The signal-to-noise ratio of each 
+conditions at any given point on the sky.  In addition, down time for
+observatory maintenance is also included. 
+
+The signal-to-noise ratio of each 
 observation is determined using a sky background model which includes the dark
 sky brightness in each filter, the effects of seeing and atmospheric
 transparency, and a detailed model for scattered light from the moon and/or 
 twilight at each observation. The time taken to move from one observation to
 the next is given by a detailed model of the camera, telescope, and dome. It 
 includes such effects as the acceleration/deceleration profiles employed in 
-moving in altitude, azimuth, camera rotator, dome azimuth, and wind/stray
-light screen altitude, the time taken to damp vibrations excited by each slew, 
-cable wrap, time taken for active optics lock and correction as a function of 
-slew distance, filter change, and focal plane readout. The time required for
-observatory maintenance is also simulated. 
+moving the telescope, the dome, and the wind screen, 
+% in altitude, azimuth, camera rotator, dome azimuth, and wind/stray light screen altitude, 
+the time needed to damp vibrations excited by each slew, 
+cable wrap, the time taken for active optics lock and correction as a function of 
+slew distance, and the time for filter changes and focal plane readout. 
 
 Observations are scheduled by a ranking algorithm. After a given exposure, all 
 possible next observations are assigned a score which depends upon their locations, times,
@@ -1314,6 +1326,7 @@ conditions.  It takes a few days to produce a decade-long simulation
 using an average PC.
 
 \subsubsection{Catalog Generation}
+\label{sec:catalogs}
 
 The simulated astronomical catalogs are stored in an SQL
 database. This base catalog is queried using sequences of observations
@@ -1321,7 +1334,7 @@ derived from the Operations Simulator. Each simulated
 pointing provides a position and time of the observation together with
 the appropriate sky conditions (e.g. seeing, moon phase and angle, sky
 brightness and sky transparency). Positions of sources are propagated
-to the time of observation (including proper motion for stars and
+to the time of observation (including proper motions for stars and
 orbits for Solar System sources). Magnitudes and source counts are
 derived using the atmospheric and filter response functions
 appropriate for the airmass of the observation and after applying
@@ -1362,24 +1375,23 @@ templates are randomly assigned to a subset of the stellar population
 so that variability may also be simulated. For Galactic reddening, a
 value of $E(B-V)$ is assigned to each star using the three-dimensional
 Galactic model of Amores \& Lepine (2005). To provide consistency with
-extragalactic observations the dust model in the Milky Way is
-re-normalized to match the Schlegel et al.~(1998) dust maps at a
-fiducial distance of 100 kpc.
+the modeling of extragalactic fluxes in the simulations, the dust model in the Milky Way integrated
+to 100 kpc is re-normalized to match the Schlegel et al.~(1998) dust maps.
 
 Galaxy catalogs are derived from the Millennium simulations of de
-Lucia et al.~(2006).  These models extend the dark matter N-body
+Lucia et al.~(2006).  These models extend pure dark matter N-body
 simulations to include gas cooling, star formation, supernovae and
 AGN, and are designed to reproduce the observed colors, luminosities,
 and clustering of galaxies as a function of redshift. To generate the
-LSST simulated catalogs, a light-cone, covering redshifts $0<z<6$, was
-constructed from 58 500h$^{-1}$Mpc simulation snapshots. This
-light-cone extends to a depth of approximately $r=28$ and covers a
+LSST simulated catalogs, a light cone, covering redshifts $0<z<6$, was
+constructed from 58 simulation snapshots 500h$^{-1}$Mpc on a side. This
+light cone extends to a depth of approximately $r=28$ and covers a
 4.5$^\circ$$\times$4.5$^\circ$ footprint on the sky. Replicating this
 catalog across the sky simulates the full LSST footprint. As with the
 stellar catalog, an SED is fit to the colors of each source using
 Bruzual \& Charlot (2003) spectral synthesis models. These fits are
 undertaken separately for the bulge and disk components and, for the
-disk, include inclination dependent reddening. Morphologies are
+disk, include inclination-dependent reddening. Morphologies are
 modeled using two Sersic profiles. The bulge-to-disk ratio and disk
 scale lengths are taken from de Lucia et al.~(2006). Half-light radii
 for bulges are estimated using the empirical absolute-magnitude
@@ -1393,14 +1405,14 @@ in magnitude and redshift space until their densities reflect the
 average observed properties.
 
 Quasar/AGN catalogs are generated using the Bongiorno et al.~(2007)
-luminosity function for $M_B < -15$, and over an area of 100
+luminosity function for $M_B < -15$, over an area of 100
 deg$^2$. Their observed SEDs are generated using a composite
 rest-frame spectrum derived from SDSS data by Vanden Berk et
 al.~(2001). The host galaxy is selected to have the closest match to
 the preferred stellar mass and color at the AGN's redshift, following
 the results from Xue et al.~(2010).  Each galaxy hosts at most one
-AGN, and no explicit distinction is made between fainter AGN and
-''quasars" that dramatically outshine their host galaxies. The light
+AGN, and no explicit distinction is made between low-luminosity AGN and
+quasars that dramatically outshine their host galaxies. The light
 curve for each AGN is generated using a damped random walk model and
 prescriptions given by MacLeod et al.~(2010).
 
@@ -1411,16 +1423,17 @@ Trans Neptunian Objects, and Centaurs. Spectral energy distributions
 are assigned using the C and S type asteroids of DeMeo et
 al.~(2009). Positions for the 11 million asteroids in the simulation
 are stored within the base catalog (sampled once per night for the ten
-year duration of the LSST survey). Querying the base catalog returns
-all sources within a given LSST pointing for which we generate
-accurate ephemerides using the $PyOrb$ software package (Granvik et
+year duration of the LSST survey). We generate
+accurate ephemerides of all asteroids falling within a given LSST
+point using the $PyOrb$ software package (Granvik et
 al.~2009). With typically 8000 sources per LSST field of view, this
-procedure was developed to decrease the computational resources
+procedure significantly reduces the computational resources
 required to simulate asteroid ephemerides.
 
 
 
 \subsubsection{Image Simulations}
+\label{sec:imsim}
 
 The framework described above provides a parametrized view of the sky
 above the atmosphere. To generate images, photons are drawn from the
@@ -1480,7 +1493,7 @@ example of a simulated image is shown in Fig.~\ref{Fig:ImSimExample}.
 %\vskip -1in
 \caption{ A simulated image of a single LSST CCD (covering a
   $13.3\times13.3$ arcmin$^2$ region of the sky). The image is a color
-  composite from a set of 15 second $gri$ exposures.}
+  composite (Lupton et al.~2004) from a set of 15 second $gri$ exposures.}
 \label{Fig:ImSimExample}
 \end{figure*}
 
@@ -1492,7 +1505,7 @@ example of a simulated image is shown in Fig.~\ref{Fig:ImSimExample}.
 The LSST observing strategy is designed to maximize the scientific
 throughput by minimizing slew and other downtime and by making appropriate
 choices of the filter bands given the real-time weather conditions.
-Using simulated surveys produced with Operations Simulator described in \S~\ref{sec:opsim}, 
+Using simulated surveys produced with the Operations Simulator described in \S~\ref{sec:opsim}, 
 we illustrate predictions of LSST performance with two examples. 
 
 
@@ -1500,9 +1513,16 @@ we illustrate predictions of LSST performance with two examples.
 
 The fundamental basis of the LSST concept is to scan the sky deep, wide, and
 fast, and to obtain a dataset that simultaneously satisfies the majority
-of the science goals. This concept, the so-called ``universal cadence'', will
-yield the main deep-wide-fast survey (typical single visit depth of $r\sim24.5$)
-and use about 90\% of the observing time. The remaining 10\% of observing 
+of the science goals. We present here a specific realization, the
+so-called ``universal cadence'', which yields the main deep-wide-fast
+survey and meets our core science goals.  However, at this writing,
+there is a vigorous discussion of cadence plans in the LSST community,
+exploring variants and alternatives that enhances various specific
+science programs, while maintaining the science requirements described
+in the SRD.  
+
+The main deep-wide-fast survey %(typical single visit depth of $r\sim24.5$)
+will use about 90\% of the observing time. The remaining 10\% of the observing 
 time will be used to obtain improved coverage of parameter space such as 
 very deep ($r\sim26$) observations, observations with very short revisit 
 times ($\sim$1 minute), and observations of ``special'' regions such as the 
@@ -1543,12 +1563,13 @@ determination.
 
 The universal cadence provides most of LSST's power for detecting Near Earth 
 Objects (NEO) and naturally incorporates the southern half of the ecliptic 
-within its 20,000 square degrees (the northern half lies above the desired airmass 
+within its 18,000 square degrees (the northern half lies above the desired airmass 
 limits, $X\la1.5$). NEO sample completeness for the smallest bodies ($\sim$140m in 
 diameter, per the Congressional NEO mandate) is greatly enhanced, however, by the 
 addition of a crescent on the sky within 10 degrees of the northern ecliptic
-(see Fig.~\ref{Fig:rbandSky}). Thus, the ``northern Ecliptic proposal'' (here ``proposal''
-refers to an observing program) extends the universal cadence to this region using the
+(see Fig.~\ref{Fig:rbandSky}). Thus, we plan to extend
+%the ``northern Ecliptic proposal'' (here ``proposal'' refers to an observing program) extends
+ the universal cadence to this region using the
 $r$ and $i$ filters only, along 
 with more relaxed limits on airmass and seeing. Relaxed limits on airmass and 
 seeing are also adopted for $\sim$700 deg$^2$ around the South Celestial 
@@ -1589,7 +1610,7 @@ every two days over four months, about 600 deg$^2$ can be observed with this
 cadence over 10 years. Taking weather into account, the selected fields would 
 each have on average about 40 hour-long sequences of 200 exposures each. Each 
 observation in a sequence would have an equivalent 5-$\sigma$ depth of
-$r\sim24$, and each filter subsequence when coadded would be 2 magnitudes 
+$r\sim24.5$, and each filter subsequence when coadded would be 2 magnitudes 
 deeper than the main survey visits ($r\sim26.5$). When all 40 sequences and 
 the main survey visits are coadded, they would extend the depth to $r\sim28$. 
 
@@ -1612,7 +1633,7 @@ The LSST has already selected four distant extragalactic survey fields\footnote{
 details, see http://www.lsst.org/News/enews/deep-drilling-201202.html}
 that the project guarantees to observe as Deep Drilling Fields with deeper coverage 
 and more frequent temporal sampling than provided by the standard LSST observing 
-pattern. These fields (Elais S1, XMM-LSS, Extended Chandra Deep Field-South, and
+pattern. These fields (Elias S1, XMM-LSS, Extended Chandra Deep Field-South, and
 COSMOS) are  well-studied survey fields with substantial existing multiwavelength 
 coverage and other positive attributes. These four fields are only the first chosen 
 for deep-drilling observations; more such fields will be chosen later.
@@ -1621,10 +1642,12 @@ The baseline universal cadence is by no means the definitive plan for the entire
 survey. Rather, it represents a proof of concept that it is indeed possible to 
 design a universal cadence which addresses a wide variety of science goals in a nearly 
 optimal way. We are undertaking a vigorous and systematic research effort to explore 
-the enormously large parameter space of possible surveys. The commissioning period 
+the enormously large parameter space of possible surveys. The
+scientific commissioning period 
 will be used to test the usefulness of various observing modes and to explore 
-alternative strategies. Proposals from the community, through the science collaborations
-(see \S~\ref{Sec:community}), for specialized cadences (such as mini-surveys and
+alternative strategies. Proposals from the community
+%, through the science collaborations (see \S~\ref{Sec:community}), 
+for specialized cadences (such as mini-surveys and
 micro-surveys) will also be considered.  
 
 
@@ -1669,7 +1692,7 @@ of errors expected for trigonometric parallax and proper motion measurements.
 In both examples, the conclusions crucially depend on assumed signal-to-noise
 ratios, described next.
 
-\subsubsection{  Expected Signal-to-Noise Ratio } 
+\subsubsection{  Expected Photometric Signal-to-Noise Ratio } 
 
 The output of operations simulations is a data stream consisting of 
 a position on the sky and the time of observation, together with 
@@ -1684,7 +1707,8 @@ the systematic photometric error (includes errors due to, e.g., imperfect
 modeling of the point spread function, but does not include errors in 
 absolute photometric zeropoint). The calibration system and procedures
 are designed to maintain $\sigma_{sys}<0.005$ mag. Based on 
-SDSS experience (Sesar et al.~2007), the random photometric error, as
+SDSS experience (Sesar et al.~2007), the random photometric error for
+point sources, as
 a function of magnitude, is well described\footnote{Eq.~\ref{ggg} can 
 be derived from $\sigma_{rand}=N/S$, where $N$ is noise and $S$ is signal, 
 and by assuming that $N^2 = N_o^2 + \alpha S$. The constants $N_o$ and 
@@ -1694,11 +1718,13 @@ by using the condition that $\sigma_{rand}=0.2$ for $m=m_5$.} by
 \label{ggg}
   \sigma_{rand}^2 = (0.04-\gamma)\, x + \gamma \, x^2 \,\,\, {\rm (mag^2),}
 \end{equation}
-with $x = 10^{0.4\,(m-m_5)}$. Here $m_5$ is the 5$\sigma$ depth (for
+with $x \equiv 10^{0.4\,(m-m_5)}$. Here $m_5$ is the 5$\sigma$ depth (for
 point sources) in a given band, and $\gamma$ depends on the sky 
-brightness, readout noise, etc. Using the LSST exposure time 
-calculator\footnote{Available at http://dls.physics.ucdavis.edu/etc.} 
-(Gee et al.~2007), we have obtained the values of $\gamma$ 
+brightness, readout noise, etc. 
+%Using the LSST exposure time 
+%calculator\footnote{Available at http://dls.physics.ucdavis.edu/etc.} 
+%(Gee et al.~2007), 
+Detailed determination of the system throughput yields the values of $\gamma$ 
 listed in Table 2. The 5$\sigma$ depth for point sources is determined from 
 \begin{eqnarray}
 \label{m5}
@@ -1722,7 +1748,7 @@ the median seeing of $\theta=1.5$ arcsec, and the median airmass of $X=1.3$.
 In comparison, the LSST loss of depth is 0.32 mag due to shorter exposures,
 while the gains are 1.17 mag due to larger aperture, 0.83 mag due to better 
 seeing, 0.20 mag due to fainter sky, and 0.10 mag due to better throughput,
-for the net gain of $\sim$2.0 mag.}.}
+for a net gain of $\sim$2.0 mag.}.}
 
 
 \subsubsection{   The NEO Completeness Analysis    } 
@@ -1744,7 +1770,7 @@ band, the smallest objects are preferentially detected in the $griz$ bands.
 The correction for trailing is implemented by subtracting from the right-hand 
 side of eq.~\ref{m5}
 \begin{equation}
- \Delta m_5^{\rm trailing} = 1.25\,\log_{10}(1+0.028{v \,t_{vis} \over \theta}),
+ \Delta m_5^{\rm trailing} = 1.25\,\log_{10}\left(1+0.028{v \,t_{vis} \over \theta}\right),
 \end{equation}
 where the object's velocity, $v$, is expressed in deg.~day$^{-1}$. For the nominal
 exposure time of 30 seconds and $\theta=0.7$ arcsec, the loss of limiting 
@@ -1752,36 +1778,43 @@ magnitude is 0.14 mag for $v=0.25$ deg.~day$^{-1}$, typical for objects in the m
 asteroid belt, and 0.43 mag for $v=1.0$ deg.~day$^{-1}$, typical of NEOs passing
 near Earth. 
 
-Above 60\% completeness, one magnitude of depth is roughly
-equivalent to 10\% in completeness.  An object's orbit is considered to be 
-cataloged if the object was detected on at least three nights during a single 
+For a survey that has a completeness to NEOs above 60\%, each
+additional one magnitude of depth for a given survey cadence increases
+the completeness by another 10\%.  An object's orbit is considered to be 
+determined if the object was detected on at least three nights during a single 
 lunation, with a minimum of two visits per night. The same criterion
-was used in NASA studies\footnote{The NASA 2007 NEO study is available from
-http://neo.jpl.nasa.gov/neo/report2007.html.}, and is confirmed as
+has been used in NASA studies,
+%\footnote{The NASA 2007 NEO study is available from
+%http://neo.jpl.nasa.gov/neo/report2007.html.}, 
+%[WE'VE GIVEN THIS REFERENCE IN A FOOTNOTE EARLIER]
+and is confirmed as 
 reliable by a detailed analysis of orbital linking and determination using
-the MOPS code (Jedicke et al.~2005) developed by the Pan-STARRS project (and 
+the Moving Object Processing System (MOPS) code (Jedicke et al.~2005) developed by the Pan-STARRS project (and 
 adopted by LSST in a collaborative effort with Pan-STARRS). The MOPS software
-system and its algorithms are significantly more advanced than anything
+system and its algorithms are significantly more advanced than
+anything previously 
 fielded for this purpose to date. Realistic MOPS simulations show 
 $>$99\% linking efficiency across all classes of Solar System objects. 
 For the LSST baseline cadence, objects
-counted as cataloged are observed on 20 different nights on average over ten
+counted as having well-determined orbits are observed on 20 different nights on average over ten
 years. A more stringent requirement that an object must be detected on at least 
-five nights decreases the completeness by typically 3\%. The completeness is also a
+five nights decreases the completeness by typically 3\%. {\bf
+  SOMETHING IS SCREWY HERE.}  The completeness is also a
 function of the assumed size distribution of NEOs: the flatter the distribution, the 
 higher the completeness. If the latest results for the NEO size
 distribution by A. Harris (priv. comm.) are taken into account, the
-completeness increases by 1-2\%. Due to these issues, the completeness
+completeness increases by 1-2\%. {\bf IS THIS STATEMENT STILL
+  UP-TO-DATE?} Due to these issues, the completeness
 estimates have a systematic uncertainty of at least 2\%. 
 
 The LSST baseline cadence provides orbits for 82\% of PHAs larger than 140
-meters after 10 years of operations. With a minor change of this cadence, such as
-requiring that all observations in the so-called NE region (North Ecliptic 
-region, defined by $\delta >+5^\circ$) are obtained in the $r$ band, the completeness 
-for 140m and larger PHAs is 84\%, with 90\% completeness reached for 200m and 
-larger objects. The completeness curve as a function of an object's size is shown 
+meters after 10 years of operations.  This can be increased to 84\%
+completeness (90\% for sizes above 200 meters) with minor changes to
+the cadence, such as 
+requiring that all observations North of $\delta =+5^\circ$) are
+obtained in the $r$ band.  The completeness curve as a function of an object's size is shown 
 in Fig.~\ref{Fig:Cneo} (lower curve). This cadence spends 5\% of the total 
-observing time on NEO-optimized observations in the NE region. 
+observing time on NEO-optimized observations north of $\delta = +5^\circ$.
 
 
 
@@ -1802,16 +1835,19 @@ Various adjustments to the baseline cadence can boost the completeness for
 140m and larger PHAs to 90\%. We find that such variations can have an unacceptably 
 large impact on other science programs, if the 90\% completeness is to be reached 
 within the 10 year survey lifetime. However, with a minor adjustment of the 
-baseline cadence, such that 15\% of the time is spent in the NE region to reach
-fainter limiting magnitudes, this completeness level can be reached with a 12-year 
-long survey, and with a negligible effect on other science goals. The completeness 
+baseline cadence, such that 15\% of the time is spent north of $\delta
+= +5^\circ$ to reach
+fainter limiting magnitudes, this completeness level can be reached
+with a 12 year 
+survey, and with a negligible effect on other science goals. The completeness 
 curve as a function of an object's size for such a modified cadence is shown in 
 Fig.~\ref{Fig:Cneo} (upper curve).
 
 Our analysis assumes that no NEOs are known prior to LSST. Currently known
-NEOs do not have a significant impact on this calculation. However, if a precursor 
-survey, such as Pan-STARRS 4, operated for three years prior to LSST, the time to
-fulfill the Congressional mandate by LSST could be shortened by about a year.
+NEOs do not have a significant impact on this calculation. 
+%However, if a precursor 
+%survey, such as Pan-STARRS 4, operated for three years prior to LSST, the time to
+%fulfill the Congressional mandate by LSST could be shortened by about a year.
 
 
 \subsubsection{The Expected Accuracy of Trigonometric Parallax and Proper Motion Measurements } 
@@ -1824,7 +1860,7 @@ accuracy is a function of signal-to-noise ratio. Random astrometric errors per
 visit are modeled as $\theta/SNR$, with $\theta=700$ mas and $SNR$ determined using
 eq.~\ref{m5}. The estimated proper motion and parallax accuracy at the bright end
 ($r<20$) is driven by systematic errors due to the atmosphere. Systematic
-errors of 10 mas are added in quadrature, and are assumed to be {\it uncorrelated} 
+errors of 10 mas are added in quadrature, and are assumed to be {uncorrelated} 
 between different observations of a given object. Systematic and random
 errors become similar at about $r=22$, and there are about 100 stars per LSST 
 sensor (0.05 deg$^2$) to this depth (and fainter than the LSST saturation limit at
@@ -1853,7 +1889,7 @@ impact on red stars is smaller due to a relatively small number of observations
 in the $u$ and $g$ bands, but extremely red objects, such as L and T dwarfs, 
 will definitely have larger errors, depending on details of their spectral 
 energy distributions.  After the first three years of the survey, 
-{\it the proper motion errors will be about five times as large, and parallax
+{the proper motion errors will be about five times as large, and parallax
 errors will be about twice as large,} as the values given in Table 3; the errors
 scale as $t^{-3/2}$ and $t^{-1/2}$, respectively. This error behavior is 
 a strong independent argument for a survey lifetime of at least 10 years 
@@ -1889,7 +1925,7 @@ For comparison with Table 3, the SDSS-POSS proper motion measurements have an
 accuracy of $\sim$5 mas yr$^{-1}$ per coordinate at $r=20$ (Munn et al.~2004). Gaia
 is expected to deliver parallax errors of 0.3 mas and proper motion errors of 
 0.2 mas yr$^{-1}$ at its faint end at $r\sim20$ (Perryman et al.~2001). Hence, LSST will smoothly 
-extend Gaia's error vs. magnitude curve 4 magnitudes fainter.
+extend Gaia's error vs.\ magnitude curve 4 magnitudes fainter.
 
 
 
@@ -1900,11 +1936,17 @@ extend Gaia's error vs. magnitude curve 4 magnitudes fainter.
 The LSST data system is being designed to enable as wide a range of science as 
 possible. Standard data products, including calibrated images and catalogs of
 detected objects and their attributes, will be provided both for individual 
-exposures and the deep incremental data coaddition. About 2 billion objects 
-will be routinely monitored for photometric and astrometric changes, and any 
-transient events (non-recurrent objects with statistically significant photometric 
-change; about 10,000 per night on average) will be posted in less than 60 seconds 
-via web portals including the Virtual Observatory. 
+exposures and the deep incremental data coaddition.  Each visit will
+be differenced with reference images in that regions of sky, and
+$>5\,\sigma$ changes in flux or position will be registered (we expect
+millions of such events each night).  The results will be posted to
+the web less than 60 seconds after the closing the shutter on the
+second exposure of the visit.  
+%About 2 billion objects 
+%will be routinely monitored for photometric and astrometric changes, and any 
+%transient events (non-recurrent objects with statistically significant photometric 
+%change; about 10,000 per night on average) will be posted in less than 60 seconds 
+%via web portals including the Virtual Observatory. 
 For the ``static'' sky, there will be yearly database releases listing many 
 attributes for billions of objects. This database will grow in size to about 
 30 PB and about 20 billion objects\footnote{It is assumed that about 10 billion stars
@@ -1914,8 +1956,9 @@ interstellar dust in the Galactic plane, and cadence details. Plausible variatio
 in these assumptions yield stellar samples 
 ranging from 5 billion to 20 billion stars.} in ten years, and will 
 include other metadata (parameter error estimates, system data, seeing
-summary, etc). For a comparison, the SDSS Data Release 7 imaging database
-includes about 357 million unique objects\footnote{http://www.sdss.org/dr7/}. 
+summary, etc). For a comparison, the SDSS Data Release 8 imaging database
+(Aihara et al.~2011) includes about 469 million unique objects.
+
 
 The SDSS experience is that the distribution of sizes of data portal requests 
 follows a power law, ranging from frequent simple queries or image cutout
@@ -1950,7 +1993,7 @@ within the data release processing, and execute it on the next data release
 run. Much of the science will be statistical in nature and will involve large 
 correlation calculations with user-specified precision. We plan to enable
 open source community-driven applications development. Finally, special data 
-pipelines developed by the Science Collaborations (see \S~\ref{Sec:community}) 
+pipelines developed by the science community %(see \S~\ref{Sec:community}) 
 will populate new parameters in the database. 
 
 
@@ -1961,11 +2004,12 @@ will populate new parameters in the database.
 \caption{A comparison of $\sim7.5\times7.5$ arcmin$^2$ images of
 the same area of sky (centered on $\alpha$=9$^h$ 20' 47'' and 
 $\delta$=30$^\circ$ 8' 12'') obtained by the SDSS (top, $r<22.5$) and 
-the Deep Lens Survey (bottom, $r<24.5$). The depth gain for the bottom image
+the Deep Lens Survey (bottom, $r<24.5$). These are gri composites,
+colorized following Lupton et al.~(2004).  The depth gain for the bottom image
 is mostly due to the lower surface brightness limit, which is also responsible 
 for the apparent increase of galaxy sizes. LSST will obtain $\sim$100 $gri$ 
 color images to the same depth ($\sim$200 for the $riz$ composites) of each point 
-over half the Celestial sphere (20,000 deg$^2$, equivalent to 1.3 million $\sim7.5\times7.5$
+over half the Celestial sphere (18,000 deg$^2$, equivalent to 1.15 million $\sim7.5\times7.5$
 arcmin$^2$ regions), and with better seeing. After their coaddition, the final 
 image will be another $\sim3$ mag deeper (a faint limit of $r=27.5$ for point 
 sources).} 
@@ -1990,7 +2034,7 @@ Adapted from Blandford et al.~(2008).}
 The characterization (unsupervised machine learning) and classification (supervised machine learning) of 
 massive, multivariate data catalogs such as those generated by the LSST are major research challenges for 
 data-intensive astronomy (Tyson et al.~2008b; Ivezi\'{c} et al.~2008b; Bloom et al.~2008; Borne 2008,
-2009). To address these questions the statistics and machine-learning research 
+2009; Ivezi\'c et al.~2014). To address these questions the statistics and machine-learning research 
 communities are collaborating with LSST scientists to develop new algorithms that will enable the full 
 scientific potential of the LSST, including:
 \begin{itemize}
@@ -2989,8 +3033,14 @@ updated system description and science examples, refreshed references.
 \vskip 0.3in
 \begin{thebibliography}{}
 
+\bibitem[()]{} Abazajian, K.N., Adelman-McCarthy, J.K., Ag\"ueros,
+  M.A. et al.~2009, Astrophysical Journal Supplement, 182, 543
+
 \bibitem[()]{} A'Hearn, M.F. 2004, in Comets II, M.C. Festou, H.U. Keller, and H.A. Weaver (eds.), 
-             University of  Arizona Press, Tucson, 745 pp., p.17-22 
+             University of  Arizona Press, Tucson, p.17-22 
+
+\bibitem[()]{} Aihara, H., Allende Prieto, C., An, D., et al.~2011,
+  Astrophysical Journal Supplement, 195, 26
 
 \bibitem[()]{} Albrecht, A. \& Bernstein, G. 2007, Physical Review D, 75, 3003
 
@@ -3185,8 +3235,8 @@ updated system description and science examples, refreshed references.
 
 \bibitem[()]{} Gawiser, E., van Dokkum, P.G., Herrera, D., et al.~2006, Astrophysical Journal Supplement, 162, 1 
 
-\bibitem[()]{} Gee, P., Tyson, J.A., Pinto, P., et al.~2007, 
-             American Astronomical Society, AAS Meeting \#211, \#137.28
+%\bibitem[()]{} Gee, P., Tyson, J.A., Pinto, P., et al.~2007, 
+%             American Astronomical Society, AAS Meeting \#211, \#137.28
 	
 \bibitem[()]{} Gezari, S. 2012, European Physical Journal Web of Conferences, 39, 3001
 
@@ -3245,6 +3295,10 @@ updated system description and science examples, refreshed references.
 \bibitem[()]{} Ibata, R., Irwin, M., Lewis, G.F. \& Stolte, A. 2001, Astrophysical Journal, 547, L133
 	
 \bibitem[()]{} Ishak, M., Upadhye, A. \& Spergel, D.N. 2006, Physical Review D, 74, 043513
+
+\bibitem[()]{} Ivezi\'c, \v Z., Connolly, A.J., Vanderplas, J.T., and
+  Gray, A. 2014, Statistics, Data Mining, and Machine Learning in
+  Astronomy, Princeton University Press
 
 \bibitem[()]{} Ivezi\'{c}, \v{Z}., Tabachnik, S., Rafikov, R., et al.~2001, Astronomical Journal, 122, 2749
 	
@@ -3373,6 +3427,10 @@ updated system description and science examples, refreshed references.
 \bibitem[()]{} Lue, A., Scoccimarro, R. \& Starkman, G. 2004, Physical Review D, 69, 4005
 
 \bibitem[()]{} Luhman, K.L. 2014,  Astrophysical Journal, 786, 18 
+
+\bibitem[()]{} Lupton, R., Blanton, M.R., Fekete, G., Hogg, D.W.,
+  O'Mullane, W., Szalay, A., and Wherry, N. 2004, Publications of the
+  Astronomical Society of the Pacific, 116, 133
 
 \bibitem[()]{} MacLeod, C.L., Ivezi\'{c}, \v{Z}., Kochanek, C.S., et al.~2010, Astrophysical Journal, 721, 1014
 
