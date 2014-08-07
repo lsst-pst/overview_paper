@@ -20,6 +20,26 @@
 \usepackage{graphicx}
 \usepackage{xspace}
 
+\newcommand{\DIASource}{\code{DIASource}\xspace}
+\newcommand{\DIASources}{\code{DIASources}\xspace}
+\newcommand{\DIAObject}{\code{DIAObject}\xspace}
+\newcommand{\DIAObjects}{\code{DIAObjects}\xspace}
+\newcommand{\DB}{{Level 1 database}\xspace}
+\newcommand{\DR}{{Level 2 database}\xspace}
+\newcommand{\Object}{\code{Object}\xspace}
+\newcommand{\Objects}{\code{Objects}\xspace}
+\newcommand{\Source}{\code{Source}\xspace}
+\newcommand{\Sources}{\code{Sources}\xspace}
+\newcommand{\ForcedSource}{\code{ForcedSource}\xspace}
+\newcommand{\ForcedSources}{\code{ForcedSources}\xspace}
+\newcommand{\CoaddSource}{\code{CoaddSource}\xspace}
+\newcommand{\CoaddSources}{\code{CoaddSources}\xspace}
+\newcommand{\SSObject}{\code{SSObject}\xspace}
+\newcommand{\SSObjects}{\code{SSObjects}\xspace}
+\newcommand{\VOEvent}{\code{VOEvent}\xspace}
+\newcommand{\VOEvents}{\code{VOEvents}\xspace}
+\newcommand{\transSNR}{5\xspace}
+
 \usepackage[usenames]{color} 
 %\newcommand{\B}[1]{{\color{blue} #1}}
 %\newcommand{\R}[1]{{\color{red} #1}}
@@ -1122,20 +1142,6 @@ includes 9 sensors, and can be replaced.}
 \subsubsection{ Data Management }
 
 
-The rapid cadence of the LSST observing program will produce an enormous
-volume of data ($\sim$15 TB of raw imaging data per night), leading to a total database over 
-the ten years of operations of 100 PB for the imaging data, and 50 PB for the catalog database. 
-For comparison, the image volume in SDSS Data Release 7 (Abazajian et
-al.~2009) is 16 TB. 
-The total LSST data volume after processing will be several hundred PB.
-The computing power required to process the data grows as the survey
-progresses, starting at
- $\sim$100 TFlops and increasing to $\sim$400 TFlops by the end of the survey. Processing 
-such a large volume of data, converting the raw images into a faithful
-representation of the Universe, automated data quality assessment, and 
-archiving the results in useful form for a broad community of users are
-major challenges.
-
 \begin{figure}
 \vskip 0.1in
 \includegraphics[width=1.0\hsize,clip]{DMsandwich.pdf}
@@ -1145,88 +1151,182 @@ enables scalability, reliability, and evolutionary capability.}
 \label{Fig:DM1}
 \end{figure}
 
-The data management system is configured in three levels: an
+The data collected by the LSST telescope and camera will be automatically reduced to scientifically useful catalogs and images by the LSST Data Management (DM) system. The DM system will perform two, somewhat overlapping in scientific intent, types of image analyses:
+
+\begin{enumerate}
+\item Analysis of difference images, with the goal of detecting and characterizing astrophysical phenomena revealed by their time-dependent nature. The detection of supernovae superimposed on bright extended galaxies is an example of this analysis. The processing will be done on nightly or daily basis and result in {\bf Level 1} data products. Level 1 products will include difference images, catalogs of sources detected in difference images (\DIASources), astrophysical objects\footnote{The LSST has adopted the nomenclature by which single-epoch detections of astrophysical {\em objects} are called {\em sources}. The reader is cautioned that this nomenclature is not universal: some surveys call {\em detections} what LSST calls {\em sources}, and use the term {\em sources} for what LSST calls {\em objects}.} these are associated to (\DIAObjects), and Solar System objects (\SSObjects). The catalogs will entered into the {\bf \DB} and made available in near real time. Notifications (``alerts'') about new \DIASources will be issued using community-accepted standards within 60 seconds of observation. Level 1 data products are discussed in \S~\ref{sec:level1}.
+
+\item Analysis of direct images, with the goal of detecting and characterizing astrophysical objects. Detection of faint galaxies on deep coadds and their subsequent characterization is an example of this analysis. The results are {\bf Level 2} data products. These products, generated and released annually\footnote{Except for the first two data releases, which will be created six months apart.}, will include the single-epoch images, deep coadds, catalogs of characterized \Objects (detected on deep coadds as well as individual visits), \Sources\footnote{When written in bold monospace type (i.e., {\tt \textbackslash{}tt}), \Objects and \Sources refer to objects and sources detected and measured as a part of Level 2 processing.} (detections and measurements on individual visits), and \ForcedSources (constrained measurement of flux on individual visits). It will also include fully reprocessed Level 1 data products (see \S \ref{sec:l1dbreproc}). In contrast to the \DB, which is updated in real-time, the \DR{}s are static and will not change after release. Level 2 data products are discussed in \S~\ref{sec:level2}.
+\end{enumerate}
+ 
+The two types of analyses have different requirements on timeliness. Changes in flux or position of objects may need to be immediately followed up, lest interesting information be lost. Thus the primary results of analysis of difference images -- discovered and characterized \DIASources{} -- generally need to be broadcast as {\em event alerts} within 60 seconds of end of visit acquisition. The analysis of science (direct) images is less time sensitive, and will be done as a part of annual data release process.
+
+\vspace{1em}
+
+Recognizing the diversity of astronomical community needs, and the need for specialized processing not part of the automatically generated Level 1 and 2 products, LSST Data Management plans to devote 10\% of its data management system capabilities to enabling the creation, use, and federation of {\bf Level 3} (user-created) data products. Level 3 capabilities will enable science cases that greatly benefit from co-location of user processing and/or data within the LSST Archive Center. The high-level requirement for Level 3 is established in \S~3.5 of the LSST SRD. Their details are discussed in \S~\ref{sec:level3} of this document.
+
+\vspace{1em}
+
+Finally, LSST Survey Specifications (\S~3.4 of LSST SRD) prescribe that 90\% of LSST observing time be spent in the so-called ``universal cadence" mode of surveying the sky. These observations will result in Level 1 and 2 data products discussed above. The remaining 10\% of observing time will be devoted to {\bf special programs}, designed to obtain improved coverage of interesting regions of observational parameter space. Examples include very deep ($r \sim 26$, per exposure) observations, observations with very short revisit times ($\sim$1 minute), and observations of ``special" regions such as the Ecliptic, Galactic plane, and the Large and Small Magellanic Clouds. The data products for these programs will be generated using the same processing software and hardware and possess the general characteristics of Level 1 and 2 data products, but may be performed on a somewhat different cadence. They will be discussed in \S~\ref{sec:specialProgs}.
+
+
+
+
+The rapid cadence of the LSST observing program will produce an enormous
+volume of data ($\sim$15 TB of raw imaging data per night). Over the ten years of
+operations and 11 data releases, this results in a cumulative {\em processed} data
+size approaching 0.5 EB for imaging, and over 50 PB for the catalog databases 
+(e.g., the final data release catalog database will be 15 PB in size). 
+For comparison, the image volume in SDSS Data Release 7 is 16 TB. 
+The computing power required to process the data grows as the survey
+progresses, starting at
+ $\sim$200 TFLOPS and peaking at $\sim$1 PFLOPS by the end of the survey. 
+Processing such a large volume of data, converting the raw images into a faithful
+representation of the Universe, automated data quality assessment, and 
+archiving the results in useful form for a broad community of users are
+major challenges.
+
+%\begin{figure}
+%\vskip 0.1in
+%\includegraphics[width=1.0\hsize,clip]{DMsandwich.ps}
+%\caption{The three-layered architecture of the data management system 
+%(application [purple], middleware [green], and infrastructure [yellow] layers) 
+%enables scalability, reliability, and evolutionary capability.} 
+%\label{Fig:DM1}
+%\end{figure}
+
+The data management system is conceptually divided into three layers: an
 infrastructure layer consisting of the computing, storage, and
 networking hardware and system software; a middleware layer, which
 handles distributed processing, data access, user interface, and
 system operations services; and an applications layer, which includes
 the data pipelines and products and the science data archives (see
-Fig.~\ref{Fig:DM1}). The application layer (see Fig.~\ref{Fig:DM4})
-is organized around the data products being produced.  The nightly
-pipelines (see Fig.~\ref{Fig:DM5}) are based on image subtraction,
-and are designed to rapidly detect interesting transient events in the
-image stream and send out alerts to the community within 60 seconds of
-completing the image readout.  The data release
-pipelines (see Fig.~\ref{Fig:DM6}), in contrast, are intended to
-produce the most completely analyzed data products of the survey, in
-particular those that measure very faint objects and cover long time
-scales. A new run will begin each year (with two runs in the first
-year of operations), processing the entire survey data
-set that is available to date. The data release pipelines consume most of the
-computing power of the data management system.  The calibration
-products pipeline produces the wide variety of calibration data
-required by the other pipelines.  All of these pipelines are
-architected to make efficient use of Linux clusters with thousands of
-nodes.
+Fig.~\ref{Fig:DM1}).
 
-There will be computing facilities at the base facility in La Serena,
-at a central archive facility, and at multiple data access 
-centers. The data will be transported over existing high-speed optical fiber 
+Different aspects of data processing will occur at three facilities: the
+Summit Facility at Cerro Pachon (initial cross-talk correction), the
+Base Facility in La Serena (retransmition hub, also the data access
+center for Chilean community), and the central Archive Facility at
+NCSA, in Champaigne, IL which will also serve as a data access center
+for the US community.
+
+The data will be transported over existing high-speed optical fiber 
 links from South America to the U.S. (see Fig.~\ref{Fig:DM2}).
-Although the data processing center will have substantial computing power ($\sim$400 
-TFlops, equal to the world's most powerful computer in 2007), the continuation of 
-current trends suggests that the center will 
-not even qualify for the top 500 list by the time of first light.
+Although the data processing center will have substantial computing 
+power (e.g., the central facility will peak at $\sim 1.6$~PFLOPS of 
+compute power), the continuation of current trends suggests that the center will 
+not qualify for the top 500 list by the time of first light.
 Hence, while LSST is making a novel use of advances in information technology, 
-it is not taking the risk of pushing expected technology to the limit.  
+it is not taking the risk of pushing the expected technology to the limit.  
 
-{\bf THIS SECTION NEEDS UPDATING; I BELIEVE MARIO IS PLANNING TO DO
-  SO.  IN PARTICULAR, WE NEED A DISCUSSION OF LEVEL 1, 2, AND 3, AND
-  AN EMPHASIS THAT THE DATA PROCESSING WILL ALLOW THE BULK OF THE
-  SCIENCE TO BE DONE AT THE CATALOG LEVEL.}
+In addition to providing the hardware capabilities, LSST Data Management will
+enable LSST science by creating a well documented, state-of-the-art, 
+high-performance, scalable, multi-camera, open source, O/IR survey data 
+processing and analysis system.
 
+Algorithm development for LSST builds on the experience base and expertise
+already gained in large astronomical surveys (e.g., SDSS, Pan-STARRS, DES, 
+SuperMACHO, ESSENCE,  the DLS, CFHT-LS, or UKIDDS). The pipelines written 
+for these surveys have demonstrated the feasibility of largely autonomous data 
+reduction of large data sets, automated detection of sources and objects, and the 
+extraction of scientifically useful characteristics of those objects. Unfortunately, most 
+of these codes are poorly suited for running at the scale of LSST, are highly optimized 
+for the specific survey they were built for, or suffer from general lack of documentation 
+and software engineering that makes them infeasible to extend and maintain over the
+lifetime of LSST.
 
-\begin{figure}[t!]
-%\includegraphics[width=1.0\hsize,clip]{DMp1.pdf}
-\hskip -0.1in
-\includegraphics[width=1.15\hsize,clip]{DMp2.pdf}
-%\includegraphics[width=1.0\hsize,clip]{DMfig14.pdf}
-\vskip -0.3in
-\caption{The application layer of the data management system. The arrows indicate
-direction of the data flow. The main pipelines enable nightly processing,
-calibration, and data releases.} 
-\label{Fig:DM4}
-\end{figure}
+Therefore, while firmly footed in this prior history, the LSST data
+management software has largely been written anew, in Python and (where necessary
+for performance reasons) C++. Furthermore, all LSST codes have been
+designed to follow best practices of software engineering (modularity, 
+unit testing, etc.).
 
-\begin{figure}
-%\hskip -0.25in
-\includegraphics[width=1.0\hsize,clip]{DMp4.pdf}
-%\includegraphics[width=1.0\hsize,clip]{DMfig14.pdf}
-%\vskip -0.4in
-\caption{The structure of nightly (``alert generation'') pipelines. 
-Their main task is to compare new data to the previously accumulated data and search for 
-transient, variable and moving objects.} 
-\label{Fig:DM5}
-\end{figure}
-
-\begin{figure*}[t!]
-\hskip 0.3in
-\includegraphics[width=0.92\hsize,clip]{DMp3.pdf}
-\caption{The structure of the yearly data release pipelines.
-These pipelines are intended to produce the most completely analyzed data products 
-of the survey, and will consume most of the computing power of the data management 
-system.} 
-\label{Fig:DM6}
-\end{figure*}
+The LSST data management system has been prototyped over eight years, including undergoing eight data challenges processing data sets with varying degrees of difficulty. It currently ($\sim$ late 2014) consists of implementations of single frame processing pipelines (the 
 
 
-\begin{figure*}
-\hskip 0.5in
-\includegraphics[width=0.9\hsize,clip]{DMX2.pdf}
-\caption{The LSST data flow from the mountain summit/base facility in
-Chile to the data access center and archive centers in the U.S.} 
-\label{Fig:DM2}
-\end{figure*}
+%The principal functions of the DM system are to: %\begin{itemize}%%\item Process, in real time, the incoming stream of images generated by the camera system during observing by archiving raw images, generating alerts to sources whose properties have changed on the sky, and updating the relevant catalogs (``Level 1'' data products).%%\item Periodically process the accumulated survey data to provide a uniform photometric and astrometric calibration, measure the properties of fainter objects, and classify objects based on their time-dependent behavior. The results of such a processing run form a {\em data release} (DR), which is a static, self-consistent data set for use in performing scientific analysis of LSST data and publication of the results (``Level 2'' data products). All data releases are archived for the entire operational life of the LSST archive.%%\item Facilitate the creation of added-value (``Level 3'') data products, by providing suitable software, APIs, and computing infrastructure at the LSST data center.%%\item Make all LSST data available through an interface that utilizes, to the maximum possible extent, community-based standards. Provide enough processing, storage, and network bandwidth to enable user analysis of the data without petabyte-scale data transfers. %%\end{itemize}%%
+%The rapid cadence of the LSST observing program will produce an enormous
+%volume of data ($\sim$15 TB of raw imaging data per night). Over the ten years of
+%operations and 11 data releases, this results in a cumulative {\em processed} data
+%size approaching 0.5 EB for imaging, and over 50 PB for the catalog databases 
+%(e.g., the final data release catalog database will be 15 PB in size). 
+%For comparison, the image volume in SDSS Data Release 7 is 16 TB. 
+%The computing power required to process the data grows as the survey
+%progresses, starting at
+% $\sim$200 TFLOPS and peaking at $\sim$1 PFLOPS by the end of the survey. 
+%Processing such a large volume of data, converting the raw images into a faithful
+%representation of the Universe, automated data quality assessment, and 
+%archiving the results in useful form for a broad community of users are
+%major challenges.
+%
+%\begin{figure}
+%\vskip 0.1in
+%\includegraphics[width=1.0\hsize,clip]{DMsandwich.ps}
+%\caption{The three-layered architecture of the data management system 
+%(application [purple], middleware [green], and infrastructure [yellow] layers) 
+%enables scalability, reliability, and evolutionary capability.} 
+%\label{Fig:DM1}
+%\end{figure}
+%
+%The data management system is conceptually divided into three layers: an
+%infrastructure layer consisting of the computing, storage, and
+%networking hardware and system software; a middleware layer, which
+%handles distributed processing, data access, user interface, and
+%system operations services; and an applications layer, which includes
+%the data pipelines and products and the science data archives (see
+%Fig.~\ref{Fig:DM1}).
+%
+%Different aspects of data processing will occur at three facilities: the
+%Summit Facility at Cerro Pachon (initial cross-talk correction), the
+%Base Facility in La Serena (retransmition hub, also the data access
+%center for Chilean community), and the central Archive Facility at
+%NCSA, in Champaigne, IL which will also serve as a data access center
+%for the US community.
+%
+%The data will be transported over existing high-speed optical fiber 
+%links from South America to the U.S. (see Fig.~\ref{Fig:DM2}).
+%Although the data processing center will have substantial computing 
+%power (e.g., the central facility will peak at $\sim 1.6$~PFLOPS of 
+%compute power), the continuation of current trends suggests that the center will 
+%not qualify for the top 500 list by the time of first light.
+%Hence, while LSST is making a novel use of advances in information technology, 
+%it is not taking the risk of pushing the expected technology to the limit.  
+%
+%In addition to providing the hardware capabilities, LSST Data Management will
+%enable LSST science by creating a well documented, state-of-the-art, 
+%high-performance, scalable, multi-camera, open source, O/IR survey data 
+%processing and analysis system.
+%
+%Algorithm development for LSST builds on the experience base and expertise
+%already gained in large astronomical surveys (e.g., SDSS, Pan-STARRS, DES, 
+%SuperMACHO, ESSENCE,  the DLS, CFHT-LS, or UKIDDS). The pipelines written 
+%for these surveys have demonstrated the feasibility of largely autonomous data 
+%reduction of large data sets, automated detection of sources and objects, and the 
+%extraction of scientifically useful characteristics of those objects. Unfortunately, most 
+%of these codes are poorly suited for running at the scale of LSST, are highly optimized 
+%for the specific survey they were built for, or suffer from general lack of documentation 
+%and software engineering that makes them infeasible to extend and maintain over the
+%lifetime of LSST.
+%
+%Therefore, while firmly footed in this prior history, the LSST data
+%management software has largely been written anew, in Python and (where necessary
+%for performance reasons) C++. Furthermore, all LSST codes have been
+%designed to follow best practices of software engineering (modularity, 
+%unit testing, etc.).
+%
+%The LSST data management system has been prototyped over eight years, including undergoing eight data challenges processing data sets with varying degrees of difficulty. It currently ($\sim$ late 2014) consists of implementations of single frame processing pipelines (the 
+%
+%The most recent data challenge
+%
+%Since 2006, LSST Data Management (data challenges...)
+%%
+%\begin{figure*}
+%\hskip 0.5in
+%\includegraphics[width=0.9\hsize,clip]{DMX2.ps}
+%\caption{The LSST data flow from the mountain summit/base facility in
+%Chile to the data access center and archive centers in the U.S.} 
+%\label{Fig:DM2}
+%\end{figure*}
 
 
 
