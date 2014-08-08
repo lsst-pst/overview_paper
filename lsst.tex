@@ -1188,6 +1188,7 @@ A novel aspect of the LSST DM system will be its ``Level 3" capabilities, allowi
 
 
 \subsubsection{The LSST software stack}
+\label{sec:dmstack}
 
 The {\em LSST Software Stack} is a well documented, state-of-the-art, high-performance, scalable, multi-camera, open source, O/IR survey data processing and analysis system, built to enable LSST survey data reduction and custom, user-driven, Level 3 processing. It comprises of all science pipelines needed to accomplish LSST data processing tasks (e.g., calibration, single frame processing, coaddition, image differencing, multi-epoch measurement, etc.), the necessary data access and orchestration middleware, as well as the database and user interface components.
 
@@ -1219,12 +1220,12 @@ A small region in the vicinity of globular cluster M2, taken from a coadd of SDS
 The LSST data management software has been prototyped for over eight years. It has been exercised in eight data challenges, with increasing degrees of complexity. Besides processing simulated LSST data (\S~\ref{sec:imsim}), it has been used to process images from CFHT-LS and SDSS (Abazajian et al. 2009). As an example, Figure~\ref{Fig:DMStripe82} shows a small region in the vicinity of M2 taken from a large coadd of SDSS Stripe 82 data, generated with LSST software stack prototypes.
 \\
 
-The LSST software stack is free software, licenced under the terms of the GNU General
-Public Licence, Version 3. The stack
-prototype code and documentation are available at \url{http://ls.st/ug}.
+The LSST software stack is free software, licensed under the terms of the GNU General
+Public License, Version 3. The stack
+prototype code and documentation are available via \url{http://ls.st/ug}.
 Its open source nature, an open development
-process, attention to software engineering, and a long-term project commitment,  
-may make the LSST software stack interesting for use beyond LSST.
+process, attention to software engineering, and a long-term project commitment 
+may make it of interest for use beyond LSST.
 
 \B{
 \vskip 0.4in
@@ -1975,25 +1976,25 @@ extend Gaia's error vs.\ magnitude curve 4 magnitudes fainter.
 \subsection{             Data Products                    } 
 \label{Sec:dp}
 
-The data collected by the LSST telescope and camera will be automatically reduced to scientifically useful catalogs and images by the LSST Data Management system (\S~\ref{sec:dm}). These data products are designed to be sufficient to enable the large majority of LSST science cases. The details of LSST data products are described in the LSST Data Products Definition Document (DPDD; Juric et al. 2013), so only a high-level overview will be presented here. The reader is instructed to consult the DPDD for details.
+Data collected by the LSST telescope and camera will be automatically processed to {\em data products} -- catalogs and reduced images -- by the LSST Data Management system (\S~\ref{sec:dm}). These products are designed to be sufficient to enable a large majority of LSST science cases. The LSST data products are described in the LSST Data Products Definition Document (DPDD; Juric et al. 2013), so only a high-level overview will be presented here; the reader is instructed to consult the DPDD for details.
 
 \vskip 1em
 
-Two major categories of data products will be produced and delivered by LSST:
+Two major categories of data products will be produced and delivered by LSST DM:
 \begin{itemize}
-\item {\bf Level 1 data products} are designed to support the discovery, characterization, and rapid follow-up of time-dependent phenomena (``transient science''). These will be generated continuously every observing night, by detecting and characterizing sources in images differenced against deep templates. They will include alerts to objects that were newly discovered, or have changed brightness or position. The alerts will be published within 60 seconds of the observation.\\
+\item {\bf Level 1 data products}, designed to support the discovery, characterization, and rapid follow-up of time-dependent phenomena (``transient science''). These will be generated continuously every observing night, by detecting and characterizing sources in images differenced against deep templates. They will include alerts to objects that were newly discovered, or have changed brightness or position. The alerts to such events will be published within 60 seconds of observation.\\
 \\
-In addition to transient science, Level 1 data products will support discovery and follow-up of objects in the Solar System. Objects with motions sufficient to cause trailing in a single exposure will be identified and flagged as such when the alerts are broadcast. Those that are not trailed will be identified and linked based on their motion from observation to observation and their orbits published within 24 hours of identification. We note that the efficiency of linking (and thus the completeness of the resulting orbit catalog) will depend on the final observing cadence chosen for LSST, as well as the performance of the linking algorithm.\item {\bf Level 2} data products are designed to enable systematics- and flux-limited science, and will be made available in annual Data Releases. These will include the (reduced and raw) single-epoch images, deep co-adds of the observed sky, catalogs of objects detected in LSST data, catalogs of sources (the detections and measurements of objects on individual visits), and catalogs of ``forced sources" (measurements of flux on individual visits at locations where objects were detected by LSST or other surveys). LSST data releases will also include fully reprocessed Level 1 data products, as well as all metadata necessary for the end-user to reproduce any aspect of LSST data processing.\\
+In addition to transient science, Level 1 data products will support discovery and follow-up of objects in the Solar System. Objects with motions sufficient to cause trailing in a single exposure will be identified and flagged as such when the alerts are broadcast. Those that are not trailed will be identified and linked based on their motion from observation to observation, over a period of a few days. Their orbits will be published within 24 hours of identification. The efficiency of linking (and thus the completeness of the resulting orbit catalog) will depend on the final observing cadence chosen for LSST, as well as the performance of the linking algorithm.\item {\bf Level 2} data products are designed to enable systematics- and flux-limited science, and will be made available in annual Data Releases. These will include the (reduced and raw) single-epoch images, deep co-adds of the observed sky, catalogs of objects detected in LSST data, catalogs of sources (the detections and measurements of objects on individual visits), and catalogs of ``forced sources" (measurements of flux on individual visits at locations where objects were detected by LSST or other surveys). LSST data releases will also include fully reprocessed Level 1 data products, as well as all metadata and software necessary for the end-user to reproduce any aspect of LSST data release processing.\\
 \\
 A noteworthy aspect of LSST Level 2 processing is that it will largely rely on {\bf multi-epoch model fitting}, or {\bf \em MultiFit}, to perform near-optimal characterization of object properties. That is, while the co-adds will be used to perform object {\em detection}, the {\em measurement} of their properties will be performed by simultaneously fitting (PSF-convolved) models to single-epoch observations. An extended source model -- a constrained linear combination of two S\'ersic profiles -- and a moving point source model -- a point source model with proper motion -- will generally be fitted to each detected object\footnote{For performance reasons, it's likely that only the point source model will be fitted in the most extremely crowded regions of the Galactic plane.}.\\
 \\
-Secondly, for the extended source model fits, the LSST will characterize and store the shape of the associated likelihood surface (and the posterior), and not just the maximum likelihood values. The characterization will be accomplished by sampling, with up to $\sim 200$ (independent) likelihood samples retained for each object. For performance and storage reasons, these samples may be retained only for some bands (those of greatest interest for weak lensing studies).
+Secondly, for the extended source model fits, the LSST will characterize and store the shape of the associated likelihood surface (and the posterior), and not just the maximum likelihood values and covariances. The characterization will be accomplished by sampling, with up to $\sim 200$ (independent) likelihood samples retained for each object. We caution that, for storage cost reasons, these samples may be retained only for some bands (those of greatest interest for weak lensing studies).
 
 \end{itemize}%
 
-While a large majority of science cases will be adequately served by Level 1 and 2 data products, a limited number of highly specialized investigations may require custom, user-driven, processing of LSST data. This processing will often benefit from being performed at the LSST Archive Center, given the size of the LSST data set and the associated storage and computational challenges. To enable such use cases, the LSST DM system will devote 10\% of its processing and storage capabilities to creation, use, and federation of {\bf Level 3} (user-created) data products. It will also allow the science teams to use the database infrastructure to store and share their results.
+While a large majority of science cases will be adequately served by Level 1 and 2 data products, a limited number of highly specialized investigations may require custom, user-driven, processing of LSST data. This processing is likely to benefit from being performed at the LSST Archive Center, given the size of the LSST data set and the associated storage and computational challenges. To enable such use cases, the LSST DM system will devote the equivalent of 10\% of its processing and storage capabilities to creation, use, and federation of {\bf Level 3} (user-created) data products. It will also allow the science teams to use the LSST database infrastructure to store and share their results.
 
-To further enable user-driven Level 3 processing, the LSST software stack has been architected and will be built with reusibility in mind. This will allow the LSST users to develop custom Level 3 processing codes while leveraging 15+ years of investment and experience poured into the LSST stack. In addition to executing such customized codes at the LSST data centers, the LSST users will be able to run it on their resources as well.\\
+To further enable user-driven Level 3 processing, the LSST software stack has been explicitly architected with reusability and extendability in mind, and will be made available to the LSST user community (\S~\ref{sec:dmstack}). This will allow the LSST users to more rapidly develop custom Level 3 processing codes, leveraging 15+ years of investment and experience poured into LSST codes. In addition to executing such customized codes at the LSST data centers, LSST users will be able to run it on their resources as well.\\
 
 Finally, approximately 10\% of the observing time will be devoted to mini-surveys that do not follow the LSST baseline cadence (\S~\ref{Sec:minisurveys}). The data products for these programs will be generated using the same processing system and exhibit the same general characteristics of Level 1 and 2 data products, but may be performed on a somewhat different cadence.
 
