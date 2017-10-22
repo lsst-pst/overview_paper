@@ -902,7 +902,7 @@ Precise determination of the point spread function across each image,
 accurate photometric and astrometric calibration, and continuous monitoring 
 of system performance and observing conditions will be needed to reach the 
 full potential of the LSST mission. Extensive precursor data including the 
-massive SDSS dataset and our own data obtained using telescopes close to 
+SDSS dataset and our own data obtained using telescopes close to 
 the LSST site of Cerro Pach\'{o}n (e.g., the SOAR and Gemini South telescopes), 
 as well as telescopes of similar aperture (e.g., Subaru), indicate that the 
 photometric and astrometric accuracy will be limited not by our instrumentation 
@@ -912,51 +912,47 @@ or software, but rather by atmospheric effects.
 %The required 1\% photometric accuracy is driven by our requirements 
 %on the photometric redshift accuracy, the separation of stellar populations, 
 %the ability to detect low-amplitude variable objects, and the search for 
-%systematic effects in type Ia supernova light curves. 
-SDSS data and PS1 data 
+%systematic effects in type Ia supernova light curves.
+
+The overall photometric calibration philosophy (Stubbs \& Tonry, 2006) is to measure explicitly, at 1 nm resolution, the 
+instrumental sensitivity as a function of wavelength using light from a monochromatic source injected
+into the telescope pupil. The dose of delivered photons is measured using a calibration photodiode whose quantum 
+efficiency is known to high accuracy. In addition, the LSST system will explicitly measure the atmospheric transmission 
+spectrum associated with each image acquired. A
+dedicated 1.5-meter auxiliary calibration telescope will obtain spectra of
+standard stars in LSST fields, calibrating the atmospheric throughput
+as a function of wavelength  (Stubbs et al.~2007; 
+see Figs.~\ref{Fig:modtran1} and \ref{Fig:modtran2}). 
+Celestial spectrophotometric sources can be used as a separate means of photometric calibration, albeit only through the 
+comparison of band-integrated fluxes with synthetic photometry calculations. 
+
+This calibration process has been undertaken by the Dark Energy Survey (DES) team, with results reported in Burke et al.~(2017).   
+
+SDSS, PS1, and DES data 
 taken in good photometric conditions have approached the LSST
 requirement of 1\% photometric calibration
-(Padmanabahn et al.~2008; Schlafly et al.~2012), although measurements with ground-based telescopes 
+(Padmanabahn et al.~2008; Schlafly et al.~2012, Burke et al.~2017), although measurements with ground-based telescopes 
 typically produce data with errors a factor of two or so larger. Analysis of
 repeated SDSS scans obtained in varying observing conditions demonstrates that data
 obtained in 
-%traditionally 
 non-photometric conditions can also be calibrated with
 sufficient accuracy (Ivezi\'{c} et al.~2007b), as long as high-quality
 photometric data also exist in the region. 
+The LSST calibration plan builds on this experience gained from the SDSS and other surveys. 
 
-The LSST calibration plan builds on experience gained from the SDSS survey. 
 The planned calibration process decouples the establishment of a stable and uniform internal 
 relative calibration from the task of assigning absolute optical flux to 
 celestial objects. 
-%The latter effort requires determination of a small 
-%number of factors appropriate for the accumulated multi-epoch data
-%set. [I HAVE NO IDEA WHAT THIS SENTENCE ACTUALLY MEANS...]
-Celestial sources will be used to define the internal photometric system and 
+
+Celestial sources will be used to refine the internal photometric system and 
 to monitor stability and uniformity of photometric data. There will be 
 $>$100 main-sequence stars with $17<r<20$ per detector (14$\times$14 arcmin$^2$) 
 even at high Galactic latitudes. Standardization of photometric scales will be 
 achieved through direct observation of stars with well-understood spectral 
-energy distributions (SEDs). 
+energy distributions (SEDs), in conjunction with the in-dome calibration system and the atmospheric transmission spectra. 
 
-While the primary source of data used for photometric calibration will be 
-science images taken with the main telescope, these images alone will be 
-insufficient to fully characterize instrumental and atmospheric temporal and 
-spatial variations that can affect photometric measurements.  A
-separate 1.5-meter calibration telescope will obtain spectra of
-standard stars in LSST fields, calibrating the atmospheric throughput
-as a function of wavelength  (Stubbs et al.~2007; 
-see Figs.~\ref{Fig:modtran1} and \ref{Fig:modtran2}).  A tunable
-monochromatic light source, calibrated with a photodiode, will measure
-the relative throughput of the telescope plus camera system as a
-function of wavelength (Stubbs \& Tonry 2006).  
-%Auxiliary instrumentation, including a 1.5 m calibration telescope, will provide the 
-%calibration parameters needed for image 
-%processing, to calibrate the instrumental response of the LSST hardware
-%(Stubbs \& Tonry 2006), and to measure the atmospheric optical depth as 
-%a function of wavelength along the LSST line of sight (Stubbs et al.~2007; 
-%see Figs.~\ref{Fig:modtran1} and \ref{Fig:modtran2}). 
-
+Astrometric calibration will be based on the results from the Gaia mission (Gaia Collaboration 2016), which will provide 
+numerous high-accuracy astrometric standards in each and every LSST field. 
 
 \subsection{     The LSST  Reference Design    }
 
@@ -2273,7 +2269,6 @@ this sample will be $z\sim$1.2, with the third quartile at $z\sim2$.
 %For a subsample of 2 billion galaxies further constrained by flux limits in the 
 %$g$ and $z$ bands, the photometric redshift errors will be about two times 
 %smaller. 
-%I SIMPLY DON'T BELIEVE THIS.
 It will be possible to further improve photometric redshift calibration
 by cross-correlating the photometric sample with redshift surveys of
 galaxies and quasars in the same fields (Newman 2008; Matthews \&
@@ -3196,8 +3191,8 @@ Program Order No. 9 (AST-0551161), Scientific Program Order No. 1
 Portions of this work are supported by the Department of Energy under contract
 DE-AC02-76SF00515 with the Stanford Linear Accelerator Center, contract
 DE-AC02-98CH10886 with Brookhaven National Laboratory, contract
-DE-AC52-07NA27344 with Lawrence Livermore National Laboratory, and grant
-DE-FG02-07ER41505. A portion of this work was conducted at the Jet Propulsion 
+DE-AC52-07NA27344 with Lawrence Livermore National Laboratory, and grants
+DE-FG02-07ER41505 and DE-SC0007881. A portion of this work was conducted at the Jet Propulsion 
 Laboratory, California Institute of Technology, under a contract with NASA.
 Gifts by the Charles Simonyi Fund for Arts and Sciences,
 and Bill Gates, and grants by W. M. Keck Foundation and the TABASGO Foundation
@@ -3350,6 +3345,8 @@ expanded author list.
 
 \bibitem[()]{} Burke, D., Axelrod, T., Bartlett, J., et al.~2007, 
                       American Astronomical Society, AAS Meeting \#211, \#137.23
+                      
+\bibitem[()]{} Burke, D., Rykoff, ES, Allam, S \& Annis, et al.~2017, arXiv:1706.01542.
 
 \bibitem[()]{} Burrows, D., Sudarsky, D. \& Hubeny, I. 2006, Astrophysical Journal, 640, 1063
 
@@ -3429,6 +3426,8 @@ expanded author list.
 \bibitem[()]{} Foley, R.J. 2012, Astrophysical Journal, 748, 127
 
 \bibitem[()]{} Fukugita, M., Ichikawa, T., Gunn, J.E., et al.~1996, Astronomical Journal, 111, 1748
+
+\bibitem[()]{} Gaia Collaboration 2016, A\&A, 595, A2 
 
 \bibitem[()]{} Gal-Yam, A., Ofek, E.O., Poznanski, D., et al.~2006, Astrophysical Journal, 639, 331
 
