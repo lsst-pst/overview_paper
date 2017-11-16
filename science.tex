@@ -22,7 +22,7 @@ organized by the four science themes that drive the LSST design
 \B{For an in-depth discussion of LSST science cases, we refer the reader to the
 LSST Science Book.}
 
-% PJM: Read, edit and get feedback on Section 4.1:
+
 \vskip 0.3in
 \subsection{Probing Dark Energy and Dark Matter }
 
@@ -43,23 +43,23 @@ expansion of the background.  Thus, quantifying the rate of growth of
 structures from early times until the present provides additional
 tests of the energy contents of the Universe and their interactions.
 
-The joint analysis of LSST weak lensing and BAO is
+The joint analysis of LSST weak lensing and galaxy clustering is
 particularly powerful in constraining the dynamical behavior of dark
 energy, i.e., how it evolves with cosmic time or redshift (Hu \& Jain
 2004; Zhan 2006).  By
 simultaneously measuring the growth of large-scale structure, and
 luminosity and angular distances as functions of redshift (via weak
-lensing, BAO, SN, and cluster counting), LSST data can reveal whether
+lensing, LSS, SN, and cluster counting), LSST data can reveal whether
 the recent cosmic acceleration is due to dark energy or modified
 gravity (Lue, Scoccimarro \& Starkman 2004; Knox, Song \& Tyson 2006;
 Ishak, Upadhye \& Spergel 2006; Jain \& Zhang 2008; Oguri \& Takada
-2011; Jain et al.~2013; Weinberg et al.~2013).
+2011; Jain et al.~2013; Weinberg et al.~2013). The Dark Energy Survey (see e.g. DES Collaboration 2017 and references therein) provides a compelling proof of concept for this program.
 
 Over a broad range of accessible redshifts, the simple linear model
 for the dark energy equation of state ($w = w_0 + w_a(1-a)$) is a poor representation of more
-general dark energy theories. Barnard et al.~(2008) have shown that in a high-dimensional dark energy model space,
-LSST data could lead to a hundred- to thousand-fold increase in precision over
-precursor experiments about to be undertaken, thereby confirming its status as
+general dark energy theories. Barnard et al.~(2008) showed that in a high-dimensional dark energy model space,
+LSST data could lead to a hundred- to thousand-fold increase in precision over its
+precursor experiments, thereby confirming its status as
 a premier Stage IV experiment in the sense of Albrecht et al.~(2006).
 %Fits of multi-parameter dark energy models to the complementary LSST
 %probes of dark energy will constrain alternative models of gravity.
@@ -72,22 +72,16 @@ photometry of galaxies will be of high enough quality to give
 photometric redshifts with an accuracy ($\sigma/(1+z)$) of 1-2\% (only
 10\% of the sample will have redshift errors larger than 4\%); the
 sample to this limit will include about four billion galaxies.  At a
-slightly brighter cut, there will be about 40 galaxies arcmin${-2}$
-with shapes measured well enough for weak lensing measurements.
-%The nominal high-SNR galaxy sample defined by $i<25.3$ (SNR$>$20 for point
-%sources) will include four billion galaxies (56 arcmin$^{-2}$; the surface density of galaxies
-%used for weak lensing analysis will be about 40 arcmin$^{-2}$) with a mean
-%photometric redshift accuracy of 1-2\% (relative error for $1+z$), and with
-%only 10\% of the sample with redshift errors larger than 4\%.
+slightly brighter cut, there will be around 30 galaxies arcmin${-2}$
+with shapes measured well enough for weak lensing measurements (Chang et
+al 2013, 2015), with the number realized in practice being dependent on
+the performance of the deblending and shape measurement algorithms.
 The median redshift for
 this sample will be $z\sim$1.2, with the third quartile at $z\sim2$.
-%For a subsample of 2 billion galaxies further constrained by flux limits in the
-%$g$ and $z$ bands, the photometric redshift errors will be about two times
-%smaller.
 It will be possible to further improve photometric redshift calibration
 by cross-correlating the photometric sample with redshift surveys of
 galaxies and quasars in the same fields (Newman 2008; Matthews \&
-Newman 2010; Menard et al.~2013).
+Newman 2010; Menard et al.~2013, Davis et al. 2017).
 
 
 \begin{figure}
@@ -110,17 +104,17 @@ the constraints.}
 
 
 
-\begin{figure}
-\includegraphics[width=1.0\hsize,clip]{cls.pdf}
-\caption{The lensing shear auto power spectra constructed from 5 redshift bins
-($l$ is the multipole moment of the distribution on the sky). Only the 5 auto-power
-spectra of each redshift bin among the available 15 cospectra are displayed, and the
-solid curves show the predictions for the concordance $\Lambda$CDM model. The boxes
-show the expected 1-$\sigma$ measurement error (in bins of $\Delta l/l=0.2$) from the full LSST
-10-year survey due to the sample (i.e., cosmic) variance which dominates at about
-$l< 100$, and intrinsic ellipticities which dominate at $l> 1000$ (Zhan 2006).}
-\label{Fig:wlPk}
-\end{figure}
+% \begin{figure}
+% \includegraphics[width=1.0\hsize,clip]{cls.pdf}
+% \caption{The lensing shear auto power spectra constructed from 5 redshift bins
+% ($l$ is the multipole moment of the distribution on the sky). Only the 5 auto-power
+% spectra of each redshift bin among the available 15 cospectra are displayed, and the
+% solid curves show the predictions for the concordance $\Lambda$CDM model. The boxes
+% show the expected 1-$\sigma$ measurement error (in bins of $\Delta l/l=0.2$) from the full LSST
+% 10-year survey due to the sample (i.e., cosmic) variance which dominates at about
+% $l< 100$, and intrinsic ellipticities which dominate at $l> 1000$ (Zhan 2006).}
+% \label{Fig:wlPk}
+% \end{figure}
 
 
 \begin{figure}
@@ -164,11 +158,12 @@ distance are relatively insensitive to the assumed systematics
 \end{figure}
 
 
-The main LSST observables in the context of dark energy and matter will be
+The main LSST observables in the context of dark energy and matter will be:
 
 \begin{itemize}
 \item Measurements of the two-point auto- and cross-correlation of
-  shear across multiple redshift bins (Fig.~\ref{Fig:wlPk}). There will be
+  shear across multiple redshift bins. %(Fig.~\ref{Fig:wlPk}).
+  There will be
 over 50 of these auto and cross power spectra constructed from the
 shape catalog with excellent photometric redshifts
 %correlation of shear of a galaxy at one redshift bin with another galaxy in
@@ -210,16 +205,15 @@ Wood-Vasey et al.~2007), and the rapid sampling ``mini-survey'' of selected
 areas will yield well-sampled light curves of tens of thousands of supernovae
 to a limiting redshift beyond one (leading to an independent test of dark energy
 dynamics; Riess et al.~2007).
-\item Unique constraints on anisotropy of cosmological parameters over the sky using
-SN, WL and BAO, which will test fundamental cosmological assumptions of homogeneity and isotropy.
-For example, WL$+$BAO and SN can separately probe anisotropy of dark energy (Zhan, Knox \& Tyson 2009).
+\item Unique constraints on anisotropy of cosmological parameters over the sky using, which will test fundamental cosmological assumptions of homogeneity and isotropy.
+For example, WL$+$LSS and SN can separately probe anisotropy of dark energy (e.g. Zhan, Knox \& Tyson 2009).
 \item The shape of the power spectrum of dark matter fluctuations measured by
 the LSST weak lensing maps will constrain the sum of neutrino masses with an accuracy
 of 0.04 eV or better (Cooray 1999; Song \& Knox 2004; Hannestad, Tu \& Wong 2006).
-The current best limit, as derived from a combination of WMAP, the SDSS power spectrum,
-SN, and the Ly$\alpha$ forest, is 0.17 eV (Seljak et al.~2006).
-\item Hundreds of millions of galaxy-galaxy lenses will provide the needed statistics to probe dark matter
-halo profiles and substructure (Mandelbaum et al.~2006). The image fluxes in several thousand well-measured
+%The current best limit, as derived from a combination of WMAP, the SDSS power spectrum,
+%SN, and the Ly$\alpha$ forest, is 0.17 eV (Seljak et al.~2006).
+\item Tens of thousands of galaxy-galaxy lenses will provide the needed statistics to probe dark matter
+halo profiles and substructure (e.g. Mandelbaum et al.~2006, Vegetti et al.~2012). The image fluxes in several thousand well-measured
 strongly lensed quasars will enable constraints of the dark matter mass function on small scales (Dalal \& Kochanek 2002).
 \item The abundance of galaxy clusters as a function of mass and redshift is sensitive to cosmological parameters
 (SciBook, Ch.~13). LSST will produce a large catalog of clusters detected through their member galaxy population
@@ -236,12 +230,13 @@ Cluster mass reconstruction based on the multiple image positions
  can probe the cluster inner mass profile, and can provide a separate test of cosmology, especially
 in cases with strongly lensed background objects at different redshift (Porciani \& Madau 2000; Oguri \& Kawano 2003).
 \item Time delays of galaxy-scale lensed quasars will allow one to measure Hubble's constant
-(e.g. Suyu et al.~2010) in hundreds or thousands of systems; sub-percent level precision in
-$H(z)$ should be achievable (Coe \& Moustakas 2009), providing a further independent dark energy probe.
+(e.g. Suyu et al.~2010, Bonvin et al.~2017) in hundreds of systems; sub-percent level precision in
+$H(z)$ should be achievable (Coe \& Moustakas 2009, Treu \& Marshall 2016), providing a further independent dark energy probe.
 Time delays for quasars multiply lensed by clusters as a function of redshift are an independent test
 of dark energy (Kundi\'{c} et al.~1997). The natural timescale (many months to years) is well matched
 to the LSST survey (Oguri \& Marshall 2010).
 \end{itemize}
+
 
 \subsection{Taking an Inventory of the Solar System}
 
@@ -374,29 +369,29 @@ objects.  There are many projects that LSST data products will enable:
 \begin{itemize}
 
 
-\item Discovery and characterization of thousands of hot Jupiters 
-  in exoplanetary systems via the transit method (Wright et al.~2012). 
-LSST will extend the extrasolar planet census to larger distances within the Galaxy, thus enabling detailed studies 
-of planet frequency as a function of stellar metallicity and parent population (e.g., Hartman et al.~2009; Bayliss \& 
-Sackett 2011). The out-of-transit variability of exoplanet host stars will also provide characterization of the system 
-via flaring behavior and stellar age via gyrochronology, the latter helping constrain theories of tidal evolution and 
-migration in giant planets. 
+\item Discovery and characterization of thousands of hot Jupiters
+  in exoplanetary systems via the transit method (Wright et al.~2012).
+LSST will extend the extrasolar planet census to larger distances within the Galaxy, thus enabling detailed studies
+of planet frequency as a function of stellar metallicity and parent population (e.g., Hartman et al.~2009; Bayliss \&
+Sackett 2011). The out-of-transit variability of exoplanet host stars will also provide characterization of the system
+via flaring behavior and stellar age via gyrochronology, the latter helping constrain theories of tidal evolution and
+migration in giant planets.
 
 \item Gravitational microlensing in the Milky Way (see Han 2008) as well as in the Local Group and beyond (de Jong, Kuijken \& H\'{e}raudeau 2008).
 
-\item Studies of dwarf novae, including their use as probes of stellar populations and 
-      structure in the Local Group (Neill \& Shara 2005; Shara 2006; Shen \& Bildsten 2009). Population studies of the end points of binary evolution differentiating long orbital period vs short orbital period dwarf novae at different places in the galaxy, as well as the numbers of recurrent vs normal novae. Regular cadence, long term color observation on a large sample of galactic sources will enable the identification of CVs containing highly magnetic white dwarfs, that are red due to cyclotron emission from the magnetic accretion column and in low state for the majority of the 10-year survey. 
+\item Studies of dwarf novae, including their use as probes of stellar populations and
+      structure in the Local Group (Neill \& Shara 2005; Shara 2006; Shen \& Bildsten 2009). Population studies of the end points of binary evolution differentiating long orbital period vs short orbital period dwarf novae at different places in the galaxy, as well as the numbers of recurrent vs normal novae. Regular cadence, long term color observation on a large sample of galactic sources will enable the identification of CVs containing highly magnetic white dwarfs, that are red due to cyclotron emission from the magnetic accretion column and in low state for the majority of the 10-year survey.
 
-\item Studies of  transients from poorly-constrained stages of stellar evolution including  
+\item Studies of  transients from poorly-constrained stages of stellar evolution including
 stellar eruptions,  luminous blue variable (LBV), stellar mergers, and helium core flashes leading to white dwarf formation,  both through pre-eruption characterization of sources at the positions of eruptive transients in the ​deep LSST ​stacks​ and detection of faint precursor eruptions, and by constraining rates of individual ​eruption ​subclasses​ (Smith 2014)​​ anddetecting them in galaxies out to tens of Mpc.
 
 \item A census of light echoes of historical explosive and eruptive
   transients in the Milky Way and Local Group through high resolution
   time series​.
 
-\item Studies of known and unusual SN populations and parameterization of their light curves (e.g., Hoeflich, Wheeler \& Thielemann~1998; Wang et al.~2003; Howell et al.~2007; Kowalski et al.~2008; Hicken et al.~2009; Foley~2012​, Bianco et al.~2014, Arcavi~2017​), including late-time observations of rapidly-evolving transients to deep limits, critical for ascertaining their nature. Measurements of intrinsic rates for both peculiar transients (e.g. Drout et al. 2014) and for SN as a function of sub-type and host environment properties (e.g. metallicity; Graur et al. 2017). 
+\item Studies of known and unusual SN populations and parameterization of their light curves (e.g., Hoeflich, Wheeler \& Thielemann~1998; Wang et al.~2003; Howell et al.~2007; Kowalski et al.~2008; Hicken et al.~2009; Foley~2012​, Bianco et al.~2014, Arcavi~2017​), including late-time observations of rapidly-evolving transients to deep limits, critical for ascertaining their nature. Measurements of intrinsic rates for both peculiar transients (e.g. Drout et al. 2014) and for SN as a function of sub-type and host environment properties (e.g. metallicity; Graur et al. 2017).
 
-\item A deep search for new populations of novae and supernova progenitors 
+\item A deep search for new populations of novae and supernova progenitors
       (Smartt 2009; Thompson et al.~2009; Smith et al.~2011; see Fig.\ref{Fig:shri}) both through direct imaging and through the detection of SN precursor events (Ofek et al.~2013), characterization of pre-SN variability of SN progenitors and the frequency of pre-SN outbursts.
 
 \item The discovery of multiply imaged lensed SNe; $\sim500$ multiply
@@ -406,11 +401,11 @@ stellar eruptions,  luminous blue variable (LBV), stellar mergers, and helium co
 \item A large, well characterized sample of super luminous supernovae
 including object at redshift as high as 2.5, a sample large enough to be leveraged for cosmology  improving constraints on $w$ and $\Omega_m$ (Scovacricchi et al., ~2015).
 
-\item Studies of optical bursters (those varying faster than 1 mag hr$^{-1}$) to $r\sim25$ mag. 
+\item Studies of optical bursters (those varying faster than 1 mag hr$^{-1}$) to $r\sim25$ mag.
 
-\item Detection and measurement of gamma-ray burst afterglows and transients 
+\item Detection and measurement of gamma-ray burst afterglows and transients
       (e.g., Zhang \& M\'{e}sz\'{a}ros 2004; Zhang et al.~2006; Kann et al.~2010) to high redshift ($\sim$7.5).
- 
+
 \item Large scale studies of stellar tidal disruptions by nuclear supermassive
   black holes (e.g., Evans \& Kochanek 1989; Gezari et al.~2008; Strubbe \&
   Quataert 2009; Bloom et al.~2011; Gezari 2012; Komossa 2015), as well as binary
@@ -425,21 +420,21 @@ including object at redshift as high as 2.5, a sample large enough to be leverag
 
 
 \item A study of quasar variability using accurate, multicolor light
-  curves for a few million  
-quasars, leading to constraints on the accretion physics and nuclear environments (de Vries, Becker 
-\& White 2003; Vanden Berk et al.~2004, MacLeod et al.~2010; Jiang et al.~2017). Relations between quasar variability 
-      properties and luminosity, redshift, 
-      rest-frame wavelength, time scale, color, radio-jet emission, black-hole 
+  curves for a few million
+quasars, leading to constraints on the accretion physics and nuclear environments (de Vries, Becker
+\& White 2003; Vanden Berk et al.~2004, MacLeod et al.~2010; Jiang et al.~2017). Relations between quasar variability
+      properties and luminosity, redshift,
+      rest-frame wavelength, time scale, color, radio-jet emission, black-hole
       mass, and Eddington-normalized luminosity will be defined with massive
       statistics, including the potential to detect rare but important events such as
       jet flares and obscuration events. Microlensing events will also be monitored in the $\sim$4000 gravitationally-lensed
       quasars discovered by LSST and used to measure the spatial structure of quasar accretion disks.
 
-\item The superb continuum light curves of AGN will enable economical ``piggyback" 
-      reverberation-mapping efforts using spectroscopy of emission lines (e.g., Doron \& Eliran 2012; Shen et al. 2015; Grier et al. 2017). These results 
+\item The superb continuum light curves of AGN will enable economical ``piggyback"
+      reverberation-mapping efforts using spectroscopy of emission lines (e.g., Doron \& Eliran 2012; Shen et al. 2015; Grier et al. 2017). These results
       will greatly broaden the luminosity-redshift plane of reverberation-mapped AGNs
-      with black-hole mass estimates. For LSST data alone, the inter-band continuum lags 
-      will provide useful structural information. 
+      with black-hole mass estimates. For LSST data alone, the inter-band continuum lags
+      will provide useful structural information.
 
 \item Optical identification of transients and variables detected in
   other electromagnetic wavebands, from gamma rays to radio. Examples
@@ -767,11 +762,11 @@ resulting galaxy SEDs should give rise to even better photometric
 redshifts, as well as tighter constraints on stellar masses and star
 formation histories crucial for galaxy evolution studies.  The weak
 lensing analyses from space and from the ground will also be highly
-complementary, and will provide crucial cross-checks of one another. 
-LSST also presents the opportunity to conduct simultaneous observations 
-of WFIRST's Galactic Bulge survey fields, from which it will be possible to 
-measure the parallax and hence the lens masses for most microlensing 
-events, as well as providing valuable lightcurve coverage during the large 
+complementary, and will provide crucial cross-checks of one another.
+LSST also presents the opportunity to conduct simultaneous observations
+of WFIRST's Galactic Bulge survey fields, from which it will be possible to
+measure the parallax and hence the lens masses for most microlensing
+events, as well as providing valuable lightcurve coverage during the large
 data gaps between WFIRST survey `seasons'.
 
 LSST will also enable multi-wavelength studies of faint optical
