@@ -848,7 +848,8 @@ spectrum associated with each image acquired. A
 dedicated 1.5-meter auxiliary calibration telescope will obtain spectra of
 standard stars in LSST fields, calibrating the atmospheric throughput
 as a function of wavelength  (Stubbs et al.~2007;
-see Figs.~\ref{Fig:modtran1} and \ref{Fig:modtran2}).
+see Figs.~\ref{Fig:modtran1} and \ref{Fig:modtran2});  in reality the LSST auxiliary telescope will take
+data at lower spectral resolution ($R \sim 100$) but wider spectral coverage (340nm --- 1.05$\mu$m) using a slitless spectrograph and an LSST corner-raft CCD. 
 Celestial spectrophotometric sources can be used as a separate means of photometric calibration, albeit only through the
 comparison of band-integrated fluxes with synthetic photometry calculations.
 
@@ -871,7 +872,11 @@ relative calibration from the task of assigning absolute optical flux to
 celestial objects.
 
 Celestial sources will be used to refine the internal photometric system and
-to monitor stability and uniformity of photometric data. There will be
+to monitor stability and uniformity of photometric data. We expect to use \cite{Gaia2016} photometry, utilising
+the \textit{BP} and \textit{RP} photometric measurements as well as the \text{G} magnitudes; for a subset
+of stars (\textit{e.g.} F-subdwarfs) we expect to be able to transfer this rigid photometric system above
+the atmosphere to objects observed by LSST.
+There will be
 $>$100 main-sequence stars with $17<r<20$ per detector (14$\times$14 arcmin$^2$)
 even at high Galactic latitudes. Standardization of photometric scales will be
 achieved through direct observation of stars with well-understood spectral
