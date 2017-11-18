@@ -1173,8 +1173,8 @@ following sofware engineering best practices, including modularity, clear defini
 of interfaces, continuous integration,
 utilization of unit testing, a single set of documentation and coding
 standards, and others. The primary implementation language is Python and, where
-necessary for performance reasons, C++\footnote{All components implemented
-in C++ have been wrapped and exposed as Python modules to the rest of the system. Python truly is the ``native language of LSST''.}.
+necessary for performance reasons, C\texttt{++}\footnote{All components implemented
+in C\texttt{++} have been wrapped and exposed as Python modules to the rest of the system. Python truly is the ``native language of LSST''.}.
 
 \begin{figure}
 %
@@ -1257,7 +1257,7 @@ quasars and Solar System objects (\S~\ref{sec:catalogs}), a system for generatin
 based on the pointing of the telescope, and a system for generating
 realistic LSST images of a given area of sky
 (\S~\ref{sec:imsim}). Computationally intensive routines are written
-in $C/C^{++}$ with the overall framework and database interactions
+in C/C\texttt{++} with the overall framework and database interactions
 using $Python$.  The purpose of this design is to enable the
 generation of a wide range of data products for use by the
 collaboration; from all-sky catalogs used in simulations of the LSST
