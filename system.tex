@@ -1220,7 +1220,7 @@ extract the appropriate astrophysical signals, and that this can be
 achieved with sufficient efficiency such that the telescope can
 complete its primary objectives within the ten years of its duration
 (including surveying 18,000 sq degrees of the sky, and completing the
-Deep Drilling Fields, see \S \ref{Sec:minisurveys}).
+Deep Drilling Fields, see \S \ref{Sec:minisurveys}). 
 
 
 Realizing these objectives requires that the project can characterize
@@ -1230,7 +1230,7 @@ electronics, and the capabilities of the analysis software. A
 simulation framework provides such a capability; delivering a virtual
 prototype LSST against which design decisions, optimizations
 (including descoping), and trade studies can be evaluated (Connolly
-et al.~2010).
+et al.~2014).
 
 
 The framework underlying the LSST simulations is designed to be
@@ -1242,7 +1242,7 @@ databases of simulated astrophysical catalogs of stars, galaxies,
 quasars and Solar System objects (\S~\ref{sec:catalogs}), a system for generating observations
 based on the pointing of the telescope, and a system for generating
 realistic LSST images of a given area of sky
-(\S~\ref{sec:imsim}). Computationally intensive routines are written
+(\S~\ref{sec:imsim}). Computationally intensive routines are written 
 in $C/C^{++}$ with the overall framework and database interactions
 using $Python$.  The purpose of this design is to enable the
 generation of a wide range of data products for use by the
@@ -1254,51 +1254,51 @@ plane.
 
 \subsubsection{ The LSST Operations Simulator \label{sec:opsim}}
 
-The LSST Operations Simulator was developed to enable a
-detailed quantitative analysis of the various science tradeoffs described in
+The LSST Operations Simulator (Delgado et al.~2014) was developed to enable a 
+detailed quantitative analysis of the various science tradeoffs described in 
 this paper. It contains detailed models of site conditions, hardware and
-software performance, and an algorithm for scheduling observations which will,
-eventually, drive the largely robotic observatory.
+software performance, and an algorithm for scheduling observations which will, 
+eventually, drive the largely robotic observatory. 
 Observing conditions include a model for seeing derived from an extensive body
 of on-site MASS/DIMM (Multi-Aperture Scintillation Sensor and Differential
 Image Motion Monitor) measurements obtained during site selection and
-characterization (see Fig.~\ref{Fig:seeing}). It not only reproduces the
-observed seeing distribution, but includes
-the auto-correlation spectrum of seeing with time over intervals from minutes
+characterization (see Fig.~\ref{Fig:seeing}). It not only reproduces the 
+observed seeing distribution, but includes 
+the auto-correlation spectrum of seeing with time over intervals from minutes 
 to seasons. Weather data are taken from ten years of hourly measurements at
-nearby Cerro Tololo. The time history of site conditions is important if the
+nearby Cerro Tololo. The time history of site conditions is important if the 
 simulation is to faithfully reproduce a sequence of observations. Thus, for
 example, the simulator correctly represents the variation of limiting
 magnitude between pairs of observations used to detect NEOs and the
 correlation between, for example, seasonal weather patterns and observing
 conditions at any given point on the sky.  In addition, down time for
-observatory maintenance is also included.
+observatory maintenance is also included. 
 
-The signal-to-noise ratio of each
+The signal-to-noise ratio of each 
 observation is determined using a sky background model which includes the dark
 sky brightness in each filter, the effects of seeing and atmospheric
-transparency, and a detailed model for scattered light from the moon and/or
-twilight at each observation. The time taken to move from one observation to
-the next is given by a detailed model of the camera, telescope, and dome. It
-includes such effects as the acceleration/deceleration profiles employed in
-moving the telescope, the dome, and the wind screen,
-% in altitude, azimuth, camera rotator, dome azimuth, and wind/stray light screen altitude,
-the time needed to damp vibrations excited by each slew,
-cable wrap, the time taken for active optics lock and correction as a function of
-slew distance, and the time for filter changes and focal plane readout.
+transparency, and a detailed model for scattered light from the moon and/or 
+twilight at each observation (Yoachim et al.~2014). The time taken to move from one observation to
+the next is given by a detailed model of the camera, telescope, and dome. It 
+includes such effects as the acceleration/deceleration profiles employed in 
+moving the telescope, the dome, and the wind screen, 
+% in altitude, azimuth, camera rotator, dome azimuth, and wind/stray light screen altitude, 
+the time needed to damp vibrations excited by each slew, 
+cable wrap, the time taken for active optics lock and correction as a function of 
+slew distance, and the time for filter changes and focal plane readout. 
 
-Observations are scheduled by a ranking algorithm. After a given exposure, all
+Observations are scheduled by a ranking algorithm. After a given exposure, all 
 possible next observations are assigned a score which depends upon their locations, times,
-and filters according to a set of scientific requirements which can vary with
+and filters according to a set of scientific requirements which can vary with 
 time and location. For example, if an ecliptic field has been observed in the
-$r$ band, the score for another $r$-band observation of the same field will
+$r$ band, the score for another $r$-band observation of the same field will 
 initially be quite low, but it will rise in time to peak about an hour after
 the first observation, and decline thereafter. This algorithm results in
 observations being acquired as pairs roughly an hour apart, which enables
-efficient association of NEO detections. To ensure uniform
+efficient association of NEO detections. To ensure uniform 
 sky coverage, fields with fewer previous observations will be scored more
 highly than those which have already been observed more frequently.
-
+ 
 Once all possible next observations have been scored for scientific
 priority, their scores are modified according to observing conditions
 (e.g., seeing, airmass, and sky brightness) and to criteria such as
@@ -1310,32 +1310,33 @@ filter, and with what sky background, seeing and other observing
 conditions.  It takes a few days to produce a decade-long simulation
 using an average PC.
 
+Results of the simulated surveys can be visualized and analyzed using
+a Python-based package called the Metrics Analysis Framework (MAF;
+Jones et al.~2014). MAF provides tools to analyze the properties of a
+survey (e.g.\ the distribution of aimasses) through the creation of
+functions or metrics that are applied to OpSim outputs. These metrics
+can express the expected technical performance of the survey, such as
+the number of visits per field or the integrated depth after 10 years,
+as well as the science capabilities or a survey, such as the number of
+supernovae detected or the number of supernovae with sufficient
+observations that they can be easily classified.
+
 \subsubsection{Catalog Generation}
 \label{sec:catalogs}
 
-The simulated astronomical catalogs are stored in an SQL
-database. This base catalog is queried using sequences of observations
-derived from the Operations Simulator. Each simulated
-pointing provides a position and time of the observation together with
-the appropriate sky conditions (e.g. seeing, moon phase and angle, sky
-brightness and sky transparency). Positions of sources are propagated
-to the time of observation (including proper motions for stars and
-orbits for Solar System sources). Magnitudes and source counts are
-derived using the atmospheric and filter response functions
+The simulated astronomical catalogs (CatSim; Connolly et al.~2014) are
+stored in an SQL database. This base catalog is queried using
+sequences of observations derived from the Operations Simulator. Each
+simulated pointing provides a position and time of the observation
+together with the appropriate sky conditions (e.g. seeing, moon phase
+and angle, sky brightness and sky transparency). Positions of sources
+are propagated to the time of observation (including proper motions
+for stars and orbits for Solar System sources). Magnitudes and source
+counts are derived using the atmospheric and filter response functions
 appropriate for the airmass of the observation and after applying
 corrections for source variability.  The resulting catalogs are then
 formatted for either output to users, or fed into an image
-simulator. Images are generated by ray-tracing individual photons
-through the atmosphere, telescope and camera systems. Photons are
-drawn from the spectral energy distributions that define the simulated
-sources and ray-traced through the atmosphere and optical system
-before conversion to electrons by simulating the camera physics.
-Images are read out using a simulation of the camera electronics and
-amplifier layout and formatted for ingestion into the LSST data
-management system. All observing conditions, defined by the Operations
-Simulator, are propagated through the catalog and image generation to
-preserve fidelity and consistency between the derived catalogs and
-images.
+simulator.
 
 The current version of the LSST simulation framework incorporates
 galaxies derived from an N-body simulation of a $\Lambda$CDM
@@ -1356,8 +1357,10 @@ Bochanski et al.~2007, Burrows et al.~2006, Petterson \& Hawley 1989,
 Kowalski et al.~2010). The adopted metallicity for each star is based
 on a model from Ivezi\'{c} et al.~(2008a), and proper motions are
 based on the kinematic model of Bond et al.~(2010).  Light curve
-templates are randomly assigned to a subset of the stellar population
-so that variability may also be simulated. For Galactic reddening, a
+templates are assigned to a subset of the stellar population so that
+variability may also be simulated. This assignment and variability are
+matched to that observed by the Kepler satellite and augmented by
+simulated distributions of RR-Lyrae and Cepheids. For Galactic reddening, a
 value of $E(B-V)$ is assigned to each star using the three-dimensional
 Galactic model of Amores \& Lepine (2005). To provide consistency with
 the modeling of extragalactic fluxes in the simulations, the dust model in the Milky Way integrated
@@ -1421,62 +1424,67 @@ required to simulate asteroid ephemerides.
 \label{sec:imsim}
 
 The framework described above provides a parametrized view of the sky
-above the atmosphere. To generate images, photons are drawn from the
-spectral energy distribution of each source (scaled to the appropriate
-flux density based on the apparent magnitude of a source and
-accounting for the spatial distribution of light for extended
-sources). Each photon is ray-traced through the atmosphere, telescope
-and camera to generate a CCD image. The atmosphere is modeled using a
-Taylor frozen screen approximation (with the atmosphere described by
-six layers). The density fluctuations within these screens are
-described by a Kolmogorov spectrum with an outer scale (typically 10m
-to 200m). All screens move during an exposure with velocities derived
-from NOAA measurements of the wind velocities above the LSST site in
-Chile.  Typical velocities are on the order of 20 m s$^{-1}$, and are
-found to have a seasonable dependence that is modeled when generating
-the screens. Each photon's trajectory is altered due to refraction as
-it passes through each screen.
+above the atmosphere. Images are simulated using two packages: GalSim
+(Rowe et al.~2015), and Phosim (Peterson et al.~2015). Galsim is a
+modular and open-source package that provides a library for simulating
+stars and galaxies through a range of modern astronomical
+telescopes. Point-spread-functions (PSFs) are treated as either
+analytic functions or modelled from ray-traced optics. Convolutions by
+the PSF can be applied to parameterized galaxy profiles (e.g.\
+Sersic profiles) or to directly observed images. Operations are
+applied in Fourier space to enable an effective trade-off between
+speed of simulation and accuracy. GalSim is written in C++ with a
+Python API and is integrated within the LSST CatSim framework.
+
+Phosim is an open-source package that simulates images by drawing
+photons from the spectral energy distribution of each source (scaled
+to the appropriate flux density based on the apparent magnitude of a
+source and accounting for the spatial distribution of light for
+extended sources). Each photon is ray-traced through the atmosphere,
+telescope and camera to generate a CCD image. The atmosphere is
+modeled using a Taylor frozen screen approximation (with the
+atmosphere described by six layers). The density fluctuations within
+these screens are described by a Kolmogorov spectrum with an outer
+scale (typically 10m to 200m). All screens move during an exposure
+with velocities derived from NOAA measurements of the wind velocities
+above the LSST site in Chile.  Typical velocities are on the order of
+20 m s$^{-1}$, and are found to have a seasonable dependence that is
+modeled when generating the screens. Each photon's trajectory is
+altered due to refraction as it passes through each screen.
 
 
 \begin{figure*}
 \centerline{\includegraphics[width=0.98\textwidth,clip]{chip2014.jpg}}
 %\vskip -1in
-\caption{ A simulated image of a single LSST CCD (covering a
-  $13.3\times13.3$ arcmin$^2$ region of the sky). The image is a color
-  composite (Lupton et al.~2004) from a set of 30 second $gri$ visits.}
+\caption{ A simulated image of a single LSST CCD using PhoSim
+  (covering a $13.3\times13.3$ arcmin$^2$ region of the sky). The
+  image is a color composite (Lupton et al.~2004) from a set of 30
+  second $gri$ visits.}
 \label{Fig:ImSimExample}
 \end{figure*}
 
+After the atmospheric refraction, the photons in PhoSim are reflected
+and refracted by the optical surfaces within the telescope and
+camera. The mirrors and lenses are simulated using geometric optics
+techniques in a fast ray-tracing algorithm and all optical surfaces
+include a spectrum of perturbations based on design tolerances. Each
+optic moves according to its six degrees of freedom within tolerances
+specified by the LSST system. Fast techniques for finding intercepts
+on the aspheric surface and altering the trajectory of a photon by
+reflection or wavelength-dependent refraction have been implemented to
+optimize the efficiency of the simulated images. Wavelength and
+angle-dependent transmission functions are incorporated within each of
+these techniques, including simulation of the telescope spider.
 
+Both GalSim and PhoSim model the propagation of photons through the
+silicon of the detector. The conversion probability, refraction as a
+function of wavelength and temperature, and charge diffusion within
+the silicon are modeled for all photons. Photons are pixelated and the
+readout process simulated including blooming, charge saturation,
+charge transfer inefficiency, gain and offsets, hot pixels and
+columns, and QE variations. 
 
+An example of a simulated LSST image using PhoSim is shown in
+Fig.~\ref{Fig:ImSimExample}.  
 
-After the atmospheric refraction, photons are reflected and refracted
-by the optical surfaces within the telescope and camera. The mirrors
-and lenses are simulated using geometric optics techniques in a fast
-ray-tracing algorithm and all optical surfaces include a spectrum of
-perturbations based on design tolerances. Each optic moves according
-to its six degrees of freedom within tolerances specified by the LSST
-system. Fast techniques for finding intercepts on the aspheric surface
-and altering the trajectory of a photon by reflection or
-wavelength-dependent refraction have been implemented to optimize the
-efficiency of the simulated images. Wavelength and angle-dependent
-transmission functions are incorporated within each of these
-techniques, including simulation of the telescope spider.
-
-Ray tracing of the photons continues into the silicon of the
-detector. The conversion probability, refraction as a function of
-wavelength and temperature, and charge diffusion within the silicon
-are modeled for all photons. Photons are pixelated and the readout
-process simulated including blooming, charge saturation, charge
-transfer inefficiency, gain and offsets, hot pixels and columns, and
-QE variations. The sky background is added as a post-processing step,
-and includes Rayleigh scattering of the moon's light, based on SEDs
-for the full moon and the dark sky. The background is vignetted
-according to the results of ray-trace simulations.
-
-The simulator generates $\sim$300,000 photons per second on an average
-workstation. To produce simulated data corresponding to a night of
-regular LSST operations requires approximately 0.5-1 million CPU hours
-and, therefore, necessitates the use of large compute clusters.  An
-example of a simulated image is shown in Fig.~\ref{Fig:ImSimExample}.
 }
