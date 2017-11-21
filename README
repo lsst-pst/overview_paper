@@ -3,10 +3,10 @@ resolution figures for astro-ph version are
 provided separately.   (ZI, May 15, 2008)
 
 To compile:
-
+> latexmk -pdf lsst && mv lsst.pdf overview_v1.0.pdf
+or
 > latex lsst; latex lsst; 
 > dvips -Ppdf -o lsst.ps lsst.dvi
 > ps2pdf14 lsst.ps overview_v1.0.pdf
-
 > latex lsst; latex lsst; dvips -Ppdf -o lsst.ps lsst.dvi; ps2pdf14 lsst.ps overview_v1.0.pdf
 

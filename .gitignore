@@ -1,0 +1,8 @@
+lsst.dvi
+lsst.fdb_latexmk
+lsst.log
+lsst.out
+lsst.pdf
+overview*.pdf
+*.aux
+*.fls
