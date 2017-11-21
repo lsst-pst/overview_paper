@@ -31,7 +31,7 @@ the use of multiple cross-checking probes that reach unprecedented
 precision (see Fig.~\ref{Fig:DEellipses}). Any given probe constrains
 degenerate combinations of cosmological parameters, and each probe is
 affected by different systematics, thus the combination of probes
-allows systematics to be calibrated out and for degeneracies to be
+allows systematics to be calibrated and for degeneracies to be
 broken.  Dark energy manifests itself in two ways.  The first is the
 relationship between redshift and distance (the Hubble diagram), or
 equivalently the expansion rate of the Universe as a function of
@@ -68,9 +68,16 @@ The power and accuracy of LSST dark energy and dark matter probes are
 a result of the enormous samples that LSST will have, including
 several billion galaxies and millions of Type Ia
 supernovae. At $i < 25.3$ (SNR${}>20$ for point sources), the
-photometry of galaxies will be of high enough quality to provide 
-photometric redshifts with an accuracy ($\sigma/(1+z)$) of 1-2\%; the
-sample to this limit will include several billion galaxies.  At a
+photometry of galaxies will be of high enough quality to provide
+photometric redshifts with an RMS accuracy ($\sigma/(1+z)$) of 1-2\% 
+over the range $0.3 < z < 3.0$ (only
+10\% of the sample will have redshift errors larger than 4\%). 
+This number represents a requirement on the accuracy of the photometry at delivering photometric
+redshifts given known templates for the SEDs.  The degradation in photometric redshift quality associated without having more
+training data than currently exists to define the template set increases the
+expected $\sigma/(1+z)$ to $\sim$0.05 (e.g., Newman et al.~2015, Graham et al.~2017), which is still well within the
+expected range for a Stage IV dark energy experiment.  The
+sample to this depth will include several billion galaxies.  At a
 slightly brighter cut, there will be around 30 galaxies arcmin$^{-2}$
 with shapes measured well enough for weak lensing measurements (Chang et
 al 2013, 2015), with the number realized in practice being dependent on
@@ -97,7 +104,11 @@ The BAO and WL results are based on galaxy--galaxy, galaxy--shear,
 and shear--shear power spectra only.
 Adding other probes such as strong lensing time delay
 and higher-order galaxy and shear statistics will further improve
-the constraints.}
+the constraints.  While some survey parameters mentioned in the text differ slightly from
+those in the LSST Science Book (which were used to make this figure), changing the size of the
+contours for individual probes, the key point remains that
+this combination of dark energy probes results in contours with different degeneracy directions, and
+hence their combination results in tight constraints on the dark energy equation of state. }
 \label{Fig:DEellipses}
 \end{figure}
 
@@ -116,17 +127,17 @@ the constraints.}
 % \end{figure}
 
 
-\begin{figure}
-\includegraphics[width=1.0\hsize,clip]{bao.pdf}
-\caption{Simulations of the ratio of the measured galaxy power spectrum to
-a featureless reference power spectrum in various redshift bins (shifted vertically
-for clarity), for the full LSST survey using conservative photometric redshift
-errors. The several peaks visible in each curve are the signature of baryon acoustic
-oscillations (Eisenstein et al.~2005; Cole et al.~2005; Anderson et al.~2014). LSST will measure the
-angular diameter distance over this redshift range with an accuracy of $\sim1$\%
-(Zhan \& Knox 2006).}
-\label{Fig:bao}
-\end{figure}
+%\begin{figure}
+%\includegraphics[width=1.0\hsize,clip]{bao.pdf}
+%\caption{Simulations of the ratio of the measured galaxy power spectrum to
+%a featureless reference power spectrum in various redshift bins (shifted vertically
+%for clarity), for the full LSST survey using conservative photometric redshift
+%errors. The several peaks visible in each curve are the signature of baryon acoustic
+%oscillations (Eisenstein et al.~2005; Cole et al.~2005; Anderson et al.~2014). LSST will measure the
+%angular diameter distance over this redshift range with an accuracy of $\sim1$\%
+%(Zhan \& Knox 2006).}
+%\label{Fig:bao}
+%\end{figure}
 
 
 
@@ -176,7 +187,7 @@ As described in the following two items, the galaxy-galaxy and galaxy-shear corr
 %underlying matter distribution ([best citation?]) and is independent of the galaxy bias. The growth of structure can be 
 %measured with photometric redshift tomography. These correlations can also be used to construct mass maps which
 %enable numerous cross-correlation studies.
-
+%
 \item The galaxy--shear correlation function probes the growth of dark matter large-scale structure and is a
 diagnostic of the underlying cosmology (Choi et al.~2012). The combination with the
 galaxy--velocity correlation function estimated from spectroscopic observations of millions of galaxies
@@ -222,12 +233,12 @@ universe. This sample of supernovae can be used as a tracer of large scale struc
 gravitational potential of structure through inferences of their peculiar velocities (Gordon et al. 2007, 
 Bhattacharya et al. 2010, Howlett et al. 2017), weak lensing of supernova brightnesses (Dodelson et al. 2006, 
 Quartin et al. 2014, Macaulay et al. 2016, Scovaricchi et al. 2017), and the local bulk flow (Reiss et al. 1999, 
-Dai et al. 2011, Turnbull et al. 2012, Feindt et al. 2013,  Huterer et al. 2015, ) as well as the 
-low redshift constraints on isotropy of the universe (Javanmardi et al. 2015, Antoniou et al. 2010, 
+Dai et al. 2011, Turnbull et al. 2012, Feindt et al. 2013,  Huterer et al. 2015, ) as well as  
+low redshift constraints on the isotropy of the universe (Javanmardi et al. 2015, Antoniou et al. 2010, 
 Campanelli et al. 2011, Cai et al. 2013, Colin et al. 2011).  2) The rapidly sampled ``mini-survey'' 
 (deep drilling field) of selected areas, possibly coadded over short time scales,  will yield well-sampled 
 light curves of tens of thousands of supernovae to redshifts peaking around $z\sim 0.7$ and reaching beyond a 
-redshift of 1.0, limited by the systematics related to the limits of our astropysical understanding of supernovae 
+redshift of 1.0, limited by the systematics related to the limits of our astrophysical understanding of supernovae 
 populations and relative photometric calibration. Such a deep drilling sample will constrain cosmological parameters 
 through the standardizable candle property of supernova Type Ia, as well as through correlations in measured 
 luminosities probing large scale structures, as the deep drilling fields are also of larger spatial area compared 
