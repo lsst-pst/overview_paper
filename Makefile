@@ -1,12 +1,11 @@
 #
 #
 
-SRC=$(lsst.tex)
 
-OBJ=$(SRC:.tex=.pdf)
+TEX=$(*.tex)
 
-all: $(tex)
-	latexmk -bibtex -pdf -f $(SRC)
+all: $(TEX)
+	latexmk  -pdf -f lsst.tex
 
 clean :
 	latexmk -c
