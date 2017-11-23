@@ -484,7 +484,13 @@ Data Products Definition Document (Juri\'{c} et al. 2013).
 
 Two major categories of data products will be produced and delivered by LSST DM:
 \begin{itemize}
-\item {\bf   Prompt products (Level 1)}, designed to support the discovery,
+\item {\bf   Prompt products\footnote{Historically, these have been referred to as ``Level
+1 Data Products'', but going forward we prefer to use the more descriptive
+{\em Prompt Products} designation. Note that the old terminology is still
+in use in present-day LSST documents and code; new and updated
+documents will gradually transition to the new, descriptive, nomenclature
+used in this paper.
+}}, designed to support the discovery,
   characterization, and rapid follow-up of time-dependent phenomena
   (``transient science''). These will be generated continuously every
   observing night, by detecting and characterizing sources in images
@@ -504,7 +510,9 @@ identification. The efficiency of linking (and thus the completeness
 of the resulting orbit catalog) will depend on the final observing
 cadence chosen for LSST, as well as the performance of the linking
 algorithm (\S~\ref{Sec:NEOc}).
-\item {\bf Data release products (Level 2) } are designed to enable systematics- and flux-limited science, and will be made available in annual Data Releases. These will include the (reduced and raw) single-epoch images, deep coadds of the observed sky, catalogs of objects detected in LSST data, catalogs of sources (the detections and measurements of objects on individual visits), and catalogs of ``forced sources" (measurements of flux on individual visits at locations where objects were detected by LSST or other surveys). LSST data releases will also include fully reprocessed prompt products, as well as all metadata and software necessary for the end-user to reproduce any aspect of LSST data release processing.\\
+\item {\bf Data release products\footnote{These have been referred to as ``Level
+2 Data Products'' in the past; as with their ``Level 1`` counterparts, we
+will use the more descriptive nomenclature going forward.}} are designed to enable systematics- and flux-limited science, and will be made available in annual Data Releases. These will include the (reduced and raw) single-epoch images, deep coadds of the observed sky, catalogs of objects detected in LSST data, catalogs of sources (the detections and measurements of objects on individual visits), and catalogs of ``forced sources" (measurements of flux on individual visits at locations where objects were detected by LSST or other surveys). LSST data releases will also include fully reprocessed prompt products, as well as all metadata and software necessary for the end-user to reproduce any aspect of LSST data release processing.\\
 \\
 A noteworthy aspect of LSST data release processing is that it will largely
 rely on {\bf multi-epoch model fitting}, or {\bf \em MultiFit}, to
