@@ -1164,17 +1164,19 @@ infrastructure.
 \subsubsection{The LSST software stack}
 \label{sec:dmstack}
 
-The {\em LSST Software Stack} is a well documented, state-of-the-art,
-high-performance, scalable, multi-camera, open source, O/IR survey
-data processing and analysis system, built to enable LSST survey data
-reduction and the writing of custom, user-driven, code for added value
-processing. It comprises
+The {\em LSST Software Stack} is the data processing and analysis
+system developed by the LSST Project to enable LSST survey data
+reduction and delivery. It comprises of
 all science pipelines needed to accomplish LSST data processing tasks
 (e.g., calibration, single frame processing, coaddition, image
 differencing, multi-epoch measurement, asteroid orbit determination,
 etc.), the necessary data
 access and orchestration middleware, as well as the database and user
-interface components.
+interface components. While its primary goal is to enable the creation
+and serving of LSST-delivered data products, this codebase will also
+be installed within the LSST Science Platform as a convenient starting
+point that the users may use or extend with their own algorithms, for added
+value processing.
 
 Algorithm development for the LSST software builds on the expertise
 and experience of prior large astronomical surveys (including SDSS,
