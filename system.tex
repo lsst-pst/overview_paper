@@ -1158,11 +1158,8 @@ all science pipelines needed to accomplish LSST data processing tasks
 differencing, multi-epoch measurement, asteroid orbit determination,
 etc.), the necessary data
 access and orchestration middleware, as well as the database and user
-interface components. While its primary goal is to enable the creation
-and serving of LSST-delivered data products, this codebase will also
-be installed within the LSST Science Platform as a convenient starting
-point that the users may use or extend with their own algorithms, for added
-value processing.
+interface components.
+
 
 Algorithm development for the LSST software builds on the expertise
 and experience of prior large astronomical surveys (including SDSS,
@@ -1202,6 +1199,7 @@ and SDSS (Abazajian et al. 2009). As an example,
 Figure~\ref{Fig:DMStripe82} shows a small region in the vicinity of M2
 taken from a large coaddition of SDSS Stripe 82 data, generated with LSST
 software stack prototypes.
+\\
 
 \begin{figure}
 \includegraphics[width=1.0\hsize,clip]{cosmos-PSF-matched-detail}
@@ -1212,20 +1210,28 @@ software stack prototypes.
 \label{Fig:HSC_cosmos}
 \end{figure}
 
-More recently a pipeline derived from the present-day LSST software stack prototypes 
+Other than when prohibited by licensing, security, or other similar
+considerations, the LSST makes all newly developed source code, and especially
+that pertaining to scientific algorithms, public.  Our primary goals in
+publicizing the code are to simplify reproducibility of LSST data products
+and to provide insight into algorithms used to create them.  Achieving these goals requires
+that the source code is not only available, but apropriately documented at all
+levels.
+Given that, most of the LSST software stack is licensed under the terms of the GNU General
+Public License (GPL), Version 3, and can be found at \url{https://github.com/lsst}.
+The documentation for the LSST Science Pipelines components of the stack is available at
+\url{http://pipelines.lsst.io}.
+
+The LSST Softare Stack may be of interest and (re)used beyond the LSST project (e.g.,
+by other survey projects, or by individual LSST end-users).  Enabling
+or supporting such applications goes beyond LSST’s construction
+requirements; however, when developing the LSST codes we strongly
+prefer design choices that enable future generalization.  As an example of such
+re-use, a pipeline derived from the present-day LSST software stack prototypes 
 has been used to reduce data taken with the HSC camera on
 Subaru as part of the large SSP survey (\url{http://hsc.mtk.nao.ac.jp/ssp/survey};
 \cite{2017arXiv170405858A,2017arXiv170506766B}; see Fig.~\ref{Fig:HSC_cosmos}).
-\\
 
-Most of the LSST software stack is free software, licensed under the terms of the GNU General
-Public License, Version 3. The source code may be found at \url{https://github.com/lsst}.
-The documentation for the LSST Science Pipelines components of the stack are available at
-\url{http://pipelines.lsst.io}.
-Its open source nature, attention to software engineering, a long-term
-institutional commitment, and a modular design may make it of interest as
-a basis for development of image processing pipelines for instruments 
-beyond LSST.
 
 \B{
 \vskip 0.4in
