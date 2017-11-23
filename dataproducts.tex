@@ -296,96 +296,80 @@ activity (which influences the night sky brightness, Patat 2008) is about
 
 \subsubsection{   The NEO Completeness Analysis    } 
 \label{Sec:NEOc}
+Detailed analyses of the LSST completeness for PHAs and NEOs are
+described in Jones et al.~(2017), Vere{\v s} \& Chesley~(2017b), and Grav et al.~(2016).
+After accounting for differences in their input assumptions and models, each of these independent
+works calculates a completeness value which is consistent within a few percent. 
+Here we briefly summarize the LSST project analysis carried out in Jones et al.~(2017); this 
+approach is roughly the same for each of the studies mentioned above. 
+
 To assess the LSST completeness for PHAs, the PHA 
-population is represented by a size-limited complete sample of 800 true
-PHAs whose orbital elements are taken from the Minor Planet Center.
+population is represented by a sample of orbits taken from the Solar 
+System model of of Grav et al.~(2007). 
 The simulated baseline survey is used to determine which PHAs are present in
 each exposure and at what signal-to-noise ratio they were observed. In 
 addition to  seeing, atmospheric transparency, and sky background effects
 (see eq.~\ref{m5}), the signal-to-noise computation takes into account losses 
-due to non-optimal filters and object trailing. Using SDSS observations
-of asteroids (Ivezi\'c et al.~2001), we adopt the following mean colors to 
-transform limiting (AB) magnitudes in LSST bandpasses (listed in Table 2)
-to an `effective'' limiting magnitude in the standard $V$ band: 
-$V-m=(-2.1, -0.5, 0.2, 0.4, 0.6, 0.6)$ for $m=(u,g,r,i,z,y)$. Due to 
+due to non-optimal detection filters and object trailing. Using mean asteroid reflectance
+spectra (DeMeo et al. 2009), combined with the LSST bandpasses (listed in Table 2),
+we calculate expected colors, assuming all PHAs are C type asteroids, of
+$V-m = (-1.53, -0.28, 0.18, 0.29, 0.30, 0.30)$ for $m=(u, g, r, i, z, y)$ to transform
+standard $V$ band magnitudes to the magnitudes expected in each filter.  Due to 
 very red $V-u$ colors, and the relatively bright limiting magnitude in the $y$ 
 band, the smallest objects are preferentially detected in the $griz$ bands.
 The correction for trailing is implemented by subtracting from the right-hand 
 side of eq.~\ref{m5}
-\begin{equation}
- \Delta m_5^{\rm trailing} = 1.25\,\log_{10}\left(1+0.028{v \,t_{vis} \over \theta}\right),
-\end{equation}
-where the object's velocity, $v$, is expressed in deg.~day$^{-1}$. For the nominal
-exposure time of 30 seconds and $\theta=0.7$ arcsec, the loss of limiting 
-magnitude is 0.14 mag for $v=0.25$ deg.~day$^{-1}$, typical for objects in the main 
-asteroid belt, and 0.43 mag for $v=1.0$ deg.~day$^{-1}$, typical of NEOs passing
-near Earth. 
+\begin{eqnarray}
+ \Delta m_5^{\rm trailing} & = &1.25\,\log_{10}\left(1+0.42 \, x^2 \right) \\
+   x & = & {v \,t_{vis} \over 24 \, \theta},
+\end{eqnarray}
+where the object's velocity, $v$, is expressed in deg.~day$^{-1}$. 
+For the nominal exposure time of 30 seconds and $\theta=0.7$ arcsec, the loss of limiting 
+magnitude is 0.04 mag for $v=0.25$ deg.~day$^{-1}$, typical for objects in the main 
+asteroid belt, and 0.46 mag for $v=1.0$ deg.~day$^{-1}$, typical of NEOs passing
+near Earth. The PHA orbits are cloned over an $H$ magnitude distribution with $dN/dH = 10^{\alpha \, H}$,
+with $\alpha=0.33$, in order to evaluate completeness as a function of $H$.  
 
-For a survey that has a completeness to NEOs above 60\%, each
-additional one magnitude of depth for a given survey cadence increases
-the completeness by another 10\%.  An object's orbit is considered to be 
-determined if the object was detected on at least three nights during a single 
-lunation, with a minimum of two visits per night. The same criterion
-has been used in NASA studies,
-%\footnote{The NASA 2007 NEO study is available from
-%http://neo.jpl.nasa.gov/neo/report2007.html.}, 
-%[WE'VE GIVEN THIS REFERENCE IN A FOOTNOTE EARLIER]
-and is confirmed as 
-reliable by a detailed analysis of orbital linking and determination using
-the Moving Object Processing System (MOPS) code (Jedicke et al.~2005) developed by the Pan-STARRS project (and 
-adopted by LSST in a collaborative effort with Pan-STARRS). The MOPS software
-system and its algorithms are significantly more advanced than
-anything previously 
+An object is considered to be discovered if the object was detected on at least three nights within a 
+window of 15 days, with a minimum of two visits per night. The same criteria has been used in NASA studies,
+and is confirmed as reliable by a detailed analysis of orbital linking and orbit determination using the Moving
+Object Processing System (MOPS) code (Vere{\v s} \& Chesley~2017b; Jedicke et al.~2005) developed by the 
+Pan-STARRS project (and adopted by LSST in a collaborative effort with Pan-STARRS). The MOPS software
+system and its algorithms are significantly more advanced than anything previously 
 fielded for this purpose to date. Realistic MOPS simulations show 
-$>$99\% linking efficiency across all classes of Solar System objects. 
-For the LSST baseline cadence, objects
-counted as having well-determined orbits are observed on 20 different nights on average over ten
-years. A more stringent requirement that an object must be detected on at least 
-five nights per lunation decreases the completeness by typically 3\%. 
-The completeness is also a function of the assumed size distribution of NEOs, the flatter the distribution, the 
-higher the completeness, and different assumptions contribute a systematic uncertainty of about 2\%. 
+$>$99\% linking efficiency across all classes of Solar System objects (Denneau et al.~2013), 
+and at least 93\% efficiency for NEOs (Vere{\v s} \& Chesley~2017b).  
 
-The LSST baseline cadence provides orbits for 82\% of PHAs larger than 140
-meters after 10 years of operations.  This can be increased to 84\%
-completeness (90\% for sizes above 200 meters) with minor changes to
-the cadence, such as 
-requiring that all observations North of $\delta =+5^\circ$) are
-obtained in the $r$ band.  The completeness curve as a function of an object's size is shown 
-in Fig.~\ref{Fig:Cneo} (lower curve). This cadence spends 5\% of the total 
-observing time on NEO-optimized observations north of $\delta = +5^\circ$.
-
-
+The LSST baseline cadence discovers 66\% of PHAs with $H\leq22$ (equivalent to $D\ge140$~m) 
+after 10 years of operations (61\% of NEOs with $H\leq22$) (Jones et al.~2017).  This cadence spends 6\% of the total 
+observing time on NEO-optimized observations north of $\delta = +5^\circ$, and MOPS links objects with windows of 15 days. 
+The baseline survey cumulative completeness as a function of time for objects with $H\le22$ is shown in the upper panel of Fig.~\ref{Fig:Cneo}, 
+both with and without including other surveys. These figures are likely to be uncertain to the level of $\pm5\%$ due 
+to unknown variations in the orbital distribution of the true population, the size distribution, uncertain distributions of shape 
+(and thus light curve variations) and surface properties (thus colors and albedo), plus variations in survey cadence due to
+weather, etc.
 
 \begin{figure}
-\includegraphics[width=1.0\hsize,clip]{Cneo.pdf}
-\caption{Completeness of the LSST survey for PHAs brighter than a given absolute
-magnitude (related to the size of the object and albedo; 
-$H$=22 mag is equivalent to a typical 140m asteroid and $H$=24 mag is
-equivalent to a 50m asteroid). Two scenarios are shown: the lower curve is the 
-10-year long baseline survey with a 5\% NEO optimization, and it reaches a 
-completeness of 84\%. The upper dashed curve results from spending 15\% of the 
-observing time in an NEO optimized mode, and running the survey for 12 years.  
-It meets the 90\% completeness level for 140m objects mandated by the Congress.} 
+\includegraphics[width=1.0\hsize,clip]{neo_pha_completeness_3in15_minion_1016}
+\includegraphics[width=1.0\hsize,clip]{neo_pha_completeness_3in30_astro_lsst_01_1016}
+\caption{Cumulative completeness of the LSST survey for NEOs (left in each panel) and PHAs (right in each panel) 
+brighter than a given absolute magnitude, $H\le22$ (related to the size of the object and albedo; 
+$H$=22 mag is equivalent to a typical 140m asteroid). The top panel illustrates cumulative completeness
+for the LSST baseline cadence and MOPS configuration. In the baseline, LSST alone would discover 66\% of the PHAs 
+with $H\le22$ (61\% of NEOs); LSST combined with existing resources (including reasonable boosts
+in capability in the future) can discover 81\% of PHAs (73\% of NEOs). The bottom panel illustrates cumulative
+completeness when LSST is operated for 12 years, with extra visits around the ecliptic, and when the MOPS linking 
+window is increased to 30 days from the baseline 15. In this case, LSST alone could discover 74\% of the PHAs with
+$H\le22$ (69\% of NEOs); LSST combined with existing resources could discover 86\% of PHAs (77\% of NEOs).
+} 
 \label{Fig:Cneo}
 \end{figure}
 
-Various adjustments to the baseline cadence can boost the completeness for
-140m and larger PHAs to 90\%. We find that such variations can have an unacceptably 
-large impact on other science programs, if the 90\% completeness is to be reached 
-within the 10 year survey lifetime. However, with a minor adjustment of the 
-baseline cadence, such that 15\% of the time is spent north of $\delta
-= +5^\circ$ to reach
-fainter limiting magnitudes, this completeness level can be reached
-with a 12 year 
-survey, and with a negligible effect on other science goals. The completeness 
-curve as a function of an object's size for such a modified cadence is shown in 
-Fig.~\ref{Fig:Cneo} (upper curve).
-
-Our analysis assumes that no NEOs are known prior to LSST. Currently known
-NEOs do not have a significant impact on this calculation. 
-%However, if a precursor 
-%survey, such as Pan-STARRS 4, operated for three years prior to LSST, the time to
-%fulfill the Congressional mandate by LSST could be shortened by about a year.
+Various adjustments to the baseline cadence and MOPS can boost the completeness for $H\le22$ PHAs. 
+By improving MOPS and increasing the MOPS linking window from 15 to 30 days we can boost completeness
+by about 3\%. By running the survey for an additional two years, we can boost completeness by another 4\%. 
+Considering this `extended' LSST in the context of existing/ongoing surveys would result in a system-wide cumulative completeness of 86\% for PHAs (77\% for NEOs), approaching the 90\% required by the Congressional mandate (see 
+lower panel of Fig.~\ref{Fig:Cneo}). 
 
 
 \subsubsection{The Expected Accuracy of Trigonometric Parallax and Proper Motion Measurements } 
