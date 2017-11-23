@@ -234,7 +234,7 @@ three times per lunation) in order to link detections unambiguously and derive o
 exposures should be shorter than about 30 seconds each to minimize the effects of trailing for the majority of
 moving objects. The images must be well sampled to enable accurate astrometry, with absolute accuracy of at
 least 0.1 arcsec in order to measure orbital parameters of TNOs with enough precision to constrain theoretical
-models and enable prediction of occulations. The photometry should be
+models and enable prediction of occultations. The photometry should be
 better than 1-2\% to measure asteroids' colors and thus determine
 their types.  The different filters
 should be observed over a short time span to reduce apparent
@@ -857,7 +857,8 @@ spectrum associated with each image acquired. A
 dedicated 1.5-meter auxiliary calibration telescope will obtain spectra of
 standard stars in LSST fields, calibrating the atmospheric throughput
 as a function of wavelength  (Stubbs et al.~2007;
-see Figs.~\ref{Fig:modtran1} and \ref{Fig:modtran2}).
+see Figs.~\ref{Fig:modtran1} and \ref{Fig:modtran2});  in reality the LSST auxiliary telescope will take
+data at lower spectral resolution ($R \sim 100$) but wider spectral coverage (340nm --- 1.05$\mu$m) using a slitless spectrograph and an LSST corner-raft CCD.
 Celestial spectrophotometric sources can be used as a separate means of photometric calibration, albeit only through the
 comparison of band-integrated fluxes with synthetic photometry calculations.
 
@@ -880,7 +881,11 @@ relative calibration from the task of assigning absolute optical flux to
 celestial objects.
 
 Celestial sources will be used to refine the internal photometric system and
-to monitor stability and uniformity of photometric data. There will be
+to monitor stability and uniformity of photometric data. We expect to use \cite{Gaia2016} photometry, utilising
+the \textit{BP} and \textit{RP} photometric measurements as well as the \text{G} magnitudes; for a subset
+of stars (\textit{e.g.} F-subdwarfs) we expect to be able to transfer this rigid photometric system above
+the atmosphere to objects observed by LSST.
+There will be
 $>$100 main-sequence stars with $17<r<20$ per detector (14$\times$14 arcmin$^2$)
 even at high Galactic latitudes. Standardization of photometric scales will be
 achieved through direct observation of stars with well-understood spectral
@@ -901,9 +906,9 @@ found in the LSST Science Book (Ch.~2--3).
 \includegraphics[width=1.0\hsize,clip]{mirrors.pdf}
 \vskip -0.5in
 \caption{The LSST baseline optical design (modified three-mirror
-  Paul-Baker) with its unique 
-monolithic mirror: the primary and tertiary mirrors are positioned such 
-that they form a continuous compound surface, allowing them to be polished 
+  Paul-Baker) with its unique
+monolithic mirror: the primary and tertiary mirrors are positioned such
+that they form a continuous compound surface, allowing them to be polished
 from a single substrate.}
 \label{Fig:optics}
 \end{figure}
@@ -913,7 +918,7 @@ from a single substrate.}
 %\vskip -0.65in
 \includegraphics[width=1.0\hsize,clip]{polishing.pdf}
 %\vskip -0.65in
-\caption{The polishing of the primary-tertiary mirror pair at the Richard F.Caris Mirror Lab at the University of Arizona Tucson. } 
+\caption{The polishing of the primary-tertiary mirror pair at the Richard F.Caris Mirror Lab at the University of Arizona Tucson. }
 \label{Fig:polishing}
 \end{figure}
 
@@ -924,9 +929,9 @@ from a single substrate.}
 %\vskip -0.65in
 \includegraphics[width=1.0\hsize,clip]{TMA_Image-Oct-2017.JPG}
 %\vskip -0.65in
-\caption{The baseline design for the 
+\caption{The baseline design for the
 LSST telescope.  The small focal ratio allows for a very squat
-telescope, and thus a very stiff structure.  } 
+telescope, and thus a very stiff structure.  }
 \label{Fig:telescope}
 \end{figure}
 
@@ -935,56 +940,55 @@ telescope, and thus a very stiff structure.  }
 \subsubsection{ Telescope and Site}
 
 The large LSST \'etendue is achieved in a novel three-mirror design (modified
-Paul-Baker Mersenne-Schmidt system; Angel, Lesser \& Sarlot 2000) with a very fast $f$/1.234 beam. The optical 
-design has been optimized to yield a large field of view (9.6 deg$^2$), 
+Paul-Baker Mersenne-Schmidt system; Angel, Lesser \& Sarlot 2000) with a very fast $f$/1.234 beam. The optical
+design has been optimized to yield a large field of view (9.6 deg$^2$),
 with seeing-limited image quality, across a wide wavelength band (320--1050
 nm). Incident light is collected by an annular primary mirror, having
-an outer diameter of 8.4 m and inner diameter of 5.0 m, creating an effective filled aperture of 
+an outer diameter of 8.4 m and inner diameter of 5.0 m, creating an effective filled aperture of
 $\sim$6.5 m in diameter. The collected light is reflected to a 3.4 m convex secondary, then onto
-a 5 m concave tertiary, and finally  into the three refractive lenses of the camera (see Fig.~\ref{Fig:optics}).  
-In broad terms, the primary-secondary mirror pair acts as a beam condenser, while the aspheric portion of 
+a 5 m concave tertiary, and finally  into the three refractive lenses of the camera (see Fig.~\ref{Fig:optics}).
+In broad terms, the primary-secondary mirror pair acts as a beam condenser, while the aspheric portion of
 the secondary and tertiary mirror acts as a Schmidt camera.  The 3-element refractive optics of the camera
 correct for the chromatic aberrations induced by the necessity of a thick dewar window and flatten the
-focal surface.  During design optimization, the primary and tertiary mirror surfaces were placed such that the primary's 
-inner diameter coincides with the tertiary's outer diameter, thus making it possible to fabricate the mirror pair from a 
-single monolithic blank using spin-cast borosilicate technology. The secondary mirror is fabricated from 
-a thin 100 mm thick meniscus substrate, made from Corning's ultra-low expansion material. All 
-three mirrors will be actively supported to control wavefront distortions 
-introduced by gravity and environmental stresses on the telescope. 
-The primary-tertiary mirror and the secondary mirror were 
+focal surface.  During design optimization, the primary and tertiary mirror surfaces were placed such that the primary's
+inner diameter coincides with the tertiary's outer diameter, thus making it possible to fabricate the mirror pair from a
+single monolithic blank using spin-cast borosilicate technology. The secondary mirror is fabricated from
+a thin 100 mm thick meniscus substrate, made from Corning's ultra-low expansion material. All
+three mirrors will be actively supported to control wavefront distortions
+introduced by gravity and environmental stresses on the telescope.
+The primary-tertiary mirror and the secondary mirror were
 cast\footnote{http://www.lsst.org/News/enews/m1m3-1004.html}  in 2008
-and 2009.  The primary-tertiary mirror was polished by the Richard F.Caris Mirror Lab at the University of Arizona Tucson before being inspected and accepted by LSST in April 2015 (Araujo-Hauck et al. 2016). The  primary-tertiary mirror cell was fabricated by CAID in Tucson and is undergoing acceptance tests. The integration of the actuators and final tests with the mirror is scheduled later this fall and beginning of 2018. 
- 
+and 2009.  The primary-tertiary mirror was polished by the Richard F.Caris Mirror Lab at the University of Arizona Tucson before being inspected and accepted by LSST in April 2015 \cite{Araujo16}. The  primary-tertiary mirror cell was fabricated by CAID in Tucson and is undergoing acceptance tests. The integration of the actuators and final tests with the mirror is scheduled later this fall and beginning of 2018. 
 
 \begin{figure}
 %\vskip -1.3in
 \includegraphics[width=1.0\hsize,clip]{observatoryFull.pdf}
 \includegraphics[width=1.0\hsize,clip]{ObservatoryFull_2017.pdf}
 %\vskip -1.4in
-\caption{Left: artist's rendering of the dome enclosure 
-with the attached summit support building on Cerro Pach\'{o}n. The LSST calibration 
+\caption{Top: artist's rendering of the dome enclosure
+with the attached summit support building on Cerro Pach\'{o}n. The LSST calibration
 telescope is shown on an adjacent rise to the right.
-Right: Status of the LSST Observatory as of Summer 2017. The main LSST telescope is on the right, waiting for the dome to be installed. The calibration telescope is on the left with its dome being installed.} 
+Bottom: Status of the LSST Observatory as of Summer 2017. The main LSST telescope is on the right, waiting for the dome to be installed. The calibration telescope is on the left with its dome being installed.}
 \label{Fig:observatory}
 \end{figure}
 
 The LSST Observing Facility (Fig.~\ref{Fig:observatory}),
 consisting of the telescope enclosure and summit support building, is being constructed atop Cerro Pach\'{o}n in northern Chile,
-sharing the ridge with the Gemini South and SOAR telescopes\footnote{Coordinates listed in older versions 
-of this paper were incorrect. We thank E. Mamajek for pointing this error to us.} 
-% old, WRONG: (latitude: S 30$^\circ$ 10$'$ 20.1$"$; longitude: W 70$^\circ$ 48$'$ 0.1$"$; elevation: 2123 m; 
-% NEW: from Mamajek (2012, arXiv:1210.1616, Table 3, GPS values): 
-(latitude: S 30$^\circ$ 14$\arcmin$ 40.68$\arcsec$; longitude: W 70$^\circ$ 44$\arcmin$ 57.90$\arcsec$; elevation: 2652 m; 
+sharing the ridge with the Gemini South and SOAR telescopes\footnote{Coordinates listed in older versions
+of this paper were incorrect. We thank E. Mamajek for pointing this error to us.}
+% old, WRONG: (latitude: S 30$^\circ$ 10$'$ 20.1$"$; longitude: W 70$^\circ$ 48$'$ 0.1$"$; elevation: 2123 m;
+% NEW: from Mamajek (2012, arXiv:1210.1616, Table 3, GPS values):
+(latitude: S 30$^\circ$ 14$\arcmin$ 40.68$\arcsec$; longitude: W 70$^\circ$ 44$\arcmin$ 57.90$\arcsec$; elevation: 2652 m;
 Mamajek 2012).  The telescope enclosure houses a compact, stiff
 telescope structure (see Fig.~\ref{Fig:telescope}) atop a 15 m high concrete pier
-with a fundamental frequency of 8 Hz, that is crucial for achieving the required fast slew-and-settle times.  The height of the pier was set to place the telescope above the degrading 
+with a fundamental frequency of 8 Hz, that is crucial for achieving the required fast slew-and-settle times.  The height of the pier was set to place the telescope above the degrading
 effects of the turbulent ground layer.  Capping the telescope
 enclosure is a 30 m diameter dome with extensive ventilation to reduce
-dome seeing 
-%(local air turbulence that can distort images)  
-and to maintain a uniform thermal environment over the course of the night.  Furthermore, the summit support 
+dome seeing
+%(local air turbulence that can distort images)
+and to maintain a uniform thermal environment over the course of the night.  Furthermore, the summit support
 building has been oriented with respect to the prevailing winds to shed its turbulence away from the
-telescope enclosure.  The summit support building includes a coating chamber for recoating the three LSST mirrors and 
+telescope enclosure.  The summit support building includes a coating chamber for recoating the three LSST mirrors and
 clean room facilities for maintaining and servicing the camera.
 
 
@@ -1055,16 +1059,16 @@ includes 9 sensors, and can be replaced.}
 The rapid cadence and scale of the LSST observing program will produce
 approximately 15 TB per night of raw imaging data\footnote{For
   comparison, the volume of all imaging data collected over a decade
-  and published in SDSS Data Release 7 (Abazajian et al.~2009) is approximately 16 TB.}. The large data volume, the real-time aspects, and the complexity of processing involved makes it impractical to defer the data reduction to the LSST end-users. Instead, the data collected by the LSST system will be automatically reduced to scientifically useful catalogs and images by the LSST Data Management (DM) system.
+  and published in SDSS Data Release 7 (Abazajian et al.~2009) is approximately 16 TB.}. The large data volume, the real-time aspects, and the complexity of processing involved makes it no more practical to defer the data reduction to the LSST end-users anymore than it was for SDSS. Instead, the data collected by the LSST system will be automatically reduced to scientifically useful catalogs and images by the LSST Data Management (DM) system.
 \\
 
 The principal functions of the LSST Data Management system are to:
 \begin{itemize}
-\item Process, in real time, the incoming stream of images generated by the camera system during observing by archiving raw images, generating alerts to new sources or sources whose properties have changed, and updating the relevant catalogs (``Level 1'' data products; \S~\ref{Sec:dp}).
+\item Process, in real time, the incoming stream of images generated by the camera system during observing by archiving raw images, generating alerts to new sources or sources whose properties have changed, and updating the relevant catalogs (Prompt  products; \S~\ref{Sec:dp}).
 \item Periodically process the accumulated survey data to provide a
   uniform photometric and astrometric calibration, measure the
-  properties of all detected objects, and characterize objects based on their time-dependent behavior. The results of such a processing run form a {\em Data Release} (DR), which is a static, self-consistent data set suitable for use in performing scientific analyses of LSST data and publication of the results (the ``Level 2'' data products; \S~\ref{Sec:dp}). All data releases will be archived for the entire operational life of the LSST archive.
-\item Facilitate the creation of added-value (``Level 3'';
+  properties of all detected objects, and characterize objects based on their time-dependent behavior. The results of such a processing run form a {\em Data Release} (DR), which is a static, self-consistent data set suitable for use in performing scientific analyses of LSST data and publication of the results (the data release products; \S~\ref{Sec:dp}). All data releases will be archived for the entire operational life of the LSST archive.
+\item Facilitate the creation of added value (
   \S~\ref{Sec:dp}) data products, by providing suitable software,
   application programming interfaces (APIs),
 and computing infrastructure at the LSST data access centers.
@@ -1107,9 +1111,11 @@ Fig.~\ref{Fig:DM1}).
 % Edit that file and save it as PDF when an update is needed.
 %
 \hskip 0.25in
-\includegraphics[width=0.95\hsize,clip]{DMX2.pdf}
-\caption{The LSST data flow from the mountain summit/base facility in
-Chile to the data access center and archive centers in the U.S.}
+%\includegraphics[width=0.95\hsize,clip]{DMX2.pdf}
+%new graphic from EMily Acosta on https://gallery.lsst.org/bp/#/folder/2334398/62907418
+\includegraphics[width=0.95\hsize,clip]{SitesDataflow}
+\caption{The LSST data flow from the mountain facilities in
+Chile to the data access center and processing centers in the U.S. and France}
 \label{Fig:DM2}
 \end{figure*}
 
@@ -1119,11 +1125,12 @@ detector cross-talk
 correction will be performed), the Base Facility in La Serena (which will serve
 as a retransmission hub for data
 uploads to North America, as well as the data access center for the Chilean
-community), and the central Archive Facility at the National Center
-for Supercomputing Applications (NCSA) in Champaign, Illinois
-All Level 1 (nightly) and Level 2 (data release) processing will take place at the
-Archive Facility, which will also serve as a data access center
+community), and the Large Data Facility at the National Center
+for Supercomputing Applications (NCSA) in Champaign, Illinois.
+All prompt (nightly) and half the data release product processing will take place at the
+Large Data Facility, which will also serve as a data access center
 for the US community.
+The other half of the data release processing will be done at IN2P3 in Lyon France.
 
 The data will be transported between the centers over existing high-speed optical fiber
 links from South America to the U.S. (see Fig.~\ref{Fig:DM2}).
@@ -1134,22 +1141,18 @@ not qualify for the top 500 list by the time of first light.
 Hence, while LSST is making a novel use of advances in information technology,
 it is not taking the risk of pushing the expected technology to the limit, reducing
 the overall risk to the project.
-\\
 
-A novel aspect of the LSST DM system will be its ``Level 3"
-capabilities, allowing the end-users to create, store, and share
+A novel aspect of the LSST DM system will be its ``next-to-the-data''
+capabilities provided through the science platform, allowing the end-users to create, store, and share
 custom data products not created by standard LSST processing. These
 could be new catalogs created by simple post-processing of the LSST
 data release catalogs, or entirely new data products generated by
 running custom code on raw LSST data. The LSST software stack (described
 below) will be made available to LSST end-users, as a basis on which
 to quickly build such code. Approximately 10\% of the total
-budget for the LSST Archive Center compute and storage capacity has
-been reserved for end-user, Level 3, processing support
-infrastructure\footnote{Furthermore, the data management system
-architecture will enable Level 3 tasks to "piggyback" onto annual
-Level 2 reprocessings, leveraging considerable I/O and
-computing resources employed in the production of a data release.}.
+budget for the LSST Large Data Facility compute and storage capacity has
+been reserved for end-user, added value , processing support
+infrastructure.
 
 \subsubsection{The LSST software stack}
 \label{sec:dmstack}
@@ -1157,7 +1160,7 @@ computing resources employed in the production of a data release.}.
 The {\em LSST Software Stack} is a well documented, state-of-the-art,
 high-performance, scalable, multi-camera, open source, O/IR survey
 data processing and analysis system, built to enable LSST survey data
-reduction and the writing of custom, user-driven, code for Level 3
+reduction and the writing of custom, user-driven, code for added value
 processing. It comprises
 all science pipelines needed to accomplish LSST data processing tasks
 (e.g., calibration, single frame processing, coaddition, image
@@ -1166,7 +1169,7 @@ etc.), the necessary data
 access and orchestration middleware, as well as the database and user
 interface components.
 
-Algorithm development for the LSST software builds on the expertize
+Algorithm development for the LSST software builds on the expertise
 and experience of prior large astronomical surveys (including SDSS,
 Pan-STARRS, DES,
 SuperMACHO, ESSENCE,  DLS, CFHTLS, and UKIDSS). The pipelines written
@@ -1178,12 +1181,12 @@ extraction of scientifically useful characteristics of those objects.
 While firmly footed in this prior history, the LSST software stack has
 largely been written anew, for reasons of performance, extendability, and
 maintainability. All LSST codes have been designed and implemented
-following sofware engineering best practices, including modularity, clear definition
+following software engineering best practices, including modularity, clear definition
 of interfaces, continuous integration,
 utilization of unit testing, a single set of documentation and coding
 standards, and others. The primary implementation language is Python and, where
-necessary for performance reasons, C++\footnote{All components implemented
-in C++ have been wrapped and exposed as Python modules to the rest of the system. Python truly is the ``native language of LSST''.}.
+necessary for performance reasons, C\texttt{++}\footnote{All components implemented
+in C\texttt{++} have been wrapped and exposed as Python modules to the rest of the system. Python truly is the ``native language of LSST''.}.
 
 \begin{figure}
 %
@@ -1197,18 +1200,31 @@ A small region in the vicinity of globular cluster M2, taken from a coadd of SDS
 
 
 The LSST data management software has been prototyped for over eight
-years. It has been exercised in eight data challenges, with increasing
-degrees of complexity. Besides processing simulated LSST data
+years. Besides processing simulated LSST data
 (\S~\ref{sec:imsim}), it has been used to process images from CFHTLS
 and SDSS (Abazajian et al. 2009). As an example,
 Figure~\ref{Fig:DMStripe82} shows a small region in the vicinity of M2
 taken from a large coaddition of SDSS Stripe 82 data, generated with LSST
 software stack prototypes.
+
+\begin{figure}
+\includegraphics[width=1.0\hsize,clip]{cosmos-PSF-matched-detail}
+\caption{
+  A small portion of the HSC \textit{gri} imaging of the COSMOS field.  The limiting magnitude is
+  \textit{c.} 27.5, roughly equivalent to 10-year LSST depth.
+  }
+\label{Fig:HSC_cosmos}
+\end{figure}
+
+More recently the LSST software stack has been used to reduce data taken with the HSC camera on
+Subaru as part of the large SSP survey (\url{http://hsc.mtk.nao.ac.jp/ssp/survey};
+\cite{2017arXiv170405858A,2017arXiv170506766B}; see Fig.~\ref{Fig:HSC_cosmos}).
 \\
 
 The LSST software stack is free software, licensed under the terms of the GNU General
 Public License, Version 3. The stack
-prototype code and documentation are available via \url{http://ls.st/ug}.
+prototype code and documentation are available via \url{http://ls.st/ug};
+the source code may be found at \url{https://github.com/lsst}.
 Its open source nature, an open development
 process, attention to software engineering, a long-term project
 commitment and a modular design that can be modified for use with
@@ -1251,8 +1267,8 @@ databases of simulated astrophysical catalogs of stars, galaxies,
 quasars and Solar System objects (\S~\ref{sec:catalogs}), a system for generating observations
 based on the pointing of the telescope, and a system for generating
 realistic LSST images of a given area of sky
-(\S~\ref{sec:imsim}). Computationally intensive routines are written 
-in $C/C^{++}$ with the overall framework and database interactions
+(\S~\ref{sec:imsim}). Computationally intensive routines are written
+in C/C\texttt{++} with the overall framework and database interactions
 using $Python$.  The purpose of this design is to enable the
 generation of a wide range of data products for use by the
 collaboration; from all-sky catalogs used in simulations of the LSST
@@ -1495,5 +1511,4 @@ columns, and QE variations.
 
 An example of a simulated LSST image using PhoSim is shown in
 Fig.~\ref{Fig:ImSimExample}.  
-
 }
