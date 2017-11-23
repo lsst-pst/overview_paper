@@ -469,7 +469,7 @@ is expected to deliver parallax errors of 0.3 mas and proper motion errors of
 extend Gaia's error vs.\ magnitude curve 4 magnitudes fainter.
 
 
-\subsection{             Data Products                    }
+\subsection{             Data Products and Archive Services          }
 \label{Sec:dp}
 
 Data collected by the LSST telescope and camera will be automatically processed to {\em data products} -- catalogs, alerts,
@@ -484,7 +484,13 @@ Data Products Definition Document (Juri\'{c} et al. 2013).
 
 Two major categories of data products will be produced and delivered by LSST DM:
 \begin{itemize}
-\item {\bf   Prompt products (Level 1)}, designed to support the discovery,
+\item {\bf   Prompt products\footnote{Historically, these have been referred to as ``Level
+1 Data Products'', but going forward we prefer to use the more descriptive
+{\em Prompt Products} designation. Note that the old terminology is still
+in use in present-day LSST documents and code; new and updated
+documents will gradually transition to the new, descriptive, nomenclature
+used in this paper.
+}}, designed to support the discovery,
   characterization, and rapid follow-up of time-dependent phenomena
   (``transient science''). These will be generated continuously every
   observing night, by detecting and characterizing sources in images
@@ -504,7 +510,9 @@ identification. The efficiency of linking (and thus the completeness
 of the resulting orbit catalog) will depend on the final observing
 cadence chosen for LSST, as well as the performance of the linking
 algorithm (\S~\ref{Sec:NEOc}).
-\item {\bf Data release products (Level 2) } are designed to enable systematics- and flux-limited science, and will be made available in annual Data Releases. These will include the (reduced and raw) single-epoch images, deep coadds of the observed sky, catalogs of objects detected in LSST data, catalogs of sources (the detections and measurements of objects on individual visits), and catalogs of ``forced sources" (measurements of flux on individual visits at locations where objects were detected by LSST or other surveys). LSST data releases will also include fully reprocessed prompt products, as well as all metadata and software necessary for the end-user to reproduce any aspect of LSST data release processing.\\
+\item {\bf Data release products\footnote{These have been referred to as ``Level
+2 Data Products'' in the past; as with their ``Level 1`` counterparts, we
+will use the more descriptive nomenclature going forward.}} are designed to enable systematics- and flux-limited science, and will be made available in generally annual Data Releases. These will include the (reduced and raw) single-epoch images, deep coadds of the observed sky, catalogs of objects detected in LSST data, catalogs of sources (the detections and measurements of objects on individual visits), and catalogs of ``forced sources" (measurements of flux on individual visits at locations where objects were detected by LSST or other surveys). LSST data releases will also include fully reprocessed prompt products, as well as all metadata and software necessary for the end-user to reproduce any aspect of LSST data release processing.\\
 \\
 A noteworthy aspect of LSST data release processing is that it will largely
 rely on {\bf multi-epoch model fitting}, or {\bf \em MultiFit}, to
@@ -533,28 +541,6 @@ weak lensing studies.
 
 \end{itemize}
 
-
-While a large majority of science cases will be adequately served by
-prompt and data release  products, a limited number of highly specialized
-investigations may require custom, user-driven, processing of LSST
-data. This processing will be most efficiently performed at the
-LSST Large Data Facility, given the size of the LSST data set and the
-associated storage and computational challenges. To enable such use
-cases, the LSST DM system will devote the equivalent of 10\% of its
-processing and storage capabilities to creation, use, and federation
-of {\bf added value} (user-created) data products. It will also allow the
-science teams to use the LSST database infrastructure to store and
-share their results.
-
-To further enable user-driven added value (Level 3) processing, the LSST software
-stack has been explicitly architected with reusability and
-extendability in mind, and will be made available to the LSST user
-community (\S~\ref{sec:dmstack}). This will allow the LSST users to
-more rapidly develop custom processing codes, leveraging 15+
-years of investment and experience put into LSST codes. In addition to
-executing such customized codes at the LSST data centers, LSST users
-will be able to run it on their own computational resources as well.\\
-
 We have described that approximately 10\% of the observing time will
 be devoted to mini-surveys that do not follow the LSST baseline
 cadence (\S~\ref{Sec:minisurveys}). The data products for these
@@ -563,6 +549,72 @@ exhibit the same general characteristics of prompt or data release   data
 products, but these data may be reduced on a somewhat different
 timescale.
 
+While a large majority of science cases will be adequately served by prompt
+and data release products, more specialized investigations may benefit from
+custom, user-created, products derived from the LSST data.  These could be
+new catalogs created by simple post-processing of the LSST data release
+catalogs, entirely new data products generated by running custom code on raw
+LSST imaging data, or something in-between.  We will make it possible for the
+end-users to create (or use) such {\bf added value\footnote{Formerly know as
+``Level 3 Data Products``.}} products at the LSST Large Data Facility,
+using the services offered within the LSST Science Platform (Sec.~\ref{sec:lsp}).
+
+
+\subsubsection{The LSST Science Platform}
+\label{sec:lsp}
+
+The LSST Science Platform \citep{LSP} represents LSST's vision for a
+large-scale astronomical data archive that can enable effective research
+with datasets of LSST size and complexity.  It builds on recent trends in
+remote data analysis, and practical experiences in the astronomical context
+gathered by projects such as the JHU
+SciServer \citep{sciserver}, Gaia GAVIP \citep{gavip}, or NOAO Datalab \citep{datalab}.
+
+The LSST Science Platform will be a set of web applications (portals) and
+services through which the users will access the LSST data products and, if
+desired, conduct remote analyses or create added value products.  The
+platform makes this possible through tree user-facing {\em aspects}:
+%
+\begin{itemize}
+
+\item The web {\bf Portal}, designed to provide the essential data access and
+visualization services through a simple-to-use website.  It will enable
+querying and browsing of the available datasets in ways the users are
+accustomed to at archives such as IRSA, MAST, or the SDSS archive.
+
+\item The {\bf JupyterLab} aspect, that will provide a
+Jupyter\footnote{\url{http://jupyter.org/}} Notebook-like
+interface and is geared towards enabling next-to-the-data remote analysis. 
+A large suite of commonly used astronomical software, including the LSST
+software stack (Sec~\ref{sec:dmstack}), will be made available through this
+interface.  The user experience will be nearly identical to working with
+Jupyter notebooks locally, except that computation and analysis will occur
+with resources provided at the LSST Data Access Center.  This is an
+implementation of the ``bringing computation to the data'' paradigm: rather
+than imposing the burden of downloading, storing, and processing
+(potentially large) subsets of LSST data at their home institutions, we make
+it possible for the users to bring their codes and perform analyses at the
+LSST DAC.  This reduces the barrier to entry and shortens the path to
+science for the LSST science community.
+
+\item The {\bf Web API} aspect will expose the LSST DAC services to other
+software tools and services using commonly accepted formats and protocols\footnote{For
+example, industry-standard protocols such as WebDAV may be used to expose
+file data, or Virtual Observatory protocols for access to catalogs or images
+(TAP and SIAP, respectively), etc.}.  This interface will open the
+possibility for remote access and analysis of the LSST data set using
+applications that the users are already comfortable with such as
+TOPCAT \citep{topcat}, or libraries such as Astropy \citep{astropy}.  Furthermore, the offered APIs will allow
+for federation with other astronomical archives, bringing added value to the
+LSST dataset.
+\end{itemize}
+
+Approximately 10\% of the total budget for the LSST Large Data Facility
+compute and storage capacity has been reserved for the LSST Science Platform
+needs, and to be shared by all LSST DAC users.  Based on the current plans and
+technology projections, these equate to approximately 2,400 cores, 4 PB of
+file storage, and 3 PB of database storage at the beginning of LSST
+operations (in 2022).
 
 
 \B{
