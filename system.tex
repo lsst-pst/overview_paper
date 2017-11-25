@@ -187,14 +187,14 @@ on the ``pre-acceleration'' era ($z\ga1$) would improve constraints on the prope
 dark energy as a function of redshift.
 
 Finally, there will be powerful cross checks and complementarities with other planned or
-proposed surveys, such as Euclid (Laureijs et al.~2011) and WFIRST 
-(Spergel et al.~2015), which will provide 
+proposed surveys, such as Euclid (Laureijs et al.~2011) and WFIRST
+(Spergel et al.~2015), which will provide
 %\footnote{http://wfirst.gsfc.nasa.gov}
 wide-field optical-IR imaging from space;
 DESI (Levi et al.~2013)
 %\footnote{http://desi.lbl.gov}
-and PFS (Takada et al.~2014), which will measure 
-spectroscopic BAO with 
+and PFS (Takada et al.~2014), which will measure
+spectroscopic BAO with
 millions of galaxies; and SKA\footnote{https://www.skatelescope.org} (radio).
 Large survey volumes are key to probing dynamical dark energy models (with sub-horizon
 dark energy clustering or anisotropic stresses). The cross-correlation
@@ -203,8 +203,8 @@ mass distribution -- as probed by neutral hydrogen in CHIME (Newburgh et al.~201
 et al. 2016) or SKA, or galaxies in DESI and PFS -- with the gravitational growth
 probed by tomographic shear in LSST will be a complementary way to constrain dark energy
 properties beyond simply characterizing its equation of state and to test the underlying theory of gravity.
-Current and future ground-based CMB experiments, such as Advanced ACT (De Bernardis et al.~2016), 
-SPT-3G (Benson et al.~2014), Simons Observatory, and CMB Stage-4 (Abazajian et al.~2016), will also offer invaluable opportunities for 
+Current and future ground-based CMB experiments, such as Advanced ACT (De Bernardis et al.~2016),
+SPT-3G (Benson et al.~2014), Simons Observatory, and CMB Stage-4 (Abazajian et al.~2016), will also offer invaluable opportunities for
 cross-correlations with secondary CMB anisotropies.
 
 
@@ -958,7 +958,7 @@ three mirrors will be actively supported to control wavefront distortions
 introduced by gravity and environmental stresses on the telescope.
 The primary-tertiary mirror and the secondary mirror were
 cast\footnote{http://www.lsst.org/News/enews/m1m3-1004.html}  in 2008
-and 2009.  The primary-tertiary mirror was polished by the Richard F.Caris Mirror Lab at the University of Arizona Tucson before being inspected and accepted by LSST in April 2015 \cite{Araujo16}. The  primary-tertiary mirror cell was fabricated by CAID in Tucson and is undergoing acceptance tests. The integration of the actuators and final tests with the mirror is scheduled later this fall and beginning of 2018. 
+and 2009.  The primary-tertiary mirror was polished by the Richard F.Caris Mirror Lab at the University of Arizona Tucson before being inspected and accepted by LSST in April 2015 \cite{Araujo16}. The  primary-tertiary mirror cell was fabricated by CAID in Tucson and is undergoing acceptance tests. The integration of the actuators and final tests with the mirror is scheduled later this fall and beginning of 2018.
 
 \begin{figure}
 %\vskip -1.3in
@@ -1066,7 +1066,7 @@ The principal functions of the LSST Data Management system are to:
 \item Periodically process the accumulated survey data to provide a
   uniform photometric and astrometric calibration, measure the
   properties of all detected objects, and characterize objects based on their time-dependent behavior. The results of such a processing run form a {\em Data Release} (DR), which is a static, self-consistent data set suitable for use in performing scientific analyses of LSST data and publication of the results (the data release products; \S~\ref{Sec:dp}). All data releases will be archived for the entire operational life of the LSST archive.
-\item Facilitate the creation of added value (
+\item Facilitate the creation of community generated (
   \S~\ref{Sec:dp}) data products, by providing suitable software,
   application programming interfaces (APIs),
 and computing infrastructure at the LSST data access centers.
@@ -1099,8 +1099,8 @@ to be approximately 15 PB in size.
 %% (application [red, top], middleware [purple, middle], and infrastructure [blue, bottom] layers) enables scalability, reliability, and evolutionary capability.}
 %% \label{Fig:DM1}
 %% \end{figure}
-%% 
-%% 
+%%
+%%
 %% The data management system is conceptually divided into three layers: an
 %% infrastructure layer consisting of the computing, storage, and
 %% networking hardware and system software; a middleware layer, which
@@ -1108,7 +1108,7 @@ to be approximately 15 PB in size.
 %% system operations services; and an applications layer, which includes
 %% the data pipelines and products and the science data archives (see
 %% Fig.~\ref{Fig:DM1}).
- 
+
 \begin{figure*}
 %%
 %% new graphic from EMily Acosta on https://gallery.lsst.org/bp/#/folder/2334398/62907418
@@ -1116,7 +1116,7 @@ to be approximately 15 PB in size.
 \hskip 0.01in
 \includegraphics[width=1.0\hsize,clip]{SitesDataflow}
 \caption{The LSST data flow from the mountain facilities in
-Chile to the data access center and processing center in the U.S., and 
+Chile to the data access center and processing center in the U.S., and
 the satellite processing center in France}
 \label{Fig:DM2}
 \end{figure*}
@@ -1213,19 +1213,19 @@ considerations, the LSST makes all newly developed source code, and especially
 that pertaining to scientific algorithms, public.  Our primary goals in
 publicizing the code are to simplify reproducibility of LSST data products
 and to provide insight into algorithms used to create them.  Achieving these goals requires
-that the source code is not only available, but apropriately documented at all
+that the source code is not only available, but appropriately documented at all
 levels.
 Given that, most of the LSST software stack is licensed under the terms of the GNU General
 Public License (GPL), Version 3, and can be found at \url{https://github.com/lsst}.
 The documentation for the LSST Science Pipelines components of the stack is available at
 \url{http://pipelines.lsst.io}.
 
-The LSST Softare Stack may be of interest and (re)used beyond the LSST project (e.g.,
+The LSST Software Stack may be of interest and (re)used beyond the LSST project (e.g.,
 by other survey projects, or by individual LSST end-users).  Enabling
 or supporting such applications goes beyond LSST’s construction
 requirements; however, when developing the LSST codes we strongly
 prefer design choices that enable future generalization.  As an example of such
-re-use, a pipeline derived from the present-day LSST software stack prototypes 
+re-use, a pipeline derived from the present-day LSST software stack prototypes
 has been used to reduce data taken with the HSC camera on
 Subaru as part of the large SSP survey (\url{http://hsc.mtk.nao.ac.jp/ssp/survey};
 \cite{2017arXiv170405858A,2017arXiv170506766B}; see Fig.~\ref{Fig:HSC_cosmos}).
@@ -1245,7 +1245,7 @@ extract the appropriate astrophysical signals, and that this can be
 achieved with sufficient efficiency such that the telescope can
 complete its primary objectives within the ten years of its duration
 (including surveying 18,000 sq degrees of the sky, and completing the
-Deep Drilling Fields, see \S \ref{Sec:minisurveys}). 
+Deep Drilling Fields, see \S \ref{Sec:minisurveys}).
 
 
 Realizing these objectives requires that the project can characterize
@@ -1279,51 +1279,51 @@ plane.
 
 \subsubsection{ The LSST Operations Simulator \label{sec:opsim}}
 
-The LSST Operations Simulator (Delgado et al.~2014) was developed to enable a 
-detailed quantitative analysis of the various science tradeoffs described in 
+The LSST Operations Simulator (Delgado et al.~2014) was developed to enable a
+detailed quantitative analysis of the various science tradeoffs described in
 this paper. It contains detailed models of site conditions, hardware and
-software performance, and an algorithm for scheduling observations which will, 
-eventually, drive the largely robotic observatory. 
+software performance, and an algorithm for scheduling observations which will,
+eventually, drive the largely robotic observatory.
 Observing conditions include a model for seeing derived from an extensive body
 of on-site MASS/DIMM (Multi-Aperture Scintillation Sensor and Differential
 Image Motion Monitor) measurements obtained during site selection and
-characterization (see Fig.~\ref{Fig:seeing}). It not only reproduces the 
-observed seeing distribution, but includes 
-the auto-correlation spectrum of seeing with time over intervals from minutes 
+characterization (see Fig.~\ref{Fig:seeing}). It not only reproduces the
+observed seeing distribution, but includes
+the auto-correlation spectrum of seeing with time over intervals from minutes
 to seasons. Weather data are taken from ten years of hourly measurements at
-nearby Cerro Tololo. The time history of site conditions is important if the 
+nearby Cerro Tololo. The time history of site conditions is important if the
 simulation is to faithfully reproduce a sequence of observations. Thus, for
 example, the simulator correctly represents the variation of limiting
 magnitude between pairs of observations used to detect NEOs and the
 correlation between, for example, seasonal weather patterns and observing
 conditions at any given point on the sky.  In addition, down time for
-observatory maintenance is also included. 
+observatory maintenance is also included.
 
-The signal-to-noise ratio of each 
+The signal-to-noise ratio of each
 observation is determined using a sky background model which includes the dark
 sky brightness in each filter, the effects of seeing and atmospheric
-transparency, and a detailed model for scattered light from the moon and/or 
+transparency, and a detailed model for scattered light from the moon and/or
 twilight at each observation (Yoachim et al.~2014). The time taken to move from one observation to
-the next is given by a detailed model of the camera, telescope, and dome. It 
-includes such effects as the acceleration/deceleration profiles employed in 
-moving the telescope, the dome, and the wind screen, 
-% in altitude, azimuth, camera rotator, dome azimuth, and wind/stray light screen altitude, 
-the time needed to damp vibrations excited by each slew, 
-cable wrap, the time taken for active optics lock and correction as a function of 
-slew distance, and the time for filter changes and focal plane readout. 
+the next is given by a detailed model of the camera, telescope, and dome. It
+includes such effects as the acceleration/deceleration profiles employed in
+moving the telescope, the dome, and the wind screen,
+% in altitude, azimuth, camera rotator, dome azimuth, and wind/stray light screen altitude,
+the time needed to damp vibrations excited by each slew,
+cable wrap, the time taken for active optics lock and correction as a function of
+slew distance, and the time for filter changes and focal plane readout.
 
-Observations are scheduled by a ranking algorithm. After a given exposure, all 
+Observations are scheduled by a ranking algorithm. After a given exposure, all
 possible next observations are assigned a score which depends upon their locations, times,
-and filters according to a set of scientific requirements which can vary with 
+and filters according to a set of scientific requirements which can vary with
 time and location. For example, if an ecliptic field has been observed in the
-$r$ band, the score for another $r$-band observation of the same field will 
+$r$ band, the score for another $r$-band observation of the same field will
 initially be quite low, but it will rise in time to peak about an hour after
 the first observation, and decline thereafter. This algorithm results in
 observations being acquired as pairs roughly an hour apart, which enables
-efficient association of NEO detections. To ensure uniform 
+efficient association of NEO detections. To ensure uniform
 sky coverage, fields with fewer previous observations will be scored more
 highly than those which have already been observed more frequently.
- 
+
 Once all possible next observations have been scored for scientific
 priority, their scores are modified according to observing conditions
 (e.g., seeing, airmass, and sky brightness) and to criteria such as
@@ -1338,7 +1338,7 @@ using an average PC.
 Results of the simulated surveys can be visualized and analyzed using
 a Python-based package called the Metrics Analysis Framework (MAF;
 Jones et al.~2014). MAF provides tools to analyze the properties of a
-survey (e.g.\ the distribution of aimasses) through the creation of
+survey (e.g.\ the distribution of airmasses) through the creation of
 functions or metrics that are applied to OpSim outputs. These metrics
 can express the expected technical performance of the survey, such as
 the number of visits per field or the integrated depth after 10 years,
@@ -1454,7 +1454,7 @@ above the atmosphere. Images are simulated using two packages: GalSim
 modular and open-source package that provides a library for simulating
 stars and galaxies through a range of modern astronomical
 telescopes. Point-spread-functions (PSFs) are treated as either
-analytic functions or modelled from ray-traced optics. Convolutions by
+analytic functions or modeled from ray-traced optics. Convolutions by
 the PSF can be applied to parameterized galaxy profiles (e.g.\
 Sersic profiles) or to directly observed images. Operations are
 applied in Fourier space to enable an effective trade-off between
@@ -1507,8 +1507,8 @@ function of wavelength and temperature, and charge diffusion within
 the silicon are modeled for all photons. Photons are pixelated and the
 readout process simulated including blooming, charge saturation,
 charge transfer inefficiency, gain and offsets, hot pixels and
-columns, and QE variations. 
+columns, and QE variations.
 
 An example of a simulated LSST image using PhoSim is shown in
-Fig.~\ref{Fig:ImSimExample}.  
+Fig.~\ref{Fig:ImSimExample}.
 }
