@@ -1,3 +1,5 @@
+*fdb_latexmk
+*log
 lsst.dvi
 lsst.fdb_latexmk
 lsst.log
