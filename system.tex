@@ -465,7 +465,7 @@ and the LSST Science Book.
    (because the system throughput and atmospheric properties are
     wavelength dependent, the achieved depths are different in different
     bands). The adopted time allocation
-   (see Table 1) includes a slight preference to the $r$ and $i$ bands because of their
+   (see Table~\ref{tab:baseline}) includes a slight preference to the $r$ and $i$ bands because of their
    dominant role in star/galaxy separation and weak lensing measurements.
 \item  {\it The distribution of visits on the sky} should extend over
    at least $\sim$20,000 deg$^2$ to obtain the required number of galaxies
@@ -504,12 +504,12 @@ goals. Before describing these surveys in detail, we discuss the main
 system parameters.
 
 
-\begin{table}
-\caption{The LSST Baseline Design and Survey Parameters}
-\begin{tabular}{|l|l|}
-\hline
-   Quantity                         &     Baseline Design Specification    \\
-\hline
+\begin{deluxetable}{l|l}[t]
+\tablecaption{The LSST Baseline Design and Survey Parameters\label{tab:baseline}}
+\tablehead{
+\colhead{Quantity} & \colhead{Baseline Design Specification}
+}
+\startdata
 Optical Config.                           &  3-mirror modified Paul-Baker        \\
 Mount Config.                            &  Alt-azimuth          \\
 Final f-ratio, aperture                 &  f/1.234, 8.4 m                \\
@@ -517,24 +517,21 @@ Field of view, \'etendue              &  9.6 deg$^2$,   319 m$^2$deg$^2$     \\
 Plate Scale                                  &  50.9 $\mu$m/arcsec (0.2'' pix)  \\
 Pixel count                                  &  3.2 Gigapix  \\
 Wavelength Coverage                   &  320 -- 1050 nm, $ugrizy$             \\
-Single visit depths, design $^a$  &  23.9, 25.0, 24.7, 24.0, 23.3, 22.1    \\
-Single visit depths, min.$^b$       &  23.4, 24.6, 24.3, 23.6, 22.9, 21.7    \\
-Mean number of visits$^c$          &  56, 80, 184, 184, 160, 160               \\
-Final (coadded) depths$^d$         &  26.1, 27.4, 27.5, 26.8, 26.1, 24.9     \\
-\hline
-\end{tabular}
-\\ \vskip 0.05in
-$^a$ Design specification from the Science Requirements Document (SRD) for 5$\sigma$ depths
+Single visit depths, design\tablenotemark{a}  &  23.9, 25.0, 24.7, 24.0, 23.3, 22.1    \\
+Single visit depths, min.\tablenotemark{b}       &  23.4, 24.6, 24.3, 23.6, 22.9, 21.7    \\
+Mean number of visits\tablenotemark{c}          &  56, 80, 184, 184, 160, 160               \\
+Final (coadded) depths\tablenotemark{d}         &  26.1, 27.4, 27.5, 26.8, 26.1, 24.9     \\
+\enddata
+\tablenotetext{a}{Design specification from the Science Requirements Document (SRD) for 5$\sigma$ depths
 for point sources in the $ugrizy$ bands, respectively. The listed values are expressed on AB magnitude
 scale, and correspond to point sources and fiducial zenith observations (about 0.2 mag loss of depth
-is expected for realistic airmass distributions, see Table 2 for more details).
-$^b$ Minimum specification from the Science Requirements Document for 5$\sigma$ depths.
-$^c$ An illustration of the distribution of the number of visits as a function of bandpass,
-taken from Table 24 in the SRD.
-$^d$ Idealized depth of coadded images, based on design specification for 5$\sigma$ depth and
-the number of visits in the penultimate row (taken from Table 24 in the SRD).
-\vskip 0.2in
-\end{table}
+is expected for realistic airmass distributions, see Table~\ref{tab:eqparams} for more details).}
+\tablenotetext{b}{Minimum specification from the Science Requirements Document for 5$\sigma$ depths.}
+\tablenotetext{c}{An illustration of the distribution of the number of visits as a function of bandpass,
+taken from Table 24 in the SRD.}
+\tablenotetext{d}{Idealized depth of coadded images, based on design specification for 5$\sigma$ depth and
+the number of visits in the penultimate row (taken from Table 24 in the SRD).}
+\end{deluxetable}
 
 
 
@@ -670,9 +667,7 @@ to efficiently reject cosmic rays), yielding $\epsilon=77$\%.
 \end{enumerate}
 
 \begin{figure}[t]
-\vskip -0.5in
-\includegraphics[width=1.1\hsize,clip]{coaddedDepth.pdf}
-\vskip -1.1in
+\includegraphics[width=\hsize,clip]{coaddedDepth.pdf}
 \caption{The coadded depth in the $r$ band (AB magnitudes) vs. the effective aperture and
 the survey lifetime. It is assumed that 22\% of the total observing time (corrected for
 weather and other losses) is allocated for the $r$ band, and that the ratio of
@@ -774,8 +769,7 @@ in the near infrared.
 
 
 \begin{figure}
-\hskip -0.13in
-\includegraphics[width=1.1\hsize,clip]{filters_y4.pdf}
+\includegraphics[width=1.0\hsize,clip]{filters_y4.pdf}
 \caption{The LSST bandpasses. The vertical axis shows the total throughput. The computation
 includes the atmospheric transmission (assuming an airmass of 1.2, % at an altitude of $\sim$56 deg.,
 dotted line), optics, and the detector sensitivity. {\bf XXX will be updated!}}
@@ -800,8 +794,7 @@ refraction would worsen the point spread function for a wider bandpass.
 
 
 \begin{figure}
-\hskip -0.12in
-\includegraphics[width=1.1\hsize,clip]{modtran1.pdf}
+\includegraphics[width=1.0\hsize,clip]{modtran1.pdf}
 \caption{An example of determination of the atmospheric opacity by
 simultaneously fitting a three-parameter stellar model SED (Kurucz 1979) and
 six physical parameters of a sophisticated atmospheric model (MODTRAN, Anderson
@@ -902,9 +895,7 @@ design parameters, and extensive system engineering analysis can be
 found in the LSST Science Book (Ch.~2--3).
 
 \begin{figure}
-\vskip -0.5in
 \includegraphics[width=1.0\hsize,clip]{mirrors.pdf}
-\vskip -0.5in
 \caption{The LSST baseline optical design (modified three-mirror
   Paul-Baker) with its unique
 monolithic mirror: the primary and tertiary mirrors are positioned such
@@ -1022,7 +1013,6 @@ replace any of the five via a procedure accomplished during daylight hours.
 %\includegraphics[width=1.55\hsize,angle=90.0,clip]{camera2009.pdf}
 %\vskip -2.5in
 %\includegraphics[width=1.55\hsize,angle=90.0,clip]{camera2009.pdf}
-\hskip -0.05in
 \includegraphics[width=1.05\hsize,clip]{CameraFigureUpdated2017.pdf}
 \caption{A cutaway view of LSST camera. Not shown are the shutter, which is positioned between the filter and lens L3, and the filter exchange system.}
 \label{Fig:camera}
@@ -1479,7 +1469,7 @@ altered due to refraction as it passes through each screen.
 
 
 \begin{figure*}
-\centerline{\includegraphics[width=0.98\textwidth,clip]{chip2014.jpg}}
+\centerline{\includegraphics[width=0.98\hsize,clip]{chip2014.jpg}}
 %\vskip -1in
 \caption{ A simulated image of a single LSST CCD using PhoSim
   (covering a $13.3\times13.3$ arcmin$^2$ region of the sky). The
