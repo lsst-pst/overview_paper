@@ -1,7 +1,4 @@
-\documentclass{emulateapj}
-
-
-\slugcomment{A living LSST document (arXiv:0805.2366); version 4.0.1 of Nov 24, 2017}
+\documentclass[twocolumn]{aastex61}
 
 
 \newcommand\x         {\hbox{$\times$}}
@@ -19,19 +16,15 @@
 
 \usepackage{graphicx}
 \usepackage{xspace}
-\usepackage[colorlinks=true, citecolor=blue, linktocpage=true]{hyperref}
 
-\usepackage[usenames]{color}
-%\newcommand{\B}[1]{{\color{blue} #1}}
-%\newcommand{\R}[1]{{\color{red} #1}}
-\newcommand{\G}[1]{{\color{red} #1}}
 \newcommand{\B}[1]{{#1}}
-\newcommand{\R}[1]{{\color{red} #1}}
 
-
+\shorttitle{The Large Synoptic Survey Telescope}
+\shortauthors{Ivezic, Tyson et al.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+
 \title{LSST: from Science Drivers to Reference Design and Anticipated Data Products}
 
 \include{authors}
@@ -47,10 +40,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\vskip 0.15in
-%\section*{ACKNOWLEDGMENTS}
-\centerline{ACKNOWLEDGMENTS}
-
+\acknowledgments
 In 2003, the LSST Corporation was formed as a non-profit 501(c)3 Arizona corporation
 with headquarters in Tucson, AZ.  Membership has since expanded to
 more than forty institutional members
@@ -94,8 +84,10 @@ and the hospitality of the Aspen Center for Physics.
 
 We thank Chris Borden, Tim Knauer and Branimir Sesar for valuable comments.
 
+\facility{LSST}
 
-\appendix{\bf Version History }
+\appendix
+\section{Version History}
 
 \vskip 0.06in
 Version 1.0 (May 15, 2008): the first posting.
@@ -118,12 +110,12 @@ expanded author list.
 \bibitem[()]{} Abazajian, K.N., Adelman-McCarthy, J.K., Ag\"ueros,
   M.A. et al.~2009, Astrophysical Journal Supplements, 182, 543
 
-\bibitem[()]{} Abazajian, K.~N., Adshead, P., Ahmed, Z., et al.	 2016, arXiv:1610.02743 
+\bibitem[()]{} Abazajian, K.~N., Adshead, P., Ahmed, Z., et al.	 2016, arXiv:1610.02743
 
 \bibitem[()]{} Abbott, B.~P. et~al.~2017a, ApJL, 848, L12
-  
+
 \bibitem[()]{} Abbott, B.~P. et~al.~2017b, arXiv:1710.05835, Nature in press
-  
+
 \bibitem[()]{} A'Hearn, M.F. 2004, in Comets II, M.C. Festou, H.U. Keller, and H.A. Weaver (eds.),
              University of  Arizona Press, Tucson, p.17-22
 
@@ -166,11 +158,11 @@ expanded author list.
 
 \bibitem[()]{} Arnett. W.D. \& Meakin, C., 2011, Astrophysical Journal, 741, 33
 
-\bibitem[Astropy Collaboration et al.(2013)]{astropy} Astropy Collaboration, Robitaille, T.~P., Tollerud, E.~J., et al.\ 2013, \aap, 558, A33 
+\bibitem[Astropy Collaboration et al.(2013)]{astropy} Astropy Collaboration, Robitaille, T.~P., Tollerud, E.~J., et al.\ 2013, \aap, 558, A33
 
 \bibitem[()]{} Atwood, W.B., Abdo, A.A., Ackerman, M., et al., 2009, Astrophysical Journal, 697, 1071
 
-\bibitem[()]{Araujo16} Araujo- Hauck, C., Sebag, J., Liang, M., et al., 2016,  Proc. SPIE, 9906, 99060L  
+\bibitem[()]{Araujo16} Araujo- Hauck, C., Sebag, J., Liang, M., et al., 2016,  Proc. SPIE, 9906, 99060L
 
 \bibitem[()]{} Barnard, M., Abrahamse, A., Albrecht, A., Bozek, B. \& Yashar, M., 2008, Physical Review D, 78, 043528
 
@@ -203,16 +195,16 @@ expanded author list.
 
 \bibitem[()]{} Belokurov, V., \& Koposov, S.~E.\ 2016, MNRAS, 456, 602
 
-\bibitem[()]{} Benson, B.~A., Ade, P.~A.~R., Ahmed, Z., et al.\ 2014, Proceedings of the SPIE, 9153, 91531P 
+\bibitem[()]{} Benson, B.~A., Ade, P.~A.~R., Ahmed, Z., et al.\ 2014, Proceedings of the SPIE, 9153, 91531P
 
 \bibitem[()]{} Bergeron, P., Wesemael, F. \& Beauchamp, A. 1995, Publications of the Astronomical Society
                             of the Pacific, 107, 1047
 
-\bibitem[()]{} De Bernardis, F., Stevens, J.~R., Hasselfield, M., et al.\ 2016, Proceedings of the SPIE, 9910, 991014 
+\bibitem[()]{} De Bernardis, F., Stevens, J.~R., Hasselfield, M., et al.\ 2016, Proceedings of the SPIE, 9910, 991014
 
 \bibitem[()]{} Bernstein, G.M., Trilling, D.E., Allen, R.L., et al.~2004, Astronomical Journal, 128, 1364
 
-\bibitem[()]{} Bernstein, G.M., Armstrong, R., Plazas, A.~A., et al. 2017, arXiv:1703.01679 
+\bibitem[()]{} Bernstein, G.M., Armstrong, R., Plazas, A.~A., et al. 2017, arXiv:1703.01679
 
 \bibitem[()]{} Berry, M., Ivezi\'c, \v Z., Sesar, B., et al.~2012, Astrophysical Journal, 757, 166
 
@@ -247,7 +239,7 @@ expanded author list.
 
 %\bibitem[()]{} Borne, K., Laher, R., Ivezi\'{c}, \v{Z}., et al.~2009, BAAS, 41, 372
 
-\bibitem[()]{} Bosch, J., Armstrong, R., Bickerton, S., et al.~2017,  arXiv:1705.06766 
+\bibitem[()]{} Bosch, J., Armstrong, R., Bickerton, S., et al.~2017,  arXiv:1705.06766
 
 \bibitem[()]{} Bottke, W.F., Vokrouhlick\'{y}, D., Bro\v{z}, M., Nesvorn\'y, D. \& Morbidelli, A. 2001,
              Science, 294, 1693
@@ -324,10 +316,10 @@ expanded author list.
 \bibitem[()]{} Cushing, M.C., Rayner, J.T. \& Vacca, W.D. 2005, Astrophysical Journal, 623, 1115
 
 \bibitem[()]{}  D.~C.~Dai, W.~H.~Kinney and D.~Stojkovic, JCAP {\bf 1104}, 015 (2011)
-              
+
 \bibitem[()]{} Dalal, N. \& Kochanek, C.S. 2002, Astrophysical Journal, 575, 25
 
-\bibitem[()]{} Dalal, N., Dor{\'e}, O., Huterer, D., \& Shirokov, A.\ 2008, Phys.Rev.D, 77, 123514 
+\bibitem[()]{} Dalal, N., Dor{\'e}, O., Huterer, D., \& Shirokov, A.\ 2008, Phys.Rev.D, 77, 123514
 
 \bibitem[()]{} Dandy, C.L., Fitzsimmons, A. \& Collander-Brown, S.J. 2002, Icarus, 163, 363
 
@@ -387,7 +379,7 @@ expanded author list.
 
 \bibitem[()]{} Finch, C.~T., Zacharias, N. \& Henry, T.~J. 2010, Astronomical Journal, 140, 844
 
-\bibitem[Fitzpatrick et al.(2016)]{datalab} Fitzpatrick, M.~J., Graham, M.~J., Mighell, K.~J., et al.\ 2016, \procspie, 9913, 99130L 
+\bibitem[Fitzpatrick et al. (2016)]{datalab} Fitzpatrick, M.~J., Graham, M.~J., Mighell, K.~J., et al.\ 2016, \procspie, 9913, 99130L
 
 \bibitem[()]{} Flaugher, B. 2006, Proc. of SPIE, Vol. 6269, 62692C
 
@@ -484,12 +476,12 @@ expanded author list.
 
 \bibitem[()]{} Hu, W. \& Jain, B. 2004, Physical Review D, 70, 3009
 
-\bibitem[()]{} Hu, W., \& Kravtsov, A.~V.\ 2003, Astrophysical Journal, 584, 702 
+\bibitem[()]{} Hu, W., \& Kravtsov, A.~V.\ 2003, Astrophysical Journal, 584, 702
 
 \bibitem[()]{} Huterer, D., Takada, M., Bernstein, G. \& Jain, B. 2006, MNRAS, 366, 101
 
 \bibitem[()]{}  D.~Huterer, D.~L.~Shafer and F.~Schmidt, JCAP {\bf 1512}, no. 12, 033 (2015)
-              
+
 \bibitem[()]{} Ibata, R., Irwin, M., Lewis, G.F. \& Stolte, A. 2001, Astrophysical Journal, 547, L133
 
 \bibitem[()]{} Ishak, M., Upadhye, A. \& Spergel, D.N. 2006, Physical Review D, 74, 043513
@@ -552,7 +544,7 @@ expanded author list.
 
 \bibitem[()]{} Jones, R.~L, Slater, C.~T., Moeyens, J., Allen, L., Axelrod, T., Cook, K., Ivezi\'{c}, \v{Z}.,  Juri\'{c}, M., Myers, J., Petry, C.~E. 2017, XXXX
 
-\bibitem[()]{} Joudaki, S., Blake, C., Johnson, A., et al.~2017, arXiv:1707.06627              
+\bibitem[()]{} Joudaki, S., Blake, C., Johnson, A., et al.~2017, arXiv:1707.06627
 
 \bibitem[()]{} Juri\'{c}, M., Ivezi\'c, \v Z., Brooks, A., et al.~2008, Astrophysical Journal, 673, 864
 
@@ -614,7 +606,7 @@ expanded author list.
 
 \bibitem[()]{} Kurucz, R.L. 1993, ``CD-ROM No.13”, Cambridge, Mass., Smithsonian Astrophysical Observatory
 
-\bibitem[()]{} Laher, R.R., Masci, F.J., Groom, S., et al. 2017, arXiv:1708.01584 
+\bibitem[()]{} Laher, R.R., Masci, F.J., Groom, S., et al. 2017, arXiv:1708.01584
 
 \bibitem[()]{} Laureijs, R., Amiaux, J., Ardiuni, S. et al.~2011, arXiv:1110.3193
 
@@ -624,7 +616,7 @@ expanded author list.
 
 \bibitem[()]{} Lenz, D.D., Newberg, J., Rosner, R., et al.~1998, Astrophysical Journal Supp., 119, 121
 
-\bibitem[()]{} Leistedt, B., Peiris, H.~V., \& Roth, N.\ 2014, Physical Review Letters, 113, 221301 
+\bibitem[()]{} Leistedt, B., Peiris, H.~V., \& Roth, N.\ 2014, Physical Review Letters, 113, 221301
 
 \bibitem[()]{} Lepine, S. 2008, Astronomical Journal, 135, 2177
 
@@ -634,7 +626,7 @@ expanded author list.
 
 \bibitem[()]{} Linder, E.V. 2003, Physical Review D, 68, 083504
 
-\bibitem[()]{} Lintott, C., Schawinski, K., Bamford, S. 2011, MNRAS,
+\bibitem[Lintott et al. (2011)]{GalaxyZoo} Lintott, C., Schawinski, K., Bamford, S. 2011, MNRAS,
   410, 166
 
 \bibitem[()]{} Longhitano, M. \& Binggeli, B. 2010, Astronomy \& Astrophysics, 509, 46
@@ -670,7 +662,7 @@ expanded author list.
 
 \bibitem[()]{} Mamajek, E.E. 2012, arXiv:1210.1616
 
-\bibitem[()]{} Mana, A., Giannantonio, T., Weller, J., et al.~2013, Monthly Notices of the Royal Astronomical Society, 434, 684 
+\bibitem[()]{} Mana, A., Giannantonio, T., Weller, J., et al.~2013, Monthly Notices of the Royal Astronomical Society, 434, 684
 
 \bibitem[()]{} Mandelbaum, R. Seljak, U., Kauffmann, G., Hirata, C.M. \& Brinkmann, J. 2006, MNRAS, 368, 715
 
@@ -678,7 +670,7 @@ expanded author list.
 
 \bibitem[()]{} Marcus, R.A., Ragozzine, D., Murray-Clay, R.A. \& Holman, M.J. 2011, Astrophysical Journal, 733, 40
 
-\bibitem[()]{} Martin, D.C., Fanson, J., Schiminovich, D., et al.~2006, Astrophysical Journal, 619, L1
+\bibitem[Martin et al. (2006)]{Martin2006} Martin, D.C., Fanson, J., Schiminovich, D., et al.~2006, Astrophysical Journal, 619, L1
 
 \bibitem[()]{} Martini, P. \& Schneider, D.P. 2003, Astrophysical Journal, 597, 109
 
@@ -689,11 +681,11 @@ expanded author list.
 
 \bibitem[()]{} M\'{e}nard, B., Scranton, R., Schmidt, S., et al.~2013, arXiv:1303.4722
 
-\bibitem[()]{} Merloni, A., Predehl, P., Becker, W., et al. 2012, arXiv:1209.3114 
+\bibitem[()]{} Merloni, A., Predehl, P., Becker, W., et al. 2012, arXiv:1209.3114
 
 \bibitem[()]{} Metzger, B.D. \& Berger, E. 2012, Astrophysical Journal, 746, 48
 
-\bibitem[()]{} Mo, H.~J., Jing, Y.~P., \& White, S.~D.~M.\ 1996, Monthly Notices of the Royal Astronomical Society, 282, 1096 
+\bibitem[()]{} Mo, H.~J., Jing, Y.~P., \& White, S.~D.~M.\ 1996, Monthly Notices of the Royal Astronomical Society, 282, 1096
 
 \bibitem[()]{} Monet, D.G., Levine, S.E., Canzian, B., et al.~2003, Astronomical Journal, 125, 984
 
@@ -719,9 +711,9 @@ expanded author list.
 
 \bibitem[()]{} Newman, J., 2015, Astroparticle Physics, 63, 81
 
-\bibitem[()]{} Newburgh, L.~B., Addison, G.~E., Amiri, M., et al.~2014, Proceedings of the SPIE, 9145, 91454V 
- 
-\bibitem[()]{} Newburgh, L.~B., Bandura, K., Bucher, M.~A., et al.~2016, Proceedings of the SPIE, 9906, 99065X 
+\bibitem[()]{} Newburgh, L.~B., Addison, G.~E., Amiri, M., et al.~2014, Proceedings of the SPIE, 9145, 91454V
+
+\bibitem[()]{} Newburgh, L.~B., Bandura, K., Bucher, M.~A., et al.~2016, Proceedings of the SPIE, 9906, 99065X
 
 \bibitem[()]{} Nissanke, S., Kasliwal, M. \& Georgieva, A. 2013,  Astrophysical Journal, 767, 124
 \bibitem[()]{} Ofek, E.O.,  Sullivan, M., Cenko, S.B., et al., 2013, Nature 494, 65
@@ -764,7 +756,7 @@ expanded author list.
 
 \bibitem[()]{} Rabinowitz, D.L. 1993,  Astrophysical Journal, 407, 412
 
-\bibitem[Raddick et al.(2017)]{sciserver} Raddick, J., Souter, B., Lemson, G., \& Taghizadeh-Popp, M.\ 2017, American Astronomical Society Meeting Abstracts, 229, 236.15 
+\bibitem[Raddick et al.(2017)]{sciserver} Raddick, J., Souter, B., Lemson, G., \& Taghizadeh-Popp, M.\ 2017, American Astronomical Society Meeting Abstracts, 229, 236.15
 
 \bibitem[()]{} M.~Quartin, V.~Marra and L.~Amendola, Phys.\ Rev.\ D {\bf 89}, no. 2, 023009 (2014)
 
@@ -795,7 +787,7 @@ expanded author list.
 
 \bibitem[()]{} Schlegel, D.J., Finkbeiner, D.P. \& Davis, M. 1998, Astrophysical Journal, 500, 525
 
-\bibitem[()]{} Scranton, R., Connolly, A., Krughoff, S., et al.~2007, astro-ph/0709.0752
+\bibitem[Scranton et al. (2007)]{Scranton2007} Scranton, R., Connolly, A., Krughoff, S., et al.~2007, astro-ph/0709.0752
 
 \bibitem[()]{} Schwamb, M.~E., Brown, M.~E., Rabinowitz, D.~L. \& Ragozzine, D. 2010, Astrophysical Journal, 720, 1691
 
@@ -809,7 +801,7 @@ expanded author list.
 
 \bibitem[()]{} Scranton, R., Connolly, A., Krughoff, S., et al.~2007, astro-ph/0709.0752
 
-\bibitem[()]{} Seljak, U.\ 2009, Physical Review Letters, 102, 021302 
+\bibitem[()]{} Seljak, U.\ 2009, Physical Review Letters, 102, 021302
 
 \bibitem[()]{} Seljak, U., Makarov, A., McDonald, P., et al.~2005,  Physical Review D, 71, 3515
 
@@ -832,7 +824,7 @@ expanded author list.
 
 \bibitem[()]{} Shields, G.A. \& Bonning, E.W. 2008, Astrophysical Journal, 682, 758
 
-\bibitem[()]{} Skrutskie, M.F., Cutri, R.M., Stiening, R., et al.~2006, Astronomical Journal, 131, 1163.
+\bibitem[Skrutskie et al. (2006)]{Skrutskie2006} Skrutskie, M.F., Cutri, R.M., Stiening, R., et al.~2006, Astronomical Journal, 131, 1163.
 
 \bibitem[()]{} Smartt, S.J. 2009, ARA\&A, 47, 63
 
@@ -870,11 +862,11 @@ expanded author list.
 
 \bibitem[()]{} Takada, M. \& Jain, B. 2004, MNRAS, 348, 897
 
-\bibitem[()]{} Takada, M., \& Spergel, D.~N.~2014, Monthly Notices of the Royal Astronomical Society, 441, 2456 
+\bibitem[()]{} Takada, M., \& Spergel, D.~N.~2014, Monthly Notices of the Royal Astronomical Society, 441, 2456
 
-\bibitem[()]{} Takada, M.\ 2006, Phys.Rev.D, 74, 043505 
+\bibitem[()]{} Takada, M.\ 2006, Phys.Rev.D, 74, 043505
 
-\bibitem[Taylor(2005)]{topcat} Taylor, M.~B.\ 2005, Astronomical Data Analysis Software and Systems XIV, 347, 29 
+\bibitem[Taylor(2005)]{topcat} Taylor, M.~B.\ 2005, Astronomical Data Analysis Software and Systems XIV, 347, 29
 
 \bibitem[()]{} Thompson, T.A.,Prieto, J.L., Stanek, K.Z., et al.~2009, Astrophysical Journal, 705, 1364
 
@@ -896,7 +888,7 @@ expanded author list.
 \bibitem[()]{} Trujillo, C.A. \& Sheppard, S.~S. 2014, Nature, 507, 471
 
 \bibitem[()]{} S.~J.~Turnbull, M.~J.~Hudson, H.~A.~Feldman, M.~Hicken, R.~P.~Kirshner and R.~Watkins, Mon.\ Not.\ Roy.\ Astron.\ Soc.\  {\bf 420}, 447 (2012)
-              
+
 \bibitem[()]{} Tyson, J.A., Kochanski, G.P. \& Dell'Antonio, I.P. 1998, Astrophysical Journal, 498, L107
 
 \bibitem[()]{} Tyson, J.A., Roat, C., Bosch, J. \& Wittman, D. 2008a, Astronomical
@@ -906,7 +898,7 @@ expanded author list.
 \bibitem[()]{} Tyson, J. A., and LSST collaboration, 2008b, see
                  http://universe.ucdavis.edu/docs/LSST\_petascale\_challenge.pdf
 
-\bibitem[Vagg et al.(2016)]{gavip} Vagg, D., O'Callaghan, D., O'H{\'o}g{\'a}in, F., et al.\ 2016, \procspie, 9913, 99131V 
+\bibitem[Vagg et al.(2016)]{gavip} Vagg, D., O'Callaghan, D., O'H{\'o}g{\'a}in, F., et al.\ 2016, \procspie, 9913, 99131V
 
 \bibitem[()]{} Vanden Berk, D.E., Richards, G.T., Bauer, A., et al.~2001, Astronomical Journal, 122, 549
 
@@ -951,7 +943,7 @@ IAU Minor Planet Center, 2017, U181, http://www.minorplanetcenter.net/mpec/K17/K
 
 \bibitem[()]{} Yoo, J., Chanam\'{e}, J. \& Gould, A. 2004, Astrophysical Journal, 601, 311
 
-\bibitem[()]{} York, D.G., Adelman, J., Anderson, S., et al.~2000, Astronomical Journal, 120, 1579
+\bibitem[York et al. (2000)]{York2000} York, D.G., Adelman, J., Anderson, S., et al.~2000, Astronomical Journal, 120, 1579
 
 \bibitem[()]{} Yoshida, F. \& Nakamura, T. 2005, Astronomical Journal, 130, 2900
 
@@ -973,9 +965,8 @@ IAU Minor Planet Center, 2017, U181, http://www.minorplanetcenter.net/mpec/K17/K
 \bibitem[Aihara et al. (2017)]{2017arXiv170405858A} Aihara, H., Arimoto, N., et al. 2017 arXiv:1704.05858
 
 \bibitem[Bernstein et al. (2017)]{2017PASP..129g4503B} Bernstein, G.~M., Armstrong R., et al 2017 PASP, 129, 7
-  
-\end{thebibliography}
 
+\end{thebibliography}
 
 \end{document}
 

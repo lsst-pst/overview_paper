@@ -93,7 +93,7 @@ The resulting sky coverage for the LSST baseline
 cadence, based on detailed operations simulations, is shown for the
 $r$ band in Fig.~\ref{Fig:rbandSky}. The anticipated total number of visits
 for a ten-year LSST survey is about 2.8 million ($\sim$5.6 million 15-second long
-exposures). The per-band allocation of these visits is shown in Table 1.
+exposures). The per-band allocation of these visits is shown in Table~\ref{tab:baseline}.
 
 
 
@@ -158,41 +158,39 @@ micro-surveys) will also be considered.
 
 
 
-\begin{table}
-\caption{The Parameters From Eqs.~\ref{ggg} and \ref{m5} {\bf XXX will be updated!}}
-\begin{tabular}{|r|r|r|r|r|r|r|}
-\hline
-                           &   $u$  &   $g$   & $r$   &  $i$  & $z$  & $y$  \\
-\hline
-   $m_{\rm sky}^a$ &   22.9    & 22.3    & 21.2    & 20.5    & 19.6    &  18.6  \\
-   $\theta^b$       &   0.77     &  0.73     & 0.70    & 0.67    &  0.65   &  0.63  \\
-   $\gamma^c$   &   0.037   & 0.038    & 0.039   & 0.039   & 0.040   & 0.040 \\
-    $k_m^d$        &    0.451  &  0.163   &  0.087  &  0.065   &  0.043   &  0.138 \\
-    $C_m^e$        &   22.92   & 24.29    & 24.33   & 24.20   & 24.07   & 23.69 \\
-    $m_5^f$         &   23.68     &   24.89    & 24.43     &  24.00   & 24.45    & 22.60  \\
- $\Delta C^{\infty,g}_m$  &  0.67   &  0.21     &  0.11   &  0.08   &   0.05  &  0.04  \\
- $\Delta C_m(2)^h$       &  0.24   &  0.09     &   0.05  &  0.04   &   0.03  &  0.02 \\
-   $\Delta m_5^i$ &   0.21    & 0.15   & 0.14     &  0.13   & 0.13    & 0.15  \\
-\hline
-\end{tabular}
-  \\ \vskip 0.05in
-  $^a$ The expected median zenith sky brightness at Cerro Pach\'on, derived from
-           the median dark sky brightness observed by SDSS (AB mag arcsec$^{-2}$). \\
-  $^b$ The expected delivered median zenith seeing (arcsec). For larger
-           airmass, $X$, seeing is proportional to $X^{0.6}$. \\
-  $^c$ The band-dependent parameter from Eq.~\ref{ggg}. \\
-  $^d$ Adopted atmospheric extinction. \\
-  $^e$ The band-dependent parameter from Eq.~\ref{m5}. \\
-  $^f$ The typical 5$\sigma$ depth for point sources at zenith, assuming exposure time of
-          2$\times$15 sec, and observing conditions as listed. For larger
-          airmass the 5$\sigma$ depth is brighter; see the bottom row. \\
-  $^g$ The loss of depth due to instrumental noise (assuming 9 e$^-$ per pixel and readout,
-       and two readouts per visit). \\
-  $^h$ Additive correction to $C_m$ when exposure time is doubled from its fiducial value
-          to 60 sec. \\
-  $^i$ The loss of depth at airmass of $X=1.2$ due to seeing degradation
-                 and increased atmospheric extinction. \\
-\end{table}
+\begin{deluxetable}{|r|r|r|r|r|r|r|}
+\tablecaption{The Parameters From Eqs.~\ref{ggg} and \ref{m5} {\bf XXX will be updated!}\label{tab:eqparams}}
+\tablehead{
+\colhead{} & \colhead{$u$}  &   \colhead{$g$}   & \colhead{$r$}   &  \colhead{$i$}  & \colhead{$z$}  & \colhead{$y$}
+}
+\startdata
+   $m_{\rm sky}$\tablenotemark{a} &   22.9    & 22.3    & 21.2    & 20.5    & 19.6    &  18.6  \\
+   $\theta$\tablenotemark{b}      &   0.77     &  0.73     & 0.70    & 0.67    &  0.65   &  0.63  \\
+   $\gamma$\tablenotemark{c}      &   0.037   & 0.038    & 0.039   & 0.039   & 0.040   & 0.040 \\
+    $k_m$\tablenotemark{d}        &    0.451  &  0.163   &  0.087  &  0.065   &  0.043   &  0.138 \\
+    $C_m$\tablenotemark{e}        &   22.92   & 24.29    & 24.33   & 24.20   & 24.07   & 23.69 \\
+    $m_5$\tablenotemark{f}        &   23.68     &   24.89    & 24.43     &  24.00   & 24.45    & 22.60  \\
+ $\Delta C^{\infty}_m$\tablenotemark{g} &  0.67   &  0.21     &  0.11   &  0.08   &   0.05  &  0.04  \\
+ $\Delta C_m(2)$\tablenotemark{h} &  0.24   &  0.09     &   0.05  &  0.04   &   0.03  &  0.02 \\
+   $\Delta m_5$\tablenotemark{i}  &   0.21    & 0.15   & 0.14     &  0.13   & 0.13    & 0.15  \\
+\enddata
+\tablenotetext{^a}{The expected median zenith sky brightness at Cerro Pach\'on, derived from
+           the median dark sky brightness observed by SDSS (AB mag arcsec$^{-2}$).}
+\tablenotetext{^b}{The expected delivered median zenith seeing (arcsec). For larger
+           airmass, $X$, seeing is proportional to $X^{0.6}$.}
+\tablenotetext{^c}{The band-dependent parameter from Eq.~\ref{ggg}.}
+\tablenotetext{^d}{Adopted atmospheric extinction.}
+\tablenotetext{^e}{The band-dependent parameter from Eq.~\ref{m5}.}
+\tablenotetext{^f}{The typical 5$\sigma$ depth for point sources at zenith, assuming exposure time of
+          2$\times$15\,sec, and observing conditions as listed. For larger
+          airmass the 5$\sigma$ depth is brighter; see the bottom row.}
+\tablenotetext{^g}{The loss of depth due to instrumental noise (assuming 9\,e$^-$ per pixel and readout,
+       and two readouts per visit).}
+\tablenotetext{^h}{Additive correction to $C_m$ when exposure time is doubled from its fiducial value
+          to 60\,sec.}
+\tablenotetext{i}{The loss of depth at airmass of $X=1.2$ due to seeing degradation
+                 and increased atmospheric extinction.}
+\end{deluxetable}
 
 
 
@@ -240,7 +238,7 @@ brightness, readout noise, etc.
 %calculator\footnote{Available at http://dls.physics.ucdavis.edu/etc.}
 %(Gee et al.~2007),
 Detailed determination of the system throughput yields the values of $\gamma$
-listed in Table 2. The 5$\sigma$ depth for point sources is determined from
+listed in Table~\ref{tab:eqparams}. The 5$\sigma$ depth for point sources is determined from
 \begin{eqnarray}
 \label{m5}
   m_5 = C_m + 0.50\,(m_{sky}-21) + 2.5\,\log_{10}(0.7/\theta) +  \nonumber \\
@@ -253,10 +251,10 @@ $k$ is the atmospheric extinction coefficient, and $X$ is airmass.
 
 The constants $C_m$ depend on the overall throughput of the instrument
 and are computed using currently the best available throughput estimates for
-optical elements and sensors. The resulting $C_m$ values are listed in Table 2
-and in all six bands they imply single visit depths (also listed in Table 2) in the range
+optical elements and sensors. The resulting $C_m$ values are listed in Table~\ref{tab:eqparams}
+and in all six bands they imply single visit depths (also listed in Table~\ref{tab:eqparams}) in the range
 between minimum and design specification values from the Science Requirements
-Document listed in Table 1.
+Document listed in Table~\ref{tab:baseline}.
 The differences in performance between LSST and, for example, SDSS are easily
 understood\footnote{SDSS data
 typically reach a 5$\sigma$ depth for point sources of $r=22.5$
@@ -271,22 +269,22 @@ seeing, 0.20 mag due to fainter sky, for the net gain of $\sim$1.9 mag.}.
 The structure of eq.~\ref{m5} nicely illustrates decoupling between the system
 sensitivity which is fully absorbed into $C_m$ and observing conditions
 (system deployment parameters) specified by $m_{sky}$, $\theta$, $t_{vis}$, $k_m$
-and $X$. The computation of $C_m$ listed in Table 2 assumed instrumental noise of
+and $X$. The computation of $C_m$ listed in Table~\ref{tab:eqparams} assumed instrumental noise of
 9 e$^-$ per pixel and per readout, which has by and large negligible effect on $m_5$ in
 all bands except for the $u$ band. This loss of depth due to instrumental noise, $\Delta C^{\infty}_m$,
-is listed in Table 2; it also corresponds to additive correction to $C_m$ when the
+is listed in Table~\ref{tab:eqparams}; it also corresponds to additive correction to $C_m$ when the
 exposure time $t_{vis} \rightarrow \infty$. To predict $5\sigma$ depths for
 exposure time $\tau$ times longer that the fiducial $t_{vis} = 30$ sec., the
-following correction has to be added to $C_m$ listed in Table 2:
+following correction has to be added to $C_m$ listed in Table~\ref{tab:eqparams}:
 \begin{equation}
 \label{eq:DCm}
  \Delta C_m(\tau) = \Delta C^\infty_m - 1.25\,\log_{10}\left[1 + {10^{(0.8 \, \Delta C^\infty_m)} - 1 \over \tau}  \right].
 \end{equation}
 Of course, $\Delta C_m(\tau=1)=0$. Again, this effect is only substantial in the $u$
-band, as demonstrated by $\Delta C_m(\tau = 2)$ listed in Table 2.
+band, as demonstrated by $\Delta C_m(\tau = 2)$ listed in Table~\ref{tab:eqparams}.
 
 The loss of depth at the airmass of $X=1.2$ due to seeing degradation
-and increased atmospheric extinction is listed in the last row in Table 2. Note
+and increased atmospheric extinction is listed in the last row in Table~\ref{tab:eqparams}. Note
 that the uncertainty of limiting depth predictions due to unpredictable solar
 activity (which influences the night sky brightness, Patat 2008) is about
 0.1-0.2 mag.
@@ -311,7 +309,7 @@ each exposure and at what signal-to-noise ratio they were observed. In
 addition to  seeing, atmospheric transparency, and sky background effects
 (see eq.~\ref{m5}), the signal-to-noise computation takes into account losses
 due to non-optimal detection filters and object trailing. Using mean asteroid reflectance
-spectra (DeMeo et al. 2009), combined with the LSST bandpasses (listed in Table 2),
+spectra (DeMeo et al. 2009), combined with the LSST bandpasses (listed in Table~\ref{tab:eqparams}),
 we calculate expected colors, assuming all PHAs are C type asteroids, of
 $V-m = (-1.53, -0.28, 0.18, 0.29, 0.30, 0.30)$ for $m=(u, g, r, i, z, y)$ to transform
 standard $V$ band magnitudes to the magnitudes expected in each filter.  Due to
@@ -350,11 +348,8 @@ to unknown variations in the orbital distribution of the true population, the si
 weather, etc.
 
 \begin{figure}
-\hskip -0.2in
-\includegraphics[width=1.16\hsize,clip]{neo_pha_completeness_3in15_minion_1016}
-\phantom{x}
-\hskip -0.3in
-\includegraphics[width=1.16\hsize,clip]{neo_pha_completeness_3in30_astro_lsst_01_1016}
+\includegraphics[width=1.\hsize,clip]{neo_pha_completeness_3in15_minion_1016}
+\includegraphics[width=1.\hsize,clip]{neo_pha_completeness_3in30_astro_lsst_01_1016}
 \caption{Cumulative completeness of the LSST survey for NEOs (left in each panel) and PHAs (right in each panel)
 brighter than a given absolute magnitude, $H\le22$ (related to the size of the object and albedo;
 $H$=22 mag is equivalent to a typical 140m asteroid). The top panel illustrates cumulative completeness
@@ -402,26 +397,24 @@ parameters, and thus enable absolute proper motion measurements.
 
 
 
-\begin{table}[b!]
-\caption{The expected proper motion, parallax and accuracy for a 10-year long baseline survey.}
-\begin{tabular}{|l|c|c|c|c|c|}
-\hline
-    $r$   &  $\sigma^a_{xy} $  & $\sigma^b_\pi$  &   $\sigma^c_\mu$   &  $\sigma^d_1$  &  $\sigma^e_C$  \\
-    mag &       mas            &      mas  & mas/yr &   mag   &    mag  \\
-\hline
+\begin{deluxetable}{l|c|c|c|c|c}
+\tablecaption{The expected proper motion, parallax and accuracy for a 10-year long baseline survey.\label{tab:tenyear}}
+\tablehead{
+\colhead{$r$} &  \colhead{$\sigma_{xy}$\tablenotemark{a}} & \colhead{$\sigma_\pi$\tablenotemark{b}} & \colhead{$\sigma_\mu$\tablenotemark{c}} & \colhead{$\sigma_1$\tablenotemark{d}} &  \colhead{$\sigma_C$\tablenotemark{e}} \\
+\colhead{mag} & \colhead{mas} & \colhead{mas} & \colhead{mas/yr} & \colhead{mag} & \colhead{mag}
+}
+\startdata
        21 &  11  &  0.6  &  0.2   &   0.01  &   0.005 \\
        22 &  15  &  0.8  &  0.3   &   0.02  &   0.005 \\
        23 &  31  &  1.3  &  0.5   &   0.04  &   0.006 \\
        24 &  74  &  2.9  &  1.0   &   0.10  &   0.009 \\
-\hline
-\end{tabular}
-\\ \vskip 0.05in
-  $^a$ Typical astrometric accuracy (rms per coordinate per visit); \\
-  $^b$ Parallax accuracy for 10-year long survey; \\
-  $^c$ Proper motion accuracy for 10-year long survey; \\
-  $^d$ Photometric error for a single visit (two 15-second exposures); \\
-  $^e$ Photometric error for coadded observations (see Table 1). \\
-\end{table}
+\enddata
+\tablenotetext{a}{Typical astrometric accuracy (rms per coordinate per visit).}
+\tablenotetext{b}{Parallax accuracy for 10-year long survey.}
+\tablenotetext{c}{Proper motion accuracy for 10-year long survey.}
+\tablenotetext{d}{Photometric error for a single visit (two 15-second exposures).}
+\tablenotetext{e}{Photometric error for coadded observations (see Table~\ref{tab:baseline}).}
+\end{deluxetable}
 
 
 The astrometric transformations for a given CCD and exposure, and
@@ -431,7 +424,7 @@ pixel to sky coordinates are modeled using low-order polynomials and standard
 techniques developed at the U.S. Naval Observatory (Monet et al.~2003). The expected
 proper motion and
 parallax errors for a 10-year long baseline survey, as a function of apparent
-magnitude, are summarized in Table 3. Blue stars (e.g., F/G stars) fainter than
+magnitude, are summarized in Table~\ref{tab:tenyear}. Blue stars (e.g., F/G stars) fainter than
 $r\sim23$ will have about 50\% larger proper motion and parallax errors than
 given in the table due to decreased numbers of $z$ and $y$ band detections. The
 impact on red stars is smaller due to a relatively small number of observations
@@ -439,7 +432,7 @@ in the $u$ and $g$ bands, but extremely red objects, such as L and T dwarfs,
 will definitely have larger errors, depending on details of their spectral
 energy distributions.  After the first three years of the survey,
 {the proper motion errors will be about five times as large, and parallax
-errors will be about twice as large,} as the values given in Table 3; the errors
+errors will be about twice as large,} as the values given in Table~\ref{tab:tenyear}; the errors
 scale as $t^{-3/2}$ and $t^{-1/2}$, respectively. This error behavior is
 a strong independent argument for a survey lifetime of at least 10 years
 (c.f. \S 2).
@@ -448,7 +441,7 @@ a strong independent argument for a survey lifetime of at least 10 years
 
 
 
-For comparison with Table 3, the SDSS-POSS proper motion measurements have an
+For comparison with Table~\ref{tab:tenyear}, the SDSS-POSS proper motion measurements have an
 accuracy of $\sim$5 mas yr$^{-1}$ per coordinate at $r=20$ (Munn et al.~2004). Gaia
 is expected to deliver parallax errors of 0.3 mas and proper motion errors of
 0.2 mas yr$^{-1}$ at its faint end at $r\sim20$ (Perryman et al.~2001). Hence, LSST will smoothly
@@ -640,8 +633,9 @@ scientific potential of the LSST, including:
 
 
 \begin{figure}
-\hskip -0.8in
-\includegraphics[width=1.5\hsize,clip]{panels1_2.pdf}
+\begin{center}
+\includegraphics[width=0.47\textwidth,clip]{panels1_2.pdf}
+\end{center}
 \caption{A comparison of $\sim7.5\times7.5$ arcmin$^2$ images of
 the same area of sky (centered on $\alpha$=9$^h$ 20$\arcmin$ 47$\arcsec$ and
 $\delta$=30$^\circ$ 8$\arcmin$ 12$\arcsec$) obtained by the SDSS (top, $r<22.5$) and
@@ -658,7 +652,9 @@ sources).}
 \end{figure}
 
 \begin{figure}
-\includegraphics[width=1.0\hsize,clip]{panels2.pdf}
+\begin{center}
+\includegraphics[width=0.47\textwidth,clip]{panels2.pdf}
+\end{center}
 \caption{A comparison of angular resolution for $20\times20$ arcsec$^2$ images obtained
 by the SDSS (top, median seeing of 1.5 arcsec) and expected from LSST (bottom,
 seeing of 0.7 arcsec). The images show a lensed SDSS quasar (SDSS J1332+0347,
@@ -666,4 +662,3 @@ Morokuma et al.~2007); the bottom image was taken with Suprime-cam at Subaru.
 Adapted from Blandford et al.~(2008).}
 \label{Fig:panels2}
 \end{figure}
-
