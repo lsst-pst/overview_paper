@@ -220,7 +220,7 @@ the systematic photometric error (includes errors due to, e.g., imperfect
 modeling of the point spread function, but does not include errors in
 absolute photometric zeropoint). The calibration system and procedures
 are designed to maintain $\sigma_{sys}<0.005$ mag. Based on
-SDSS experience (\cite{2007AJ....134.2236S}), the random photometric error for
+SDSS experience \citep{2007AJ....134.2236S}, the random photometric error for
 point sources, as
 a function of magnitude, is well described\footnote{Eq.~\ref{ggg} can
 be derived from $\sigma_{rand}=N/S$, where $N$ is noise and $S$ is signal,
@@ -236,7 +236,7 @@ point sources) in a given band, and $\gamma$ depends on the sky
 brightness, readout noise, etc.
 %Using the LSST exposure time
 %calculator\footnote{Available at http://dls.physics.ucdavis.edu/etc.}
-%(\cite{Gee2007}),
+%\citep{Gee2007},
 Detailed determination of the system throughput yields the values of $\gamma$
 listed in Table~\ref{tab:eqparams}. The 5$\sigma$ depth for point sources is determined from
 \begin{eqnarray}
@@ -286,7 +286,7 @@ band, as demonstrated by $\Delta C_m(\tau = 2)$ listed in Table~\ref{tab:eqparam
 The loss of depth at the airmass of $X=1.2$ due to seeing degradation
 and increased atmospheric extinction is listed in the last row in Table~\ref{tab:eqparams}. Note
 that the uncertainty of limiting depth predictions due to unpredictable solar
-activity (which influences the night sky brightness, \cite{2008A&A...481..575P}) is about
+activity (which influences the night sky brightness, \citet{2008A&A...481..575P}) is about
 0.1-0.2 mag.
 
 
@@ -295,21 +295,21 @@ activity (which influences the night sky brightness, \cite{2008A&A...481..575P})
 \subsubsection{   The NEO Completeness Analysis    }
 \label{Sec:NEOc}
 Detailed analyses of the LSST completeness for PHAs and NEOs are
-described in \cite{2017arXiv171110621J}, \cite{2017AJ....154...12V,2017AJ....154...13V}, and \cite{2016AJ....151..172G}.
+described in \citet{2017arXiv171110621J}, \citet{2017AJ....154...12V,2017AJ....154...13V}, and \citet{2016AJ....151..172G}.
 After accounting for differences in their input assumptions and models, each of these independent
 works calculates a completeness value which is consistent within a few percent.
-Here we briefly summarize the LSST project analysis carried out in \cite{2017arXiv171110621J}; this
+Here we briefly summarize the LSST project analysis carried out in \citet{2017arXiv171110621J}; this
 approach is roughly the same for each of the studies mentioned above.
 
 To assess the LSST completeness for PHAs, the PHA
 population is represented by a sample of orbits taken from the Solar
-System model of of \cite{2007AAS...211.4721G}.
+System model of \citet{2007AAS...211.4721G}.
 The simulated baseline survey is used to determine which PHAs are present in
 each exposure and at what signal-to-noise ratio they were observed. In
 addition to  seeing, atmospheric transparency, and sky background effects
 (see eq.~\ref{m5}), the signal-to-noise computation takes into account losses
 due to non-optimal detection filters and object trailing. Using mean asteroid reflectance
-spectra (\cite{2009Icar..202..160D}), combined with the LSST bandpasses (listed in Table~\ref{tab:eqparams}),
+spectra \citep{2009Icar..202..160D}, combined with the LSST bandpasses (listed in Table~\ref{tab:eqparams}),
 we calculate expected colors, assuming all PHAs are C type asteroids, of
 $V-m = (-1.53, -0.28, 0.18, 0.29, 0.30, 0.30)$ for $m=(u, g, r, i, z, y)$ to transform
 standard $V$ band magnitudes to the magnitudes expected in each filter.  Due to
@@ -331,15 +331,15 @@ with $\alpha=0.33$, in order to evaluate completeness as a function of $H$.
 An object is considered to be discovered if the object was detected on at least three nights within a
 window of 15 days, with a minimum of two visits per night. The same criterion has been used in NASA studies,
 and is confirmed as reliable by a detailed analysis of orbital linking and orbit determination using the Moving
-Object Processing System (MOPS) code (\cite{2017AJ....154...12V,2017AJ....154...13V}; \cite{2005AAS...20712102J}) developed by the
+Object Processing System (MOPS) code \citep{2017AJ....154...12V,2017AJ....154...13V,2005AAS...20712102J} developed by the
 Pan-STARRS project (and adopted by LSST in a collaborative effort with Pan-STARRS). The MOPS software
 system and its algorithms are significantly more advanced than anything previously
 fielded for this purpose to date. Realistic MOPS simulations show
-$>$99\% linking efficiency across all classes of Solar System objects (\cite{2013PASP..125..357D}),
-and at least 93\% efficiency for NEOs (\cite{2017AJ....154...12V,2017AJ....154...13V}).
+$>$99\% linking efficiency across all classes of Solar System objects \citep{2013PASP..125..357D},
+and at least 93\% efficiency for NEOs \citep{2017AJ....154...12V,2017AJ....154...13V}.
 
 The LSST baseline cadence discovers 66\% of PHAs with $H\leq22$ (equivalent to $D\ge140$~m)
-after 10 years of operations (61\% of NEOs with $H\leq22$) (\cite{2017arXiv171110621J}).  This cadence spends 6\% of the total
+after 10 years of operations (61\% of NEOs with $H\leq22$) \citep{2017arXiv171110621J}.  This cadence spends 6\% of the total
 observing time on NEO-optimized observations north of $\delta = +5^\circ$, and MOPS links objects with windows of 15 days.
 The baseline survey cumulative completeness as a function of time for objects with $H\le22$ is shown in the upper panel of Fig.~\ref{Fig:Cneo},
 both with and without including other surveys. These figures are likely to be uncertain to the level of $\pm5\%$ due
@@ -386,10 +386,10 @@ $r\sim16$) even at the Galactic poles.
 
 Data from the Subaru telescope reduced with the LSST software stack indicate that systematic errors of
 10 mas on spatial scales of several arcminutes are realistic even at this stage of maturity of the
-code; results reported by DES (\cite{DES}) indicate astrometric residuals of $\sim 7$mas for 30s exposures
+code; results reported by DES \citep{DES} indicate astrometric residuals of $\sim 7$mas for 30s exposures
 in a 4m, with scope for further improvements from denser astrometric standard grids. Even a drift-scanning
 survey such as SDSS delivers uncorrelated systematic errors (dominated by seeing
-effects) at the level of 20-30 mas (measured from repeated scans; \cite{2003AJ....125.1559P});
+effects) at the level of 20-30 mas \citep[measured from repeated scans;][]{2003AJ....125.1559P};
 the expected image quality for LSST will be twice as good as for SDSS. Furthermore,
 there are close to 1000 galaxies per sensor with $r<22$, which will provide exquisite
 control of systematic astrometric errors as a function of magnitude, color and other
@@ -421,7 +421,7 @@ The astrometric transformations for a given CCD and exposure, and
 proper motion and parallax for all the stars from a given CCD, are simultaneously
 solved for using an iterative algorithm. The astrometric transformations from
 pixel to sky coordinates are modeled using low-order polynomials and standard
-techniques developed at the U.S. Naval Observatory (\cite{2003AJ....125..984M}). The expected
+techniques developed at the U.S. Naval Observatory \citep{2003AJ....125..984M}. The expected
 proper motion and
 parallax errors for a 10-year long baseline survey, as a function of apparent
 magnitude, are summarized in Table~\ref{tab:tenyear}. Blue stars (e.g., F/G stars) fainter than
@@ -442,9 +442,9 @@ a strong independent argument for a survey lifetime of at least 10 years
 
 
 For comparison with Table~\ref{tab:tenyear}, the SDSS-POSS proper motion measurements have an
-accuracy of $\sim$5 mas yr$^{-1}$ per coordinate at $r=20$ (\cite{2004AJ....127.3034M}). Gaia
+accuracy of $\sim$5 mas yr$^{-1}$ per coordinate at $r=20$ \citep{2004AJ....127.3034M}. Gaia
 is expected to deliver parallax errors of 0.3 mas and proper motion errors of
-0.2 mas yr$^{-1}$ at its faint end at $r\sim20$ (\cite{2001A&A...369..339P}). Hence, LSST will smoothly
+0.2 mas yr$^{-1}$ at its faint end at $r\sim20$ \citep{2001A&A...369..339P}. Hence, LSST will smoothly
 extend Gaia's error vs.\ magnitude curve 4 magnitudes fainter.
 
 
@@ -457,7 +457,7 @@ and reduced images -- by the LSST Data Management system
 enable a large majority of LSST science cases, without the need to
 work directly with the raw pixels.  We give a high-level overview of
 the LSST data products here; further details may be found in the LSST
-Data Products Definition Document (\cite{LSE-163}).
+Data Products Definition Document \citep{LSE-163}.
 
 \vskip 1em
 
@@ -601,8 +601,9 @@ operations (in 2022).
 
 The characterization (unsupervised machine learning) and classification (supervised machine learning) of
 massive, multivariate data catalogs such as those generated by the LSST are major research challenges for
-data-intensive astronomy (\cite{Tyson2008}; \cite{2008AIPC.1082..359I};
-\cite{2008AN....329..284B}; \cite{2008AN....329..255B}; \cite{2014sdmm.book.....I}). To address these questions, the statistics and machine-learning research
+data-intensive astronomy
+\citep{Tyson2008,2008AIPC.1082..359I,2008AN....329..284B,2008AN....329..255B,2014sdmm.book.....I}.
+To address these questions, the statistics and machine-learning research
 communities are collaborating with LSST scientists to develop new algorithms that will enable the full
 scientific potential of the LSST, including:
 \begin{itemize}
@@ -640,7 +641,7 @@ scientific potential of the LSST, including:
 the same area of sky (centered on $\alpha$=9$^h$ 20$\arcmin$ 47$\arcsec$ and
 $\delta$=30$^\circ$ 8$\arcmin$ 12$\arcsec$) obtained by the SDSS (top, $r<22.5$) and
 the Deep Lens Survey (bottom, $r<24.5$). These are gri composites,
-colorized following \cite{2004PASP..116..133L}.  The depth gain for the bottom image
+colorized following \citet{2004PASP..116..133L}.  The depth gain for the bottom image
 is mostly due to the lower surface brightness limit, which is also responsible
 for the apparent increase of galaxy sizes. LSST will obtain $\sim$100 $gri$
 color images to the same depth ($\sim$200 for the $riz$ composites) of each point
@@ -657,8 +658,8 @@ sources).}
 \end{center}
 \caption{A comparison of angular resolution for $20\times20$ arcsec$^2$ images obtained
 by the SDSS (top, median seeing of 1.5 arcsec) and expected from LSST (bottom,
-seeing of 0.7 arcsec). The images show a lensed SDSS quasar (SDSS J1332+0347,
-\cite{2007AJ....133..214M}); the bottom image was taken with Suprime-cam at Subaru.
-Adapted from \cite{2007AAS...21113707B}.}
+seeing of 0.7 arcsec). The images show a lensed SDSS quasar
+\citep[SDSS J1332+0347,][]{2007AJ....133..214M}; the bottom image was taken with Suprime-cam at Subaru.
+Adapted from \citet{2007AAS...21113707B}.}
 \label{Fig:panels2}
 \end{figure}
