@@ -394,7 +394,7 @@ Requirements Document \citep{LPM-17}
 and the LSST Science Book \citep{2009arXiv0912.0201L}.
 
 \begin{enumerate}
-\item  {\it The single visit depth} should reach $r\sim24.5$. This limit is
+\item  \textit{The single visit depth} should reach $r\sim24.5$. This limit is
    primarily driven by the search for NEOs, variable sources (e.g., SN,
    RR Lyrae stars), and by proper motion and trigonometric parallax
    measurements for stars. Indirectly, it is also driven by the
@@ -402,32 +402,32 @@ and the LSST Science Book \citep{2009arXiv0912.0201L}.
    exposures required by WL science.  We will split a single visit
    into two exposures of equal length to identify and remove cosmic
    rays.
-\item  {\it Image quality} should maintain the limit set by the
+\item  \textit{Image quality} should maintain the limit set by the
      atmosphere (the median free-air seeing is 0.65 arcsec in the $r$ band
      at the chosen site, see Fig.~\ref{Fig:seeing}),
      and not be degraded appreciably by the hardware. In addition to stringent
      constraints from weak lensing, good image quality is driven by the
      required survey depth for point sources and by image differencing
      techniques.
-\item  {\it Photometric repeatability} should achieve 5 mmag precision
+\item  \textit{Photometric repeatability} should achieve 5 mmag precision
      at the bright end, with zeropoint stability across the sky of 10 mmag
      and band-to-band calibration errors not larger than 5 mmag.
      These requirements are driven by the need for high photometric redshift accuracy,
      the separation of stellar populations, detection of low-amplitude variable
      objects (such as eclipsing planetary systems), and the search for
      systematic effects in type Ia supernova light curves.
-\item  {\it Astrometric precision} should maintain the limit set by
+\item  \textit{Astrometric precision} should maintain the limit set by
      the atmosphere, of about 10 mas per visit at the bright end
      (on scales below 20 arcmin). This precision is driven by the desire to
      achieve a proper motion accuracy of 0.2 mas yr$^{-1}$ and parallax accuracy of
      1.0 mas over the course of a 10-year survey (see \S \ref{sec:astrom}).
-\item  {\it The single visit exposure time} (including both exposures in a
+\item  \textit{The single visit exposure time} (including both exposures in a
     visit, which are required for cosmic ray rejection) should be less than about a minute
     to prevent trailing of fast moving objects and to aid control
     of various systematic effects induced by the atmosphere. It should
     be longer than $\sim$20 seconds to avoid significant efficiency losses due to
     finite readout, slew time, and read noise.
-\item  {\it The filter complement} should include at least six filters
+\item  \textit{The filter complement} should include at least six filters
     in the wavelength range limited by atmospheric absorption and
     silicon detection efficiency (320--1050 nm), with roughly
     rectangular filters and no large gaps in the coverage, in order
@@ -438,19 +438,19 @@ and the LSST Science Book \citep{2009arXiv0912.0201L}.
     about 1 micron  would enable studies of sub-stellar objects, high-redshift
     quasars (to redshifts of $\sim$7.5), and regions of the Galaxy that are obscured
     by interstellar dust.
-\item  {\it The revisit time distribution} should enable determination of
+\item  \textit{The revisit time distribution} should enable determination of
    orbits of Solar System objects and sample SN light curves every few days,
    while accommodating constraints set by proper motion and trigonometric
    parallax measurements.
-\item  {\it The total number of visits} of any given area of sky, when accounting for all
+\item  \textit{The total number of visits} of any given area of sky, when accounting for all
    filters, should be of the order of 1,000, as mandated by WL
    science, the search for NEOs, and proper motion and
    trigonometric parallax measurements. Studies of transient sources
    also benefit from a large number of visits.
-\item  {\it The coadded survey depth} should reach
+\item  \textit{The coadded survey depth} should reach
     $r\sim27.5$, with sufficient signal-to-noise ratio in other bands
     to address both extragalactic and Galactic science drivers.
-\item  {\it The distribution of visits per filter} should enable
+\item  \textit{The distribution of visits per filter} should enable
    accurate photometric redshifts, separation of stellar populations,
    and sufficient depth to enable detection of faint extremely red
    sources (e.g., brown dwarfs and high-redshift quasars). Detailed simulations of
@@ -461,7 +461,7 @@ and the LSST Science Book \citep{2009arXiv0912.0201L}.
     bands). The adopted time allocation
    (see Table~\ref{tab:baseline}) includes a slight preference to the $r$ and $i$ bands because of their
    dominant role in star/galaxy separation and weak lensing measurements.
-\item  {\it The distribution of visits on the sky} should extend over
+\item  \textit{The distribution of visits on the sky} should extend over
    at least $\sim$20,000 deg$^2$ to obtain the required number of galaxies
    for WL studies, with attention paid to include ``special''
    regions such as the Ecliptic and Galactic planes, and the Large and Small
@@ -469,7 +469,7 @@ and the LSST Science Book \citep{2009arXiv0912.0201L}.
    20,000 deg$^2$ is comparable to the full area observable from any
    given ground-based site at reasonably low airmass (the LSST survey area will
    be contained within 30,000 deg$^2$ with $\delta<+34.5^\circ$).
-\item  {\it Data processing, data products and data access} should
+\item  \textit{Data processing, data products and data access} should
   result in data products that approach the statistical uncertainties
   in the raw data; i.e., the processing must be close to optimal.
 %enable efficient science analysis without a significant impact on the
@@ -488,9 +488,9 @@ compatible in terms of desired data characteristics. Indeed, any one
 of the four main science drivers could be removed, and the remaining
 three would still yield very similar requirements for most system
 parameters. As a result, the LSST system can adopt a highly
-efficient survey strategy where {\it a single dataset serves most science
+efficient survey strategy where \textit{a single dataset serves most science
 programs} (instead of science-specific surveys executed in series).
-One can view this project as {\it massively parallel astrophysics}.
+One can view this project as \textit{massively parallel astrophysics}.
 The vast majority (about 90\%) of the observing time will be devoted to
 a deep-wide-fast survey mode, with the remaining 10\%
 allocated to special programs which will also address multiple science
@@ -574,7 +574,7 @@ and galaxies have $k<0.5$. For more details, please see \citet{2003AJ....125.274
 For this reason, the sky area for the main survey is
 maximized to its practical limit, 18,000 deg$^2$, determined by the
 requirement to avoid airmasses less than 1.5,
-%$X<1.5$, where approximately $X={\rm sec}(\theta)$  and $\theta$ is
+%$X<1.5$, where approximately $X=\mathrm{sec}(\theta)$  and $\theta$ is
 %the zenith distance),
 which would substantially
 deteriorate the image quality and the survey depth (see eq.~\ref{m5}).
@@ -597,7 +597,7 @@ Fig.~\ref{Fig:coaddDepth}.
 \subsubsection{ The Optimal Exposure Time }
 
 The single visit depth depends on both the primary mirror diameter and the
-chosen exposure time, $t_{\rm vis}$. In turn, the exposure time
+chosen exposure time, $t_\mathrm{vis}$. In turn, the exposure time
 determines the time interval to revisit a given sky position and the total
 number of visits, and each of these quantities has its own science
 drivers. We summarize these simultaneous constraints in terms of the
@@ -609,9 +609,9 @@ single-visit exposure time:
 \item  The mean revisit time (assuming uniform cadence) for a given position
          on the sky, $n$, scales as
 \begin{equation}
-  n = \left( {t_{\rm vis} \over 10  \, {\rm sec}} \right)
-      \left( { A_{\rm sky} \over 10,000  \, {\rm deg}^2} \right)
-      \left( {10 \, {\rm deg}^2 \over  A_{\rm FOV}} \right) {\rm days},
+  n = \left( {t_\mathrm{vis} \over 10  \, \mathrm{sec}} \right)
+      \left( { A_\mathrm{sky} \over 10,000  \, \mathrm{deg}^2} \right)
+      \left( {10 \, \mathrm{deg}^2 \over  A_\mathrm{FOV}} \right) \mathrm{days},
 \end{equation}
 where two visits per night are assumed (required for efficient detection of
 Solar System objects, see below), and the losses for realistic observing conditions
@@ -625,7 +625,7 @@ with losses for realistic observing conditions taken into account,
 is given by
 \begin{equation}
       N_{visit} = \left( {3000 \over n} \right)
-                    \left( { T \over 10 \, {\rm yr}} \right).
+                    \left( { T \over 10 \, \mathrm{yr}} \right).
 \end{equation}
 The requirement $N_{visit}>800$ again implies that $n<4$ and
 $t_{vis} < 40$ seconds if the survey lifetime, $T \sim 10$ years.
@@ -638,7 +638,7 @@ acceptable read-out time is set to 2 seconds, the shutter open-and-close
 time is 2 seconds, and the slew and settle time is set to 5 seconds, including
 the read-out time for the second exposure in a visit):
 \begin{equation}
-      \epsilon = \left( {t_{vis} \over t_{vis} + 9 \, {\rm sec}}\right).
+      \epsilon = \left( {t_{vis} \over t_{vis} + 9 \, \mathrm{sec}}\right).
 \end{equation}
 To maintain efficiency losses below $\sim$30\% (i.e., at least below the
 limit set by the weather patterns), and to minimize the read noise
@@ -683,7 +683,7 @@ allowed $t_{vis}$ for the main deep-wide-fast survey.}
 \label{Fig:singleDepth}
 \end{figure}
 
-To summarize, the chosen primary mirror diameter is the {\it minimum}
+To summarize, the chosen primary mirror diameter is the \textit{minimum}
 diameter that simultaneously satisfies the depth ($r\sim24.5$ for single visit and
 $r\sim27.5$ for coadded depth) and cadence (revisit time of 3-4 days,
 with 30 seconds per visit) constraints described above.
@@ -732,7 +732,7 @@ as is being done by the PS1 Consortium\footnote{More information about
 Pan-STARRS is available from http://pan-starrs.ifa.hawaii.edu.}.
 
 In summary,
-{\it given the science requirements as stated here, there is a
+\textit{given the science requirements as stated here, there is a
 minimum \'etendue of $\sim$300 deg$^2$m$^2$ which enables our seemingly
 disparate science goals to be addressed with a single data set.}
 A system with a smaller \'etendue would require separate specialized surveys
@@ -766,7 +766,7 @@ in the near infrared.
 \includegraphics[width=1.0\hsize,clip]{filters_y4.pdf}
 \caption{The LSST bandpasses. The vertical axis shows the total throughput. The computation
 includes the atmospheric transmission (assuming an airmass of 1.2, % at an altitude of $\sim$56 deg.,
-dotted line), optics, and the detector sensitivity. {\bf XXX will be updated!}}
+dotted line), optics, and the detector sensitivity. \textbf{XXX will be updated!}}
 \label{Fig:filters}
 \end{figure}
 
@@ -1049,7 +1049,7 @@ The principal functions of the LSST Data Management system are to:
 \item Process, in real time, the incoming stream of images generated by the camera system during observing by archiving raw images, generating alerts to new sources or sources whose properties have changed, and updating the relevant catalogs (Prompt  products; \S~\ref{Sec:dp}).
 \item Periodically process the accumulated survey data to provide a
   uniform photometric and astrometric calibration, measure the
-  properties of all detected objects, and characterize objects based on their time-dependent behavior. The results of such a processing run form a {\em Data Release} (DR), which is a static, self-consistent data set suitable for use in performing scientific analyses of LSST data and publication of the results (the data release products; \S~\ref{Sec:dp}). All data releases will be archived for the entire operational life of the LSST archive.
+  properties of all detected objects, and characterize objects based on their time-dependent behavior. The results of such a processing run form a \emph{Data Release} (DR), which is a static, self-consistent data set suitable for use in performing scientific analyses of LSST data and publication of the results (the data release products; \S~\ref{Sec:dp}). All data releases will be archived for the entire operational life of the LSST archive.
 \item Facilitate the creation of user generated (
   \S~\ref{Sec:dp}) data products, by providing suitable software,
   application programming interfaces (APIs),
@@ -1061,7 +1061,7 @@ community-based standards   to the maximum possible extent. Provide
   transfers.
 \end{itemize}
 
-Over the ten years of LSST operations and 11 data releases, this processing will result in a cumulative {\em processed} data size
+Over the ten years of LSST operations and 11 data releases, this processing will result in a cumulative \emph{processed} data size
 approaching 500 petabytes (PB) for imaging, and over 50 PB for the
 catalog databases. The final data release catalog database alone is expected
 to be approximately 15 PB in size.
@@ -1132,7 +1132,7 @@ the overall risk to the project.
 \subsubsection{The LSST software stack}
 \label{sec:dmstack}
 
-The {\em LSST Software Stack} is the data processing and analysis
+The \emph{LSST Software Stack} is the data processing and analysis
 system developed by the LSST Project to enable LSST survey data
 reduction and delivery. It comprises of
 all science pipelines needed to accomplish LSST data processing tasks

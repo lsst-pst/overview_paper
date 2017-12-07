@@ -159,12 +159,12 @@ micro-surveys) will also be considered.
 
 
 \begin{deluxetable}{|r|r|r|r|r|r|r|}
-\tablecaption{The Parameters From Eqs.~\ref{ggg} and \ref{m5} {\bf XXX will be updated!}\label{tab:eqparams}}
+\tablecaption{The Parameters From Eqs.~\ref{ggg} and \ref{m5} \textbf{XXX will be updated!}\label{tab:eqparams}}
 \tablehead{
 \colhead{} & \colhead{$u$}  &   \colhead{$g$}   & \colhead{$r$}   &  \colhead{$i$}  & \colhead{$z$}  & \colhead{$y$}
 }
 \startdata
-   $m_{\rm sky}$\tablenotemark{a} &   22.9    & 22.3    & 21.2    & 20.5    & 19.6    &  18.6  \\
+   $m_\mathrm{sky}$\tablenotemark{a} &   22.9    & 22.3    & 21.2    & 20.5    & 19.6    &  18.6  \\
    $\theta$\tablenotemark{b}      &   0.77     &  0.73     & 0.70    & 0.67    &  0.65   &  0.63  \\
    $\gamma$\tablenotemark{c}      &   0.037   & 0.038    & 0.039   & 0.039   & 0.040   & 0.040 \\
     $k_m$\tablenotemark{d}        &    0.451  &  0.163   &  0.087  &  0.065   &  0.043   &  0.138 \\
@@ -229,7 +229,7 @@ $\alpha$ can be expressed in terms of a single unknown constant $\gamma$
 by using the condition that $\sigma_{rand}=0.2$ for $m=m_5$.} by
 \begin{equation}
 \label{ggg}
-  \sigma_{rand}^2 = (0.04-\gamma)\, x + \gamma \, x^2 \,\,\, {\rm (mag^2),}
+  \sigma_{rand}^2 = (0.04-\gamma)\, x + \gamma \, x^2 \,\,\, \mathrm{(mag^2),}
 \end{equation}
 with $x \equiv 10^{0.4\,(m-m_5)}$. Here $m_5$ is the 5$\sigma$ depth (for
 point sources) in a given band, and $\gamma$ depends on the sky
@@ -318,7 +318,7 @@ band, the smallest objects are preferentially detected in the $griz$ bands.
 The correction for trailing is implemented by subtracting from the right-hand
 side of eq.~\ref{m5}
 \begin{eqnarray}
- \Delta m_5^{\rm trailing} & = &1.25\,\log_{10}\left(1+0.42 \, x^2 \right) \\
+ \Delta m_5^\mathrm{trailing} & = &1.25\,\log_{10}\left(1+0.42 \, x^2 \right) \\
    x & = & {v \,t_{vis} \over 24 \, \theta},
 \end{eqnarray}
 where the object's velocity, $v$, is expressed in deg.~day$^{-1}$.
@@ -451,7 +451,7 @@ extend Gaia's error vs.\ magnitude curve 4 magnitudes fainter.
 \subsection{             Data Products and Archive Services          }
 \label{Sec:dp}
 
-Data collected by the LSST telescope and camera will be automatically processed to {\em data products} -- catalogs, alerts,
+Data collected by the LSST telescope and camera will be automatically processed to \emph{data products} -- catalogs, alerts,
 and reduced images -- by the LSST Data Management system
 (\S~\ref{sec:dm}). These products are designed to be sufficient to
 enable a large majority of LSST science cases, without the need to
@@ -463,9 +463,9 @@ Data Products Definition Document \citep{LSE-163}.
 
 Two major categories of data products will be produced and delivered by LSST DM:
 \begin{itemize}
-\item {\bf   Prompt products\footnote{Historically, these have been referred to as ``Level
+\item \textbf{  Prompt products\footnote{Historically, these have been referred to as ``Level
 1 Data Products'', but going forward we prefer to use the more descriptive
-{\em Prompt Products} designation. Note that the old terminology is still
+\emph{Prompt Products} designation. Note that the old terminology is still
 in use in present-day LSST documents and code; new and updated
 documents will gradually transition to the new, descriptive, nomenclature
 used in this paper.
@@ -489,15 +489,15 @@ identification. The efficiency of linking (and thus the completeness
 of the resulting orbit catalog) will depend on the final observing
 cadence chosen for LSST, as well as the performance of the linking
 algorithm (\S~\ref{Sec:NEOc}).
-\item {\bf Data release products\footnote{These have been referred to as ``Level
+\item \textbf{Data release products\footnote{These have been referred to as ``Level
 2 Data Products'' in the past; as with their ``Level 1`` counterparts, we
 will use the more descriptive nomenclature going forward.}} are designed to enable systematics- and flux-limited science, and will be made available in generally annual Data Releases. These will include the (reduced and raw) single-epoch images, deep coadds of the observed sky, catalogs of objects detected in LSST data, catalogs of sources (the detections and measurements of objects on individual visits), and catalogs of ``forced sources" (measurements of flux on individual visits at locations where objects were detected by LSST or other surveys). LSST data releases will also include fully reprocessed prompt products, as well as all metadata and software necessary for the end-user to reproduce any aspect of LSST data release processing.\\
 \\
 A noteworthy aspect of LSST data release processing is that it will largely
-rely on {\bf multi-epoch model fitting}, or {\bf \em MultiFit}, to
+rely on \textbf{multi-epoch model fitting}, or \textbf{\emph{MultiFit}}, to
 perform near-optimal characterization of object properties. That is,
-while the coadds will be used to perform object {\em detection}, the
-{\em measurement} of their properties will be performed by
+while the coadds will be used to perform object \emph{detection}, the
+\emph{measurement} of their properties will be performed by
 simultaneously fitting (PSF-convolved) models to single-epoch
 observations. It is not yet clear to what extent we will be able to make some of these
 measurements on suitable linear combinations of input images (with careful propagation
@@ -534,7 +534,7 @@ custom, user-created, products derived from the LSST data.  These could be
 new catalogs created by simple post-processing of the LSST data release
 catalogs, entirely new data products generated by running custom code on raw
 LSST imaging data, or something in-between.  We will make it possible for the
-end-users to create (or use) such {\bf user generated\footnote{Formerly known as
+end-users to create (or use) such \textbf{user generated\footnote{Formerly known as
 ``Level 3 Data Products``.}} products at the LSST Large Data Facility,
 using the services offered within the LSST Science Platform (\S~\ref{sec:lsp}).
 
@@ -552,16 +552,16 @@ SciServer \citep{2017AAS...22923615R}, Gaia GAVIP \citep{2016SPIE.9913E..1VV}, o
 The LSST Science Platform will be a set of web applications (portals) and
 services through which the users will access the LSST data products and, if
 desired, conduct remote analyses or create user generated products.  The
-platform makes this possible through tree user-facing {\em aspects}:
+platform makes this possible through tree user-facing \emph{aspects}:
 %
 \begin{itemize}
 
-\item The web {\bf Portal}, designed to provide the essential data access and
+\item The web \textbf{Portal}, designed to provide the essential data access and
 visualization services through a simple-to-use website.  It will enable
 querying and browsing of the available datasets in ways the users are
 accustomed to at archives such as IRSA, MAST, or the SDSS archive.
 
-\item The {\bf JupyterLab} aspect, that will provide a
+\item The \textbf{JupyterLab} aspect, that will provide a
 Jupyter\footnote{\url{http://jupyter.org/}} Notebook-like
 interface and is geared towards enabling next-to-the-data remote analysis.
 A large suite of commonly used astronomical software, including the LSST
@@ -576,7 +576,7 @@ it possible for the users to bring their codes and perform analyses at the
 LSST DAC.  This reduces the barrier to entry and shortens the path to
 science for the LSST science community.
 
-\item The {\bf Web API} aspect will expose the LSST DAC services to other
+\item The \textbf{Web API} aspect will expose the LSST DAC services to other
 software tools and services using commonly accepted formats and protocols\footnote{For
 example, industry-standard protocols such as WebDAV may be used to expose
 file data, or Virtual Observatory protocols for access to catalogs or images
