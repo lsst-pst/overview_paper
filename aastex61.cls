@@ -6029,7 +6029,7 @@ needed. It will not do anything.^^J Please use
 \newcount\AuthorCollaborationLimit
 \let\AuthorCallLimit\AuthorCollaborationLimit
 %% no limit for default
-\AuthorCollaborationLimit=100
+\AuthorCollaborationLimit=10000
 \newcount\largestAffilNum
 
 \def\lookfornumbers#1#2#3#4#5#6#7#8#9{\def\one{#1}
@@ -6237,8 +6237,8 @@ needed. It will not do anything.^^J Please use
 \ifnumlines\nolinenumbers\fi
 \onecolumngrid
 \clearpage
-\AuthorCollaborationLimit=100
-\largestAffilNum=100
+\AuthorCollaborationLimit=10000
+\largestAffilNum=10000
 {\vskip6pt\vskip1sp\centerline{\large\bf All Authors and
 Affiliations\vrule depth 18pt width0pt}\nobreak
 \maketitle
