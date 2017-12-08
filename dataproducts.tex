@@ -136,7 +136,7 @@ curves than obtained from the universal cadence. Such sequences would also
 serve as excellent tests of our photometric calibration procedures.
 
 The LSST has already selected four distant extragalactic survey fields\footnote{For
-details, see http://www.lsst.org/News/enews/deep-drilling-201202.html}
+details, see \url{http://www.lsst.org/News/enews/deep-drilling-201202.html}}
 that the project guarantees to observe as Deep Drilling Fields with deeper coverage
 and more frequent temporal sampling than provided by the standard LSST observing
 pattern. These fields (Elias S1, XMM-LSS, Extended Chandra Deep Field-South, and
@@ -159,12 +159,12 @@ micro-surveys) will also be considered.
 
 
 \begin{deluxetable}{|r|r|r|r|r|r|r|}
-\tablecaption{The Parameters From Eqs.~\ref{ggg} and \ref{m5} {\bf XXX will be updated!}\label{tab:eqparams}}
+\tablecaption{The Parameters From Eqs.~\ref{ggg} and \ref{m5} \textbf{XXX will be updated!}\label{tab:eqparams}}
 \tablehead{
 \colhead{} & \colhead{$u$}  &   \colhead{$g$}   & \colhead{$r$}   &  \colhead{$i$}  & \colhead{$z$}  & \colhead{$y$}
 }
 \startdata
-   $m_{\rm sky}$\tablenotemark{a} &   22.9    & 22.3    & 21.2    & 20.5    & 19.6    &  18.6  \\
+   $m_\mathrm{sky}$\tablenotemark{a} &   22.9    & 22.3    & 21.2    & 20.5    & 19.6    &  18.6  \\
    $\theta$\tablenotemark{b}      &   0.77     &  0.73     & 0.70    & 0.67    &  0.65   &  0.63  \\
    $\gamma$\tablenotemark{c}      &   0.037   & 0.038    & 0.039   & 0.039   & 0.040   & 0.040 \\
     $k_m$\tablenotemark{d}        &    0.451  &  0.163   &  0.087  &  0.065   &  0.043   &  0.138 \\
@@ -220,7 +220,7 @@ the systematic photometric error (includes errors due to, e.g., imperfect
 modeling of the point spread function, but does not include errors in
 absolute photometric zeropoint). The calibration system and procedures
 are designed to maintain $\sigma_{sys}<0.005$ mag. Based on
-SDSS experience (Sesar et al.~2007), the random photometric error for
+SDSS experience \citep{2007AJ....134.2236S}, the random photometric error for
 point sources, as
 a function of magnitude, is well described\footnote{Eq.~\ref{ggg} can
 be derived from $\sigma_{rand}=N/S$, where $N$ is noise and $S$ is signal,
@@ -229,14 +229,14 @@ $\alpha$ can be expressed in terms of a single unknown constant $\gamma$
 by using the condition that $\sigma_{rand}=0.2$ for $m=m_5$.} by
 \begin{equation}
 \label{ggg}
-  \sigma_{rand}^2 = (0.04-\gamma)\, x + \gamma \, x^2 \,\,\, {\rm (mag^2),}
+  \sigma_{rand}^2 = (0.04-\gamma)\, x + \gamma \, x^2 \,\,\, \mathrm{(mag^2),}
 \end{equation}
 with $x \equiv 10^{0.4\,(m-m_5)}$. Here $m_5$ is the 5$\sigma$ depth (for
 point sources) in a given band, and $\gamma$ depends on the sky
 brightness, readout noise, etc.
 %Using the LSST exposure time
-%calculator\footnote{Available at http://dls.physics.ucdavis.edu/etc.}
-%(Gee et al.~2007),
+%calculator\footnote{Available at \url{http://dls.physics.ucdavis.edu/etc}.}
+%\citep{Gee2007},
 Detailed determination of the system throughput yields the values of $\gamma$
 listed in Table~\ref{tab:eqparams}. The 5$\sigma$ depth for point sources is determined from
 \begin{eqnarray}
@@ -286,7 +286,7 @@ band, as demonstrated by $\Delta C_m(\tau = 2)$ listed in Table~\ref{tab:eqparam
 The loss of depth at the airmass of $X=1.2$ due to seeing degradation
 and increased atmospheric extinction is listed in the last row in Table~\ref{tab:eqparams}. Note
 that the uncertainty of limiting depth predictions due to unpredictable solar
-activity (which influences the night sky brightness, Patat 2008) is about
+activity (which influences the night sky brightness, \citet{2008A&A...481..575P}) is about
 0.1-0.2 mag.
 
 
@@ -295,21 +295,21 @@ activity (which influences the night sky brightness, Patat 2008) is about
 \subsubsection{   The NEO Completeness Analysis    }
 \label{Sec:NEOc}
 Detailed analyses of the LSST completeness for PHAs and NEOs are
-described in Jones et al.~(2017), Vere{\v s} \& Chesley~(2017ab), and Grav et al.~(2016).
+described in \citet{2017arXiv171110621J}, \citet{2017AJ....154...12V,2017AJ....154...13V}, and \citet{2016AJ....151..172G}.
 After accounting for differences in their input assumptions and models, each of these independent
 works calculates a completeness value which is consistent within a few percent.
-Here we briefly summarize the LSST project analysis carried out in Jones et al.~(2017); this
+Here we briefly summarize the LSST project analysis carried out in \citet{2017arXiv171110621J}; this
 approach is roughly the same for each of the studies mentioned above.
 
 To assess the LSST completeness for PHAs, the PHA
 population is represented by a sample of orbits taken from the Solar
-System model of of Grav et al.~(2007).
+System model of \citet{2007AAS...211.4721G}.
 The simulated baseline survey is used to determine which PHAs are present in
 each exposure and at what signal-to-noise ratio they were observed. In
 addition to  seeing, atmospheric transparency, and sky background effects
 (see eq.~\ref{m5}), the signal-to-noise computation takes into account losses
 due to non-optimal detection filters and object trailing. Using mean asteroid reflectance
-spectra (DeMeo et al. 2009), combined with the LSST bandpasses (listed in Table~\ref{tab:eqparams}),
+spectra \citep{2009Icar..202..160D}, combined with the LSST bandpasses (listed in Table~\ref{tab:eqparams}),
 we calculate expected colors, assuming all PHAs are C type asteroids, of
 $V-m = (-1.53, -0.28, 0.18, 0.29, 0.30, 0.30)$ for $m=(u, g, r, i, z, y)$ to transform
 standard $V$ band magnitudes to the magnitudes expected in each filter.  Due to
@@ -318,7 +318,7 @@ band, the smallest objects are preferentially detected in the $griz$ bands.
 The correction for trailing is implemented by subtracting from the right-hand
 side of eq.~\ref{m5}
 \begin{eqnarray}
- \Delta m_5^{\rm trailing} & = &1.25\,\log_{10}\left(1+0.42 \, x^2 \right) \\
+ \Delta m_5^\mathrm{trailing} & = &1.25\,\log_{10}\left(1+0.42 \, x^2 \right) \\
    x & = & {v \,t_{vis} \over 24 \, \theta},
 \end{eqnarray}
 where the object's velocity, $v$, is expressed in deg.~day$^{-1}$.
@@ -331,15 +331,15 @@ with $\alpha=0.33$, in order to evaluate completeness as a function of $H$.
 An object is considered to be discovered if the object was detected on at least three nights within a
 window of 15 days, with a minimum of two visits per night. The same criterion has been used in NASA studies,
 and is confirmed as reliable by a detailed analysis of orbital linking and orbit determination using the Moving
-Object Processing System (MOPS) code (Vere{\v s} \& Chesley~2017ab; Jedicke et al.~2005) developed by the
+Object Processing System (MOPS) code \citep{2017AJ....154...12V,2017AJ....154...13V,2005AAS...20712102J} developed by the
 Pan-STARRS project (and adopted by LSST in a collaborative effort with Pan-STARRS). The MOPS software
 system and its algorithms are significantly more advanced than anything previously
 fielded for this purpose to date. Realistic MOPS simulations show
-$>$99\% linking efficiency across all classes of Solar System objects (Denneau et al.~2013),
-and at least 93\% efficiency for NEOs (Vere{\v s} \& Chesley~2017ab).
+$>$99\% linking efficiency across all classes of Solar System objects \citep{2013PASP..125..357D},
+and at least 93\% efficiency for NEOs \citep{2017AJ....154...12V,2017AJ....154...13V}.
 
 The LSST baseline cadence discovers 66\% of PHAs with $H\leq22$ (equivalent to $D\ge140$~m)
-after 10 years of operations (61\% of NEOs with $H\leq22$) (Jones et al.~2017).  This cadence spends 6\% of the total
+after 10 years of operations (61\% of NEOs with $H\leq22$) \citep{2017arXiv171110621J}.  This cadence spends 6\% of the total
 observing time on NEO-optimized observations north of $\delta = +5^\circ$, and MOPS links objects with windows of 15 days.
 The baseline survey cumulative completeness as a function of time for objects with $H\le22$ is shown in the upper panel of Fig.~\ref{Fig:Cneo},
 both with and without including other surveys. These figures are likely to be uncertain to the level of $\pm5\%$ due
@@ -386,10 +386,10 @@ $r\sim16$) even at the Galactic poles.
 
 Data from the Subaru telescope reduced with the LSST software stack indicate that systematic errors of
 10 mas on spatial scales of several arcminutes are realistic even at this stage of maturity of the
-code; results reported by DES (\cite{}) indicate astrometric residuals of $\sim 7$mas for 30s exposures
+code; results reported by DES \citep{2017PASP..129g4503B} indicate astrometric residuals of $\sim 7$mas for 30s exposures
 in a 4m, with scope for further improvements from denser astrometric standard grids. Even a drift-scanning
 survey such as SDSS delivers uncorrelated systematic errors (dominated by seeing
-effects) at the level of 20-30 mas (measured from repeated scans; Pier et al.~2003);
+effects) at the level of 20-30 mas \citep[measured from repeated scans;][]{2003AJ....125.1559P};
 the expected image quality for LSST will be twice as good as for SDSS. Furthermore,
 there are close to 1000 galaxies per sensor with $r<22$, which will provide exquisite
 control of systematic astrometric errors as a function of magnitude, color and other
@@ -421,7 +421,7 @@ The astrometric transformations for a given CCD and exposure, and
 proper motion and parallax for all the stars from a given CCD, are simultaneously
 solved for using an iterative algorithm. The astrometric transformations from
 pixel to sky coordinates are modeled using low-order polynomials and standard
-techniques developed at the U.S. Naval Observatory (Monet et al.~2003). The expected
+techniques developed at the U.S. Naval Observatory \citep{2003AJ....125..984M}. The expected
 proper motion and
 parallax errors for a 10-year long baseline survey, as a function of apparent
 magnitude, are summarized in Table~\ref{tab:tenyear}. Blue stars (e.g., F/G stars) fainter than
@@ -442,30 +442,30 @@ a strong independent argument for a survey lifetime of at least 10 years
 
 
 For comparison with Table~\ref{tab:tenyear}, the SDSS-POSS proper motion measurements have an
-accuracy of $\sim$5 mas yr$^{-1}$ per coordinate at $r=20$ (Munn et al.~2004). Gaia
+accuracy of $\sim$5 mas yr$^{-1}$ per coordinate at $r=20$ \citep{2004AJ....127.3034M}. Gaia
 is expected to deliver parallax errors of 0.3 mas and proper motion errors of
-0.2 mas yr$^{-1}$ at its faint end at $r\sim20$ (Perryman et al.~2001). Hence, LSST will smoothly
+0.2 mas yr$^{-1}$ at its faint end at $r\sim20$ \citep{2001A&A...369..339P}. Hence, LSST will smoothly
 extend Gaia's error vs.\ magnitude curve 4 magnitudes fainter.
 
 
 \subsection{             Data Products and Archive Services          }
 \label{Sec:dp}
 
-Data collected by the LSST telescope and camera will be automatically processed to {\em data products} -- catalogs, alerts,
+Data collected by the LSST telescope and camera will be automatically processed to \emph{data products} -- catalogs, alerts,
 and reduced images -- by the LSST Data Management system
 (\S~\ref{sec:dm}). These products are designed to be sufficient to
 enable a large majority of LSST science cases, without the need to
 work directly with the raw pixels.  We give a high-level overview of
 the LSST data products here; further details may be found in the LSST
-Data Products Definition Document (Juri\'{c} et al. 2013).
+Data Products Definition Document \citep{LSE-163}.
 
 \vskip 1em
 
 Two major categories of data products will be produced and delivered by LSST DM:
 \begin{itemize}
-\item {\bf   Prompt products\footnote{Historically, these have been referred to as ``Level
+\item \textbf{  Prompt products\footnote{Historically, these have been referred to as ``Level
 1 Data Products'', but going forward we prefer to use the more descriptive
-{\em Prompt Products} designation. Note that the old terminology is still
+\emph{Prompt Products} designation. Note that the old terminology is still
 in use in present-day LSST documents and code; new and updated
 documents will gradually transition to the new, descriptive, nomenclature
 used in this paper.
@@ -489,15 +489,15 @@ identification. The efficiency of linking (and thus the completeness
 of the resulting orbit catalog) will depend on the final observing
 cadence chosen for LSST, as well as the performance of the linking
 algorithm (\S~\ref{Sec:NEOc}).
-\item {\bf Data release products\footnote{These have been referred to as ``Level
+\item \textbf{Data release products\footnote{These have been referred to as ``Level
 2 Data Products'' in the past; as with their ``Level 1`` counterparts, we
 will use the more descriptive nomenclature going forward.}} are designed to enable systematics- and flux-limited science, and will be made available in generally annual Data Releases. These will include the (reduced and raw) single-epoch images, deep coadds of the observed sky, catalogs of objects detected in LSST data, catalogs of sources (the detections and measurements of objects on individual visits), and catalogs of ``forced sources" (measurements of flux on individual visits at locations where objects were detected by LSST or other surveys). LSST data releases will also include fully reprocessed prompt products, as well as all metadata and software necessary for the end-user to reproduce any aspect of LSST data release processing.\\
 \\
 A noteworthy aspect of LSST data release processing is that it will largely
-rely on {\bf multi-epoch model fitting}, or {\bf \em MultiFit}, to
+rely on \textbf{multi-epoch model fitting}, or \textbf{\emph{MultiFit}}, to
 perform near-optimal characterization of object properties. That is,
-while the coadds will be used to perform object {\em detection}, the
-{\em measurement} of their properties will be performed by
+while the coadds will be used to perform object \emph{detection}, the
+\emph{measurement} of their properties will be performed by
 simultaneously fitting (PSF-convolved) models to single-epoch
 observations. It is not yet clear to what extent we will be able to make some of these
 measurements on suitable linear combinations of input images (with careful propagation
@@ -534,7 +534,7 @@ custom, user-created, products derived from the LSST data.  These could be
 new catalogs created by simple post-processing of the LSST data release
 catalogs, entirely new data products generated by running custom code on raw
 LSST imaging data, or something in-between.  We will make it possible for the
-end-users to create (or use) such {\bf user generated\footnote{Formerly known as
+end-users to create (or use) such \textbf{user generated\footnote{Formerly known as
 ``Level 3 Data Products``.}} products at the LSST Large Data Facility,
 using the services offered within the LSST Science Platform (\S~\ref{sec:lsp}).
 
@@ -542,26 +542,26 @@ using the services offered within the LSST Science Platform (\S~\ref{sec:lsp}).
 \subsubsection{The LSST Science Platform}
 \label{sec:lsp}
 
-The LSST Science Platform \citep{LSP} represents LSST's vision for a
+The LSST Science Platform \citep{LSE-319} represents LSST's vision for a
 large-scale astronomical data archive that can enable effective research
 with datasets of LSST size and complexity.  It builds on recent trends in
 remote data analysis, and practical experiences in the astronomical context
 gathered by projects such as the JHU
-SciServer \citep{sciserver}, Gaia GAVIP \citep{gavip}, or NOAO Datalab \citep{datalab}.
+SciServer \citep{2017AAS...22923615R}, Gaia GAVIP \citep{2016SPIE.9913E..1VV}, or NOAO Datalab \citep{2016SPIE.9913E..0LF}.
 
 The LSST Science Platform will be a set of web applications (portals) and
 services through which the users will access the LSST data products and, if
 desired, conduct remote analyses or create user generated products.  The
-platform makes this possible through tree user-facing {\em aspects}:
+platform makes this possible through tree user-facing \emph{aspects}:
 %
 \begin{itemize}
 
-\item The web {\bf Portal}, designed to provide the essential data access and
+\item The web \textbf{Portal}, designed to provide the essential data access and
 visualization services through a simple-to-use website.  It will enable
 querying and browsing of the available datasets in ways the users are
 accustomed to at archives such as IRSA, MAST, or the SDSS archive.
 
-\item The {\bf JupyterLab} aspect, that will provide a
+\item The \textbf{JupyterLab} aspect, that will provide a
 Jupyter\footnote{\url{http://jupyter.org/}} Notebook-like
 interface and is geared towards enabling next-to-the-data remote analysis.
 A large suite of commonly used astronomical software, including the LSST
@@ -576,14 +576,14 @@ it possible for the users to bring their codes and perform analyses at the
 LSST DAC.  This reduces the barrier to entry and shortens the path to
 science for the LSST science community.
 
-\item The {\bf Web API} aspect will expose the LSST DAC services to other
+\item The \textbf{Web API} aspect will expose the LSST DAC services to other
 software tools and services using commonly accepted formats and protocols\footnote{For
 example, industry-standard protocols such as WebDAV may be used to expose
 file data, or Virtual Observatory protocols for access to catalogs or images
 (TAP and SIAP, respectively), etc.}.  This interface will open the
 possibility for remote access and analysis of the LSST data set using
 applications that the users are already comfortable with such as
-TOPCAT \citep{topcat}, or libraries such as Astropy \citep{astropy}.  Furthermore, the offered APIs will allow
+TOPCAT \citep{2005ASPC..347...29T}, or libraries such as Astropy \citep{2013A&A...558A..33A}.  Furthermore, the offered APIs will allow
 for federation with other astronomical archives, bringing added value to the
 LSST dataset.
 \end{itemize}
@@ -601,8 +601,9 @@ operations (in 2022).
 
 The characterization (unsupervised machine learning) and classification (supervised machine learning) of
 massive, multivariate data catalogs such as those generated by the LSST are major research challenges for
-data-intensive astronomy (Tyson et al.~2008b; Ivezi\'{c} et al.~2008b;
-Bloom et al.~2008; Borne 2008; Ivezi\'c et al.~2014). To address these questions, the statistics and machine-learning research
+data-intensive astronomy
+\citep{Tyson2008,2008AIPC.1082..359I,2008AN....329..284B,2008AN....329..255B,2014sdmm.book.....I}.
+To address these questions, the statistics and machine-learning research
 communities are collaborating with LSST scientists to develop new algorithms that will enable the full
 scientific potential of the LSST, including:
 \begin{itemize}
@@ -640,7 +641,7 @@ scientific potential of the LSST, including:
 the same area of sky (centered on $\alpha$=9$^h$ 20$\arcmin$ 47$\arcsec$ and
 $\delta$=30$^\circ$ 8$\arcmin$ 12$\arcsec$) obtained by the SDSS (top, $r<22.5$) and
 the Deep Lens Survey (bottom, $r<24.5$). These are gri composites,
-colorized following Lupton et al.~(2004).  The depth gain for the bottom image
+colorized following \citet{2004PASP..116..133L}.  The depth gain for the bottom image
 is mostly due to the lower surface brightness limit, which is also responsible
 for the apparent increase of galaxy sizes. LSST will obtain $\sim$100 $gri$
 color images to the same depth ($\sim$200 for the $riz$ composites) of each point
@@ -657,8 +658,8 @@ sources).}
 \end{center}
 \caption{A comparison of angular resolution for $20\times20$ arcsec$^2$ images obtained
 by the SDSS (top, median seeing of 1.5 arcsec) and expected from LSST (bottom,
-seeing of 0.7 arcsec). The images show a lensed SDSS quasar (SDSS J1332+0347,
-Morokuma et al.~2007); the bottom image was taken with Suprime-cam at Subaru.
-Adapted from Blandford et al.~(2008).}
+seeing of 0.7 arcsec). The images show a lensed SDSS quasar
+\citep[SDSS J1332+0347,][]{2007AJ....133..214M}; the bottom image was taken with Suprime-cam at Subaru.
+Adapted from \citet{2007AAS...21113707B}.}
 \label{Fig:panels2}
 \end{figure}
