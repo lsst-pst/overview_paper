@@ -50,11 +50,10 @@ affiliations:
   JPL: 'Jet Propulsion Laboratory, California Institute of Technology, Pasadena, CA
     91109'
   LNL: 'Livermore National Laboratory, 7000 East Avenue, Livermore, CA 94550'
-  LSST: 'LSST Project Office, 933 N. Cherry Avenue, Tucson, AZ  85721'
+  LSST: 'LSST Project Office, 950 N. Cherry Avenue, Tucson, AZ  85719'
   Lowell: '1400 W. Mars Hill Rd., Lowell Observatory, Flagstaff, AZ 86001'
   Lyon-CC-IN2P3: 'Centre de Calcul de l''IN2P3, USR 6402 du CNRS-IN2P3, 43 Bd. du
     11 Novembre 1918, 69622 Villeurbanne Cedex, France'
-  Lyon-CC-IN2P3b: 'IN2P3 Computing Center, CNRS/IN2P3, Lyon-Villeurbanne, France'
   Lyon-LMA-IN2P3: 'Laboratoire des Materiaux Avances (LMA), IN2P3/CNRS, Universit\''{e}
     de Lyon, F-69622 Villeurbanne, Lyon, France'
   NAOChina: 'National Astronomical Observatories, Chinese Academy of Sciences, A20
@@ -648,7 +647,7 @@ authors:
     name: Haupt
     orcid:
   - affil:
-      - Lyon-CC-IN2P3b
+      - Lyon-CC-IN2P3
     altaffil: []
     initials: F.
     name: Hernandez
@@ -1320,11 +1319,11 @@ authors:
     name: Warner
     orcid:
   - affil:
-      - Haverford
+      - LSST
     altaffil: []
     initials: B.
     name: Willman
-    orcid:
+    orcid: 0000-0003-2892-9906
   - affil:
       - UCDavis
     altaffil: []
