@@ -141,7 +141,7 @@ authors:
     altaffil: []
     initials: \v{Z}.
     name: Ivezi\'{c}
-    orcid:
+    orcid: 0000-0001-5250-2633
   - affil:
       - UCDavis
     altaffil: []
@@ -280,7 +280,7 @@ authors:
     altaffil: []
     initials: A.C.
     name: Becker
-    orcid:
+    orcid: 0000-0001-6661-3043
   - affil:
       - SLAC
     altaffil: []
@@ -355,7 +355,7 @@ authors:
     altaffil: []
     initials: J.F.
     name: Bosch
-    orcid:
+    orcid: 0000-0003-2759-5764
   - affil:
       - SLAC-CHECK
       - Lyon-CC-IN2P3
@@ -440,7 +440,7 @@ authors:
     altaffil: []
     initials: A.J.
     name: Connolly
-    orcid:
+    orcid: 0000-0001-5576-8189
   - affil:
       - LSST
     altaffil: []
@@ -729,7 +729,7 @@ authors:
     altaffil: []
     initials: R.L.
     name: Jones
-    orcid:
+    orcid: 0000-0001-5916-0031
   - affil:
       - Paris-LPNHE
     altaffil: []
@@ -741,7 +741,7 @@ authors:
     altaffil: []
     initials: M.
     name: Juri\'{c}
-    orcid:
+    orcid: 0000-0003-1996-9252
   - affil:
       - LSST
       - SLAC-Kavli
@@ -766,7 +766,7 @@ authors:
     altaffil: []
     initials: B.
     name: Kalmbach
-    orcid:
+    orcid: 0000-0002-6825-5283
   - affil:
       - LSST
     altaffil: []
@@ -778,7 +778,7 @@ authors:
     altaffil: []
     initials: M.M.
     name: Kasliwal
-    orcid:
+    orcid: 0000-0001-7970-0760
   - affil:
       - Chicago
     altaffil: []
@@ -814,7 +814,7 @@ authors:
     altaffil: []
     initials: S.
     name: Krughoff
-    orcid:
+    orcid: 0000-0002-4410-7868
   - affil:
       - Praha-ASCR
     altaffil: []
@@ -875,7 +875,7 @@ authors:
     altaffil: []
     initials: R.H.
     name: Lupton
-    orcid:
+    orcid: 0000-0003-1666-0962
   - affil:
       - Caltech-Astro
     altaffil: []
@@ -1231,7 +1231,7 @@ authors:
     altaffil: []
     initials: M.A.
     name: Strauss
-    orcid:
+    orcid: 0000-0002-0106-7755
   - affil:
       - CUMBRES
     altaffil: []
@@ -1359,7 +1359,7 @@ authors:
     altaffil: []
     initials: P.
     name: Yoachim
-    orcid:
+    orcid: 0000-0003-2874-6464
   - affil:
       - OSU
     altaffil: []
