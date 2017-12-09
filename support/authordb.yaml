@@ -532,6 +532,12 @@ authors:
     name: Durech
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: F.
+    name: Economou
+    orcid: 0000-0002-8333-7615
+  - affil:
       - PSU
     altaffil: []
     initials: M.
@@ -694,6 +700,12 @@ authors:
     initials: J.
     name: Jee
     orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: T.
+    name: Jenness
+    orcid: 0000-0001-5982-167X
   - affil:
       - Berkeley-Space
     altaffil: []
