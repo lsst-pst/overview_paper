@@ -82,9 +82,6 @@ affiliations:
   Paris-APC: 'AstroParticule et Cosmologie, Universit\''{e} Paris Diderot, CNRS/IN2P3,
     CEA/lrfu, Observatoire de Paris, Sorbonne Paris Cit\''{e}, 10, rue Alice Domon
     et L\''{e}onie Duquet, Paris Cedex 13, France'
-  Paris-APC-CHECK: 'APC, AstroParticule et Cosmologie, Universit\''{e} Paris Diderot,
-    CNRS/IN2P3, CEA/lrfu, Observatoire de Paris, Sorbonne Paris Cit\''{e}, 10, rue
-    Alice Domon et L\''{e}onie Duquet, Paris Cedex 13, France'
   Paris-Diderot: 'Universit\''{e} Paris Diderot, Sorbonne Paris Cit\''{e}, F-75013
     Paris, France'
   Paris-LAL: 'Laboratoire de l''Acc\''{e}l\''{e}rateur Lin\''{e}aire, IN2P3-CNRS,
@@ -258,7 +255,7 @@ authors:
     name: Barrau
     orcid:
   - affil:
-      - Paris-APC-CHECK
+      - Paris-APC
     altaffil: []
     initials: J.G.
     name: Bartlett
@@ -1118,7 +1115,7 @@ authors:
     name: Rosing
     orcid:
   - affil:
-      - Paris-APC-CHECK
+      - Paris-APC
     altaffil: []
     initials: C.
     name: Roucelle
