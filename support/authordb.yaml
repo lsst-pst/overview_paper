@@ -86,8 +86,6 @@ affiliations:
     Paris, France'
   Paris-LAL: 'Laboratoire de l''Acc\''{e}l\''{e}rateur Lin\''{e}aire, IN2P3-CNRS,
     Universit\''{e} de Paris-Sud, B.P. 34, 91898 Orsay Cedex, France'
-  Paris-LAL-CHECK: 'Laboratoire de l’Acc\''{e}l\''{e}rateur Lin\''{e}aire, Univ. Paris
-    Sud/CNRS/IN2P3, Bat. 200, 91898 Orsay Cedex, France'
   Paris-LPNHE: 'Laboratoire de Physique Nucl\''{e}aire et des Hautes Energies, Universit\''{e}
     Pierre et Marie Curie, Universit\''{e} Paris Diderot, CNRS/IN2P3, 4 place Jussieu,
     75005 Paris, France'
@@ -311,7 +309,7 @@ authors:
     name: Biswas
     orcid:
   - affil:
-      - Paris-LAL-CHECK
+      - Paris-LAL
       - Paris-Diderot
     altaffil: []
     initials: G.
