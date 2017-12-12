@@ -169,7 +169,7 @@ authors:
     name: Alonso
     orcid:
   - affil:
-      - Washington
+      - Princeton-Astro
     altaffil: []
     initials: Y.
     name: AlSayyad
@@ -181,7 +181,7 @@ authors:
     name: Anderson
     orcid:
   - affil:
-      - NOAO
+      - LSST
     altaffil: []
     initials: J.
     name: Andrew
@@ -491,7 +491,7 @@ authors:
     name: Dawson
     orcid:
   - affil:
-      - CTIO
+      - LSST
     altaffil: []
     initials: F.
     name: Delgado
@@ -515,7 +515,7 @@ authors:
     name: Dubois
     orcid:
   - affil:
-      - SLAC
+      - IPAC
     altaffil: []
     initials: G.P.
     name: Dubois-Felsmann
@@ -618,7 +618,7 @@ authors:
     name: Goodenow
     orcid:
   - affil:
-      - NOAO
+      - LSST
     altaffil: []
     initials: W.J.
     name: Gressler
@@ -805,9 +805,9 @@ authors:
     name: Krabbendam
     orcid:
   - affil:
-      - Washington
+      - LSST
     altaffil: []
-    initials: S.
+    initials: K.S.
     name: Krughoff
     orcid: 0000-0002-4410-7868
   - affil:
@@ -920,7 +920,7 @@ authors:
     name: Miller
     orcid:
   - affil:
-      - NOAO
+      - LSST
     altaffil: []
     initials: D.J.
     name: Mills
@@ -938,7 +938,7 @@ authors:
     name: Moniez
     orcid:
   - affil:
-      - NOAO
+      - LSST
     altaffil: []
     initials: D.R.
     name: Neill
@@ -1179,7 +1179,7 @@ authors:
     name: Schwamb
     orcid:
   - affil:
-      - NOAO
+      - LSST
     altaffil: []
     initials: J.
     name: Sebag
