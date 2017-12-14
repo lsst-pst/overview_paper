@@ -1,4 +1,5 @@
 affiliations:
+  Adler: 'The Adler Planetarium, Chicago, IL 60605, USA'
   BNL: 'Brookhaven National Laboratory, Upton, NY 11973'
   Belgrade-AO: 'Astronomical Observatory, Volgina 7, P.O.Box 74, 11060 Belgrade, Serbia'
   Berkeley-Astro: 'Astronomy Department,  University of California, 601 Campbell Hall,
@@ -14,9 +15,6 @@ affiliations:
     93117'
   Caltech-Astro: 'Astronomy Department, California Institute of Technology, 1200 East
     California Blvd., Pasadena CA 91125'
-  Carnegie-Obs: 'The Observatories, Carnegie Institution for Science, Pasadena CA
-    91101, Hubble Fellow and Carnegie-Princeton Fellow, Visiting Associate, California
-    Institute of Technology, Pasadena CA 91125'
   ChUniv: 'Astronomical Institute, Charles University, Praha, Czech Republic'
   Chicago: 'Department of Astronomy and Astrophysics, University of Chicago, 5640
     South Ellis Avenue, Chicago, IL 60637'
@@ -49,6 +47,8 @@ affiliations:
     Martin Drive, Baltimore, MD 21218'
   JPL: 'Jet Propulsion Laboratory, California Institute of Technology, Pasadena, CA
     91109'
+  KLOA: 'Key Laboratory of Optical Astronomy, National Astronomical Observatories,
+     Chinese Academy of Sciences, 20A Datun Road, Chaoyang District, Beijing 100012, China'
   LAPP: 'Universit\''{e} Grenoble-Alpes, Universit\''{e} Savoie Mont Blanc, CNRS/IN2P3
     Laboratoire d''Annecy-le-Vieux de Physique des Particules,
     9 Chemin de Bellevue -- BP 110, 74940 Annecy-le-Vieux Cedex, France'
@@ -769,7 +769,7 @@ authors:
     name: Kantor
     orcid:
   - affil:
-      - Carnegie-Obs
+      - Caltech-Astro
     altaffil: []
     initials: M.M.
     name: Kasliwal
@@ -1197,7 +1197,6 @@ authors:
     name: Seppala
     orcid:
   - affil:
-      - Purdue-Astro
       - Oxford
     altaffil: []
     initials: I.
@@ -1222,7 +1221,7 @@ authors:
     name: Smith
     orcid:
   - affil:
-      - Berkeley-Astro
+      - Princeton-Astro
     altaffil: []
     initials: M.A.
     name: Strauss
@@ -1302,7 +1301,7 @@ authors:
     name: Xin
     orcid:
   - affil:
-      - Princeton-Astro
+      - Adler
     altaffil: []
     initials: L.
     name: Walkowicz
@@ -1356,7 +1355,7 @@ authors:
     name: Yoachim
     orcid: 0000-0003-2874-6464
   - affil:
-      - OSU
+      - KLOA
     altaffil: []
     initials: H.
     name: Zhan
