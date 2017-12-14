@@ -6,6 +6,8 @@ convert it to an author tex file using AASTeX6.1 syntax.
 
   python3 support/db2authors.py > authors.tex
 
+This program requires the "yaml" package to be installed.
+
 """
 from __future__ import print_function
 import os
