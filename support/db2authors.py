@@ -7,6 +7,7 @@ convert it to an author tex file using AASTeX6.1 syntax.
   python3 support/db2authors.py > authors.tex
 
 """
+from __future__ import print_function
 import os
 import os.path
 import re
