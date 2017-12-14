@@ -1,5 +1,5 @@
 affiliations:
-  Adler: 'The Adler Planetarium, Chicago, IL 60605, USA'
+  Adler: 'The Adler Planetarium, 1300 South Lakeshore Ave, Chicago, IL 60605, USA'
   BNL: 'Brookhaven National Laboratory, Upton, NY 11973'
   Belgrade-AO: 'Astronomical Observatory, Volgina 7, P.O.Box 74, 11060 Belgrade, Serbia'
   Berkeley-Astro: 'Astronomy Department,  University of California, 601 Campbell Hall,
@@ -54,6 +54,7 @@ affiliations:
     9 Chemin de Bellevue -- BP 110, 74940 Annecy-le-Vieux Cedex, France'
   LNL: 'Livermore National Laboratory, 7000 East Avenue, Livermore, CA 94550'
   LSST: 'LSST Project Office, 950 N. Cherry Avenue, Tucson, AZ  85719'
+  LOC: 'Library of Congress, 101 Independence Ave SE, Washington, DC 20540'
   Lowell: '1400 W. Mars Hill Rd., Lowell Observatory, Flagstaff, AZ 86001'
   Lyon-CC-IN2P3: 'Centre de Calcul de l''IN2P3, USR 6402 du CNRS/IN2P3, 43 Bd. du
     11 Novembre 1918, 69622 Villeurbanne Cedex, France'
@@ -1301,11 +1302,12 @@ authors:
     name: Xin
     orcid:
   - affil:
+      - LOC
       - Adler
     altaffil: []
     initials: L.
     name: Walkowicz
-    orcid:
+    orcid: 0000-0003-2918-8687
   - affil:
       - Duke
     altaffil: []
