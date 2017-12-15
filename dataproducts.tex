@@ -60,7 +60,7 @@ to evaluate and display the coverage.}
 The observing strategy for the main survey will be optimized for the homogeneity
 of depth and number of visits. In times of good seeing and at low airmass, preference
 is given to $r$-band and $i$-band observations. As often as possible, each field will be
-observed twice, with visits separated by 15-60 minutes. This strategy will provide motion
+observed twice, with visits separated by 15--60 minutes. This strategy will provide motion
 vectors to link detections of moving objects in the Solar System, and fine-time sampling
 for measuring short-period variability. The ranking criteria also ensure that the
 visits to each field are widely distributed in position angle on the sky and
@@ -115,7 +115,7 @@ read-out time and filter changes, it could obtain about 50 consecutive
 every two days over four months, about 600 deg$^2$ can be observed with this
 cadence over 10 years. Taking weather into account, the selected fields would
 each have on average about 40 hour-long sequences of 200 exposures each. Each
-observation in a sequence would have an equivalent 5-$\sigma$ depth of
+observation in a sequence would have an equivalent 5$\sigma$ depth of
 $r\sim24.5$, and each filter subsequence when coadded would be 2 magnitudes
 deeper than the main survey visits ($r\sim26.5$). When all 40 sequences and
 the main survey visits are coadded, they would extend the depth to $r\sim28$.
@@ -136,7 +136,7 @@ curves than obtained from the universal cadence. Such sequences would also
 serve as excellent tests of our photometric calibration procedures.
 
 The LSST has already selected four distant extragalactic survey fields\footnote{For
-details, see \url{http://www.lsst.org/News/enews/deep-drilling-201202.html}}
+details, see \url{https://www.lsst.org/News/enews/deep-drilling-201202.html}}
 that the project guarantees to observe as Deep Drilling Fields with deeper coverage
 and more frequent temporal sampling than provided by the standard LSST observing
 pattern. These fields (Elias S1, XMM-LSS, Extended Chandra Deep Field-South, and
@@ -287,7 +287,7 @@ The loss of depth at the airmass of $X=1.2$ due to seeing degradation
 and increased atmospheric extinction is listed in the last row in Table~\ref{tab:eqparams}. Note
 that the uncertainty of limiting depth predictions due to unpredictable solar
 activity (which influences the night sky brightness, \citet{2008A&A...481..575P}) is about
-0.1-0.2 mag.
+0.1--0.2 mag.
 
 
 
@@ -352,7 +352,7 @@ weather, etc.
 \includegraphics[width=1.\hsize,clip]{neo_pha_completeness_3in30_astro_lsst_01_1016}
 \caption{Cumulative completeness of the LSST survey for NEOs (left in each panel) and PHAs (right in each panel)
 brighter than a given absolute magnitude, $H\le22$ (related to the size of the object and albedo;
-$H$=22 mag is equivalent to a typical 140m asteroid). The top panel illustrates cumulative completeness
+$H$=22 mag is equivalent to a typical 140\,m asteroid). The top panel illustrates cumulative completeness
 for the LSST baseline cadence and MOPS configuration. In the baseline, LSST alone would discover 66\% of the PHAs
 with $H\le22$ (61\% of NEOs); LSST combined with existing resources (including reasonable boosts
 in capability in the future) can discover 81\% of PHAs (73\% of NEOs). The bottom panel illustrates cumulative
@@ -386,7 +386,7 @@ $r\sim16$) even at the Galactic poles.
 
 Data from the Subaru telescope reduced with the LSST software stack indicate that systematic errors of
 10 mas on spatial scales of several arcminutes are realistic even at this stage of maturity of the
-code; results reported by DES \citep{2017PASP..129g4503B} indicate astrometric residuals of $\sim 7$mas for 30s exposures
+code; results reported by DES \citep{2017PASP..129g4503B} indicate astrometric residuals of $\sim 7$\,mas for 30\,s exposures
 in a 4m, with scope for further improvements from denser astrometric standard grids. Even a drift-scanning
 survey such as SDSS delivers uncorrelated systematic errors (dominated by seeing
 effects) at the level of 20-30 mas \citep[measured from repeated scans;][]{2003AJ....125.1559P};
@@ -435,7 +435,7 @@ energy distributions.  After the first three years of the survey,
 errors will be about twice as large,} as the values given in Table~\ref{tab:tenyear}; the errors
 scale as $t^{-3/2}$ and $t^{-1/2}$, respectively. This error behavior is
 a strong independent argument for a survey lifetime of at least 10 years
-(c.f. \S 2).
+(c.f. \S~\ref{Sec:refdesign}).
 
 
 
@@ -490,8 +490,8 @@ of the resulting orbit catalog) will depend on the final observing
 cadence chosen for LSST, as well as the performance of the linking
 algorithm (\S~\ref{Sec:NEOc}).
 \item \textbf{Data release products\footnote{These have been referred to as ``Level
-2 Data Products'' in the past; as with their ``Level 1`` counterparts, we
-will use the more descriptive nomenclature going forward.}} are designed to enable systematics- and flux-limited science, and will be made available in generally annual Data Releases. These will include the (reduced and raw) single-epoch images, deep coadds of the observed sky, catalogs of objects detected in LSST data, catalogs of sources (the detections and measurements of objects on individual visits), and catalogs of ``forced sources" (measurements of flux on individual visits at locations where objects were detected by LSST or other surveys). LSST data releases will also include fully reprocessed prompt products, as well as all metadata and software necessary for the end-user to reproduce any aspect of LSST data release processing.\\
+2 Data Products'' in the past; as with their ``Level 1'' counterparts, we
+will use the more descriptive nomenclature going forward.}} are designed to enable systematics- and flux-limited science, and will be made available in generally annual Data Releases. These will include the (reduced and raw) single-epoch images, deep coadds of the observed sky, catalogs of objects detected in LSST data, catalogs of sources (the detections and measurements of objects on individual visits), and catalogs of ``forced sources'' (measurements of flux on individual visits at locations where objects were detected by LSST or other surveys). LSST data releases will also include fully reprocessed prompt products, as well as all metadata and software necessary for the end-user to reproduce any aspect of LSST data release processing.\\
 \\
 A noteworthy aspect of LSST data release processing is that it will largely
 rely on \textbf{multi-epoch model fitting}, or \textbf{\emph{MultiFit}}, to
@@ -535,7 +535,7 @@ new catalogs created by simple post-processing of the LSST data release
 catalogs, entirely new data products generated by running custom code on raw
 LSST imaging data, or something in-between.  We will make it possible for the
 end-users to create (or use) such \textbf{user generated\footnote{Formerly known as
-``Level 3 Data Products``.}} products at the LSST Large Data Facility,
+``Level 3 Data Products''.}} products at the LSST Large Data Facility,
 using the services offered within the LSST Science Platform (\S~\ref{sec:lsp}).
 
 
