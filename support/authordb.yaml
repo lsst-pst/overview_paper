@@ -498,6 +498,12 @@ authors:
     name: Delgado
     orcid:
   - affil:
+      - Princeton-Astro
+    altaffil: []
+    initials: M.
+    name: de Val-Borro
+    orcid: 0000-0002-0455-9384
+  - affil:
       - SLAC
     altaffil: []
     initials: S.
