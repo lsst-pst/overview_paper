@@ -175,42 +175,40 @@ specialized observing cadences.
 
 
 \begin{deluxetable}{|r|r|r|r|r|r|r|}
-\tablecaption{The Parameters From Eqs.~\ref{ggg} and \ref{m5} \textbf{XXX will be updated!}\label{tab:eqparams}}
+\tablecaption{The Parameters From Eqs.~\ref{ggg} and \ref{m5} \label{tab:eqparams}}
 \tablehead{
 \colhead{} & \colhead{$u$}  &   \colhead{$g$}   & \colhead{$r$}   &  \colhead{$i$}  & \colhead{$z$}  & \colhead{$y$}
 }
 \startdata
-   $m_\mathrm{sky}$\tablenotemark{a} &   22.9    & 22.3    & 21.2    & 20.5    & 19.6    &  18.6  \\
-   $\theta$\tablenotemark{b}      &   0.77     &  0.73     & 0.70    & 0.67    &  0.65   &  0.63  \\
-   $\gamma$\tablenotemark{c}      &   0.037   & 0.038    & 0.039   & 0.039   & 0.040   & 0.040 \\
-    $k_m$\tablenotemark{d}        &    0.451  &  0.163   &  0.087  &  0.065   &  0.043   &  0.138 \\
-    $C_m$\tablenotemark{e}        &   22.92   & 24.29    & 24.33   & 24.20   & 24.07   & 23.69 \\
-    $m_5$\tablenotemark{f}        &   23.68     &   24.89    & 24.43     &  24.00   & 24.45    & 22.60  \\
- $\Delta C^{\infty}_m$\tablenotemark{g} &  0.67   &  0.21     &  0.11   &  0.08   &   0.05  &  0.04  \\
- $\Delta C_m(2)$\tablenotemark{h} &  0.24   &  0.09     &   0.05  &  0.04   &   0.03  &  0.02 \\
-   $\Delta m_5$\tablenotemark{i}  &   0.21    & 0.15   & 0.14     &  0.13   & 0.13    & 0.15  \\
+$m_\mathrm{sky}$\tablenotemark{a}  & 22.99	& 22.26	 & 21.20	& 20.48	& 19.60	& 18.61	 \\
+$\theta$\tablenotemark{b}       	 & 0.81	& 0.77	& 0.73	& 0.71	& 0.69	& 0.68	 \\
+$\theta_{eff}$\tablenotemark{c}        & 0.92	& 0.87	& 0.83	& 0.80	& 0.78	& 0.76	 \\
+$\gamma$\tablenotemark{d}  	 & 0.038	& 0.039	& 0.039	& 0.039	& 0.039	& 0.039	 \\
+$k_m$\tablenotemark{e}   	 	 & 0.491	& 0.213	& 0.126	& 0.096	& 0.069	& 0.170	 \\
+$C_m$\tablenotemark{f}   	         & 23.09	& 24.42	& 24.44	& 24.32	& 24.16	& 23.73	 \\
+$m_5$\tablenotemark{g}    		 & 23.78	& 24.81	& 24.35	& 23.92	& 23.34	& 22.45	 \\
+$\Delta C^{\infty}_m$\tablenotemark{h}   & 0.62	& 0.18	& 0.10	& 0.07	& 0.05	& 0.04	 \\
+$\Delta C_m(2)$\tablenotemark{i}          & 0.23	& 0.08	& 0.05	& 0.03	& 0.02	& 0.02	 \\
+$\Delta m_5$\tablenotemark{j}              & 0.21	& 0.16	& 0.14	& 0.13	& 0.13	& 0.14	 \\
 \enddata
 \tablenotetext{^a}{The expected median zenith sky brightness at Cerro Pach\'on, derived from
            the median dark sky brightness observed by SDSS (AB mag arcsec$^{-2}$).}
 \tablenotetext{^b}{The expected delivered median zenith seeing
-  (arcsec). The seeing scales with airmass, $X$, as $X^{0.6}$.}
-\tablenotetext{^c}{The band-dependent parameter from Eq.~\ref{ggg}.}
-\tablenotetext{^d}{Adopted atmospheric extinction.}
-\tablenotetext{^e}{The band-dependent parameter from Eq.~\ref{m5}.}
-\tablenotetext{^f}{The typical 5$\sigma$ depth for point sources at zenith, assuming exposure time of
+  (FWHM, arcsec). The seeing approximately scales with airmass, $X$, as $X^{0.6}$.}
+\tablenotetext{^c}{The effective zenith seeing (arcsec) used for $m_5$ computation.}
+\tablenotetext{^d}{The band-dependent parameter from Eq.~\ref{ggg}.}
+\tablenotetext{^e}{Adopted atmospheric extinction.}
+\tablenotetext{^f}{The band-dependent parameter from Eq.~\ref{m5}.}
+\tablenotetext{^g}{The typical 5$\sigma$ depth for point sources at zenith, assuming exposure time of
           2$\times$15\,sec, and observing conditions as listed. For larger
           airmass the 5$\sigma$ depth is brighter; see the bottom row.}
-\tablenotetext{^g}{The loss of depth due to instrumental noise (assuming 9\,e$^-$ per pixel and readout,
+\tablenotetext{^h}{The loss of depth due to instrumental noise (assuming 9\,e$^-$ per pixel and readout,
        and two readouts per visit).}
-\tablenotetext{^h}{Additive correction to $C_m$ when exposure time is doubled from its fiducial value
+\tablenotetext{^i}{Additive correction to $C_m$ when exposure time is doubled from its fiducial value
           to 60\,sec.}
-\tablenotetext{i}{The loss of depth at airmass of $X=1.2$ due to seeing degradation
+\tablenotetext{j}{The loss of depth at airmass of $X=1.2$ due to seeing degradation
                  and increased atmospheric extinction.}
 \end{deluxetable}
-
-
-
-
 
 
 \subsection{  Detailed Analysis of Simulated Surveys  }
@@ -259,13 +257,17 @@ Detailed determination of the system throughput yields the values of $\gamma$
 listed in Table~\ref{tab:eqparams}. The 5$\sigma$ depth for point sources is determined from
 \begin{eqnarray}
 \label{m5}
-  m_5 = C_m + 0.50\,(m_{sky}-21) + 2.5\,\log_{10}(0.7/\theta) +  \nonumber \\
+  m_5 = C_m + 0.50\,(m_{sky}-21) + 2.5\,\log_{10}(0.7/\theta_{eff}) +  \nonumber \\
         + 1.25\,\log_{10}(t_{vis}/30) - k_m(X-1) \phantom{xxxxx}
 \end{eqnarray}
-where $m_{sky}$ is the sky brightness (AB mag arcsec$^{-2}$), $\theta$ is
-the seeing (FWHM, in arcsec), $t_{vis}$ is the exposure time (seconds),
-$k$ is the atmospheric extinction coefficient, and $X$ is airmass.
-
+where $m_{sky}$ is the sky brightness (AB mag arcsec$^{-2}$), $\theta_{eff}$ is
+the seeing (in arcsec), $t_{vis}$ is the exposure time (seconds),
+$k$ is the atmospheric extinction coefficient, and $X$ is airmass. Here
+the seeing corresponds to the ``effective'' seeing computed from 
+the seeing FWHM following the procedure described in the LSST Document-18208
+(available as http://ls.st/Doc-18208). The seeing FWHM in each band is listed in 
+the second row of Table 2, and the effective seeing is listed in the third row of 
+Table 2. 
 
 The constants $C_m$ depend on the overall throughput of the instrument
 and are computed using our current best throughput estimates for
