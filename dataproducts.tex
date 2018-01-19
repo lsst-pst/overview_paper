@@ -94,10 +94,10 @@ proposal provides 30 observations in each of the six filters, distributed
 roughly logarithmically in time (it may not be necessary to use the
 $u$ and $g$ filters for this heavily extincted region).
 
-The resulting sky coverage for the LSST baseline
-cadence, based on detailed operations simulations, is shown for the
+The resulting sky coverage for the LSST baseline cadence (known internally as 
+{\it minion\_1016}), based on detailed operations simulations, is shown for the
 $r$ band in Fig.~\ref{Fig:rbandSky}. The anticipated total number of visits
-for a ten-year LSST survey is about 2.8 million ($\sim$5.6 million 15-second long
+for a ten-year LSST survey  is about 2.45 million ($\sim$4.9 million 15-second long
 exposures, summing over the six filters). The per-band allocation of
 these visits is shown in Table~\ref{tab:baseline}.
 
@@ -106,10 +106,9 @@ survey. Rather, it represents a proof of concept that it is indeed possible to
 design a observing strategy which addresses a wide variety of science goals in a nearly
 optimal way. With input and engagement of the community, we are
 undertaking a vigorous and systematic research effort to explore
-the enormously large parameter space of possible surveys (see \citet{2017arXiv170804058L}). The
-scientific commissioning period
-will be used to test the usefulness of various observing modes and to explore
-alternative strategies.
+the enormously large parameter space of possible surveys (see \citealt{2017arXiv170804058L}). 
+The scientific commissioning period will be used to test the usefulness of various observing 
+modes and to explore alternative strategies.
 %Proposals from the community
 %for specialized cadences (such as mini-surveys and
 %micro-surveys) will also be considered.
@@ -123,7 +122,7 @@ proposal can satisfy the majority of LSST scientific goals, roughly 10\%
 of the time will be allocated to other strategies that significantly enhance the
 scientific return.  These surveys aim to extend the parameter space accessible
 to the main survey by going deeper or by employing different time/filter
-sampling.  We've already discussed three examples of such
+sampling.  We have already discussed three examples of such
 mini-surveys: the Northern Ecliptic Spur to improve completeness of
 the asteroid and KBO population, the Southern Celestial Cap to extend
 the survey footprint to the South Pole (thus providing coverage of the
@@ -189,8 +188,7 @@ $\Delta C^{\infty}_m$\tablenotemark{h}   & 0.62	& 0.18	& 0.10	& 0.07	& 0.05	& 0.
 $\Delta C_m(2)$\tablenotemark{i}          & 0.23	& 0.08	& 0.05	& 0.03	& 0.02	& 0.02	 \\
 $\Delta m_5$\tablenotemark{j}              & 0.21	& 0.16	& 0.14	& 0.13	& 0.13	& 0.14	 \\
 \enddata
-\tablenotetext{^a}{The expected median zenith sky brightness at Cerro Pach\'on, derived from
-           the median dark sky brightness observed by SDSS (AB mag arcsec$^{-2}$).}
+\tablenotetext{^a}{The expected median zenith sky brightness at Cerro Pach\'on (AB mag arcsec$^{-2}$).}
 \tablenotetext{^b}{The expected delivered median zenith seeing
   (FWHM, arcsec). The seeing approximately scales with airmass, $X$, as $X^{0.6}$.}
 \tablenotetext{^c}{The effective zenith seeing (arcsec) used for $m_5$ computation.}
@@ -309,7 +307,7 @@ and increased atmospheric extinction is listed in the last row in Table~\ref{tab
 that the limiting depth predictions are uncertain by about 0.1--0.2 mag
 due to unpredictable solar
 activity (which influences the night sky brightness,
-\citet{2008A&A...481..575P}).
+\citealt{2008A&A...481..575P}).
 
 
 
@@ -331,11 +329,11 @@ each exposure and at what signal-to-noise ratio they were observed. In
 addition to  seeing, atmospheric transparency, and sky background effects
 (see eq.~\ref{m5}), the signal-to-noise computation takes into account losses
 due to non-optimal detection filters and object trailing. Using mean asteroid reflectance
-spectra \citep{2009Icar..202..160D}, combined with the LSST bandpasses (listed in Table~\ref{tab:eqparams}),
+spectra \citep{2009Icar..202..160D}, combined with the LSST bandpasses,
 we calculate expected magnitudes and colors, assuming all PHAs are C type asteroids, of
 $V-m = (-1.53, -0.28, 0.18, 0.29, 0.30, 0.30)$ for $m=(u, g, r, i, z, y)$ to transform
-standard $V$ band magnitudes to the magnitudes expected in each filter.  Due to
-very red $V-u$ colors, and the relatively bright limiting magnitude in the $y$
+standard $V$ band magnitudes to the magnitudes expected in each filter \citep{2001AJ....122.2749I}.  
+Due to very red $V-u$ colors, and the relatively bright limiting magnitude in the $y$
 band, the smallest objects are preferentially detected in the $griz$ bands.
 The correction for trailing is implemented by subtracting from the right-hand
 side of eq.~\ref{m5}
@@ -346,7 +344,7 @@ side of eq.~\ref{m5}
 where the object's velocity, $v$, is expressed in deg.~day$^{-1}$.
 For the nominal exposure time of 30 seconds and $\theta=0.7$ arcsec, the loss of limiting
 magnitude is 0.04 mag for $v=0.25$ deg.~day$^{-1}$, typical for objects in the main
-asteroid belt, and 0.46 mag for $v=1.0$ deg.~day$^{-1}$, typical of NEOs passing
+asteroid belt, and 0.46 mag for $v=1.0$ deg.~day$^{-1}$, typical of PHAs passing
 near Earth. PHAs are characterized by their ``absolute magnitude''
 $H$, i.e., their apparent magnitude if they were placed 1 AU from
 both the Sun and the Earth, with a phase angle of $0^\circ$.  For a
@@ -480,8 +478,8 @@ For comparison with Table~\ref{tab:tenyear}, the SDSS-POSS proper motion measure
 accuracy of $\sim$5 mas yr$^{-1}$ per coordinate at $r=20$ \citep{2004AJ....127.3034M}. Gaia
 is expected to deliver parallax errors of 0.3 mas and proper motion errors of
 0.2 mas yr$^{-1}$ at its faint end at $r\sim20$ \citep{2001A&A...369..339P}. Hence, LSST will smoothly
-extend Gaia's error vs.\ magnitude curve 4 magnitudes fainter.
-
+extend Gaia's error vs.\ magnitude curve 4 magnitudes fainter (for illustration,
+see fig.~21 in \citealt{2012ARA&A..50..251I}). 
 
 \subsection{             Data Products and Archive Services          }
 \label{Sec:dp}
