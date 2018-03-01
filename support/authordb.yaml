@@ -260,6 +260,12 @@ authors:
     name: Bartlett
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: A.
+    name: Bauer
+    orcid:
+  - affil:
       - LNL
     altaffil: []
     initials: B.J.
