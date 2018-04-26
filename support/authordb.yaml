@@ -56,8 +56,7 @@ affiliations:
   LSST: 'LSST Project Office, 950 N. Cherry Avenue, Tucson, AZ  85719'
   LOC: 'Library of Congress, 101 Independence Ave SE, Washington, DC 20540'
   Lowell: '1400 W. Mars Hill Rd., Lowell Observatory, Flagstaff, AZ 86001'
-  Lyon-CC-IN2P3: 'Centre de Calcul de l''IN2P3, USR 6402 du CNRS/IN2P3, 43 Bd. du
-    11 Novembre 1918, 69622 Villeurbanne Cedex, France'
+  Lyon-CC-IN2P3: 'CNRS, CC-IN2P3, 21 avenue Pierre de Coubertin, CS70202, 69627 Villeurbanne cedex, France'
   Lyon-LMA-IN2P3: 'Laboratoire des Materiaux Avances (LMA), CNRS/IN2P3, Universit\''{e}
     de Lyon, F-69622 Villeurbanne, Lyon, France'
   NAOChina: 'National Astronomical Observatories, Chinese Academy of Sciences, A20
@@ -90,8 +89,6 @@ affiliations:
   Paris-LPNHE: 'Laboratoire de Physique Nucl\''{e}aire et des Hautes Energies, Universit\''{e}
     Pierre et Marie Curie, Universit\''{e} Paris Diderot, CNRS/IN2P3, 4 place Jussieu,
     75005 Paris, France'
-  Paris-LPNHE-CHECK: 'CNRS/IN2P3, UMR 7585, Laboratoire de Physique Nucl\''{e}aire et des Hautes
-    Energies, 4 place Jussieu, 75005 Paris, France'
   Paris-UPMC: 'Sorbonne Universit\''{e}s, UPMC Univ Paris 06, UMR 7585, LPNHE, F-75005,
     Paris, France'
   Peay: 'Austin Peay State University, Clarksville, TN 37044'
@@ -280,7 +277,7 @@ authors:
     orcid:
   - affil:
       - Paris-UPMC
-      - Paris-LPNHE-CHECK
+      - Paris-LPNHE
     altaffil: []
     initials: S.
     name: Baumont
@@ -577,7 +574,7 @@ authors:
     name: Freemon
     orcid:
   - affil:
-      - Clermont
+      - Clermont-LPC
     altaffil: []
     initials: E.
     name: Gangler
@@ -849,7 +846,7 @@ authors:
     orcid:
   - affil:
       - Paris-UPMC
-      - Paris-LPNHE-CHECK
+      - Paris-LPNHE
     altaffil: []
     initials: L.
     name: 'Le Guillou'
