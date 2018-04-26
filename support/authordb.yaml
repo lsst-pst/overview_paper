@@ -146,6 +146,13 @@ authors:
     name: Tyson
     orcid:
   - affil:
+      - LSST
+      - SLAC-Kavli
+    altaffil: []
+    initials: S.M.
+    name: Kahn
+    orcid:
+  - affil:
       - Olympic
     altaffil: []
     initials: B.
@@ -751,13 +758,6 @@ authors:
     name: Juri\'{c}
     orcid: 0000-0003-1996-9252
   - affil:
-      - LSST
-      - SLAC-Kavli
-    altaffil: []
-    initials: S.M.
-    name: Kahn
-    orcid:
-  - affil:
       - STScI
     altaffil: []
     initials: J.S.
@@ -1340,6 +1340,7 @@ authors:
     orcid:
   - affil:
       - LSST
+      - UA-Steward
     altaffil: []
     initials: B.
     name: Willman
