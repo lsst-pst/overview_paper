@@ -516,6 +516,12 @@ authors:
     name: Cutri
     orcid:
   - affil:
+      - Washington
+    altaffil: []
+    initials: S.F.
+    name: Daniel
+    orcid:
+  - affil:
       - Paris-LPNHE
     altaffil: []
     initials: G.
@@ -673,6 +679,12 @@ authors:
     name: Goodenow
     orcid:
   - affil:
+      - Washington
+    altaffil: []
+    initials: M.
+    name: Graham
+    orcid: 0000-0002-9154-3136
+  - affil:
       - LSST
     altaffil: []
     initials: W.J.
@@ -785,6 +797,12 @@ authors:
     altaffil: []
     initials: K.
     name: Johns
+    orcid:
+  - affil:
+      - NCSA
+    altaffil: []
+    initials: M.W.G.
+    name: Johnson
     orcid:
   - affil:
       - Washington
@@ -968,6 +986,12 @@ authors:
     name: Mandelbaum
     orcid:
   - affil:
+      - SLAC
+    altaffil: []
+    initials: D.S.
+    name: Marsh
+    orcid:
+  - affil:
       - SLAC-Kavli
     altaffil: []
     initials: P.J.
@@ -991,6 +1015,12 @@ authors:
     initials: R.
     name: McKercher
     orcid:
+  - affil:
+      - Princeton-Astro
+    altaffil: []
+    initials: J.
+    name: Meyers
+    orcid: 0000-0002-2308-4230
   - affil:
       - Grenoble-LPSC
     altaffil: []
@@ -1341,6 +1371,12 @@ authors:
     initials: I.
     name: Shipsey
     orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: J.
+    name: Sick
+    orcid: 0000-0003-3001-676X
   - affil:
       - Washington
     altaffil: []
