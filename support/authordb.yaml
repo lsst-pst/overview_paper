@@ -18,7 +18,8 @@ affiliations:
   ChUniv: 'Astronomical Institute, Charles University, Praha, Czech Republic'
   Chicago: 'Department of Astronomy and Astrophysics, University of Chicago, 5640
     South Ellis Avenue, Chicago, IL 60637'
-  Clermont-LPC: 'Universit\''e Clermont Auvergne, CNRS/IN2P3, LPC, F-63000 Clermont-Ferrand, France'
+  Clermont-LPC: 'Universit\''e Clermont Auvergne, CNRS, Laboratoire de Physique de Clermont,
+    F-63000 Clermont-Ferrand, France'
   DGPS: 'Division of Geological and Planetary Sciences, California Institute of Technology,
     Pasadena, CA 91125'
   Duke: 'Department of Physics, Duke University, Durham, NC 27708'
@@ -222,7 +223,7 @@ authors:
     altaffil: []
     initials: K.T.
     name: Arndt
-    orcid:
+    orcid: 0000-0002-6826-8340
   - affil:
       - Paris-LPNHE
     altaffil: []
@@ -236,11 +237,11 @@ authors:
     name: Aubourg
     orcid:
   - affil:
-      - LSST
+      - UA-Steward
     altaffil: []
-    initials: T.
+    initials: T.S.
     name: Axelrod
-    orcid:
+    orcid: 0000-0002-5722-7199
   - affil:
       - SLAC
     altaffil: []
@@ -442,7 +443,7 @@ authors:
     altaffil: []
     initials: H.-F.
     name: Chiang
-    orcid:
+    orcid: 0000-0002-1181-1621
   - affil:
       - SLAC-Kavli
     altaffil: []
@@ -466,7 +467,7 @@ authors:
     altaffil: []
     initials: J.
     name: Cohen-Tanugi
-    orcid:
+    orcid: 0000-0001-9022-4232
   - affil:
       - OSU
     altaffil: []
@@ -604,7 +605,7 @@ authors:
     altaffil: []
     initials: M.
     name: Fisher-Levine
-    orcid:
+    orcid: 0000-0001-9440-8960
   - affil:
       - BNL
     altaffil: []
@@ -622,7 +623,7 @@ authors:
     altaffil: []
     initials: E.
     name: Gangler
-    orcid:
+    orcid: 0000-0001-6728-1423
   - affil:
       - Rutgers
     altaffil: []
@@ -1243,7 +1244,7 @@ authors:
     altaffil: []
     initials: M.
     name: Reuter
-    orcid:
+    orcid: 0000-0003-3881-8310
   - affil:
       - NOAO
     altaffil: []
@@ -1261,6 +1262,12 @@ authors:
     altaffil: []
     initials: S.
     name: Ritz
+    orcid:
+  - affil:
+      - SLAC
+    altaffil: []
+    initials: A.
+    name: Roodman
     orcid:
   - affil:
       - CUMBRES
@@ -1281,7 +1288,7 @@ authors:
     name: Rumore
     orcid:
   - affil:
-      - Paris-LPNHE
+      - SLAC
     altaffil: []
     initials: S.
     name: Russo
@@ -1413,7 +1420,7 @@ authors:
     altaffil: []
     initials: C.W.
     name: Stubbs
-    orcid:
+    orcid: 0000-0003-0347-1724
   - affil:
       - LSST
     altaffil: []
@@ -1426,7 +1433,7 @@ authors:
     altaffil: []
     initials: J.
     name: Swinbank
-    orcid:
+    orcid: 0000-0001-9445-1846
   - affil:
       - JHU
     altaffil: []
@@ -1489,12 +1496,6 @@ authors:
     name: Virieux
     orcid:
   - affil:
-      - LSST
-    altaffil: []
-    initials: B.
-    name: Xin
-    orcid:
-  - affil:
       - LOC
       - Adler
     altaffil: []
@@ -1550,6 +1551,12 @@ authors:
     initials: P.
     name: Yoachim
     orcid: 0000-0003-2874-6464
+  - affil:
+      - LSST
+    altaffil: []
+    initials: B.
+    name: Xin
+    orcid:
   - affil:
       - KLOA
     altaffil: []
