@@ -117,6 +117,8 @@ affiliations:
     Tucson, AZ 85721'
   UA-Steward: 'Steward Observatory, The University of Arizona, 933 N Cherry Ave.,
     Tucson, AZ 85721'
+  UA-CompSci: 'Department of Computer Science, The University of Arizona, 1040 E 4th St,
+    Tucson, AZ 85719'
   UCDavis: 'Physics Department, University of California, One Shields Avenue, Davis,
     CA 95616'
   UCIrvine-Astro: 'Department of Physics and Astronomy, University of California,
@@ -377,7 +379,7 @@ authors:
     altaffil: []
     initials: D.
     name: Boutigny
-    orcid:
+    orcid: 0000-0003-4887-2150
   - affil:
       - PSU
     altaffil: []
@@ -421,7 +423,7 @@ authors:
     name: Calabrese
     orcid:
   - affil:
-      - NOAO
+      - UA-CompSci
     altaffil: []
     initials: S.
     name: Chandrasekharan
@@ -722,6 +724,12 @@ authors:
     name: Hernandez
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: J.
+    name: Hoblitt
+    orcid: 0000-0002-5292-5879
+  - affil:
       - Chicago
     altaffil: []
     initials: C.
@@ -949,7 +957,7 @@ authors:
     altaffil: []
     initials: K-T.
     name: Lim
-    orcid:
+    orcid: 0000-0002-6338-6516
   - affil:
       - Oxford
     altaffil: []
@@ -1124,7 +1132,7 @@ authors:
     altaffil: []
     initials: W.
     name: O'Mullane
-    orcid:
+    orcid: 0000-0003-4141-6195
   - affil:
       - LSST
     altaffil: []
@@ -1143,6 +1151,12 @@ authors:
     initials: R.
     name: Pain
     orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: J.M.
+    name: Peterson
+    orcid: 0000-0002-6564-6246
   - affil:
       - Purdue-Astro
     altaffil: []
@@ -1317,7 +1331,7 @@ authors:
     altaffil: []
     initials: P.
     name: Schellart
-    orcid:
+    orcid: 0000-0002-8324-0880
   - affil:
       - SLAC-Kavli
     altaffil: []
@@ -1459,6 +1473,12 @@ authors:
     name: Thayer
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: S.
+    name: Thomas
+    orcid:
+  - affil:
       - SLAC
     altaffil: []
     initials: V.
@@ -1544,7 +1564,7 @@ authors:
     altaffil: []
     initials: W.M.
     name: Wood-Vasey
-    orcid:
+    orcid: 0000-0001-7113-1233
   - affil:
       - Washington
     altaffil: []
