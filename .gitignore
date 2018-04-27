@@ -1,3 +1,5 @@
+.DS_Store
+lsstNotes.bib
 *.blg
 *.bbl
 *fdb_latexmk
