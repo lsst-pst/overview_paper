@@ -139,17 +139,17 @@ authors:
     name: Ivezi\'{c}
     orcid: 0000-0001-5250-2633
   - affil:
-      - UCDavis
-    altaffil: []
-    initials: J.A.
-    name: Tyson
-    orcid:
-  - affil:
       - LSST
       - SLAC-Kavli
     altaffil: []
     initials: S.M.
     name: Kahn
+    orcid:
+  - affil:
+      - UCDavis
+    altaffil: []
+    initials: J.A.
+    name: Tyson
     orcid:
   - affil:
       - Olympic
