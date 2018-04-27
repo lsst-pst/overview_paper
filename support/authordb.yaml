@@ -1566,6 +1566,12 @@ authors:
     name: Wood-Vasey
     orcid: 0000-0001-7113-1233
   - affil:
+      - IPAC
+    altaffil: []
+    initials: X.
+    name: Wu
+    orcid:
+  - affil:
       - Washington
     altaffil: []
     initials: P.
