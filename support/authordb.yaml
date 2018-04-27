@@ -18,10 +18,8 @@ affiliations:
   ChUniv: 'Astronomical Institute, Charles University, Praha, Czech Republic'
   Chicago: 'Department of Astronomy and Astrophysics, University of Chicago, 5640
     South Ellis Avenue, Chicago, IL 60637'
-  Clermont: 'Clermont Universit\''{e}, Universit\''{e} Blaise Pascal, CNRS/IN2P3,
-    Laboratoire de Physique Corpusculaire, BP 10448, F-63000 Clermont-Ferrand, France'
-  Clermont-LPC: 'Laboratoire de Physique Corpusculaire de Clermont-Ferrand, Universite
-    Blaise Pascal, CNRS/IN2P3, 24 avenue des Landais, 63171 Aubi\''{e}re Cedex, France'
+  Clermont-LPC: 'Universit\''e Clermont Auvergne, CNRS, Laboratoire de Physique de Clermont,
+    F-63000 Clermont-Ferrand, France'
   DGPS: 'Division of Geological and Planetary Sciences, California Institute of Technology,
     Pasadena, CA 91125'
   Duke: 'Department of Physics, Duke University, Durham, NC 27708'
@@ -36,8 +34,7 @@ affiliations:
     Grenoble-Alpes, CNRS/IN2P3, 53 av. des Martyrs, 38026 Grenoble cedex, France'
   Harvard-Astro: 'Department of Astronomy, Center for Astrophysics, Harvard University,
     60 Garden St., Cambridge, MA 02138'
-  Harvard-Physics: 'Departments of Physics, Center for Astrophysics, Harvard University,
-    60 Garden St., Cambridge, MA 02138'
+  Harvard-Physics: 'Department of Physics, Harvard University, 17 Oxford St, Cambridge MA 02138'
   Haverford: 'Department of Astronomy, Haverford College, 370 Lancaster Avenue, Haverford,
     PA 19041'
   IPAC: 'IPAC, California Institute of Technology, MS 100-22, Pasadena, CA 91125'
@@ -56,8 +53,11 @@ affiliations:
   LSST: 'LSST Project Office, 950 N. Cherry Avenue, Tucson, AZ  85719'
   LOC: 'Library of Congress, 101 Independence Ave SE, Washington, DC 20540'
   Lowell: '1400 W. Mars Hill Rd., Lowell Observatory, Flagstaff, AZ 86001'
-  Lyon-CC-IN2P3: 'Centre de Calcul de l''IN2P3, USR 6402 du CNRS/IN2P3, 43 Bd. du
-    11 Novembre 1918, 69622 Villeurbanne Cedex, France'
+  LUPM: 'CNRS, Laboratoire Univers et Particules de Montpellier (LUPM),
+    UMR 5299 - Université de Montpellier - CNRS IN2P3, Place Eugène Bataillon (CC 072),
+    34095 Montpellier cedex 05, France'
+  Lyon-CC-IN2P3: 'CNRS, CC-IN2P3, 21 avenue Pierre de Coubertin, CS70202,
+    69627 Villeurbanne cedex, France'
   Lyon-LMA-IN2P3: 'Laboratoire des Materiaux Avances (LMA), CNRS/IN2P3, Universit\''{e}
     de Lyon, F-69622 Villeurbanne, Lyon, France'
   NAOChina: 'National Astronomical Observatories, Chinese Academy of Sciences, A20
@@ -90,8 +90,6 @@ affiliations:
   Paris-LPNHE: 'Laboratoire de Physique Nucl\''{e}aire et des Hautes Energies, Universit\''{e}
     Pierre et Marie Curie, Universit\''{e} Paris Diderot, CNRS/IN2P3, 4 place Jussieu,
     75005 Paris, France'
-  Paris-LPNHE-CHECK: 'CNRS/IN2P3, UMR 7585, Laboratoire de Physique Nucl\''{e}aire et des Hautes
-    Energies, 4 place Jussieu, 75005 Paris, France'
   Paris-UPMC: 'Sorbonne Universit\''{e}s, UPMC Univ Paris 06, UMR 7585, LPNHE, F-75005,
     Paris, France'
   Peay: 'Austin Peay State University, Clarksville, TN 37044'
@@ -103,6 +101,8 @@ affiliations:
     NJ 08544'
   Purdue-Astro: 'Department of Physics and Astronomy, Purdue University, 525 Northwestern
     Ave., West Lafayette, IN  47907'
+  Radboud-Astro: 'Department of Astrophysics/IMAPP, Radboud University Nijmegen,
+    P.O. Box 9010, 6500 GL Nijmegen, The Netherlands'
   Rutgers: 'Department of Physics and Astronomy, Rutgers University, 136 Frelinghuysen
     Rd, Piscataway, NJ 08854'
   SAO: 'Smithsonian Astrophysical Observatory, 60 Garden St., Cambridge MA 02138'
@@ -117,6 +117,8 @@ affiliations:
     Tucson, AZ 85721'
   UA-Steward: 'Steward Observatory, The University of Arizona, 933 N Cherry Ave.,
     Tucson, AZ 85721'
+  UA-CompSci: 'Department of Computer Science, The University of Arizona, 1040 E 4th St,
+    Tucson, AZ 85719'
   UCDavis: 'Physics Department, University of California, One Shields Avenue, Davis,
     CA 95616'
   UCIrvine-Astro: 'Department of Physics and Astronomy, University of California,
@@ -139,6 +141,13 @@ authors:
     initials: \v{Z}.
     name: Ivezi\'{c}
     orcid: 0000-0001-5250-2633
+  - affil:
+      - LSST
+      - SLAC-Kavli
+    altaffil: []
+    initials: S.M.
+    name: Kahn
+    orcid:
   - affil:
       - UCDavis
     altaffil: []
@@ -212,11 +221,11 @@ authors:
     name: Antilogus
     orcid:
   - affil:
-      - Purdue-Astro
+      - Oxford
     altaffil: []
     initials: K.T.
     name: Arndt
-    orcid:
+    orcid: 0000-0002-6826-8340
   - affil:
       - Paris-LPNHE
     altaffil: []
@@ -230,11 +239,11 @@ authors:
     name: Aubourg
     orcid:
   - affil:
-      - LSST
+      - UA-Steward
     altaffil: []
-    initials: T.
+    initials: T.S.
     name: Axelrod
-    orcid:
+    orcid: 0000-0002-5722-7199
   - affil:
       - SLAC
     altaffil: []
@@ -273,7 +282,7 @@ authors:
     orcid:
   - affil:
       - Paris-UPMC
-      - Paris-LPNHE-CHECK
+      - Paris-LPNHE
     altaffil: []
     initials: S.
     name: Baumont
@@ -348,6 +357,12 @@ authors:
     name: Bogart
     orcid:
   - affil:
+      - SLAC
+    altaffil: []
+    initials: A.W.
+    name: Borgland
+    orcid:
+  - affil:
       - GMU
     altaffil: []
     initials: K.
@@ -364,7 +379,7 @@ authors:
     altaffil: []
     initials: D.
     name: Boutigny
-    orcid:
+    orcid: 0000-0003-4887-2150
   - affil:
       - PSU
     altaffil: []
@@ -408,7 +423,7 @@ authors:
     name: Calabrese
     orcid:
   - affil:
-      - NOAO
+      - UA-CompSci
     altaffil: []
     initials: S.
     name: Chandrasekharan
@@ -426,10 +441,22 @@ authors:
     name: Cheu
     orcid:
   - affil:
+      - NCSA
+    altaffil: []
+    initials: H.-F.
+    name: Chiang
+    orcid: 0000-0002-1181-1621
+  - affil:
       - SLAC-Kavli
     altaffil: []
     initials: J.
     name: Chiang
+    orcid:
+  - affil:
+      - IPAC
+    altaffil: []
+    initials: D.R.
+    name: Ciardi
     orcid:
   - affil:
       - LSST
@@ -437,6 +464,18 @@ authors:
     initials: C.F.
     name: Claver
     orcid:
+  - affil:
+      - LUPM
+    altaffil: []
+    initials: J.
+    name: Cohen-Tanugi
+    orcid: 0000-0001-9022-4232
+  - affil:
+      - OSU
+    altaffil: []
+    initials: R.
+    name: Coles
+    orcid: 0000-0002-4774-9364
   - affil:
       - Washington
     altaffil: []
@@ -478,6 +517,12 @@ authors:
     altaffil: []
     initials: R.
     name: Cutri
+    orcid:
+  - affil:
+      - Washington
+    altaffil: []
+    initials: S.F.
+    name: Daniel
     orcid:
   - affil:
       - Paris-LPNHE
@@ -558,6 +603,12 @@ authors:
     name: Ferguson
     orcid:
   - affil:
+      - Princeton-Astro
+    altaffil: []
+    initials: M.
+    name: Fisher-Levine
+    orcid: 0000-0001-9440-8960
+  - affil:
       - BNL
     altaffil: []
     initials: J.
@@ -570,11 +621,11 @@ authors:
     name: Freemon
     orcid:
   - affil:
-      - Clermont
+      - Clermont-LPC
     altaffil: []
     initials: E.
     name: Gangler
-    orcid:
+    orcid: 0000-0001-6728-1423
   - affil:
       - Rutgers
     altaffil: []
@@ -631,6 +682,12 @@ authors:
     name: Goodenow
     orcid:
   - affil:
+      - Washington
+    altaffil: []
+    initials: M.
+    name: Graham
+    orcid: 0000-0002-9154-3136
+  - affil:
       - LSST
     altaffil: []
     initials: W.J.
@@ -667,6 +724,12 @@ authors:
     name: Hernandez
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: J.
+    name: Hoblitt
+    orcid: 0000-0002-5292-5879
+  - affil:
       - Chicago
     altaffil: []
     initials: C.
@@ -685,6 +748,12 @@ authors:
     name: Huffer
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: P.
+    name: Ingraham
+    orcid:
+  - affil:
       - SLAC-Kavli
     altaffil: []
     initials: W.R.
@@ -701,6 +770,12 @@ authors:
     altaffil: []
     initials: B.
     name: Jain
+    orcid:
+  - affil:
+      - Clermont-LPC
+    altaffil: []
+    initials: F.
+    name: Jammes
     orcid:
   - affil:
       - UCDavis
@@ -733,6 +808,12 @@ authors:
     name: Johns
     orcid:
   - affil:
+      - NCSA
+    altaffil: []
+    initials: M.W.G.
+    name: Johnson
+    orcid:
+  - affil:
       - Washington
     altaffil: []
     initials: R.L.
@@ -750,13 +831,6 @@ authors:
     initials: M.
     name: Juri\'{c}
     orcid: 0000-0003-1996-9252
-  - affil:
-      - LSST
-      - SLAC-Kavli
-    altaffil: []
-    initials: S.M.
-    name: Kahn
-    orcid:
   - affil:
       - STScI
     altaffil: []
@@ -787,6 +861,12 @@ authors:
     initials: M.M.
     name: Kasliwal
     orcid: 0000-0001-7970-0760
+  - affil:
+      - SLAC
+    altaffil: []
+    initials: H.
+    name: Kelly
+    orcid:
   - affil:
       - Chicago
     altaffil: []
@@ -848,8 +928,14 @@ authors:
     name: Lambert
     orcid:
   - affil:
+      - SLAC
+    altaffil: []
+    initials: T.
+    name: Lange
+    orcid:
+  - affil:
       - Paris-UPMC
-      - Paris-LPNHE-CHECK
+      - Paris-LPNHE
     altaffil: []
     initials: L.
     name: 'Le Guillou'
@@ -871,7 +957,7 @@ authors:
     altaffil: []
     initials: K-T.
     name: Lim
-    orcid:
+    orcid: 0000-0002-6338-6516
   - affil:
       - Oxford
     altaffil: []
@@ -879,11 +965,23 @@ authors:
     name: Lintott
     orcid:
   - affil:
+      - SLAC
+    altaffil: []
+    initials: M.
+    name: Lopez
+    orcid:
+  - affil:
       - Princeton-Astro
     altaffil: []
     initials: R.H.
     name: Lupton
     orcid: 0000-0003-1666-0962
+  - affil:
+      - Princeton-Astro
+    altaffil: []
+    initials: L.
+    name: MacArthur
+    orcid:
   - affil:
       - Caltech-Astro
     altaffil: []
@@ -897,9 +995,15 @@ authors:
     name: Mandelbaum
     orcid:
   - affil:
+      - SLAC
+    altaffil: []
+    initials: D.S.
+    name: Marsh
+    orcid:
+  - affil:
       - SLAC-Kavli
     altaffil: []
-    initials: P.
+    initials: P.J.
     name: Marshall
     orcid:
   - affil:
@@ -920,6 +1024,12 @@ authors:
     initials: R.
     name: McKercher
     orcid:
+  - affil:
+      - Princeton-Astro
+    altaffil: []
+    initials: J.
+    name: Meyers
+    orcid: 0000-0002-2308-4230
   - affil:
       - Grenoble-LPSC
     altaffil: []
@@ -951,10 +1061,28 @@ authors:
     name: Moniez
     orcid:
   - affil:
+      - IPAC
+    altaffil: []
+    initials: S.
+    name: Monkewitz
+    orcid:
+  - affil:
+      - SLAC
+    altaffil: []
+    initials: F.
+    name: Mueller
+    orcid:
+  - affil:
       - LSST
     altaffil: []
     initials: D.R.
     name: Neill
+    orcid:
+  - affil:
+      - SLAC
+    altaffil: []
+    initials: S.
+    name: Newbry
     orcid:
   - affil:
       - Lyon-CC-IN2P3
@@ -1004,7 +1132,7 @@ authors:
     altaffil: []
     initials: W.
     name: O'Mullane
-    orcid:
+    orcid: 0000-0003-4141-6195
   - affil:
       - LSST
     altaffil: []
@@ -1024,10 +1152,22 @@ authors:
     name: Pain
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: J.M.
+    name: Peterson
+    orcid: 0000-0002-6564-6246
+  - affil:
       - Purdue-Astro
     altaffil: []
     initials: J.R.
     name: Peterson
+    orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: M.E.
+    name: Petrick
     orcid:
   - affil:
       - LSST
@@ -1108,16 +1248,40 @@ authors:
     name: Regnault
     orcid:
   - affil:
+      - SLAC
+    altaffil: []
+    initials: K.
+    name: Reil
+    orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: M.
+    name: Reuter
+    orcid: 0000-0003-3881-8310
+  - affil:
       - NOAO
     altaffil: []
     initials: S.T.
     name: Ridgway
     orcid:
   - affil:
+      - SLAC
+    altaffil: []
+    initials: V.J.
+    name: Riot
+    orcid:
+  - affil:
       - UCSC
     altaffil: []
     initials: S.
     name: Ritz
+    orcid:
+  - affil:
+      - SLAC
+    altaffil: []
+    initials: A.
+    name: Roodman
     orcid:
   - affil:
       - CUMBRES
@@ -1138,7 +1302,7 @@ authors:
     name: Rumore
     orcid:
   - affil:
-      - Paris-LPNHE
+      - SLAC
     altaffil: []
     initials: S.
     name: Russo
@@ -1161,6 +1325,13 @@ authors:
     initials: T.L.
     name: Schalk
     orcid:
+  - affil:
+      - Princeton-Astro
+      - Radboud-Astro
+    altaffil: []
+    initials: P.
+    name: Schellart
+    orcid: 0000-0002-8324-0880
   - affil:
       - SLAC-Kavli
     altaffil: []
@@ -1198,6 +1369,12 @@ authors:
     name: Sebag
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: B.
+    name: Selvy
+    orcid:
+  - affil:
       - Purdue-Astro
     altaffil: []
     initials: G.H.
@@ -1215,6 +1392,12 @@ authors:
     initials: I.
     name: Shipsey
     orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: J.
+    name: Sick
+    orcid: 0000-0003-3001-676X
   - affil:
       - Washington
     altaffil: []
@@ -1251,13 +1434,20 @@ authors:
     altaffil: []
     initials: C.W.
     name: Stubbs
-    orcid:
+    orcid: 0000-0003-0347-1724
   - affil:
       - LSST
     altaffil: []
     initials: D.
     name: Sweeney
     orcid:
+  - affil:
+      - Washington
+      - Princeton-Astro
+    altaffil: []
+    initials: J.
+    name: Swinbank
+    orcid: 0000-0001-9445-1846
   - affil:
       - JHU
     altaffil: []
@@ -1275,6 +1465,24 @@ authors:
     altaffil: []
     initials: J.J.
     name: Thaler
+    orcid:
+  - affil:
+      - SLAC
+    altaffil: []
+    initials: J.G.
+    name: Thayer
+    orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: S.
+    name: Thomas
+    orcid:
+  - affil:
+      - SLAC
+    altaffil: []
+    initials: V.
+    name: Thukral
     orcid:
   - affil:
       - NAU
@@ -1308,12 +1516,6 @@ authors:
     name: Virieux
     orcid:
   - affil:
-      - LSST
-    altaffil: []
-    initials: B.
-    name: Xin
-    orcid:
-  - affil:
       - LOC
       - Adler
     altaffil: []
@@ -1340,6 +1542,7 @@ authors:
     orcid:
   - affil:
       - LSST
+      - UA-Steward
     altaffil: []
     initials: B.
     name: Willman
@@ -1361,13 +1564,19 @@ authors:
     altaffil: []
     initials: W.M.
     name: Wood-Vasey
-    orcid:
+    orcid: 0000-0001-7113-1233
   - affil:
       - Washington
     altaffil: []
     initials: P.
     name: Yoachim
     orcid: 0000-0003-2874-6464
+  - affil:
+      - LSST
+    altaffil: []
+    initials: B.
+    name: Xin
+    orcid:
   - affil:
       - KLOA
     altaffil: []
