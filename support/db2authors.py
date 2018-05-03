@@ -56,6 +56,9 @@ for auth in authors:
     # Preference for A.~B.~Surname rather than A.B.~Surname
     initials = re.sub(r"\.(\w)", lambda m: ".~" + m.group(1), auth["initials"])
 
+    # For spaces in initials use a ~
+    initials = re.sub(r"\s+", "~", initials)
+
     print(r"\author{}{{{}~{}}}".format(orcid, initials, surname))
     if "altaffil" in auth:
         for af in auth["altaffil"]:
