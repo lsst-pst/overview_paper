@@ -50,7 +50,7 @@ affiliations:
   LAPP: 'Universit\''{e} Grenoble-Alpes, Universit\''{e} Savoie Mont Blanc, CNRS/IN2P3
     Laboratoire d''Annecy-le-Vieux de Physique des Particules,
     9 Chemin de Bellevue -- BP 110, 74940 Annecy-le-Vieux Cedex, France'
-  LNL: 'Livermore National Laboratory, 7000 East Avenue, Livermore, CA 94550'
+  LLNL: 'Lawrence Livermore National Laboratory, 7000 East Avenue, Livermore, CA 94550'
   LSST: 'LSST Project Office, 950 N. Cherry Avenue, Tucson, AZ  85719'
   LOC: 'Library of Congress, 101 Independence Ave SE, Washington, DC 20540'
   Lowell: '1400 W. Mars Hill Rd., Lowell Observatory, Flagstaff, AZ 86001'
@@ -276,7 +276,7 @@ authors:
     name: Bauer
     orcid:
   - affil:
-      - LNL
+      - LLNL
     altaffil: []
     initials: Brian J.
     name: Bauman
@@ -538,7 +538,7 @@ authors:
     name: Daues
     orcid:
   - affil:
-      - LNL
+      - LLNL
     altaffil: []
     initials: William
     name: Dawson
@@ -1118,7 +1118,7 @@ authors:
     name: Oliver
     orcid:
   - affil:
-      - LNL
+      - LLNL
     altaffil: []
     initials: Scot S.
     name: Olivier
@@ -1347,7 +1347,7 @@ authors:
     name: Schneider
     orcid:
   - affil:
-      - LNL
+      - LLNL
     altaffil: []
     initials: Michael D.
     name: Schneider
@@ -1384,7 +1384,7 @@ authors:
     name: Sembroski
     orcid:
   - affil:
-      - LNL
+      - LLNL
     altaffil: []
     initials: Lynn G.
     name: Seppala
