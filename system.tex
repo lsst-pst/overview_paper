@@ -678,7 +678,9 @@ of $\sim$8 m. Motivated by characteristics of the existing equipment at the
 Steward Mirror Laboratory, which fabricated the primary mirror, the adopted
 geometrical diameter is set to 8.4 m.
 \item A visit exposure time of 30 seconds (using two 15 second exposures
-to efficiently reject cosmic rays), yielding $\epsilon=77$\%.
+to efficiently reject cosmic rays; the possibility of a single exposure per visit, 
+to improve observing efficiency, will be investigated during the commissioning phase),
+yielding $\epsilon=77$\%.
 \item A revisit time of 3 days on average for 10,000 deg$^2$ of sky,
   with two visits per night.
 \end{enumerate}
@@ -759,7 +761,7 @@ Pan-STARRS is available from \url{http://pswww.ifa.hawaii.edu/pswww/}.}.
 In summary,
 \textit{given the science requirements as stated here, there is a
 minimum \'etendue of $\sim$300 deg$^2$m$^2$ which enables our seemingly
-disparate science goals to be addressed with a single data set.}
+disparate science goals to be addressed with a single dataset.}
 A system with a smaller \'etendue would require separate specialized surveys
 to address the science goals, which results in a loss of surveying
 efficiency\footnote{The converse is also true: for every \'etendue
@@ -980,12 +982,12 @@ scheduled for early 2018.
 \includegraphics[width=1.0\hsize,clip]{observatoryFull}
 \includegraphics[width=1.0\hsize,clip]{ObservatoryFull_2017}
 \caption{Top: artist's rendering of the dome enclosure
-with the attached summit support building on Cerro Pach\'{o}n. The LSST calibration
-telescope is shown on an adjacent rise to the right.
+with the attached summit support building on Cerro Pach\'{o}n. The LSST auxiliary 
+calibration telescope is shown on an adjacent rise to the right.
 Bottom: Photograph of the LSST Observatory as of Summer 2017. Note the
 different perspective from the artist's rendering.  The main LSST
 telescope building is on the right, waiting for the dome to be
-installed. The calibration telescope building is on the left with its
+installed. The auxiliary telescope building is on the left with its
 dome being installed.}
 \label{Fig:observatory}
 \end{figure}
@@ -1023,14 +1025,22 @@ a highly segmented architecture that enables the entire array to be read in 2 se
 The detectors are grouped into 3$\times$3 rafts (see Fig.~\ref{Fig:raft}); each
 contains its own dedicated electronics. The rafts are mounted on a silicon carbide
 grid inside a vacuum cryostat, with a custom thermal control system that maintains
-the CCDs at an operating temperature of around 178 K. The entrance window to the
+the CCDs at an operating temperature of around 173 K. The entrance window to the
 cryostat is the third (L3) of the three refractive lenses in the camera. The other
 two lenses (L1 and L2) are mounted in an optics structure at the front of the camera
 body, which also contains a mechanical shutter, and a carousel assembly that holds
 five large optical filters. The sixth optical filter can
 replace any of the five via a procedure accomplished during daylight hours.
 
-
+% from Marc Moniez 
+Each of the 21 rafts will host 3 front end electronic boards (REB) operating in the cryostat 
+(at $-10^\circ$ C), that read in parallel a total of 9$\times$16 segments per CCD (144 video 
+channels reading one million pixels each). This very high parallelization is the key to allow 
+for a fast readout (2 seconds) of the entire focal plane. To reach this performance with a 
+reasonably-sized board, a special low-noise ($<$3 electrons), low-crosstalk between channels 
+($<$0.02\%) and low-power dissipation (25 mW/channel) Analog Signal Processing Integrated 
+Circuit (ASPIC),  hosting 8 channels per chip, has been developed, which is able to read the 
+CCDs with a linearity better than 0.1\% \citep{1748-0221-12-03-C03017}. 
 
 \begin{figure}[t!]
 \includegraphics[width=1.05\hsize,clip]{CameraFigureUpdated2017}
@@ -1064,8 +1074,8 @@ approximately 15 TB per night of raw imaging data\footnote{For
   comparison, the volume of all imaging data collected over a decade
   by the SDSS-I/II projects
   and published in SDSS Data Release 7 \citep{2009ApJS..182..543A} is
-  approximately 16 TB.}. As with all large modern surveys, the large
-data volume, the
+  approximately 16 TB.} (about 20 TB with calibration exposures). As with 
+all large modern surveys, the large data volume, the
 real-time aspects, and the complexity of processing involved requires
 that the survey itself take on the task of fully reducing the data.
 The data collected by the LSST
@@ -1089,7 +1099,7 @@ in \S~\ref{Sec:dp}.  The principal functions of the system are to:
   properties of all detected objects, and characterize objects based
   on their time-dependent behavior. The results of such a processing
   run form a \emph{Data Release} (DR), which is a static,
-  self-consistent data set suitable for use in performing scientific
+  self-consistent dataset suitable for use in performing scientific
   analyses of LSST data and publication of the results (the data
   release products; \S~\ref{Sec:dp}). We are planning two data
   releases covering the first year of full operations, and annual data
@@ -1146,35 +1156,26 @@ to be approximately 15 PB in size.
 \includegraphics[width=1.0\hsize,clip]{SitesDataflow}
 \caption{The LSST data flow from the mountain facilities in
 Chile to the data access center and processing center in the U.S., and
-the satellite processing center in France}
+the satellite processing center in France.}
 \label{Fig:DM2}
 \end{figure*}
 
-The DM system components will span four key facilities on three
-continents: the Summit Facility at  Cerro Pach\'on (where the initial
-detector cross-talk
-correction will be performed), the Base Facility in La Serena (which will serve
-as a retransmission hub for data
-uploads to North America, as well as the data access center for the Chilean
-community), the Large Data Facility at the National Center
-for Supercomputing Applications (NCSA) in Champaign, Illinois, and
-CC-IN2P3 in Lyon, France.
-All real-time data processing and half the data release product
-processing will take place at the
-Large Data Facility, which will also serve as a data access center
-for the US community.
-The other half of the data release processing will be done at
-CC-IN2P3.
+The DM system will span four key facilities on three continents: the Summit 
+Facility on Cerro Pach\'on in Chile (where the initial detector cross-talk correction 
+will be performed); the Base Facility in La Serena, Chile (which will serve as a retransmission 
+for data uploads to North America, as well as the Data Access Center for the Chilean community); 
+the Data Processing and Archiving Facility at the National Center for Supercomputing Applications 
+(NCSA) in Champaign-Urbana, IL; and the Satellite Processing Facility at CC-IN2P3 in Lyon, France. 
+All real-time data processing and half the data release product processing will take place at the
+Data Processing and Archiving Facility, which will also serve as the Data Access Center for the US 
+community. The other half of the data release processing will be done at CC-IN2P3, which
+will also have the role of ``Long-term Storage'' facility. 
 
 The data will be transported between the centers over existing and new high-speed optical fiber
-links from South America to the U.S.\ (see Fig.~\ref{Fig:DM2}).
-Although the data processing center will have substantial computing
-power (e.g., the central facility will peak at $\sim 1.6$~petaflops of
-compute power), the continuation of current trends suggests that the center will
-not qualify for the top 500 list by the time of first light.
-Hence, while LSST is making a novel use of advances in information technology,
-it is not pushing the expected technology to the limit, reducing
-the overall risk to the project.
+links from South America to the U.S.\ (see Fig.~\ref{Fig:DM2}). The data processing center demands 
+stable, well-tested technology to ensure smooth operations. Hence, while LSST is making a novel 
+use of advances in information technology, it is not pushing the expected technology to the limit, 
+reducing the overall risk to the project.
 
 \subsubsection{The LSST software stack}
 \label{sec:dmstack}
@@ -1196,7 +1197,7 @@ Pan-STARRS, DES,
 SuperMACHO, ESSENCE,  DLS, CFHTLS, and UKIDSS). The pipelines written
 for these surveys have demonstrated that it is possible to carry out
 largely autonomous data
-reduction of large data sets, automated detection of sources and
+reduction of large datasets, automated detection of sources and
 objects, and the
 extraction of scientifically useful characteristics of those objects.
 While firmly footed in this prior history, the LSST software stack has
@@ -1262,8 +1263,25 @@ has been used to reduce data taken with the HSC camera \citep{2018PASJ...70S...1
 Subaru as part of the large SSP survey (\url{http://hsc.mtk.nao.ac.jp/ssp/survey};
 \citet{2018PASJ...70S...4A,2018PASJ...70S...5B}; see Fig.~\ref{Fig:HSC_cosmos}).
 
-\subsection{Simulating the LSST System}
 
+
+\subsubsection{The LSST database design: Qserv}
+\label{sec:Qserv}
+
+The scale of the LSST data release catalogs, in combination with desired targets for user concurrency 
+and query response times, present some engineering challenges. The LSST project has been developing 
+\emph{Qserv}, a shared-nothing MPP (massively parallel processing) database system, to meet these needs
+\citep{Wang:2011:QDS:2063348.2063364, 2014era..conf30303B}.  
+Catalog data within Qserv is spatially partitioned, and hosted on shard servers running on dedicated hardware 
+resources within the LSST Data Facility.  The shard servers locally leverage conventional RDBMS (relational
+database management system) technologies, running behind custom front-end codes which handle query 
+analysis, rewrite, distribution, and result aggregation.  The Qserv shard servers also provide a facility for 
+cross-user synchronization of full-table scans in order to provide predictable query response times when 
+serving many users concurrently. More details about Qserv can be found in 
+the LSST document LDM-135 (available as http://ls.st/LDM-135).
+
+
+\subsection{Simulating the LSST System}
 
 Throughout its design, construction and commissioning, the LSST needs
 to be able to demonstrate that it can achieve the requirements laid out
