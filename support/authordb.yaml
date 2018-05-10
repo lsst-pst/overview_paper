@@ -1589,17 +1589,17 @@ authors:
     name: Wu
     orcid:
   - affil:
-      - Washington
-    altaffil: []
-    initials: Peter
-    name: Yoachim
-    orcid: 0000-0003-2874-6464
-  - affil:
       - LSST
     altaffil: []
     initials: Bo
     name: Xin
     orcid:
+  - affil:
+      - Washington
+    altaffil: []
+    initials: Peter
+    name: Yoachim
+    orcid: 0000-0003-2874-6464
   - affil:
       - KLOA
     altaffil: []
