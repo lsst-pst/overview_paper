@@ -1168,6 +1168,12 @@ authors:
     name: Pain
     orcid:
   - affil:
+      - Washington
+    altaffil: []
+    initials: John K.
+    name: Parejko
+    orcid:
+  - affil:
       - LSST
     altaffil: []
     initials: J. Matt
