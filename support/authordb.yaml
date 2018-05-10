@@ -28,6 +28,8 @@ affiliations:
     Fed\`{e}rale de Lausanne (EPFL), Observatoire de Sauverny, 1290 Versoix, Switzerland'
   GMU: 'School of Physics, Astronomy and Computational Sciences, George Mason University,
     4400 University Drive, Fairfax, VA  22030'
+  GMTO: 'Giant Magellan Telescope Organization (GMTO), 465 N. Halstead Street,
+    Suite 250, Pasadena, CA 91107'
   GeminiN: 'Gemini Observatory, Northern Operations Center, 670 North A''ohoku Place,
     Hilo, HI 96720, USA'
   Google: 'Google Inc., 1600 Amphitheatre Parkway Mountain View, CA 94043'
@@ -54,9 +56,9 @@ affiliations:
   LSST: 'LSST Project Office, 950 N. Cherry Avenue, Tucson, AZ  85719'
   LOC: 'Library of Congress, 101 Independence Ave SE, Washington, DC 20540'
   Lowell: '1400 W. Mars Hill Rd., Lowell Observatory, Flagstaff, AZ 86001'
-  LUPM: 'CNRS, Laboratoire Univers et Particules de Montpellier (LUPM),
-    UMR 5299 - Université de Montpellier - CNRS IN2P3, Place Eugène Bataillon (CC 072),
-    34095 Montpellier cedex 05, France'
+  LUPM: 'Laboratoire Univers et Particules de Montpellier (LUPM),
+    Universit\''{e} de Montpellier, CNRS/IN2P3, Place Eug\`{e}ne Bataillon,
+    34095 Montpellier, France'
   Lyon-CC-IN2P3: 'CNRS, CC-IN2P3, 21 avenue Pierre de Coubertin, CS70202,
     69627 Villeurbanne cedex, France'
   Lyon-LMA-IN2P3: 'Laboratoire des Materiaux Avances (LMA), CNRS/IN2P3, Universit\''{e}
@@ -154,7 +156,7 @@ authors:
     altaffil: []
     initials: J. Anthony
     name: Tyson
-    orcid:
+    orcid: 0000-0002-9242-8797
   - affil:
       - Olympic
     altaffil: []
@@ -204,9 +206,9 @@ authors:
     name: Angel
     orcid:
   - affil:
-      - LSST
-    altaffil: ['Current address: GMTO Corporation, 465 N. Halstead Street, Suite 250 Pasadena, CA 91107']
-    initials: George
+      - GMTO
+    altaffil: []
+    initials: George Z.
     name: Angeli
     orcid:
   - affil:
@@ -272,7 +274,7 @@ authors:
   - affil:
       - LSST
     altaffil: []
-    initials: Amanda
+    initials: Amanda E.
     name: Bauer
     orcid:
   - affil:
@@ -685,7 +687,7 @@ authors:
   - affil:
       - Washington
     altaffil: []
-    initials: Melissa
+    initials: Melissa L.
     name: Graham
     orcid: 0000-0002-9154-3136
   - affil:
@@ -1478,7 +1480,7 @@ authors:
   - affil:
       - SLAC
     altaffil: []
-    initials: John G.
+    initials: John Gregg
     name: Thayer
     orcid:
   - affil:
