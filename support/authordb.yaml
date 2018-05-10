@@ -136,6 +136,7 @@ affiliations:
   UVa: 'Department of Astronomy, University of Virginia, Charlottesville, VA 22904'
   Washington: 'University of Washington, Dept. of Astronomy, Box 351580, Seattle,
     WA 98195'
+  WestWashington: 'Western Washington University, 516 High Street, Bellingham, WA 98225'
   Yale: 'Astronomy Department, Yale University, New Haven, CT 06520'
 authors:
   - affil:
@@ -504,7 +505,7 @@ authors:
     name: Cooray
     orcid:
   - affil:
-      - Lowell
+      - WestWashington
     altaffil: []
     initials: Kevin R.
     name: Covey
