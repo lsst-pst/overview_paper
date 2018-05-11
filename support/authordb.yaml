@@ -2,7 +2,7 @@ affiliations:
   Adler: 'The Adler Planetarium, 1300 South Lakeshore Ave, Chicago, IL 60605, USA'
   BNL: 'Brookhaven National Laboratory, Upton, NY 11973'
   Belldex: 'Belldex IT Consulting, Tucson, AZ 85742'
-  Belgrade-AO: 'Astronomical Observatory, Volgina 7, P.O.Box 74, 11060 Belgrade, Serbia'
+  Belgrade-AO: 'Astronomical Observatory, Volgina 7, P.O.\ Box 74, 11060 Belgrade, Serbia'
   Berkeley-Astro: 'Astronomy Department,  University of California, 601 Campbell Hall,
     Berkeley, CA 94720'
   Berkeley-LBNL: 'Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley,
@@ -12,7 +12,7 @@ affiliations:
   CMU: 'McWilliams Center for Cosmology, Department of Physics, Carnegie Mellon University,
     Pittsburgh, PA 15213, USA'
   CTIO: 'Cerro Tololo InterAmerican Observatory, La Serena, Chile'
-  CUMBRES: 'Las Cumbres Observatory, 6740 Cortona Dr. Suite 102, Santa Barbara, CA
+  CUMBRES: 'Las Cumbres Observatory, 6740 Cortona Dr.\ Suite 102, Santa Barbara, CA
     93117'
   Caltech-Astro: 'Astronomy Department, California Institute of Technology, 1200 East
     California Blvd., Pasadena CA 91125'
@@ -29,22 +29,22 @@ affiliations:
     Fed\`{e}rale de Lausanne (EPFL), Observatoire de Sauverny, 1290 Versoix, Switzerland'
   GMU: 'School of Physics, Astronomy and Computational Sciences, George Mason University,
     4400 University Drive, Fairfax, VA  22030'
-  GMTO: 'Giant Magellan Telescope Organization (GMTO), 465 N. Halstead Street,
+  GMTO: 'Giant Magellan Telescope Organization (GMTO), 465 N.\ Halstead Street,
     Suite 250, Pasadena, CA 91107'
   GeminiN: 'Gemini Observatory, Northern Operations Center, 670 North A''ohoku Place,
     Hilo, HI 96720, USA'
   Google: 'Google Inc., 1600 Amphitheatre Parkway Mountain View, CA 94043'
   Grenoble-LPSC: 'Laboratoire de Physique Subatomique et de Cosmologie, Universit\''{e}
-    Grenoble-Alpes, CNRS/IN2P3, 53 av. des Martyrs, 38026 Grenoble cedex, France'
+    Grenoble-Alpes, CNRS/IN2P3, 53 av.\ des Martyrs, 38026 Grenoble cedex, France'
   Harvard-Astro: 'Department of Astronomy, Center for Astrophysics, Harvard University,
     60 Garden St., Cambridge, MA 02138'
   Harvard-Physics: 'Department of Physics, Harvard University, 17 Oxford St, Cambridge MA 02138'
   Haverford: 'Department of Astronomy, Haverford College, 370 Lancaster Avenue, Haverford,
     PA 19041'
   IPAC: 'IPAC, California Institute of Technology, MS 100-22, Pasadena, CA 91125'
-  Illinois: 'University of Illinois, Physics and Astronomy Departments, 1110 W. Green
+  Illinois: 'University of Illinois, Physics and Astronomy Departments, 1110 W.\ Green
     St., Urbana, IL  61801'
-  IRAM: 'Instituto de Radioastronom\''ia Milim\''{e}trica, Av. Divina Pastora 7,
+  IRAM: 'Instituto de Radioastronom\''ia Milim\''{e}trica, Av.\ Divina Pastora 7,
     N\''{u}cleo Central, E-18012 Granada, Spain'
   JHU: 'Department of Physics and Astronomy, The John Hopkins University, 3701 San
     Martin Drive, Baltimore, MD 21218'
@@ -56,9 +56,9 @@ affiliations:
     Laboratoire d''Annecy-le-Vieux de Physique des Particules,
     9 Chemin de Bellevue -- BP 110, 74940 Annecy-le-Vieux Cedex, France'
   LLNL: 'Lawrence Livermore National Laboratory, 7000 East Avenue, Livermore, CA 94550'
-  LSST: 'LSST Project Office, 950 N. Cherry Avenue, Tucson, AZ  85719'
+  LSST: 'LSST Project Office, 950 N.\ Cherry Avenue, Tucson, AZ  85719'
   LOC: 'Library of Congress, 101 Independence Ave SE, Washington, DC 20540'
-  Lowell: '1400 W. Mars Hill Rd., Lowell Observatory, Flagstaff, AZ 86001'
+  Lowell: '1400 W.\ Mars Hill Rd., Lowell Observatory, Flagstaff, AZ 86001'
   LUPM: 'Laboratoire Univers et Particules de Montpellier (LUPM),
     Universit\''{e} de Montpellier, CNRS/IN2P3, Place Eug\`{e}ne Bataillon,
     34095 Montpellier, France'
@@ -70,9 +70,9 @@ affiliations:
     Datun Rd, Chaoyang District, Beijing 100012, China'
   NAU: 'Department of Physics and Astronomy, Northern Arizona University, PO Box 6010,
     Flagstaff, AZ 86011, USA'
-  NCSA: 'NCSA, University of Illinois at Urbana-Champaign, 1205 W. Clark St., Urbana,
+  NCSA: 'NCSA, University of Illinois at Urbana-Champaign, 1205 W.\ Clark St., Urbana,
     IL 61801'
-  NOAO: 'National Optical Astronomy Observatory, 950 N. Cherry Ave, Tucson, AZ 85719'
+  NOAO: 'National Optical Astronomy Observatory, 950 N.\ Cherry Ave, Tucson, AZ 85719'
   NYU-CCPP: 'Center for Cosmology \& Particle Physics, New York University, New York,
     10012'
   NYU-CUSP: 'Center for Urban Science \& Progress, New York University, Brooklyn,
@@ -92,7 +92,7 @@ affiliations:
   Paris-Diderot: 'Universit\''{e} Paris Diderot, Sorbonne Paris Cit\''{e}, F-75013
     Paris, France'
   Paris-LAL: 'Laboratoire de l''Acc\''{e}l\''{e}rateur Lin\''{e}aire, CNRS/IN2P3,
-    Universit\''{e} de Paris-Sud, B.P. 34, 91898 Orsay Cedex, France'
+    Universit\''{e} de Paris-Sud, B.P.\ 34, 91898 Orsay Cedex, France'
   Paris-LPNHE: 'Laboratoire de Physique Nucl\''{e}aire et des Hautes Energies, Universit\''{e}
     Pierre et Marie Curie, Universit\''{e} Paris Diderot, CNRS/IN2P3, 4 place Jussieu,
     75005 Paris, France'
@@ -108,7 +108,7 @@ affiliations:
   Purdue-Astro: 'Department of Physics and Astronomy, Purdue University, 525 Northwestern
     Ave., West Lafayette, IN  47907'
   Radboud-Astro: 'Department of Astrophysics/IMAPP, Radboud University Nijmegen,
-    P.O. Box 9010, 6500 GL Nijmegen, The Netherlands'
+    P.O.\ Box 9010, 6500 GL Nijmegen, The Netherlands'
   Rutgers: 'Department of Physics and Astronomy, Rutgers University, 136 Frelinghuysen
     Rd, Piscataway, NJ 08854'
   SAO: 'Smithsonian Astrophysical Observatory, 60 Garden St., Cambridge MA 02138'
@@ -119,7 +119,7 @@ affiliations:
     21218'
   SVC: 'Saint Vincent College, Department of Physics, 300 Fraser Purchase Road, Latrobe,
     PA 15650'
-  UA-Physics: 'Department of Physics, University of Arizona, 1118 E. Fourth Street,
+  UA-Physics: 'Department of Physics, University of Arizona, 1118 E.\ Fourth Street,
     Tucson, AZ 85721'
   UA-Steward: 'Steward Observatory, The University of Arizona, 933 N Cherry Ave.,
     Tucson, AZ 85721'
@@ -134,10 +134,10 @@ affiliations:
     of California--Santa Cruz, 1156 High St., Santa Cruz, CA 95064'
   UPenn: 'Department of Physics \& Astronomy, University of Pennsylvania, 209 South
     33rd Street, Philadelphia, PA 19104-6396'
-  USNO: 'U.S. Naval Observatory Flagstaff Station, 10391 Naval Observatory Road, Flagstaff,
+  USNO: 'U.S.\ Naval Observatory Flagstaff Station, 10391 Naval Observatory Road, Flagstaff,
     AZ 86001'
   UVa: 'Department of Astronomy, University of Virginia, Charlottesville, VA 22904'
-  Washington: 'University of Washington, Dept. of Astronomy, Box 351580, Seattle,
+  Washington: 'University of Washington, Dept.\ of Astronomy, Box 351580, Seattle,
     WA 98195'
   WestWashington: 'Western Washington University, 516 High Street, Bellingham, WA 98225'
   Yale: 'Astronomy Department, Yale University, New Haven, CT 06520'
