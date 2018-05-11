@@ -1468,6 +1468,12 @@ authors:
     name: Stubbs
     orcid: 0000-0003-0347-1724
   - affil:
+      - Washington
+    altaffil: []
+    initials: Ian S.
+    name: Sullivan
+    orcid: 0000-0001-8708-251X
+  - affil:
       - LSST
     altaffil: []
     initials: Donald
