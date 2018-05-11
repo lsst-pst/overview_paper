@@ -253,6 +253,12 @@ authors:
     name: Aubourg
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: Nicole
+    name: Auza
+    orcid:
+  - affil:
       - UA-Steward
     altaffil: []
     initials: Tim S.
@@ -695,6 +701,12 @@ authors:
     name: Geha
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: Charles J. B.
+    name: Gessner
+    orcid:
+  - affil:
       - Washington
     altaffil: []
     initials: Robert R.
@@ -1042,7 +1054,7 @@ authors:
   - affil:
       - LSST
     altaffil: []
-    initials: Paul
+    initials: Paul J.
     name: Lotz
     orcid:
   - affil:
