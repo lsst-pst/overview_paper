@@ -934,6 +934,12 @@ authors:
     name: Kulkarni
     orcid:
   - affil:
+      - SLAC
+    altaffil: []
+    initials: Nadine R.
+    name: Kurita
+    orcid:
+  - affil:
       - LSST
       - CTIO
     altaffil: []
