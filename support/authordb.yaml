@@ -395,6 +395,12 @@ authors:
     name: Boutigny
     orcid: 0000-0003-4887-2150
   - affil:
+      - SLAC
+    altaffil: []
+    initials: Craig A.
+    name: Brackett
+    orcid:
+  - affil:
       - PSU
     altaffil: []
     initials: William Nielsen
@@ -437,6 +443,12 @@ authors:
     name: Calabrese
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: Shawn
+    name: Callahan
+    orcid:
+  - affil:
       - UA-CompSci
     altaffil: []
     initials: Srinivasan
@@ -465,6 +477,12 @@ authors:
     altaffil: []
     initials: James
     name: Chiang
+    orcid:
+  - affil:
+      - SLAC
+    altaffil: []
+    initials: Derek
+    name: Chow
     orcid:
   - affil:
       - IPAC
@@ -543,6 +561,12 @@ authors:
     altaffil: []
     initials: Scott F.
     name: Daniel
+    orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: Felipe
+    name: Daruich
     orcid:
   - affil:
       - Paris-LPNHE
@@ -724,6 +748,12 @@ authors:
     altaffil: []
     initials: Augustin
     name: Guyonnet
+    orcid:
+  - affil:
+      - NOAO
+    altaffil: []
+    initials: Ron
+    name: Harris
     orcid:
   - affil:
       - SLAC
@@ -944,6 +974,12 @@ authors:
   - affil:
       - SLAC
     altaffil: []
+    initials: John
+    name: Ku
+    orcid:
+  - affil:
+      - SLAC
+    altaffil: []
     initials: Nadine R.
     name: Kurita
     orcid:
@@ -1002,6 +1038,12 @@ authors:
     altaffil: []
     initials: Margaux
     name: Lopez
+    orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: Paul
+    name: Lotz
     orcid:
   - affil:
       - Princeton-Astro
@@ -1120,6 +1162,12 @@ authors:
   - affil:
       - LSST
     altaffil: []
+    initials: Gary P.
+    name: Muller
+    orcid:
+  - affil:
+      - LSST
+    altaffil: []
     initials: Douglas R.
     name: Neill
     orcid:
@@ -1183,6 +1231,12 @@ authors:
     altaffil: []
     initials: Sandra
     name: Ortiz
+    orcid:
+  - affil:
+      - SLAC
+    altaffil: []
+    initials: Shawn
+    name: Osier
     orcid:
   - affil:
       - Washington
@@ -1463,6 +1517,12 @@ authors:
     name: Silvestri
     orcid:
   - affil:
+      - Washington
+    altaffil: []
+    initials: Colin T.
+    name: Slater
+    orcid: 0000-0002-0558-0521
+  - affil:
       - Peay
     altaffil: []
     initials: J. Allyn
@@ -1617,6 +1677,12 @@ authors:
     initials: Beth
     name: Willman
     orcid: 0000-0003-2892-9906
+  - affil:
+      - LLNL
+    altaffil: []
+    initials: Scott E.
+    name: Winters
+    orcid:
   - affil:
       - UCDavis
     altaffil: []
