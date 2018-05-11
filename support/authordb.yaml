@@ -1177,6 +1177,12 @@ authors:
     name: Parejko
     orcid:
   - affil:
+      - SLAC
+    altaffil: []
+    initials: Nathan M.
+    name: Pease
+    orcid:
+  - affil:
       - LSST
     altaffil: []
     initials: J. Matt
