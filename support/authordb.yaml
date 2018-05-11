@@ -483,6 +483,12 @@ authors:
     name: Cohen-Tanugi
     orcid: 0000-0001-9022-4232
   - affil:
+      - LSST
+    altaffil: []
+    initials: Joseph J.
+    name: Cockrum
+    orcid:
+  - affil:
       - OSU
     altaffil: []
     initials: Rebecca
