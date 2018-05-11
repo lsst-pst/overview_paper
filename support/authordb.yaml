@@ -58,6 +58,7 @@ affiliations:
   LLNL: 'Lawrence Livermore National Laboratory, 7000 East Avenue, Livermore, CA 94550'
   LSST: 'LSST Project Office, 950 N.\ Cherry Avenue, Tucson, AZ  85719'
   LOC: 'Library of Congress, 101 Independence Ave SE, Washington, DC 20540'
+  Longhorn: 'Longhorn Industries, Ellensburg, WA 98926'
   Lowell: '1400 W.\ Mars Hill Rd., Lowell Observatory, Flagstaff, AZ 86001'
   LUPM: 'Laboratoire Univers et Particules de Montpellier (LUPM),
     Universit\''{e} de Montpellier, CNRS/IN2P3, Place Eug\`{e}ne Bataillon,
@@ -989,6 +990,12 @@ authors:
     altaffil: []
     initials: Chris J.
     name: Lintott
+    orcid:
+  - affil:
+      - Longhorn
+    altaffil: []
+    initials: Kevin E.
+    name: Long
     orcid:
   - affil:
       - SLAC
