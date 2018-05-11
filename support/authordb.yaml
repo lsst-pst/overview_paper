@@ -1,6 +1,7 @@
 affiliations:
   Adler: 'The Adler Planetarium, 1300 South Lakeshore Ave, Chicago, IL 60605, USA'
   BNL: 'Brookhaven National Laboratory, Upton, NY 11973'
+  Belldex: 'Belldex IT Consulting, Tucson, AZ'
   Belgrade-AO: 'Astronomical Observatory, Volgina 7, P.O.Box 74, 11060 Belgrade, Serbia'
   Berkeley-Astro: 'Astronomy Department,  University of California, 601 Campbell Hall,
     Berkeley, CA 94720'
@@ -1459,6 +1460,12 @@ authors:
     altaffil: []
     initials: R. Chris
     name: Smith
+    orcid:
+  - affil:
+      - Belldex
+    altaffil: []
+    initials: Shahram
+    name: Sobhani
     orcid:
   - affil:
       - Princeton-Astro
