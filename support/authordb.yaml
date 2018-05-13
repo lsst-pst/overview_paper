@@ -120,6 +120,7 @@ affiliations:
     21218'
   SVC: 'Saint Vincent College, Department of Physics, 300 Fraser Purchase Road, Latrobe,
     PA 15650'
+  UA: 'University of Arizona, Tucson, AZ 85721'
   UA-Physics: 'Department of Physics, University of Arizona, 1118 E.\ Fourth Street,
     Tucson, AZ 85721'
   UA-Steward: 'Steward Observatory, The University of Arizona, 933 N Cherry Ave.,
@@ -227,6 +228,12 @@ authors:
     altaffil: []
     initials: Pierre
     name: Antilogus
+    orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: Constanza
+    name: Araujo
     orcid:
   - affil:
       - Princeton-Astro
@@ -407,6 +414,12 @@ authors:
     name: Brackett
     orcid:
   - affil:
+      - UCDavis
+    altaffil: []
+    initials: Andrew
+    name: Bradshaw
+    orcid:
+  - affil:
       - PSU
     altaffil: []
     initials: William Nielsen
@@ -453,6 +466,12 @@ authors:
     altaffil: []
     initials: Shawn
     name: Callahan
+    orcid:
+  - affil:
+      - SLAC
+    altaffil: []
+    initials: Alice L.
+    name: Callen
     orcid:
   - affil:
       - UA-CompSci
@@ -563,6 +582,12 @@ authors:
     name: Cutri
     orcid:
   - affil:
+      - UA
+    altaffil: []
+    initials: Philip N.
+    name: Daly
+    orcid:
+  - affil:
       - Washington
     altaffil: []
     initials: Scott F.
@@ -597,6 +622,12 @@ authors:
     altaffil: []
     initials: Francisco
     name: Delgado
+    orcid:
+  - affil:
+      - SLAC
+    altaffil: []
+    initials: Robert
+    name: de Peyster
     orcid:
   - affil:
       - Princeton-Astro
@@ -658,6 +689,18 @@ authors:
     initials: Merlin
     name: Fisher-Levine
     orcid: 0000-0001-9440-8960
+  - affil:
+      - SLAC
+    altaffil: []
+    initials: Warren
+    name: Focke
+    orcid:
+  - affil:
+      - SLAC
+    altaffil: []
+    initials: Mike
+    name: Foss
+    orcid:
   - affil:
       - BNL
     altaffil: []
@@ -762,6 +805,12 @@ authors:
     name: Guyonnet
     orcid:
   - affil:
+      - SLAC
+    altaffil: []
+    initials: Gunther
+    name: Haller
+    orcid:
+  - affil:
       - NOAO
     altaffil: []
     initials: Ron
@@ -785,6 +834,12 @@ authors:
     initials: Fabio
     name: Hernandez
     orcid: 0000-0001-7203-2552
+  - affil:
+      - SLAC
+    altaffil: []
+    initials: Sven
+    name: Herrmann
+    orcid:
   - affil:
       - LSST
     altaffil: []
@@ -936,6 +991,12 @@ authors:
     name: Kessler
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: Veronica
+    name: Kinnison
+    orcid:
+  - affil:
       - UCIrvine-Astro
     altaffil: []
     initials: David
@@ -996,6 +1057,12 @@ authors:
     name: Kurita
     orcid:
   - affil:
+      - UCDavis
+    altaffil: []
+    initials: Craig S.
+    name: Lage
+    orcid:
+  - affil:
       - LSST
       - CTIO
     altaffil: []
@@ -1007,6 +1074,12 @@ authors:
     altaffil: []
     initials: Travis
     name: Lange
+    orcid:
+  - affil:
+      - SLAC
+    altaffil: []
+    initials: J. Brian
+    name: Langton
     orcid:
   - affil:
       - Paris-UPMC
@@ -1293,6 +1366,12 @@ authors:
     name: Peterson
     orcid:
   - affil:
+      - NCSA
+    altaffil: []
+    initials: Donald L.
+    name: Petravick
+    orcid:
+  - affil:
       - LSST
     altaffil: []
     initials: M.E. Libby
@@ -1383,6 +1462,12 @@ authors:
     name: Reil
     orcid:
   - affil:
+      - Washington
+    altaffil: []
+    initials: David J.
+    name: Reiss
+    orcid:
+  - affil:
       - LSST
     altaffil: []
     initials: Michael A.
@@ -1405,6 +1490,12 @@ authors:
     altaffil: []
     initials: Steve
     name: Ritz
+    orcid:
+  - affil:
+      - BNL
+    altaffil: []
+    initials: Sean
+    name: Robinson
     orcid:
   - affil:
       - SLAC
@@ -1466,6 +1557,12 @@ authors:
     altaffil: []
     initials: Rafe H.
     name: Schindler
+    orcid:
+  - affil:
+      - UCDavis
+    altaffil: []
+    initials: Samuel
+    name: Schmidt
     orcid:
   - affil:
       - PSU
@@ -1559,6 +1656,18 @@ authors:
     name: Sobhani
     orcid:
   - affil:
+      - SLAC
+    altaffil: []
+    initials: Christine
+    name: Soldahl
+    orcid:
+  - affil:
+      - IPAC
+    altaffil: []
+    initials: Lisa
+    name: Storrie-Lombardi
+    orcid:
+  - affil:
       - Princeton-Astro
     altaffil: []
     initials: Michael A.
@@ -1609,6 +1718,12 @@ authors:
     name: Takacs
     orcid:
   - affil:
+      - SLAC
+    altaffil: []
+    initials: Stephen A.
+    name: Tether
+    orcid:
+  - affil:
       - Illinois
     altaffil: []
     initials: Jon J.
@@ -1640,6 +1755,12 @@ authors:
     orcid:
   - affil:
       - SLAC
+    altaffil: []
+    initials: Max
+    name: Turri
+    orcid:
+  - affil:
+      - SLAC
       - UPenn
     altaffil: []
     initials: Richard
@@ -1664,12 +1785,24 @@ authors:
     name: Virieux
     orcid:
   - affil:
+      - BNL
+    altaffil: []
+    initials: William
+    name: Wahl
+    orcid:
+  - affil:
       - LOC
       - Adler
     altaffil: []
     initials: Lucianne
     name: Walkowicz
     orcid: 0000-0003-2918-8687
+  - affil:
+      - BNL
+    altaffil: []
+    initials: Brian
+    name: Walsh
+    orcid:
   - affil:
       - Duke
     altaffil: []
