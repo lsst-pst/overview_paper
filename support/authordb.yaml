@@ -847,6 +847,12 @@ authors:
     name: Hoblitt
     orcid: 0000-0002-5292-5879
   - affil:
+      - SLAC
+    altaffil: []
+    initials: John A.
+    name: Hodgson
+    orcid:
+  - affil:
       - Chicago
     altaffil: []
     initials: Craig
@@ -1189,6 +1195,12 @@ authors:
     altaffil: []
     initials: Robert
     name: McKercher
+    orcid:
+  - affil:
+      - BNL
+    altaffil: []
+    initials: Michelle
+    name: McQueen
     orcid:
   - affil:
       - Princeton-Astro
@@ -1746,6 +1758,12 @@ authors:
     altaffil: []
     initials: Vaikunth
     name: Thukral
+    orcid:
+  - affil:
+      - SLAC
+    altaffil: []
+    initials: Jeffrey
+    name: Tice
     orcid:
   - affil:
       - NAU
