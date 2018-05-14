@@ -480,6 +480,12 @@ authors:
     name: Chandrasekharan
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: Glenaver
+    name: Charles-Emerson
+    orcid:
+  - affil:
       - JPL
     altaffil: []
     initials: Steve
