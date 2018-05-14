@@ -774,6 +774,12 @@ authors:
     name: Glanzman
     orcid:
   - affil:
+      - NCSA
+    altaffil: []
+    initials: William
+    name: Glick
+    orcid:
+  - affil:
       - Berkeley-Astro
       - Berkeley-LBNL
     altaffil: []
