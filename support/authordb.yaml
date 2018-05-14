@@ -1859,6 +1859,12 @@ authors:
     orcid:
   - affil:
       - LSST
+    altaffil: []
+    initials: Oliver
+    name: Wiecha
+    orcid:
+  - affil:
+      - LSST
       - UA-Steward
     altaffil: []
     initials: Beth
