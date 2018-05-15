@@ -20,21 +20,49 @@ import yaml
 BUILDERS_FILE = "builders.txt"
 
 
-def deriveNameKey(surname, initials):
+def deriveNameKey(surname, first, builder=False):
     """Build key for indexing authors.
+
+    If this is a builder name then we can make corrections for
+    Bill -> William and Margaret Gelman -> Johnson
     """
     # Clean surname of latex
+    surname = surname.replace(r"\v", "")  # Zeljko
+    if first is not None:
+        first = first.replace(r"\v", "")
+
     for c in "'{} \\":
         surname = surname.replace(c, "")
-        if initials is not None:
-            initials = initials.replace(c, "")
+        if first is not None:
+            first = first.replace(c, "")
 
-    if initials is None:
-        initials = ""
+    if first is None:
+        initial = ""
     else:
-        initials = initials[0]
+        initial = first[0]
 
-    return "{}{}".format(surname, initials)
+    key = "{}{}".format(surname, initial)
+
+    if builder:
+        # Map derived key to author key, assuming different first name
+        mapping = {"GelmanM": ("Margaret", "JohnsonM"),
+                   "WahlB": ("Bill", "WahlW"),
+                   "TysonT": ("Tony", "TysonJ"),
+                   "SchoeningB": ("Bill", "SchoeningW"),
+                   "KrughoffS": ("Simon", "KrughoffK"),
+                   "GresslerB": ("Bill", "GresslerW"),
+                   "GilmoreK": ("Kirk", "GilmoreD"),
+                   "GlickB": ("Bill", "GlickW"),
+                   "JuramyC": ("Claire", "Juramy-GillesC"),
+                   "JonesL": ("Lynne", "JonesR"),
+                   "JohnsonT": ("Tony", "JohnsonA"),
+                   "Wood-VaseyM": ("Michael", "Wood-VaseyW")}
+        if key in mapping:
+            root, new = mapping[key]
+            if first.startswith(root):
+                key = new
+
+    return key
 
 
 # Paper author database
@@ -74,7 +102,7 @@ with open(BUILDERS_FILE, "r") as fh:
     for row in fh:
         row = row.strip()
         builder = row.split("\t")
-        nameKey = deriveNameKey(builder[1], builder[0])
+        nameKey = deriveNameKey(builder[1], builder[0], builder=True)
         surnameKey = deriveNameKey(builder[1], None)
         if nameKey in builders:
             builders[nameKey].append(builder)
