@@ -1764,6 +1764,12 @@ authors:
     name: Storrie-Lombardi
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: Edward
+    name: Stover
+    orcid:
+  - affil:
       - Princeton-Astro
     altaffil: []
     initials: Michael A.
