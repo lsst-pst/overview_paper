@@ -510,6 +510,12 @@ authors:
     name: Chiang
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: Carol
+    name: Chirino
+    orcid:
+  - affil:
       - SLAC
     altaffil: []
     initials: Derek
@@ -630,6 +636,12 @@ authors:
     name: Delgado
     orcid:
   - affil:
+      - BNL
+    altaffil: []
+    initials: Alfred
+    name: Dellapenna
+    orcid:
+  - affil:
       - SLAC
     altaffil: []
     initials: Robert
@@ -688,6 +700,12 @@ authors:
     altaffil: []
     initials: Henry
     name: Ferguson
+    orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: Enrique
+    name: Figueroa
     orcid:
   - affil:
       - Princeton-Astro
@@ -851,6 +869,12 @@ authors:
     altaffil: []
     initials: Sven
     name: Herrmann
+    orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: Edward
+    name: Hileman
     orcid:
   - affil:
       - LSST
@@ -1245,6 +1269,18 @@ authors:
     name: Mills
     orcid:
   - affil:
+      - BNL
+    altaffil: []
+    initials: Connor
+    name: Miraval
+    orcid:
+  - affil:
+      - Washington
+    altaffil: []
+    initials: Joachim
+    name: Moeyens
+    orcid: 0000-0001-5820-3925
+  - affil:
       - USNO
     altaffil: []
     initials: David G.
@@ -1279,6 +1315,12 @@ authors:
     altaffil: []
     initials: Gary P.
     name: Muller
+    orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: Freddy
+    name: Mu\~noz Arancibia
     orcid:
   - affil:
       - LSST
@@ -1364,6 +1406,12 @@ authors:
     altaffil: []
     initials: Reynald
     name: Pain
+    orcid:
+  - affil:
+      - BNL
+    altaffil: []
+    initials: Paul E.
+    name: Palecek
     orcid:
   - affil:
       - Washington
@@ -1608,6 +1656,12 @@ authors:
     orcid:
   - affil:
       - LSST
+    altaffil: []
+    initials: William
+    name: Schoening
+    orcid:
+  - affil:
+      - LSST
       - CTIO
     altaffil: []
     initials: German
@@ -1648,6 +1702,12 @@ authors:
     altaffil: []
     initials: Andrew
     name: Serio
+    orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: Eduardo
+    name: Serrano
     orcid:
   - affil:
       - Oxford
@@ -1825,6 +1885,12 @@ authors:
     altaffil: []
     initials: Francoise
     name: Virieux
+    orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: Tomislav
+    name: Vucina
     orcid:
   - affil:
       - BNL
