@@ -798,6 +798,12 @@ authors:
     name: Glick
     orcid:
   - affil:
+      - IPAC
+    altaffil: []
+    initials: Tatiana
+    name: Goldina
+    orcid:
+  - affil:
       - Berkeley-Astro
       - Berkeley-LBNL
     altaffil: []
@@ -1576,6 +1582,12 @@ authors:
     name: Robinson
     orcid:
   - affil:
+      - IPAC
+    altaffil: []
+    initials: William
+    name: Roby
+    orcid:
+  - affil:
       - SLAC
     altaffil: []
     initials: Aaron
@@ -1927,6 +1939,12 @@ authors:
       - SLAC
     altaffil: []
     initials: Daniel L.
+    name: Wang
+    orcid:
+  - affil:
+      - IPAC
+    altaffil: []
+    initials: Shin-Yawn
     name: Wang
     orcid:
   - affil:
