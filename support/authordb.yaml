@@ -11,6 +11,7 @@ affiliations:
     CA 94720-7450'
   CMU: 'McWilliams Center for Cosmology, Department of Physics, Carnegie Mellon University,
     Pittsburgh, PA 15213, USA'
+  CPPM: 'Aix Marseille Univ, CNRS/IN2P3, CPPM, Marseille, France'
   CTIO: 'Cerro Tololo InterAmerican Observatory, La Serena, Chile'
   CUMBRES: 'Las Cumbres Observatory, 6740 Cortona Dr.\ Suite 102, Santa Barbara, CA
     93117'
@@ -1031,6 +1032,12 @@ authors:
     altaffil: []
     initials: Jeffrey P.
     name: Kantor
+    orcid:
+  - affil:
+      - CPPM
+    altaffil: []
+    initials: Pierre
+    name: Karst
     orcid:
   - affil:
       - Caltech-Astro
