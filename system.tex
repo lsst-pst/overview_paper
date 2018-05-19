@@ -678,7 +678,7 @@ of $\sim$8 m. Motivated by characteristics of the existing equipment at the
 Steward Mirror Laboratory, which fabricated the primary mirror, the adopted
 geometrical diameter is set to 8.4 m.
 \item A visit exposure time of 30 seconds (using two 15 second exposures
-to efficiently reject cosmic rays; the possibility of a single exposure per visit, 
+to efficiently reject cosmic rays; the possibility of a single exposure per visit,
 to improve observing efficiency, will be investigated during the commissioning phase),
 yielding $\epsilon=77$\%.
 \item A revisit time of 3 days on average for 10,000 deg$^2$ of sky,
@@ -982,7 +982,7 @@ scheduled for early 2018.
 \includegraphics[width=1.0\hsize,clip]{observatoryFull}
 \includegraphics[width=1.0\hsize,clip]{ObservatoryFull_2017}
 \caption{Top: artist's rendering of the dome enclosure
-with the attached summit support building on Cerro Pach\'{o}n. The LSST auxiliary 
+with the attached summit support building on Cerro Pach\'{o}n. The LSST auxiliary
 calibration telescope is shown on an adjacent rise to the right.
 Bottom: Photograph of the LSST Observatory as of Summer 2017. Note the
 different perspective from the artist's rendering.  The main LSST
@@ -1032,15 +1032,15 @@ body, which also contains a mechanical shutter, and a carousel assembly that hol
 five large optical filters. The sixth optical filter can
 replace any of the five via a procedure accomplished during daylight hours.
 
-% from Marc Moniez 
-Each of the 21 rafts will host 3 front end electronic boards (REB) operating in the cryostat 
-(at $-10^\circ$ C), that read in parallel a total of 9$\times$16 segments per CCD (144 video 
-channels reading one million pixels each). This very high parallelization is the key to allow 
-for a fast readout (2 seconds) of the entire focal plane. To reach this performance with a 
-reasonably-sized board, a special low-noise ($<$3 electrons), low-crosstalk between channels 
-($<$0.02\%) and low-power dissipation (25 mW/channel) Analog Signal Processing Integrated 
-Circuit (ASPIC),  hosting 8 channels per chip, has been developed, which is able to read the 
-CCDs with a linearity better than 0.1\% \citep{1748-0221-12-03-C03017}. 
+% from Marc Moniez
+Each of the 21 rafts will host 3 front end electronic boards (REB) operating in the cryostat
+(at $-10^\circ$ C), that read in parallel a total of 9$\times$16 segments per CCD (144 video
+channels reading one million pixels each). This very high parallelization is the key to allow
+for a fast readout (2 seconds) of the entire focal plane. To reach this performance with a
+reasonably-sized board, a special low-noise ($<$3 electrons), low-crosstalk between channels
+($<$0.02\%) and low-power dissipation (25 mW/channel) Analog Signal Processing Integrated
+Circuit (ASPIC),  hosting 8 channels per chip, has been developed, which is able to read the
+CCDs with a linearity better than 0.1\% \citep{1748-0221-12-03-C03017}.
 
 \begin{figure}[t!]
 \includegraphics[width=1.05\hsize,clip]{CameraFigureUpdated2017}
@@ -1074,7 +1074,7 @@ approximately 15 TB per night of raw imaging data\footnote{For
   comparison, the volume of all imaging data collected over a decade
   by the SDSS-I/II projects
   and published in SDSS Data Release 7 \citep{2009ApJS..182..543A} is
-  approximately 16 TB.} (about 20 TB with calibration exposures). As with 
+  approximately 16 TB.} (about 20 TB with calibration exposures). As with
 all large modern surveys, the large data volume, the
 real-time aspects, and the complexity of processing involved requires
 that the survey itself take on the task of fully reducing the data.
@@ -1160,21 +1160,21 @@ the satellite processing center in France.}
 \label{Fig:DM2}
 \end{figure*}
 
-The DM system will span four key facilities on three continents: the Summit 
-Facility on Cerro Pach\'on in Chile (where the initial detector cross-talk correction 
-will be performed); the Base Facility in La Serena, Chile (which will serve as a retransmission 
-for data uploads to North America, as well as the Data Access Center for the Chilean community); 
-the Data Processing and Archiving Facility at the National Center for Supercomputing Applications 
-(NCSA) in Champaign-Urbana, IL; and the Satellite Processing Facility at CC-IN2P3 in Lyon, France. 
+The DM system will span four key facilities on three continents: the Summit
+Facility on Cerro Pach\'on in Chile (where the initial detector cross-talk correction
+will be performed); the Base Facility in La Serena, Chile (which will serve as a retransmission
+for data uploads to North America, as well as the Data Access Center for the Chilean community);
+the Data Processing and Archiving Facility at the National Center for Supercomputing Applications
+(NCSA) in Champaign-Urbana, IL; and the Satellite Processing Facility at CC-IN2P3 in Lyon, France.
 All real-time data processing and half the data release product processing will take place at the
-Data Processing and Archiving Facility, which will also serve as the Data Access Center for the US 
+Data Processing and Archiving Facility, which will also serve as the Data Access Center for the US
 community. The other half of the data release processing will be done at CC-IN2P3, which
-will also have the role of ``Long-term Storage'' facility. 
+will also have the role of ``Long-term Storage'' facility.
 
 The data will be transported between the centers over existing and new high-speed optical fiber
-links from South America to the U.S.\ (see Fig.~\ref{Fig:DM2}). The data processing center demands 
-stable, well-tested technology to ensure smooth operations. Hence, while LSST is making a novel 
-use of advances in information technology, it is not pushing the expected technology to the limit, 
+links from South America to the U.S.\ (see Fig.~\ref{Fig:DM2}). The data processing center demands
+stable, well-tested technology to ensure smooth operations. Hence, while LSST is making a novel
+use of advances in information technology, it is not pushing the expected technology to the limit,
 reducing the overall risk to the project.
 
 \subsubsection{The LSST software stack}
@@ -1268,16 +1268,16 @@ Subaru as part of the large SSP survey (\url{http://hsc.mtk.nao.ac.jp/ssp/survey
 \subsubsection{The LSST database design: Qserv}
 \label{sec:Qserv}
 
-The scale of the LSST data release catalogs, in combination with desired targets for user concurrency 
-and query response times, present some engineering challenges. The LSST project has been developing 
+The scale of the LSST data release catalogs, in combination with desired targets for user concurrency
+and query response times, present some engineering challenges. The LSST project has been developing
 \emph{Qserv}, a shared-nothing MPP (massively parallel processing) database system, to meet these needs
-\citep{Wang:2011:QDS:2063348.2063364, 2014era..conf30303B}.  
-Catalog data within Qserv is spatially partitioned, and hosted on shard servers running on dedicated hardware 
+\citep{Wang:2011:QDS:2063348.2063364, 2014era..conf30303B}.
+Catalog data within Qserv is spatially partitioned, and hosted on shard servers running on dedicated hardware
 resources within the LSST Data Facility.  The shard servers locally leverage conventional RDBMS (relational
-database management system) technologies, running behind custom front-end codes which handle query 
-analysis, rewrite, distribution, and result aggregation.  The Qserv shard servers also provide a facility for 
-cross-user synchronization of full-table scans in order to provide predictable query response times when 
-serving many users concurrently. More details about Qserv can be found in 
+database management system) technologies, running behind custom front-end codes which handle query
+analysis, rewrite, distribution, and result aggregation.  The Qserv shard servers also provide a facility for
+cross-user synchronization of full-table scans in order to provide predictable query response times when
+serving many users concurrently. More details about Qserv can be found in
 the LSST document LDM-135 \citep{LDM-135}.
 
 
