@@ -854,6 +854,12 @@ authors:
     name: Haller
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: Leanne P.
+    name: Guy
+    orcid:
+  - affil:
       - NOAO
     altaffil: []
     initials: Ron
