@@ -1,0 +1,14 @@
+.DS_Store
+lsstNotes.bib
+*.blg
+*.bbl
+*fdb_latexmk
+*log
+lsst.dvi
+lsst.fdb_latexmk
+lsst.log
+lsst.out
+lsst.pdf
+overview*.pdf
+*.aux
+*.fls
