@@ -842,6 +842,12 @@ authors:
     name: Gris
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: Leanne P.
+    name: Guy
+    orcid:
+  - affil:
       - Harvard-Physics
     altaffil: []
     initials: Augustin
@@ -852,12 +858,6 @@ authors:
     altaffil: []
     initials: Gunther
     name: Haller
-    orcid:
-  - affil:
-      - LSST
-    altaffil: []
-    initials: Leanne P.
-    name: Guy
     orcid:
   - affil:
       - NOAO
