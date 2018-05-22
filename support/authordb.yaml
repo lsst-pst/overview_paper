@@ -1735,6 +1735,12 @@ authors:
     name: Serrano
     orcid:
   - affil:
+      - STScI
+    altaffil: []
+    initials: Richard A.
+    name: Shaw
+    orcid:
+  - affil:
       - Oxford
     altaffil: []
     initials: Ian
