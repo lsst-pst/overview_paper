@@ -266,9 +266,10 @@ third row of Table~\ref{tab:eqparams}.
 
 The constants $C_m$ depend on the overall throughput of the instrument
 and are computed using our current best throughput estimates for
-optical elements and sensors. The resulting $C_m$ values are listed in Table~\ref{tab:eqparams}
-and in all six bands they imply single visit depths $m_5$ (also listed
-in Table~\ref{tab:eqparams}) that lie between the minimum and design
+optical elements and sensors. The values of $C_m$ listed in Table~\ref{tab:eqparams} 
+assume instrumental noise of 9 e$^-$ per pixel and per readout (whose effect on $m_5$
+is significant only in the $u$ band). In all six bands they imply single visit depths $m_5$ 
+(also listed in Table~\ref{tab:eqparams}) that lie between the minimum and design
 specification values from the Science Requirements
 Document listed in Table~\ref{tab:baseline}.
 The differences in performance between LSST and, for example, SDSS
@@ -284,15 +285,20 @@ seeing, and 0.20 mag due to fainter sky, for a net gain of $\sim$1.9 mag.}.
 
 The structure of eq.~\ref{m5} nicely illustrates decoupling between the system
 sensitivity which is fully absorbed into $C_m$ and observing conditions
-%(system deployment parameters)
+%(system deployment parameters) 
 specified by $m_{sky}$, $\theta$, $t_{vis}$, $k_m$
-and $X$. The computation of $C_m$ listed in Table~\ref{tab:eqparams} assumed instrumental noise of
-9 e$^-$ per pixel and per readout, whose effect on $m_5$ is
-significant only in the $u$ band.
- This loss of depth due to instrumental noise, $\Delta C^{\infty}_m$,
-is listed in Table~\ref{tab:eqparams}; it also corresponds to an additive correction to $C_m$ when the
-exposure time $t_{vis} \rightarrow \infty$. To predict $5\sigma$ depths for
-exposure time $\tau$ times longer than the fiducial $t_{vis} = 30$ sec., the
+and $X$. However, this decoupling between the system sensitivity 
+expressed via $C_m$ and observing conditions is only correct in the limit that the instrumental noise 
+(dominated by the read-out noise) is negligible compared to the background noise. When this assumption 
+is not correct (e.g., in the $u$ band), the coefficients $C_m$ do slightly depend on $t_{vis}$. In the limit 
+$t_{vis} \rightarrow \infty$, the following correction need be added to $C_m$
+\begin{equation}
+\Delta C^\infty_m = 1.25 \,\log_{10}\left[1 - \left({\rm instrumental \,\, noise} \over {\rm total \,\, noise}    \right)^2\right]. 
+\end{equation}
+
+Another meaning of $\Delta C^\infty_m$ is the loss of depth at the nominal value of $t_{vis}$ due to finite 
+read-out noise. The values of  $\Delta C^\infty_m$ are listed in Table~\ref{tab:eqparams}. To predict 
+$5\sigma$ depths for an exposure time a factor of $\tau$ longer than the fiducial $t_{vis} = 30$ sec., the
 following correction should be added to the values of $C_m$ listed in Table~\ref{tab:eqparams}:
 \begin{equation}
 \label{eq:DCm}
