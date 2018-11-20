@@ -808,9 +808,16 @@ effectively defines the blue edge of the $y$ band. Of the remaining four
 filters ($griz$), the $g$ band is already quite wide. As a last option, the
 $riz$ bands could be redesigned as two wider bands. However, this option is also
 undesirable because the $r$ and $i$ bands are the primary bands for weak
-lensing studies and for star/galaxy separation, and chromatic atmospheric
-refraction would worsen the point spread function for a wider bandpass.
+lensing studies and for star/galaxy separation, and atmosperic dispersion 
+would worsen the point spread function for a wider bandpass (e.g., at airmass of 
+1.3, the typical dispersion in the $u$, $g$ and $r$ bands is 0.55 arcsec,
+0.46 arcsec and 0.19 arcsec, respectively; if the bandpass width increased
+by 50\%, the dispersion would increase by a similar factor). The effects of 
+atmosperic dispersion on weak lensing studies are mitigated by modeling 
+the point spread function as a function of the color of the object (for more
+details, see \citealt{2015ApJ...807..182M, 2018MNRAS.479.1491C}). 
 
+ 
 
 \begin{figure}
 \includegraphics[width=1.0\hsize,clip]{modtran1}
