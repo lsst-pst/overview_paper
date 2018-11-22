@@ -362,7 +362,7 @@ both the Sun and the Earth, with a phase angle of $0^\circ$.  For a
 given albedo and spherical asteroids, $H$ depends only on the asteroid diameter.  
 The PHA orbits are cloned over an $H$ magnitude distribution with $dN/dH =
 10^{\alpha \, H}$, with $\alpha=0.33$, in order to evaluate completeness as a function of $H$
-(this magnitude distribution corresponds to a size distribution $dN/dD \propto 1/D^\beta$,
+(this magnitude distribution corresponds to a differential size distribution $dN/dD \propto 1/D^\beta$,
 with $\beta = 5\alpha+1$). 
 
 An object is considered to be discovered if the object was detected on at least three nights within a
@@ -375,7 +375,11 @@ fielded for this purpose to date. Realistic MOPS simulations show
 $>$99\% linking efficiency across all classes of Solar System objects \citep{2013PASP..125..357D},
 and at least 93\% efficiency for NEOs \citep{2017AJ....154...12V,2017AJ....154...13V}.
 
-The LSST baseline cadence discovers 66\% of PHAs and 61\% of NEOs with $H\leq22$ (equivalent to $D\ge140$\,m)
+The LSST baseline cadence discovers 66\% of PHAs and 61\% of NEOs with $H\leq22$ 
+(equivalent\footnote{It is customary to interpret asteroid diameter of 140 m as corresponding to 
+absolute magnitude of $H=22$, which implies a visual albedo of 0.142 for all objects. A more 
+realistic treatment of the albedo distribution can lead to a decrease in completeness on the order
+5\% \citep{2016AJ....152...79W, 2016AJ....151..172G}.}  to $D\ge140$\,m)
 after 10 years of operations \citep{2018Icar..303..181J}.  This cadence spends 6\% of the total
 observing time on NEO-optimized observations north of $\delta = +5^\circ$, and MOPS links objects with windows of 15 days.
 The baseline survey cumulative completeness as a function of time for objects with $H\le22$ is shown in the upper panel of Fig.~\ref{Fig:Cneo},
