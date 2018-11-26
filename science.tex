@@ -31,7 +31,7 @@ space-based facilities
 
 A unique aspect of LSST as a probe of dark energy and dark matter is
 the use of multiple cross-checking probes that reach unprecedented
-precision (see Fig.~\ref{Fig:DEellipses}). Any given probe constrains
+precision (see \autoref{Fig:DEellipses}). Any given probe constrains
 degenerate combinations of cosmological parameters, and each probe is
 affected by different systematics, thus the combination of probes
 allows systematics to be calibrated and for degeneracies to be
@@ -89,32 +89,45 @@ by cross-correlating the photometric sample with redshift surveys of
 galaxies and quasars in the same fields
 \citep{2008ApJ...684...88N,2010ApJ...721..456M,2013arXiv1303.4722M,2017arXiv171002517D}.
 
+% OLD FIGURE:
+% \begin{figure}
+% \includegraphics[width=1.0\hsize,clip]{cswb}
+% \caption{
+% Constraints on the dark energy equation of state ($w = w_0 +
+% w_a(1-a)$) from LSST cosmological probes.  The various ellipses assume
+% constraints from BAO (dashed line), cluster counting (dash-dotted line),
+% supernovae (dotted line), WL (solid line), joint BAO and WL
+% (green shaded area), and all probes combined (yellow shaded area).
+% The BAO and WL results are based on galaxy--galaxy, galaxy--shear,
+% and shear--shear power spectra only.
+% Adding other probes such as strong lensing time delay
+% and higher-order galaxy and shear statistics will further improve
+% the constraints.  While the details of the contours will change
+% slightly as the survey parameters are updated,
+% %mentioned in the text differ slightly from
+% %those in the LSST Science Book (which were used to make this figure), changing the size of the
+% %contours for individual probes,
+% the key point remains that
+% this combination of dark energy probes results in contours with different degeneracy directions, and
+% hence their combination results in tight constraints on the dark energy equation of state. }
+% \label{Fig:DEellipses}
+% \end{figure}
 
+% NEW FIGURE, FROM DESC SRD
 \begin{figure}
-%\includegraphics[width=1.0\hsize,clip]{DEellipses1}
-%\includegraphics[width=0.95\hsize,clip]{DEellipses2}
-\includegraphics[width=1.0\hsize,clip]{cswb}
-\caption{
-Constraints on the dark energy equation of state ($w = w_0 +
-w_a(1-a)$) from LSST cosmological probes.  The various ellipses assume
-constraints from BAO (dashed line), cluster counting (dash-dotted line),
-supernovae (dotted line), WL (solid line), joint BAO and WL
-(green shaded area), and all probes combined (yellow shaded area).
-The BAO and WL results are based on galaxy--galaxy, galaxy--shear,
-and shear--shear power spectra only.
-Adding other probes such as strong lensing time delay
-and higher-order galaxy and shear statistics will further improve
-the constraints.  While the details of the contours will change
-slightly as the survey parameters are updated,
-%mentioned in the text differ slightly from
-%those in the LSST Science Book (which were used to make this figure), changing the size of the
-%contours for individual probes,
-the key point remains that
-this combination of dark energy probes results in contours with different degeneracy directions, and
-hence their combination results in tight constraints on the dark energy equation of state. }
-\label{Fig:DEellipses}
+  \begin{center}
+    \includegraphics[width=0.9\linewidth]{LSST_Y1_Aug13.pdf}
+    \includegraphics[width=0.9\linewidth]{LSST_Y10_Aug13.pdf}
+  \end{center}
+  \caption{Constraints on the dark energy equation of state ($w = w_0 +
+  w_a(1-a)$) from LSST cosmological probes after one year of data (Y1,
+  top) and the full 10-year survey (Y10, bottom), from each probe
+  individually, and the joint forecast including Stage III priors.  68\%
+  confidence intervals are shown in all cases; the plotted quantities
+  $\Delta w_0$ and $\Delta w_a$ are the difference between $w_0$ and
+  $w_a$ and their fiducial values of -1 and 0. Figures reproduced with permission from the LSST DESC Science Requirements Document v1 \citep{DESC-SRD}.
+  \label{Fig:DEellipses}}
 \end{figure}
-
 
 
 % \begin{figure}
@@ -171,7 +184,7 @@ distance are relatively insensitive to the assumed systematics
 \end{figure}
 
 
-The main LSST observables in the context of dark energy and matter are described below.
+The main LSST observables in the context of dark energy and matter are described below. For more details, we refer the reader to the LSST Dark Energy Science Collaboration's science requirements document, from which \autoref{Fig:DEellipses} was drawn \citep{DESC-SRD}.
 
 \begin{itemize}
 \item The
@@ -305,7 +318,7 @@ to the LSST survey \citep{2010MNRAS.405.2579O}.
   neutron star merger by LIGO with an electromagnetic counterpart \citep{2017ApJ...848L..12A}, which was
   used to constrain the Hubble parameter to roughly 15\% precision \citep{2017Natur.551...85A}.
   Constraints from standard sirens are independent of the local distance ladder, with the primary
-  uncertainties being the local velocity field and the inclination angle of the system.  Assuming that 
+  uncertainties being the local velocity field and the inclination angle of the system.  Assuming that
   the gravitational wave network is working well, \citet{2018ApJ...852L...3S}
   estimate that LSST could find of order 70 electro-magnetic counterparts to standard sirens.
 \end{itemize}
