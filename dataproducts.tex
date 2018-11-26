@@ -55,6 +55,22 @@ are due to the pattern of the pointing tessellation on the sky.}
 \label{Fig:rbandSky}
 \end{figure}
 
+\begin{figure}
+%\vskip -0.95in
+\includegraphics[width=1.0\hsize,clip]{cadence_zenith}
+\includegraphics[width=1.0\hsize,clip]{cadence_circumpolar}
+%\vskip -1.1in
+\caption{The distribution of visits over a single season at two distinct pointings,
+for a simulated realization of the baseline cadence. Two pointings within the 'Wide Fast Deep'
+universal cadence footprint were chosen, one nearly overhead at the LSST site and one 
+near the southern limit of the WFD footprint. The timing of the visits within the season
+is illustrated in the figure by calculating the month within the season (shown in the y-axis 
+location in the plot), the night within the month (x-axis location in the plot) and number of visits 
+within each night (a small additional offset in the y-axis). Each visit is color-coded according to 
+its observed filter; the shaded gray regions show the nights around new moon.}
+\label{Fig:fieldCadence}
+\end{figure}
+
 The observing strategy for the main survey will be optimized for the homogeneity
 of depth and number of visits. In times of good seeing and at low airmass, preference
 is given to $r$-band and $i$-band observations. As often as possible, each field will be
@@ -96,11 +112,12 @@ roughly logarithmically in time (it may not be necessary to use the
 $u$ and $g$ filters for this heavily extincted region).
 
 The resulting sky coverage for the LSST baseline cadence (known internally as
-{\it minion\_1016}), based on detailed operations simulations, is shown for the
+{\it baseline2018a}), based on detailed operations simulations, is shown for the
 $r$ band in Fig.~\ref{Fig:rbandSky}. The anticipated total number of visits
 for a ten-year LSST survey  is about 2.45 million ($\sim$4.9 million 15-second long
 exposures, summing over the six filters). The per-band allocation of
-these visits is shown in Table~\ref{tab:baseline}.
+these visits is shown in Table~\ref{tab:baseline}.  Details of the cadence of visits 
+over a single season, for  two distinct pointings, is shown in Fig.~\ref{Fig:fieldCadence}.
 
 The baseline universal cadence is by no means the definitive plan for the entire
 survey. Rather, it represents a proof of concept that it is indeed possible to
