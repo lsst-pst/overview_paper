@@ -1,0 +1,207 @@
+
+          Dear Editor,
+we are submitting a revised version of the paper "LSST: from Science Drivers to Reference Design 
+and Anticipated Data Products by Ivezic et al.". We are thankful to the referee for careful reading
+and excellent suggestions for how to improve this paper. We have implemented all the suggestions
+where it was feasible. Detailed listing of implemented edits is appended below. We hope that the
+revised version is now suitable for publication. 
+         For the authors, 
+           Zeljko Ivezic
+
+
+> Given the 10 year history of this paper, some of the science discussions are stale and should 
+> be updated. I have identified some places where this should be done, but there are no doubt
+> other places that could be improved.
+
+The chairs of eleven LSST Science Collaborations have carefully revisited science discussion
+and references and updated them in many instances. 
+
+> The "Deep-Wide-Fast" survey is supplemented by a "Very Deep" survey and a "Fast time domain" 
+> survey [in the abstract]. This is too reminiscent of Starbucks' coffee sizes, where "grande" isn't big.
+
+"Very" was meant to apply to both "Deep" and "Fast"; fixed. 
+
+> It would be good to have more current seeing data in Figure 1. Seeing always seems to get worse
+> after site selection probably due to regression to the mean.
+
+The LSST Project is will install a permanent seeing monitor at the summit in 2019. Since
+it will take at least a year to collect an adequate data set, existing Figure 1 cannot be significantly
+improved at this time. 
+
+> The deep drilling fields in Figure 18 do not appear to be very much deeper than the main survey: 
+> 1.8x on the color bar. This figure might need a logarithmic color bar.
+
+We have improved the design of this figure, and also added more information to its caption. 
+
+> A Figure showing the cadence for 1 or more typical spots would be useful, and it should show which 
+> filter is used for each visit. Something like a timeline with different color ticks indicating the visits. 
+> This should probably cover one lunation to keep the scale readable.
+
+Figure 19 in the revised version is our response to this excellent suggestion. 
+
+> State how long it takes to change filters. This is relevant for getting an SED of a rapidly changing transient.
+
+We have added this information to section 2.6.2: "The five filters in the camera can be changed in 
+90-120 seconds, depending on the initial camera rotator position." 
+
+> The Zwicky Transient Facility is up and running, and the author list of this paper includes many ZTF 
+> team members. Based on ZTF experience, you should have a fairly good updated estimate of what 
+> the LSST transient alert stream should look like. While you do mention several million alerts per 
+> night, you should mention how these will break down into supernovae, fast transients, stellar flares, 
+> and asteroids.
+
+Our ZTF colleagues report that they don't have robust results yet and claim that a paper describing
+LSST simulations by Ridgway et al. (2014) is still the best reference. We have added a reference to
+that paper (not including it was an omission on our part). 
+
+> Standard sirens will not be "found" by LSST [p 36]. They have to found and measured using 
+> LIGO/VIRGO/KAGRA/IndIGO and then the EM counterparts need to be found, and LSST will be a 
+> great asset for this follow-up activity. So rewrite this to say LSST will followup GWB alerts and is 
+> likely to find 70 EM counterparts if the gravitational wave network is working well.
+
+Excellent point! Implemented as suggested. 
+
+> The trailing loss Eqn (8) has weird units. vt/theta should be dimensionless, so express v in 
+> arc-sec/sec, t in sec, and theta in arc-sec. This gets rid of the weird 24 in Eqn (9). Eqn (8) is 
+> basically noise \propto sqrt(FWHM^2+[trail length]^2) which is pessimistic relative to a search
+> tuned for trails. This would have noise \propto sqrt(FWHM*sqrt(FWHM^2+[trail length]^2)) but 
+> would be a substantial computational burden to do a 4-D search for trails. You have to either 
+> explain your reasoning or give a citation for Eqn (8).
+
+Eq. 8 (now eq. 9) is based on a more detailed model, described in Section 5.1.4 in Jones et al. (2018)
+that accounts for both SNR losses and detection losses due to non-optimal extraction profile. 
+We have added a reference to Jones et al. (2018). 
+
+> On page 28, H does NOT scale directly with the diameter of an object. That would say that an 
+> object with D=1400 m would have H=220 since an object with H=22 has D=140 m for 
+> albedo = 14%. H is a logarithmic quantity representing a flux which scales quadratically with 
+> diameter. Explain what size distribution is equivalent to your dN/dH~10^{H/3}.
+
+We agree that our phrasing of this well known relation was poor. We have modified
+the text as suggested and clarified that adopted magnitude distribution corresponds 
+to a size distribution $dN/dD \propto 1/D^\beta$, with $\beta = 5\alpha+1$. 
+
+> The claim in Figure 24 that LSST colors will be twice as accurate as SDSS colors for asteroids 
+> depends on being able to phase up very sparse light curves in the different filters, which will 
+> be a considerable task, while the SDSS filters were all obtained within about 2 minutes.
+
+The accuracy of SDSS colors is about 0.03 mag (0.02 mag errors per band with uncorrelated errors), 
+when the achieved SNR allows it. Assuming that the rms for asteroid light curves is ~0.2 mag (e.g. 
+an amplitude of 0.3 mag and sinusoidal variation), and 100 observations per band, the expected 
+color accuracy is 0.02 mag (0.2/sqrt(100) with correlated errors between bands). This color accuracy
+is achieved without any light curve phasing (and the rizy bands have more than 100 observations).
+In addition, a discussion about "Sparse lightcurve inversion" in section 5.7.1 from the LSST Science 
+Book (https://www.lsst.org/scientists/scibook) shows that light curve inversion, while "a considerable 
+task", will not be a hopeless task. Thus, we believe that our statement is correct. 
+
+> \S 2.1.2: It should be noted in the text that this requirement: "The photometry should be better than 1-2% 
+> to measure asteroids' colors and thus determine their types. The different filters should be observed over a 
+> short time span to reduce apparent variations in color due to changes in observing geometry, but should 
+> be repeated over many lunations in order to determine phase curves and allow shape modeling." is not met 
+> by the proposed main survey. The typical asteroid changes its flux by 1% in 100 seconds or so. The filter 
+> change cycle is hard to find - I suppose I could look at minion_1016 - but I believe it is on a much longer 
+> time scale than 100 seconds. Thus the caption of Figure 24 stating that LSST colors will be twice as good as 
+> SDSS colors is not supported. SDSS observed all 5 bands in O(10^2) seconds, while LSST may well take days.
+
+The time to change the filter in the camera is 90-120 seconds, and following your suggestion, 
+this information was added to the manuscript. But given the discussion about asteroid color accuracy 
+just  above, we believe that the required accuracy will be achieved even without back-to-back observations
+in different filters (though we anticipate that some tests based on back-to-back observations will be done
+to empirically confirm the claim of ~2% color accuracy). 
+ 
+> Also the Congressional mandate to find 90% of all NEOs 140 m and up will not be met, although finding a 
+> large fraction of NEOs brighter the H=22 is feasible. It's those pesky coal black C types that won't be found 
+> by LSST: a quarter of the NEOs at 140 m diameter have H > 23. The albedo used in \S 3.2.2 is hard to find, 
+> but the statement that H=22 is equivalent to 140 m gives 14%. Most C-types are much darker than this.
+
+It is customary to interpret 140 m size as H=22.  But we agree that there is a substantial fraction of 
+asteroid with albedos below the implied median value of pV=0.142. We have added a reference to recent 
+papers by Wright et al. (2016) and Grav et al. (2016) who discuss this issue in quantitative detail and find 
+that a more realistic treatment of the albedo distribution can lead to a decrease in completeness 
+on the order 5% (we note that "C types that won't be found" is too strong a statement because LSST 
+completeness doesn't drop to 0 at H=22; indeed, it's still as high as 20% at H=25). 
+
+> Specify the atmospheric dispersion in the filters. You mention that going for wider passbands would make 
+> this worse but do not give the magnitude. And call it "atmospheric dispersion", not "chromatic atmospheric 
+> refraction", even though these mean the same thing. Some instruments have ADC systems, none have CARC 
+> systems. This seems like an important systematic noise term for weak lensing studies.
+
+We have quantitatively specified atmospheric dispersion as a function of wavelength, and followed 
+the suggestion to call it "atmospheric dispersion", instead of "chromatic atmospheric refraction"
+Regarding the systematic noise for weak lensing studies, we have clarified that the PSF is modeled as 
+a function of the color of the object, and given enough information about the object's morphology,
+can be handled well enough to enable weak lensing measurements. We have also added references to
+recent papers which discuss this effect (Meyers and Burchat 2015; Carlsten et al. 2018).
+
+> How does the effective number density of weak lensing background galaxies compare with Euclid and 
+> WFIRST? Euclid is observing a similarly large area with a better PSF, no seeing, no weather, no Moon, no 
+> daytime, and a darker sky.
+
+We have added text to the paper to make this comparison. The Euclid galaxy density should be about the 
+same as LSST's over a comparable survey area, enabling a weak lensing analysis with similar statistical 
+precision but with quite different systematic errors. WFIRST should go deeper, but over a significantly 
+smaller sky area. We provide a reference to a white paper comparing the three surveys' expected performance, 
+and the potential for combining them.
+
+> The weak lensing results will be competing with Euclid which has a similar start date. There are several 
+> surveys that have been "skimming the cream on weak lensing science", including CFHTLenS, PanSTARRS 
+> and DES. So far the cream has not produced spectacular results. Figure 22 seems frozen in the DETF days.
+> Figure 22 should acknowledge the surveys in the can, and show an "All" that include Euclid WL and then 
+> "All minus LSST WL". So you should include a fair assessment of how much the LSST will advance the field 
+> over where it will be given current and under construction surveys.
+
+The Figure 22 that the referee is referring to is now Fig 23 in the current version. We have followed your
+excellent suggestion and replaced the plot with the most up to date alternative, from the recently released 
+LSST DESC Science Requirements Document, and added an additional contour to show what the Dark Energy 
+Survey is expected to achieve with its Y6 dataset as a way of showing what the Stage III surveys will contribute.
+
+We have not added cosmological constraint contours that correspond to "All" including Euclid WL and then 
+"All minus LSST WL", as the referee suggested. The reason for this is that a key part of the cosmological 
+community's Stage IV dark energy program is that there are multiple surveys that are dominated by different
+systematic uncertainties and use (at least mostly) independent analysis algorithms. These enable multiple 
+cross-checks that provide confidence in our control of astrophysical and observational systematic uncertainties 
+when placing tight constraints on dark energy (or modified gravity, neutrino masses, and other measurements 
+that will also be made using those surveys). The Weinberg+13 review article on cosmology, Jain+15 white paper, 
+and Rhodes+17 ApJ paper more thoroughly explore the value of these tradeoffs in survey strategy, analysis 
+methodology, and so on, that will enable us to validate that we have adequate control of astrophysical and 
+observational systematic uncertainties. If we provide a FoM plot that appears to emphasize the purely statistical 
+constraining power of these surveys, we would be missing this key element of the community's Stage IV program. 
+Finally, as a purely practical matter, we do not have Euclid forecasts that are in the same 7-dimensional 
+cosmological parameter constraints as the LSST ones, or with reasonably consistent assumptions, nor do we 
+think that such constraints provided by the LSST community would necessarily be seen as credible (as compared 
+to whatever the Euclid consortium provides based on their best current understanding of the instrument and 
+survey).
+
+> In discussing the proper motion and parallax accuracy, it should be pointed out that achieving the required 
+> 10 mas 1 sigma 1 axis single visit accuracy requires SNR of 30, so the magnitude limit is 2 mag brighter 
+> than the single visit SNR 5 limit. Still very good: r = 22.5. Later on p 29 there is a more conservative calculation 
+> showing r = 21 for 0.2 mas/yr. So give a magnitude limit during the first proper motion accuracy discussion, 
+> and state that accuracy scales like 1/flux for fainter objects.
+
+We have clarified that the first mention of "10 mas" corresponds to systematic astrometric errors 
+(and not random errors which indeed scale as 1/flux, as discussed in Section 3.2.3)
+
+> You should cite actual performance of Gaia in addition to the pre-launch projected performance.
+
+We have added references to recent papers about Gaia Data Release 2 performance on pages 9 and 30
+(which demonstrate that their early performance estimates were robust). 
+
+> The telescope latitude and longitude are specified to 0.01" which is 31 cm. Are these values really that good? 
+> And if so, what part of the telescope do they correspond too? That should be specified. [p 16]
+
+We have clarified that the listed coordinates correspond to the center of the telescope pier. 
+
+> Footnote 14: there should be an S^2 term as well since there are flux errors proportional to the flux. The 
+> coefficient will probably be small but the term will be present.
+
+If there is an S^2 term for some reason (and one would not expect it from the first principles, 
+unless more complicated error models with various systematic effects are invoked), it must be 
+very small; for example, Sesar et al. (2007) showed that our Eq.5 is supported by the empirical SDSS 
+photometric behavior. More details about our SNR computation are available in Section 4 from http://faculty.washington.edu/ivezic/Teaching/Astr511/LSST_SNRdoc.pdf
+
+> Eqn 6 & 7: These are not consistent in their treatment of the exposure time. Eqn(6) is pure sqrt(t) while Eqn(7) 
+> is poorly written and not explained well. \Delta C^\infty_m is not the loss due to readout noise when the 
+> integration time goes to infinity, because that is zero. Rewrite to explain better.
+
+We have clarified the details behind Eqs. 6 and 7 in the revised version. 
+  
