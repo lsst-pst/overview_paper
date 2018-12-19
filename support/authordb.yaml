@@ -111,6 +111,7 @@ affiliations:
     Ave., West Lafayette, IN  47907'
   Radboud-Astro: 'Department of Astrophysics/IMAPP, Radboud University Nijmegen,
     P.O.\ Box 9010, 6500 GL Nijmegen, The Netherlands'
+  Rider: 'Department of Chemistry, Biochemistry, and Physics, Rider University, Lawrenceville, NJ 08648'
   Rutgers: 'Department of Physics and Astronomy, Rutgers University, 136 Frelinghuysen
     Rd, Piscataway, NJ 08854'
   SAO: 'Smithsonian Astrophysical Observatory, 60 Garden St., Cambridge MA 02138'
@@ -143,6 +144,7 @@ affiliations:
   Washington: 'University of Washington, Dept.\ of Astronomy, Box 351580, Seattle,
     WA 98195'
   WestWashington: 'Western Washington University, 516 High Street, Bellingham, WA 98225'
+  WisconsinMadison: 'Department of Physics, University of Wisconsin-Madison, Madison, WI 53706'
   Yale: 'Astronomy Department, Yale University, New Haven, CT 06520'
 authors:
   - affil:
@@ -316,6 +318,19 @@ authors:
     name: Baumont
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: Ellen
+    name: Bechtol
+    orcid:
+  - affil:
+      - LSST
+      - WisconsinMadison
+    altaffil: []
+    initials: Keith
+    name: Bechtol
+    orcid:
+  - affil:
       - Washington
     altaffil: []
     initials: Andrew C.
@@ -389,6 +404,12 @@ authors:
     altaffil: []
     initials: Tim W.
     name: Bond
+    orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: Michael T.
+    name: Booth
     orcid:
   - affil:
       - SLAC
@@ -479,6 +500,18 @@ authors:
     altaffil: []
     initials: Alice L.
     name: Callen
+    orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: Jeffrey L.
+    name: Carlin
+    orcid: 0000-0002-3936-9628
+  - affil:
+      - LSST
+    altaffil: []
+    initials: Erin L.
+    name: Carlson
     orcid:
   - affil:
       - UA-CompSci
@@ -709,6 +742,18 @@ authors:
     name: Eracleous
     orcid:
   - affil:
+      - LSST
+    altaffil: []
+    initials: Benjamin L.
+    name: Emmons
+    orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: Angelo
+    name: Fausti Neto
+    orcid: 0000-0002-8095-305X
+  - affil:
       - STScI
     altaffil: []
     initials: Henry
@@ -918,6 +963,12 @@ authors:
     altaffil: []
     initials: Craig
     name: Hogan
+    orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: James D.
+    name: Howard
     orcid:
   - affil:
       - BNL
@@ -1242,6 +1293,12 @@ authors:
   - affil:
       - SLAC
     altaffil: []
+    initials: Thomas W.
+    name: Markiewicz
+    orcid: 0000-0003-3646-8724
+  - affil:
+      - SLAC
+    altaffil: []
     initials: Darren S.
     name: Marsh
     orcid:
@@ -1312,6 +1369,13 @@ authors:
     name: Moeyens
     orcid: 0000-0001-5820-3925
   - affil:
+      - Rider
+      - Princeton-Astro
+    altaffil: []
+    initials: Fred E.
+    name: Moolekamp
+    orcid: 0000-0003-0093-4279
+  - affil:
       - USNO
     altaffil: []
     initials: David G.
@@ -1334,6 +1398,12 @@ authors:
     altaffil: []
     initials: Christopher
     name: Montgomery
+    orcid:
+  - affil:
+      - Washington
+    altaffil: []
+    initials: Christopher B.
+    name: Morrison
     orcid:
   - affil:
       - SLAC
@@ -1528,6 +1598,12 @@ authors:
     initials: Stephen
     name: Plate
     orcid:
+  - affil:
+      - NCSA
+    altaffil: []
+    initials: Joel P.
+    name: Plutchak
+    orcid: 0000-0002-1501-825X
   - affil:
       - Princeton-Astro
     altaffil: []
@@ -1886,6 +1962,12 @@ authors:
     initials: Sandrine
     name: Thomas
     orcid:
+  - affil:
+      - LSST
+    altaffil: []
+    initials: Adam J.
+    name: Thornton
+    orcid: 0000-0001-9342-6032
   - affil:
       - SLAC
     altaffil: []
