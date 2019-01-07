@@ -1,0 +1,61 @@
+
+Dear Editor,
+
+We are submitting a revised version of the paper "LSST: from Science Drivers to Reference Design
+and Anticipated Data Products by Ivezic et al.". We are thankful to the referee for reading our
+revised paper. We have implemented the suggested change to our asteroid photometry discussion.
+We hope that the revised version is now suitable for publication.
+
+         For the authors,
+           Zeljko Ivezic
+
+> But in terms of this manuscript, the requirement
+> "The photometry should be better than 1-2% to measure asteroids'
+> colors and thus determine their types. The different filters
+> should be observed over a short time span to reduce apparent
+> variations in color due to changes in observing geometry,"
+> from page 7 is not being met by the proposed cadence, since the
+> asteroid's orientation is clearly a significant component of the
+> observing geometry. Thus the last sentence of the Figure 25 caption:
+> "LSST color measurements of asteroids will be more than twice as
+> accurate and will increase the number of objects by roughly two
+> orders of magnitude."
+> is not well justified, and will sound stupid to anybody who works
+> with asteroids. The authors need to make a better justification
+> of why they expect to do better than the SDSS even though the cadence
+> obviously does not meet the requirement. It seems to me that the
+> LSST has a Level 1 requirement to get data that can classify
+> asteroids, but the derived Level 2 requirement on page 7 is not
+> being met because it assumes a cadence they are not actually using.
+> But there is a work-around using the 100's of observations to beat
+> down the light curve noise. This needs to be described, and perhaps
+> the requirement on page 7 rewritten in terms of data quality instead
+> of cadence.
+
+In response to this comment we have made the following changes:
+
+Page 7, the following text from the right column:
+
+"The photometry should be better than 1–2% to measure asteroids’ colors and thus
+determine their types. The different filters should be observed over a short time
+span to reduce apparent variations in color due to changes in observing geometry,
+but should be repeated over many lunations in order to determine phase curves and
+allow shape modeling.”
+
+has been modified to (emphasis added):
+
+"The *photometric calibration* should be better than 1–2% to measure asteroids’ colors
+and thus determine their types. *If possible,* the different filters should be observed
+over a short time span to reduce apparent variations in color due to changes in observing
+geometry, but should be repeated over many lunations in order to determine phase curves
+and allow shape modeling.”
+
+Figure 25 caption, the following text:
+
+"LSST color measurements of asteroids will be more than twice as accurate and will
+increase the number of objects by roughly two orders of magnitude.”
+
+has been modified to (emphasis added):
+
+"LSST color measurements of asteroids will be *at least as accurate as SDSS measurements
+shown here* and will increase the number of objects by roughly two orders of magnitude.”
