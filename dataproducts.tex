@@ -46,11 +46,11 @@ to the legend. The three regions with smaller number of visits than the main sur
 (``mini-surveys'') are the Galactic plane (arc on the right), the region around the
 South Celestial Pole (bottom), and the so-called ``northern Ecliptic region'' (upper left;
 added in order to increase completeness for moving objects). Deep drilling fields, with
-a much higher number of visits ($\approx$2500$-$4500 in the $r$ band) than the main survey 
+a much higher number of visits ($\approx$2500$-$4500 in the $r$ band) than the main survey
 (a median over all fields of 200 visits in the $r$ band), are also visible as small circles.
 The fields were dithered on sub-field scales and pixels with angular resolution of
-$\sim$30 arcmin were used to evaluate and display the coverage. 
-The slightly elevated number of visits for four locations along Dec $\approx -30^\circ$ line 
+$\sim$30 arcmin were used to evaluate and display the coverage.
+The slightly elevated number of visits for four locations along Dec $\approx -30^\circ$ line
 are due to the pattern of the pointing tessellation on the sky.}
 \label{Fig:rbandSky}
 \end{figure}
@@ -62,11 +62,11 @@ are due to the pattern of the pointing tessellation on the sky.}
 %\vskip -1.1in
 \caption{The distribution of visits over a single season at two distinct pointings,
 for a simulated realization of the baseline cadence. Two pointings within the 'Wide Fast Deep'
-universal cadence footprint were chosen, one nearly overhead at the LSST site and one 
+universal cadence footprint were chosen, one nearly overhead at the LSST site and one
 near the southern limit of the WFD footprint. The timing of the visits within the season
-is illustrated in the figure by calculating the month within the season (shown in the y-axis 
-location in the plot), the night within the month (x-axis location in the plot) and number of visits 
-within each night (a small additional offset in the y-axis). Each visit is color-coded according to 
+is illustrated in the figure by calculating the month within the season (shown in the y-axis
+location in the plot), the night within the month (x-axis location in the plot) and number of visits
+within each night (a small additional offset in the y-axis). Each visit is color-coded according to
 its observed filter; the shaded gray regions show the nights around new moon.}
 \label{Fig:fieldCadence}
 \end{figure}
@@ -116,7 +116,7 @@ The resulting sky coverage for the LSST baseline cadence (known internally as
 $r$ band in Fig.~\ref{Fig:rbandSky}. The anticipated total number of visits
 for a ten-year LSST survey  is about 2.45 million ($\sim$4.9 million 15-second long
 exposures, summing over the six filters). The per-band allocation of
-these visits is shown in Table~\ref{tab:baseline}.  Details of the cadence of visits 
+these visits is shown in Table~\ref{tab:baseline}.  Details of the cadence of visits
 over a single season, for  two distinct pointings, is shown in Fig.~\ref{Fig:fieldCadence}.
 
 The baseline universal cadence is by no means the definitive plan for the entire
@@ -288,9 +288,9 @@ third row of Table~\ref{tab:eqparams}.
 
 The constants $C_m$ depend on the overall throughput of the instrument
 and are computed using our current best throughput estimates for
-optical elements and sensors. The values of $C_m$ listed in Table~\ref{tab:eqparams} 
+optical elements and sensors. The values of $C_m$ listed in Table~\ref{tab:eqparams}
 assume instrumental noise of 9 e$^-$ per pixel and per readout (whose effect on $m_5$
-is significant only in the $u$ band). In all six bands they imply single visit depths $m_5$ 
+is significant only in the $u$ band). In all six bands they imply single visit depths $m_5$
 (also listed in Table~\ref{tab:eqparams}) that lie between the minimum and design
 specification values from the Science Requirements
 Document listed in Table~\ref{tab:baseline}.
@@ -307,19 +307,19 @@ seeing, and 0.20 mag due to fainter sky, for a net gain of $\sim$1.9 mag.}.
 
 The structure of eq.~\ref{m5} nicely illustrates decoupling between the system
 sensitivity which is fully absorbed into $C_m$ and observing conditions
-%(system deployment parameters) 
+%(system deployment parameters)
 specified by $m_{sky}$, $\theta$, $t_{vis}$, $k_m$
-and $X$. However, this decoupling between the system sensitivity 
-expressed via $C_m$ and observing conditions is only correct in the limit that the instrumental noise 
-(dominated by the read-out noise) is negligible compared to the background noise. When this assumption 
-is not correct (e.g., in the $u$ band), the coefficients $C_m$ do slightly depend on $t_{vis}$. In the limit 
+and $X$. However, this decoupling between the system sensitivity
+expressed via $C_m$ and observing conditions is only correct in the limit that the instrumental noise
+(dominated by the read-out noise) is negligible compared to the background noise. When this assumption
+is not correct (e.g., in the $u$ band), the coefficients $C_m$ do slightly depend on $t_{vis}$. In the limit
 $t_{vis} \rightarrow \infty$, the following correction need be added to $C_m$
 \begin{equation}
 \Delta C^\infty_m = 1.25 \,\log_{10}\left[1 - \left(\mathrm{instrumental \,\, noise} \over \mathrm{total \,\, noise}    \right)^2\right].
 \end{equation}
 
-Another meaning of $\Delta C^\infty_m$ is the loss of depth at the nominal value of $t_{vis}$ due to finite 
-read-out noise. The values of  $\Delta C^\infty_m$ are listed in Table~\ref{tab:eqparams}. To predict 
+Another meaning of $\Delta C^\infty_m$ is the loss of depth at the nominal value of $t_{vis}$ due to finite
+read-out noise. The values of  $\Delta C^\infty_m$ are listed in Table~\ref{tab:eqparams}. To predict
 $5\sigma$ depths for an exposure time a factor of $\tau$ longer than the fiducial $t_{vis} = 30$ sec., the
 following correction should be added to the values of $C_m$ listed in Table~\ref{tab:eqparams}:
 \begin{equation}
@@ -368,7 +368,7 @@ side of eq.~\ref{m5}
  \Delta m_5^\mathrm{trailing} & = &1.25\,\log_{10}\left(1+0.42 \, x^2 \right) \\
    x & = & {v \,t_{vis} \over 24 \, \theta},
 \end{eqnarray}
-where the object's velocity, $v$, is expressed in deg.~day$^{-1}$ (see Section 5.1.4 in 
+where the object's velocity, $v$, is expressed in deg.~day$^{-1}$ (see Section 5.1.4 in
 \citealt{2018Icar..303..181J}).
 For the nominal exposure time of 30 seconds and $\theta=0.7$ arcsec, the loss of limiting
 magnitude is 0.04 mag for $v=0.25$ deg.~day$^{-1}$, typical for objects in the main
@@ -376,11 +376,11 @@ asteroid belt, and 0.46 mag for $v=1.0$ deg.~day$^{-1}$, typical of PHAs passing
 near Earth. PHAs are characterized by their ``absolute magnitude''
 $H$, i.e., their apparent magnitude if they were placed 1 AU from
 both the Sun and the Earth, with a phase angle of $0^\circ$.  For a
-given albedo and spherical asteroids, $H$ depends only on the asteroid diameter.  
+given albedo and spherical asteroids, $H$ depends only on the asteroid diameter.
 The PHA orbits are cloned over an $H$ magnitude distribution with $dN/dH =
 10^{\alpha \, H}$, with $\alpha=0.33$, in order to evaluate completeness as a function of $H$
 (this magnitude distribution corresponds to a differential size distribution $dN/dD \propto 1/D^\beta$,
-with $\beta = 5\alpha+1$). 
+with $\beta = 5\alpha+1$).
 
 An object is considered to be discovered if the object was detected on at least three nights within a
 window of 15 days, with a minimum of two visits per night. The same criterion has been used in NASA studies,
@@ -392,9 +392,9 @@ fielded for this purpose to date. Realistic MOPS simulations show
 $>$99\% linking efficiency across all classes of Solar System objects \citep{2013PASP..125..357D},
 and at least 93\% efficiency for NEOs \citep{2017AJ....154...12V,2017AJ....154...13V}.
 
-The LSST baseline cadence discovers 66\% of PHAs and 61\% of NEOs with $H\leq22$ 
-(equivalent\footnote{It is customary to interpret asteroid diameter of 140 m as corresponding to 
-absolute magnitude of $H=22$, which implies a visual albedo of 0.142 for all objects. A more 
+The LSST baseline cadence discovers 66\% of PHAs and 61\% of NEOs with $H\leq22$
+(equivalent\footnote{It is customary to interpret asteroid diameter of 140 m as corresponding to
+absolute magnitude of $H=22$, which implies a visual albedo of 0.142 for all objects. A more
 realistic treatment of the albedo distribution can lead to a decrease in completeness on the order
 5\% \citep{2016AJ....152...79W, 2016AJ....151..172G}.}  to $D\ge140$\,m)
 after 10 years of operations \citep{2018Icar..303..181J}.  This cadence spends 6\% of the total
@@ -507,12 +507,12 @@ scale as $t^{-3/2}$ and $t^{-1/2}$, respectively. This error behavior is
 a strong independent argument for a survey lifetime of at least 10 years
 (c.f. \S~\ref{Sec:refdesign}).
 
- 
+
 For comparison with Table~\ref{tab:tenyear}, the SDSS-POSS proper motion measurements have an
-accuracy of $\sim$5 mas yr$^{-1}$ per coordinate at $r=20$ \citep{2004AJ....127.3034M}, and 
-Gaia Data Release 2 has delivered a median uncertainty in parallax of 0.7 mas and in proper motion 
-of 1.2 mas yr$^{-1}$ at its faint end, approximately corresponding to $r=20$  
-\citep{2018A&A...616A...1G,2018A&A...616A...2L}. Hence, LSST will smoothly extend Gaia's error 
+accuracy of $\sim$5 mas yr$^{-1}$ per coordinate at $r=20$ \citep{2004AJ....127.3034M}, and
+Gaia Data Release 2 has delivered a median uncertainty in parallax of 0.7 mas and in proper motion
+of 1.2 mas yr$^{-1}$ at its faint end, approximately corresponding to $r=20$
+\citep{2018A&A...616A...1G,2018A&A...616A...2L}. Hence, LSST will smoothly extend Gaia's error
 vs.\ magnitude curve about 4 magnitudes fainter (for illustration, see fig.~21 in \citealt{2012ARA&A..50..251I}).
 
 
