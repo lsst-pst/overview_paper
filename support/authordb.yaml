@@ -138,7 +138,7 @@ affiliations:
     of California--Santa Cruz, 1156 High St., Santa Cruz, CA 95064, USA'
   UPenn: 'Department of Physics \& Astronomy, University of Pennsylvania, 209 South
     33rd Street, Philadelphia, PA 19104-6396, USA'
-  USNO: 'U.S.\ Naval Observatory Flagstaff Station, 10391 Naval Observatory Road, Flagstaff,
+  USNO: 'US Naval Observatory Flagstaff Station, 10391 Naval Observatory Road, Flagstaff,
     AZ 86001, USA'
   UVa: 'Department of Astronomy, University of Virginia, Charlottesville, VA 22904, USA'
   Washington: 'University of Washington, Dept.\ of Astronomy, Box 351580, Seattle,
@@ -279,7 +279,7 @@ authors:
     altaffil: []
     initials: Deborah J.
     name: Bard
-    orcid:
+    orcid: 0000-0002-5162-5153
   - affil:
       - LSST
     altaffil: []
@@ -452,13 +452,13 @@ authors:
     altaffil: []
     initials: William Nielsen
     name: Brandt
-    orcid:
+    orcid: 0000-0002-0167-2453
   - affil:
       - DGPS
     altaffil: []
     initials: Michael E.
     name: Brown
-    orcid:
+    orcid: 0000-0002-8255-0545
   - affil:
       - UCIrvine-CC
     altaffil: []
@@ -476,7 +476,7 @@ authors:
     altaffil: []
     initials: David L.
     name: Burke
-    orcid:
+    orcid: 0000-0003-1866-1950
   - affil:
       - Lyon-LMA-IN2P3
     altaffil: []
@@ -530,7 +530,7 @@ authors:
     altaffil: []
     initials: Steve
     name: Chesley
-    orcid:
+    orcid: 0000-0003-3240-6497
   - affil:
       - UA-Physics
     altaffil: []
@@ -614,7 +614,7 @@ authors:
     altaffil: []
     initials: Kevin R.
     name: Covey
-    orcid:
+    orcid: 0000-0001-6914-7797
   - affil:
       - NCSA
     altaffil: []
@@ -626,13 +626,13 @@ authors:
     altaffil: []
     initials: Wei
     name: Cui
-    orcid:
+    orcid: 0000-0002-6324-5772
   - affil:
       - IPAC
     altaffil: []
     initials: Roc
     name: Cutri
-    orcid:
+    orcid: 0000-0002-0077-2305
   - affil:
       - UA
     altaffil: []
@@ -668,7 +668,7 @@ authors:
     altaffil: []
     initials: William
     name: Dawson
-    orcid:
+    orcid: 0000-0003-0248-6123
   - affil:
       - LSST
     altaffil: []
@@ -740,7 +740,7 @@ authors:
     altaffil: []
     initials: Michael
     name: Eracleous
-    orcid:
+    orcid: 0000-0002-3719-940X
   - affil:
       - LSST
     altaffil: []
@@ -758,7 +758,7 @@ authors:
     altaffil: []
     initials: Henry
     name: Ferguson
-    orcid:
+    orcid: 0000-0001-7113-2738
   - affil:
       - LSST
     altaffil: []
@@ -806,7 +806,7 @@ authors:
     altaffil: []
     initials: Eric
     name: Gawiser
-    orcid:
+    orcid: 0000-0003-1530-8713
   - affil:
       - SAO
     altaffil: []
@@ -824,7 +824,7 @@ authors:
     altaffil: []
     initials: Marla
     name: Geha
-    orcid:
+    orcid: 0000-0002-7007-9725
   - affil:
       - LSST
     altaffil: []
@@ -848,7 +848,7 @@ authors:
     altaffil: []
     initials: Thomas
     name: Glanzman
-    orcid:
+    orcid: 0000-0001-9649-3871
   - affil:
       - NCSA
     altaffil: []
@@ -867,7 +867,7 @@ authors:
     altaffil: []
     initials: Daniel A.
     name: Goldstein
-    orcid:
+    orcid: 0000-0003-3461-8661
   - affil:
       - LSST
     altaffil: []
@@ -987,7 +987,7 @@ authors:
     altaffil: []
     initials: Patrick
     name: Ingraham
-    orcid:
+    orcid: 0000-0003-3715-8138
   - affil:
       - SLAC-Kavli
     altaffil: []
@@ -1083,7 +1083,7 @@ authors:
     altaffil: []
     initials: Nitya J.
     name: Kallivayalil
-    orcid:
+    orcid: 0000-0002-3204-1742
   - affil:
       - Washington
     altaffil: []
@@ -1107,7 +1107,7 @@ authors:
     altaffil: []
     initials: Mansi M.
     name: Kasliwal
-    orcid: 0000-0001-7970-0760
+    orcid: 0000-0002-5619-4938
   - affil:
       - SLAC
     altaffil: []
@@ -1119,7 +1119,7 @@ authors:
     altaffil: []
     initials: Richard
     name: Kessler
-    orcid:
+    orcid: 0000-0003-3221-0419
   - affil:
       - LSST
     altaffil: []
@@ -1131,7 +1131,7 @@ authors:
     altaffil: []
     initials: David
     name: Kirkby
-    orcid:
+    orcid: 0000-0002-8828-5463
   - affil:
       - UCDavis
     altaffil: []
@@ -1173,7 +1173,7 @@ authors:
     altaffil: []
     initials: Shri
     name: Kulkarni
-    orcid:
+    orcid: 0000-0001-5390-8563
   - affil:
       - SLAC
     altaffil: []
@@ -1241,7 +1241,7 @@ authors:
     altaffil: []
     initials: Chris J.
     name: Lintott
-    orcid:
+    orcid: 0000-0001-5578-359X
   - affil:
       - Longhorn
     altaffil: []
@@ -1289,7 +1289,7 @@ authors:
     altaffil: []
     initials: Rachel
     name: Mandelbaum
-    orcid:
+    orcid: 0000-0003-2271-1527
   - affil:
       - SLAC
     altaffil: []
@@ -1477,7 +1477,7 @@ authors:
     altaffil: []
     initials: Knut
     name: Olsen
-    orcid:
+    orcid: 0000-0002-7134-8296
   - affil:
       - LSST
     altaffil: []
@@ -1543,7 +1543,7 @@ authors:
     altaffil: []
     initials: John R.
     name: Peterson
-    orcid:
+    orcid: 0000-0001-5471-9609
   - affil:
       - NCSA
     altaffil: []
@@ -1663,7 +1663,7 @@ authors:
     altaffil: []
     initials: Stephen T.
     name: Ridgway
-    orcid:
+    orcid: 0000-0003-2557-7132
   - affil:
       - LLNL
     altaffil: []
@@ -1723,7 +1723,7 @@ authors:
     altaffil: []
     initials: Abhijit
     name: Saha
-    orcid:
+    orcid: 0000-0002-5091-0470
   - affil:
       - Lyon-LMA-IN2P3
     altaffil: []
@@ -1766,7 +1766,7 @@ authors:
     altaffil: []
     initials: Michael D.
     name: Schneider
-    orcid:
+    orcid: 0000-0002-8505-7094
   - affil:
       - LSST
     altaffil: []
@@ -1785,7 +1785,7 @@ authors:
     altaffil: []
     initials: Megan E.
     name: Schwamb
-    orcid:
+    orcid: 0000-0003-4365-1455
   - affil:
       - LSST
     altaffil: []
@@ -1899,7 +1899,7 @@ authors:
     altaffil: []
     initials: Rachel A.
     name: Street
-    orcid:
+    orcid: 0000-0001-6279-0552
   - affil:
       - Harvard-Physics
       - Harvard-Astro
@@ -1961,7 +1961,7 @@ authors:
     altaffil: []
     initials: Sandrine
     name: Thomas
-    orcid:
+    orcid: 0000-0002-9121-3436
   - affil:
       - LSST
     altaffil: []
@@ -1985,7 +1985,7 @@ authors:
     altaffil: []
     initials: David E.
     name: Trilling
-    orcid:
+    orcid: 0000-0003-4580-3790
   - affil:
       - SLAC
     altaffil: []
@@ -2041,7 +2041,7 @@ authors:
     altaffil: []
     initials: Brian
     name: Walsh
-    orcid:
+    orcid: 0000-0001-7426-5413
   - affil:
       - Duke
     altaffil: []
@@ -2090,7 +2090,7 @@ authors:
     altaffil: []
     initials: David
     name: Wittman
-    orcid:
+    orcid: 0000-0002-0813-5888
   - affil:
       - LSST
     altaffil: []
@@ -2114,7 +2114,7 @@ authors:
     altaffil: []
     initials: Bo
     name: Xin
-    orcid:
+    orcid: 0000-0002-9171-4046
   - affil:
       - Washington
     altaffil: []
