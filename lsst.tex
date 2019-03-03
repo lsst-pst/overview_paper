@@ -1,22 +1,5 @@
 \documentclass[twocolumn]{aastex62}
 
-
-\newcommand\x         {\hbox{$\times$}}
-\newcommand\othername {\hbox{$\dots$}}
-\def\eq#1{\begin{equation} #1 \end{equation}}
-\def\eqarray#1{\begin{eqnarray} #1 \end{eqnarray}}
-\def\eqarraylet#1{\begin{mathletters}\begin{eqnarray} #1
-                  \end{eqnarray}\end{mathletters}}
-\def\mic              {\hbox{$\mu\mathrm{m}$}}
-\def\about            {\hbox{$\sim$}}
-\def\Mo               {\hbox{$M_{\odot}$}}
-\def\Lo               {\hbox{$L_{\odot}$}}
-\def\comm#1           {\texttt{(COMMENT: #1)}}
-\def\kms   {\hbox{km s$^{-1}$}}
-
-\usepackage{graphicx}
-\usepackage{xspace}
-
 \shorttitle{The Large Synoptic Survey Telescope}
 \shortauthors{Ivezi\'{c}, Kahn, Tyson, Abel, Acosta, Allsman, Alonso, AlSayyad, Anderson, et al.}
 
@@ -40,14 +23,24 @@
 
 
 \acknowledgments
-This material is based upon work supported in part by the National Science Foundation 
-through Cooperative Agreement 1258333 managed by the Association of Universities for 
-Research in Astronomy (AURA), and the Department of Energy under Contract No. 
-DE-AC02-76SF00515 with the SLAC National Accelerator Laboratory. Additional LSST 
-funding comes from private donations, grants to universities, and in-kind support from 
+This material is based on work supported in part by the National Science Foundation
+through Cooperative Agreement 1258333 managed by the Association of Universities for
+Research in Astronomy (AURA), and the Department of Energy under Contract No.
+DE-AC02-76SF00515 with the SLAC National Accelerator Laboratory. Additional LSST
+funding comes from private donations, grants to universities, and in-kind support from
 LSSTC Institutional Members.
+This research has made use of NASA's Astrophysics Data System Bibliographic Services.
 
 \facility{LSST}
+
+
+\bibliography{lsst}
+
+\listofchanges
+\end{document}
+
+
+% ZI: we don't need this info for the ApJ version
 
 \appendix
 
@@ -66,7 +59,3 @@ expanded author list.
 \vskip 0.06in
 Version 4.0 (May 15, 2018): updated system description and science examples, updated expected
 performance in Table 2; updated several figures; refreshed references; expanded author list.
-
-\bibliography{lsst}
-
-\end{document}
