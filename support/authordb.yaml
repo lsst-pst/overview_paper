@@ -147,1983 +147,2310 @@ affiliations:
   WisconsinMadison: 'Department of Physics, University of Wisconsin-Madison, Madison, WI 53706, USA'
   Yale: 'Astronomy Department, Yale University, New Haven, CT 06520, USA'
 authors:
-  - affil:
-      - Washington
-    altaffil: []
-    initials: \v{Z}eljko
-    name: Ivezi\'{c}
-    orcid: 0000-0001-5250-2633
-  - affil:
-      - LSST
-      - SLAC-Kavli
-    altaffil: []
-    initials: Steven M.
-    name: Kahn
-    orcid:
-  - affil:
-      - UCDavis
-    altaffil: []
-    initials: J. Anthony
-    name: Tyson
-    orcid: 0000-0002-9242-8797
-  - affil:
-      - Olympic
+  abelb:
+    affil:
+    - Olympic
     altaffil: []
     initials: Bob
     name: Abel
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  acostae:
+    affil:
+    - LSST
     altaffil: []
     initials: Emily
     name: Acosta
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  allsmanr:
+    affil:
+    - LSST
     altaffil: []
     initials: Robyn
     name: Allsman
-    orcid:
-  - affil:
-      - Oxford
+    orcid: null
+  alonsod:
+    affil:
+    - Oxford
     altaffil: []
     initials: David
     name: Alonso
-    orcid:
-  - affil:
-      - Princeton-Astro
+    orcid: null
+  alsayyady:
+    affil:
+    - Princeton-Astro
     altaffil: []
     initials: Yusra
     name: AlSayyad
-    orcid:
-  - affil:
-      - Washington
+    orcid: null
+  andersonsf:
+    affil:
+    - Washington
     altaffil: []
     initials: Scott F.
     name: Anderson
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  andrewj:
+    affil:
+    - LSST
     altaffil: []
     initials: John
     name: Andrew
-    orcid:
-  - affil:
-      - UA-Steward
-    altaffil: []
-    initials: James Roger P.
-    name: Angel
-    orcid:
-  - affil:
-      - GMTO
+    orcid: null
+  angeligz:
+    affil:
+    - GMTO
     altaffil: []
     initials: George Z.
     name: Angeli
-    orcid:
-  - affil:
-      - Paris-LAL
+    orcid: null
+  angeljrp:
+    affil:
+    - UA-Steward
+    altaffil: []
+    initials: James Roger P.
+    name: Angel
+    orcid: null
+  ansarir:
+    affil:
+    - Paris-LAL
     altaffil: []
     initials: Reza
     name: Ansari
-    orcid:
-  - affil:
-      - Paris-LPNHE
+    orcid: null
+  antilogusp:
+    affil:
+    - Paris-LPNHE
     altaffil: []
     initials: Pierre
     name: Antilogus
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  araujoc:
+    affil:
+    - LSST
     altaffil: []
     initials: Constanza
     name: Araujo
-    orcid:
-  - affil:
-      - Princeton-Astro
+    orcid: null
+  armstrongr:
+    affil:
+    - Princeton-Astro
     altaffil: []
     initials: Robert
     name: Armstrong
-    orcid:
-  - affil:
-      - Oxford
+    orcid: null
+  arndtkt:
+    affil:
+    - Oxford
     altaffil: []
     initials: Kirk T.
     name: Arndt
     orcid: 0000-0002-6826-8340
-  - affil:
-      - Paris-LPNHE
+  astierp:
+    affil:
+    - Paris-LPNHE
     altaffil: []
     initials: Pierre
     name: Astier
-    orcid:
-  - affil:
-      - Paris-APC
+    orcid: null
+  aubourge:
+    affil:
+    - Paris-APC
     altaffil: []
     initials: \'{E}ric
     name: Aubourg
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  auzan:
+    affil:
+    - LSST
     altaffil: []
     initials: Nicole
     name: Auza
-    orcid:
-  - affil:
-      - UA-Steward
+    orcid: null
+  axelrodts:
+    affil:
+    - UA-Steward
     altaffil: []
     initials: Tim S.
     name: Axelrod
     orcid: 0000-0002-5722-7199
-  - affil:
-      - SLAC
+  barddj:
+    affil:
+    - SLAC
     altaffil: []
     initials: Deborah J.
     name: Bard
     orcid: 0000-0002-5162-5153
-  - affil:
-      - LSST
-    altaffil: []
-    initials: Jeff D.
-    name: Barr
-    orcid:
-  - affil:
-      - Grenoble-LPSC
+  barraua:
+    affil:
+    - Grenoble-LPSC
     altaffil: []
     initials: Aurelian
     name: Barrau
-    orcid:
-  - affil:
-      - Paris-APC
+    orcid: null
+  barrjd:
+    affil:
+    - LSST
+    altaffil: []
+    initials: Jeff D.
+    name: Barr
+    orcid: null
+  bartlettjg:
+    affil:
+    - Paris-APC
     altaffil: []
     initials: James G.
     name: Bartlett
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  bauerae:
+    affil:
+    - LSST
     altaffil: []
     initials: Amanda E.
     name: Bauer
     orcid: 0000-0001-9037-6981
-  - affil:
-      - LLNL
+  baumanbj:
+    affil:
+    - LLNL
     altaffil: []
     initials: Brian J.
     name: Bauman
-    orcid:
-  - affil:
-      - Paris-UPMC
-      - Paris-LPNHE
+    orcid: null
+  baumonts:
+    affil:
+    - Paris-UPMC
+    - Paris-LPNHE
     altaffil: []
     initials: Sylvain
     name: Baumont
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  bechtole:
+    affil:
+    - LSST
     altaffil: []
     initials: Ellen
     name: Bechtol
-    orcid:
-  - affil:
-      - LSST
-      - WisconsinMadison
+    orcid: null
+  bechtolk:
+    affil:
+    - LSST
+    - WisconsinMadison
     altaffil: []
     initials: Keith
     name: Bechtol
-    orcid:
-  - affil:
-      - Washington
+    orcid: null
+  beckerac:
+    affil:
+    - Washington
     altaffil: []
     initials: Andrew C.
     name: Becker
     orcid: 0000-0001-6661-3043
-  - affil:
-      - SLAC
+  beclaj:
+    affil:
+    - SLAC
     altaffil: []
     initials: Jacek
     name: Becla
-    orcid:
-  - affil:
-      - NCSA
+    orcid: null
+  beldicac:
+    affil:
+    - NCSA
     altaffil: []
     initials: Cristina
     name: Beldica
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  bellavias:
+    affil:
+    - BNL
     altaffil: []
     initials: Steve
     name: Bellavia
-    orcid:
-  - affil:
-      - NYU-CUSP
-      - NYU-CCPP
+    orcid: null
+  biancofb:
+    affil:
+    - NYU-CUSP
+    - NYU-CCPP
     altaffil: []
     initials: Federica B.
     name: Bianco
     orcid: 0000-0003-1953-8727
-  - affil:
-      - OKC
+  biswasr:
+    affil:
+    - OKC
     altaffil: []
     initials: Rahul
     name: Biswas
-    orcid:
-  - affil:
-      - Paris-LAL
-      - Paris-Diderot
+    orcid: null
+  blancg:
+    affil:
+    - Paris-LAL
+    - Paris-Diderot
     altaffil: []
     initials: Guillaume
     name: Blanc
-    orcid:
-  - affil:
-      - OSU
-      - EPFL
-    altaffil: []
-    initials: Jonathan
-    name: Blazek
-    orcid:
-  - affil:
-      - SLAC-Kavli
+    orcid: null
+  blandfordrd:
+    affil:
+    - SLAC-Kavli
     altaffil: []
     initials: Roger D.
     name: Blandford
-    orcid:
-  - affil:
-      - Berkeley-Astro
+    orcid: null
+  blazekj:
+    affil:
+    - OSU
+    - EPFL
+    altaffil: []
+    initials: Jonathan
+    name: Blazek
+    orcid: null
+  bloomjs:
+    affil:
+    - Berkeley-Astro
     altaffil: []
     initials: Josh S.
     name: Bloom
-    orcid:
-  - affil:
-      - SLAC-Kavli
+    orcid: null
+  bogartj:
+    affil:
+    - SLAC-Kavli
     altaffil: []
     initials: Joanne
     name: Bogart
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  bondtw:
+    affil:
+    - SLAC
     altaffil: []
     initials: Tim W.
     name: Bond
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  boothmt:
+    affil:
+    - LSST
     altaffil: []
     initials: Michael T.
     name: Booth
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  borglandaw:
+    affil:
+    - SLAC
     altaffil: []
     initials: Anders W.
     name: Borgland
-    orcid:
-  - affil:
-      - GMU
+    orcid: null
+  bornek:
+    affil:
+    - GMU
     altaffil: []
     initials: Kirk
     name: Borne
-    orcid:
-  - affil:
-      - Princeton-Astro
+    orcid: null
+  boschjf:
+    affil:
+    - Princeton-Astro
     altaffil: []
     initials: James F.
     name: Bosch
     orcid: 0000-0003-2759-5764
-  - affil:
-      - LAPP
+  boutignyd:
+    affil:
+    - LAPP
     altaffil: []
     initials: Dominique
     name: Boutigny
     orcid: 0000-0003-4887-2150
-  - affil:
-      - SLAC
+  brackettca:
+    affil:
+    - SLAC
     altaffil: []
     initials: Craig A.
     name: Brackett
-    orcid:
-  - affil:
-      - UCDavis
+    orcid: null
+  bradshawa:
+    affil:
+    - UCDavis
     altaffil: []
     initials: Andrew
     name: Bradshaw
-    orcid:
-  - affil:
-      - PSU
+    orcid: null
+  brandtwn:
+    affil:
+    - PSU
     altaffil: []
     initials: William Nielsen
     name: Brandt
     orcid: 0000-0002-0167-2453
-  - affil:
-      - DGPS
+  brownme:
+    affil:
+    - DGPS
     altaffil: []
     initials: Michael E.
     name: Brown
     orcid: 0000-0002-8255-0545
-  - affil:
-      - UCIrvine-CC
+  bullockjs:
+    affil:
+    - UCIrvine-CC
     altaffil: []
     initials: James S.
     name: Bullock
-    orcid:
-  - affil:
-      - SLAC-Kavli
+    orcid: null
+  burchatp:
+    affil:
+    - SLAC-Kavli
     altaffil: []
     initials: Patricia
     name: Burchat
-    orcid:
-  - affil:
-      - SLAC-Kavli
+    orcid: null
+  burkedl:
+    affil:
+    - SLAC-Kavli
     altaffil: []
     initials: David L.
     name: Burke
     orcid: 0000-0003-1866-1950
-  - affil:
-      - Lyon-LMA-IN2P3
+  cagnolig:
+    affil:
+    - Lyon-LMA-IN2P3
     altaffil: []
     initials: Gianpietro
     name: Cagnoli
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  calabresed:
+    affil:
+    - LSST
     altaffil: []
     initials: Daniel
     name: Calabrese
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  callahans:
+    affil:
+    - LSST
     altaffil: []
     initials: Shawn
     name: Callahan
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  callenal:
+    affil:
+    - SLAC
     altaffil: []
     initials: Alice L.
     name: Callen
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  carlinjl:
+    affil:
+    - LSST
     altaffil: []
     initials: Jeffrey L.
     name: Carlin
     orcid: 0000-0002-3936-9628
-  - affil:
-      - LSST
+  carlsonel:
+    affil:
+    - LSST
     altaffil: []
     initials: Erin L.
     name: Carlson
-    orcid:
-  - affil:
-      - UA-CompSci
+    orcid: null
+  chandrasekharans:
+    affil:
+    - UA-CompSci
     altaffil: []
     initials: Srinivasan
     name: Chandrasekharan
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  charlesemersong:
+    affil:
+    - LSST
     altaffil: []
     initials: Glenaver
     name: Charles-Emerson
-    orcid:
-  - affil:
-      - JPL
+    orcid: null
+  chesleys:
+    affil:
+    - JPL
     altaffil: []
     initials: Steve
     name: Chesley
     orcid: 0000-0003-3240-6497
-  - affil:
-      - UA-Physics
+  cheuec:
+    affil:
+    - UA-Physics
     altaffil: []
     initials: Elliott C.
     name: Cheu
-    orcid:
-  - affil:
-      - NCSA
+    orcid: null
+  chiangh:
+    affil:
+    - NCSA
     altaffil: []
     initials: Hsin-Fang
     name: Chiang
     orcid: 0000-0002-1181-1621
-  - affil:
-      - SLAC-Kavli
+  chiangj:
+    affil:
+    - SLAC-Kavli
     altaffil: []
     initials: James
     name: Chiang
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  chirinoc:
+    affil:
+    - LSST
     altaffil: []
     initials: Carol
     name: Chirino
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  chowd:
+    affil:
+    - SLAC
     altaffil: []
     initials: Derek
     name: Chow
-    orcid:
-  - affil:
-      - IPAC
+    orcid: null
+  ciardidr:
+    affil:
+    - IPAC
     altaffil: []
     initials: David R.
     name: Ciardi
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  clavercf:
+    affil:
+    - LSST
     altaffil: []
     initials: Charles F.
     name: Claver
-    orcid:
-  - affil:
-      - LUPM
+    orcid: null
+  cockrumjj:
+    affil:
+    - LSST
+    altaffil: []
+    initials: Joseph J.
+    name: Cockrum
+    orcid: null
+  cohentanugij:
+    affil:
+    - LUPM
     altaffil: []
     initials: Johann
     name: Cohen-Tanugi
     orcid: 0000-0001-9022-4232
-  - affil:
-      - LSST
-    altaffil: []
-    initials: Joseph J.
-    name: Cockrum
-    orcid:
-  - affil:
-      - OSU
+  colesr:
+    affil:
+    - OSU
     altaffil: []
     initials: Rebecca
     name: Coles
     orcid: 0000-0002-4774-9364
-  - affil:
-      - Washington
+  connollyaj:
+    affil:
+    - Washington
     altaffil: []
     initials: Andrew J.
     name: Connolly
     orcid: 0000-0001-5576-8189
-  - affil:
-      - COOK
+  cookkh:
+    affil:
+    - COOK
     altaffil: []
     initials: Kem H.
     name: Cook
-    orcid:
-  - affil:
-      - UCIrvine-CC
+    orcid: null
+  cooraya:
+    affil:
+    - UCIrvine-CC
     altaffil: []
     initials: Asantha
     name: Cooray
-    orcid:
-  - affil:
-      - WestWashington
+    orcid: null
+  coveykr:
+    affil:
+    - WestWashington
     altaffil: []
     initials: Kevin R.
     name: Covey
     orcid: 0000-0001-6914-7797
-  - affil:
-      - NCSA
+  cribbsc:
+    affil:
+    - NCSA
     altaffil: []
     initials: Chris
     name: Cribbs
-    orcid:
-  - affil:
-      - Purdue-Astro
+    orcid: null
+  cuiw:
+    affil:
+    - Purdue-Astro
     altaffil: []
     initials: Wei
     name: Cui
     orcid: 0000-0002-6324-5772
-  - affil:
-      - IPAC
+  cutrir:
+    affil:
+    - IPAC
     altaffil: []
     initials: Roc
     name: Cutri
     orcid: 0000-0002-0077-2305
-  - affil:
-      - UA
+  dalypn:
+    affil:
+    - UA
     altaffil: []
     initials: Philip N.
     name: Daly
-    orcid:
-  - affil:
-      - Washington
+    orcid: null
+  danielsf:
+    affil:
+    - Washington
     altaffil: []
     initials: Scott F.
     name: Daniel
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  daruichf:
+    affil:
+    - LSST
     altaffil: []
     initials: Felipe
     name: Daruich
-    orcid:
-  - affil:
-      - Paris-LPNHE
+    orcid: null
+  daubardg:
+    affil:
+    - Paris-LPNHE
     altaffil: []
     initials: Guillaume
     name: Daubard
-    orcid:
-  - affil:
-      - NCSA
+    orcid: null
+  dauesg:
+    affil:
+    - NCSA
     altaffil: []
     initials: Greg
     name: Daues
-    orcid:
-  - affil:
-      - LLNL
+    orcid: null
+  dawsonw:
+    affil:
+    - LLNL
     altaffil: []
     initials: William
     name: Dawson
     orcid: 0000-0003-0248-6123
-  - affil:
-      - LSST
+  delgadof:
+    affil:
+    - LSST
     altaffil: []
     initials: Francisco
     name: Delgado
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  dellapennaa:
+    affil:
+    - BNL
     altaffil: []
     initials: Alfred
     name: Dellapenna
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  depeysterr:
+    affil:
+    - SLAC
     altaffil: []
     initials: Robert
     name: de Peyster
-    orcid:
-  - affil:
-      - Princeton-Astro
+    orcid: null
+  devalborrom:
+    affil:
+    - Princeton-Astro
     altaffil: []
     initials: Miguel
     name: de Val-Borro
     orcid: 0000-0002-0455-9384
-  - affil:
-      - SLAC
+  digelsw:
+    affil:
+    - SLAC
     altaffil: []
     initials: Seth W.
     name: Digel
-    orcid:
-  - affil:
-      - Harvard-Physics
+    orcid: null
+  dohertyp:
+    affil:
+    - Harvard-Physics
     altaffil: []
     initials: Peter
     name: Doherty
-    orcid:
-  - affil:
-      - SLAC
-    altaffil: []
-    initials: Richard
-    name: Dubois
-    orcid:
-  - affil:
-      - IPAC
+    orcid: null
+  duboisfelsmanngp:
+    affil:
+    - IPAC
     altaffil: []
     initials: Gregory P.
     name: Dubois-Felsmann
     orcid: 0000-0003-1598-6979
-  - affil:
-      - ChUniv
+  duboisr:
+    affil:
+    - SLAC
+    altaffil: []
+    initials: Richard
+    name: Dubois
+    orcid: null
+  durechj:
+    affil:
+    - ChUniv
     altaffil: []
     initials: Josef
     name: Durech
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  economouf:
+    affil:
+    - LSST
     altaffil: []
     initials: Frossie
     name: Economou
     orcid: 0000-0002-8333-7615
-  - affil:
-      - UA-Steward
+  eiflert:
+    affil:
+    - UA-Steward
     altaffil: []
     initials: Tim
     name: Eifler
-    orcid:
-  - affil:
-      - PSU
+    orcid: null
+  emmonsbl:
+    affil:
+    - LSST
+    altaffil: []
+    initials: Benjamin L.
+    name: Emmons
+    orcid: null
+  eracleousm:
+    affil:
+    - PSU
     altaffil: []
     initials: Michael
     name: Eracleous
     orcid: 0000-0002-3719-940X
-  - affil:
-      - LSST
-    altaffil: []
-    initials: Benjamin L.
-    name: Emmons
-    orcid:
-  - affil:
-      - LSST
+  faustinetoa:
+    affil:
+    - LSST
     altaffil: []
     initials: Angelo
     name: Fausti Neto
     orcid: 0000-0002-8095-305X
-  - affil:
-      - STScI
+  fergusonh:
+    affil:
+    - STScI
     altaffil: []
     initials: Henry
     name: Ferguson
     orcid: 0000-0001-7113-2738
-  - affil:
-      - LSST
+  figueroae:
+    affil:
+    - LSST
     altaffil: []
     initials: Enrique
     name: Figueroa
-    orcid:
-  - affil:
-      - Princeton-Astro
+    orcid: null
+  fisherlevinem:
+    affil:
+    - Princeton-Astro
     altaffil: []
     initials: Merlin
     name: Fisher-Levine
     orcid: 0000-0001-9440-8960
-  - affil:
-      - SLAC
+  fockew:
+    affil:
+    - SLAC
     altaffil: []
     initials: Warren
     name: Focke
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  fossmd:
+    affil:
+    - SLAC
     altaffil: []
     initials: Michael D.
     name: Foss
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  frankj:
+    affil:
+    - BNL
     altaffil: []
     initials: James
     name: Frank
-    orcid:
-  - affil:
-      - NCSA
+    orcid: null
+  freemonmd:
+    affil:
+    - NCSA
     altaffil: []
     initials: Michael D.
     name: Freemon
-    orcid:
-  - affil:
-      - Clermont-LPC
+    orcid: null
+  ganglere:
+    affil:
+    - Clermont-LPC
     altaffil: []
     initials: Emmanuel
     name: Gangler
     orcid: 0000-0001-6728-1423
-  - affil:
-      - Rutgers
+  gawisere:
+    affil:
+    - Rutgers
     altaffil: []
     initials: Eric
     name: Gawiser
     orcid: 0000-0003-1530-8713
-  - affil:
-      - SAO
+  gearyjc:
+    affil:
+    - SAO
     altaffil: []
     initials: John C.
     name: Geary
-    orcid:
-  - affil:
-      - UCDavis
+    orcid: null
+  geep:
+    affil:
+    - UCDavis
     altaffil: []
     initials: Perry
     name: Gee
-    orcid:
-  - affil:
-      - Yale
+    orcid: null
+  geham:
+    affil:
+    - Yale
     altaffil: []
     initials: Marla
     name: Geha
     orcid: 0000-0002-7007-9725
-  - affil:
-      - LSST
+  gessnercjb:
+    affil:
+    - LSST
     altaffil: []
     initials: Charles J. B.
     name: Gessner
-    orcid:
-  - affil:
-      - Washington
+    orcid: null
+  gibsonrr:
+    affil:
+    - Washington
     altaffil: []
     initials: Robert R.
     name: Gibson
-    orcid:
-  - affil:
-      - SLAC-Kavli
+    orcid: null
+  gilmoredk:
+    affil:
+    - SLAC-Kavli
     altaffil: []
     initials: D. Kirk
     name: Gilmore
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  glanzmant:
+    affil:
+    - SLAC
     altaffil: []
     initials: Thomas
     name: Glanzman
     orcid: 0000-0001-9649-3871
-  - affil:
-      - NCSA
+  glickw:
+    affil:
+    - NCSA
     altaffil: []
     initials: William
     name: Glick
-    orcid:
-  - affil:
-      - IPAC
+    orcid: null
+  goldinat:
+    affil:
+    - IPAC
     altaffil: []
     initials: Tatiana
     name: Goldina
-    orcid:
-  - affil:
-      - Berkeley-Astro
-      - Berkeley-LBNL
+    orcid: null
+  goldsteinda:
+    affil:
+    - Berkeley-Astro
+    - Berkeley-LBNL
     altaffil: []
     initials: Daniel A.
     name: Goldstein
     orcid: 0000-0003-3461-8661
-  - affil:
-      - LSST
+  goodenowi:
+    affil:
+    - LSST
     altaffil: []
     initials: Iain
     name: Goodenow
-    orcid:
-  - affil:
-      - Washington
+    orcid: null
+  grahamml:
+    affil:
+    - Washington
     altaffil: []
     initials: Melissa L.
     name: Graham
     orcid: 0000-0002-9154-3136
-  - affil:
-      - LSST
+  gresslerwj:
+    affil:
+    - LSST
     altaffil: []
     initials: William J.
     name: Gressler
-    orcid:
-  - affil:
-      - Clermont-LPC
+    orcid: null
+  grisp:
+    affil:
+    - Clermont-LPC
     altaffil: []
     initials: Philippe
     name: Gris
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  guylp:
+    affil:
+    - LSST
     altaffil: []
     initials: Leanne P.
     name: Guy
     orcid: 0000-0003-0800-8755
-  - affil:
-      - Harvard-Physics
+  guyonneta:
+    affil:
+    - Harvard-Physics
     altaffil: []
     initials: Augustin
     name: Guyonnet
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  hallerg:
+    affil:
+    - SLAC
     altaffil: []
     initials: Gunther
     name: Haller
-    orcid:
-  - affil:
-      - NOAO
+    orcid: null
+  harrisr:
+    affil:
+    - NOAO
     altaffil: []
     initials: Ron
     name: Harris
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  hascallpa:
+    affil:
+    - SLAC
     altaffil: []
     initials: Patrick A.
     name: Hascall
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  hauptj:
+    affil:
+    - BNL
     altaffil: []
     initials: Justine
     name: Haupt
-    orcid:
-  - affil:
-      - Lyon-CC-IN2P3
+    orcid: null
+  hernandezf:
+    affil:
+    - Lyon-CC-IN2P3
     altaffil: []
     initials: Fabio
     name: Hernandez
     orcid: 0000-0001-7203-2552
-  - affil:
-      - SLAC
+  herrmanns:
+    affil:
+    - SLAC
     altaffil: []
     initials: Sven
     name: Herrmann
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  hilemane:
+    affil:
+    - LSST
     altaffil: []
     initials: Edward
     name: Hileman
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  hoblittj:
+    affil:
+    - LSST
     altaffil: []
     initials: Joshua
     name: Hoblitt
     orcid: 0000-0002-5292-5879
-  - affil:
-      - SLAC
+  hodgsonja:
+    affil:
+    - SLAC
     altaffil: []
     initials: John A.
     name: Hodgson
-    orcid:
-  - affil:
-      - Chicago
+    orcid: null
+  hoganc:
+    affil:
+    - Chicago
     altaffil: []
     initials: Craig
     name: Hogan
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  howardjd:
+    affil:
+    - LSST
     altaffil: []
     initials: James D.
     name: Howard
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  huangd:
+    affil:
+    - BNL
     altaffil: []
     initials: Dajun
     name: Huang
-    orcid:
-  - affil:
-      - SLAC-Kavli
+    orcid: null
+  hufferme:
+    affil:
+    - SLAC-Kavli
     altaffil: []
     initials: Michael E.
     name: Huffer
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  ingrahamp:
+    affil:
+    - LSST
     altaffil: []
     initials: Patrick
     name: Ingraham
     orcid: 0000-0003-3715-8138
-  - affil:
-      - SLAC-Kavli
+  inneswr:
+    affil:
+    - SLAC-Kavli
     altaffil: []
     initials: Walter R.
     name: Innes
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  ivezicv:
+    affil:
+    - Washington
+    altaffil: []
+    initials: \v{Z}eljko
+    name: Ivezi\'{c}
+    orcid: 0000-0001-5250-2633
+  jacobysh:
+    affil:
+    - LSST
     altaffil: []
     initials: Suzanne H.
     name: Jacoby
-    orcid:
-  - affil:
-      - UPenn
+    orcid: null
+  jainb:
+    affil:
+    - UPenn
     altaffil: []
     initials: Bhuvnesh
     name: Jain
-    orcid:
-  - affil:
-      - Clermont-LPC
+    orcid: null
+  jammesf:
+    affil:
+    - Clermont-LPC
     altaffil: []
     initials: Fabrice
     name: Jammes
-    orcid:
-  - affil:
-      - UCDavis
+    orcid: null
+  jeej:
+    affil:
+    - UCDavis
     altaffil: []
     initials: James
     name: Jee
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  jennesst:
+    affil:
+    - LSST
     altaffil: []
     initials: Tim
     name: Jenness
     orcid: 0000-0001-5982-167X
-  - affil:
-      - Berkeley-Space
+  jernigang:
+    affil:
+    - Berkeley-Space
     altaffil: []
     initials: Garrett
     name: Jernigan
-    orcid:
-  - affil:
-      - Belgrade-AO
+    orcid: null
+  jevremovicd:
+    affil:
+    - Belgrade-AO
     altaffil: []
     initials: Darko
     name: Jevremovi\'{c}
-    orcid:
-  - affil:
-      - UA-Physics
+    orcid: null
+  johnsk:
+    affil:
+    - UA-Physics
     altaffil: []
     initials: Kenneth
     name: Johns
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  johnsonas:
+    affil:
+    - SLAC
     altaffil: []
     initials: Anthony S.
     name: Johnson
     orcid: 0000-0002-5729-2716
-  - affil:
-      - NCSA
+  johnsonmw:
+    affil:
+    - NCSA
     altaffil: []
     initials: Margaret W.G.
     name: Johnson
-    orcid:
-  - affil:
-      - Washington
+    orcid: null
+  jonesrl:
+    affil:
+    - Washington
     altaffil: []
     initials: R. Lynne
     name: Jones
     orcid: 0000-0001-5916-0031
-  - affil:
-      - Paris-LPNHE
+  juramygillesc:
+    affil:
+    - Paris-LPNHE
     altaffil: []
     initials: Claire
     name: Juramy-Gilles
-    orcid:
-  - affil:
-      - Washington
+    orcid: null
+  juricm:
+    affil:
+    - Washington
     altaffil: []
     initials: Mario
     name: Juri\'{c}
     orcid: 0000-0003-1996-9252
-  - affil:
-      - STScI
+  kahnsm:
+    affil:
+    - LSST
+    - SLAC-Kavli
+    altaffil: []
+    initials: Steven M.
+    name: Kahn
+    orcid: null
+  kaliraijs:
+    affil:
+    - STScI
     altaffil: []
     initials: Jason S.
     name: Kalirai
-    orcid:
-  - affil:
-      - UVa
+    orcid: null
+  kallivayalilnj:
+    affil:
+    - UVa
     altaffil: []
     initials: Nitya J.
     name: Kallivayalil
     orcid: 0000-0002-3204-1742
-  - affil:
-      - Washington
+  kalmbachb:
+    affil:
+    - Washington
     altaffil: []
     initials: Bryce
     name: Kalmbach
     orcid: 0000-0002-6825-5283
-  - affil:
-      - LSST
+  kantorjp:
+    affil:
+    - LSST
     altaffil: []
     initials: Jeffrey P.
     name: Kantor
-    orcid:
-  - affil:
-      - CPPM
+    orcid: null
+  karstp:
+    affil:
+    - CPPM
     altaffil: []
     initials: Pierre
     name: Karst
-    orcid:
-  - affil:
-      - Caltech-Astro
+    orcid: null
+  kasliwalmm:
+    affil:
+    - Caltech-Astro
     altaffil: []
     initials: Mansi M.
     name: Kasliwal
     orcid: 0000-0002-5619-4938
-  - affil:
-      - SLAC
+  kellyh:
+    affil:
+    - SLAC
     altaffil: []
     initials: Heather
     name: Kelly
-    orcid:
-  - affil:
-      - Chicago
+    orcid: null
+  kesslerr:
+    affil:
+    - Chicago
     altaffil: []
     initials: Richard
     name: Kessler
     orcid: 0000-0003-3221-0419
-  - affil:
-      - LSST
+  kinnisonv:
+    affil:
+    - LSST
     altaffil: []
     initials: Veronica
     name: Kinnison
-    orcid:
-  - affil:
-      - UCIrvine-Astro
+    orcid: null
+  kirkbyd:
+    affil:
+    - UCIrvine-Astro
     altaffil: []
     initials: David
     name: Kirkby
     orcid: 0000-0002-8828-5463
-  - affil:
-      - UCDavis
+  knoxl:
+    affil:
+    - UCDavis
     altaffil: []
     initials: Lloyd
     name: Knox
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  kotoviv:
+    affil:
+    - BNL
     altaffil: []
     initials: Ivan V.
     name: Kotov
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  krabbendamvl:
+    affil:
+    - LSST
     altaffil: []
     initials: Victor L.
     name: Krabbendam
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  krughoffks:
+    affil:
+    - LSST
     altaffil: []
     initials: K. Simon
     name: Krughoff
     orcid: 0000-0002-4410-7868
-  - affil:
-      - Praha-ASCR
+  kubanekp:
+    affil:
+    - Praha-ASCR
     altaffil: []
     initials: Petr
     name: Kub\'{a}nek
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  kuczewskij:
+    affil:
+    - BNL
     altaffil: []
     initials: John
     name: Kuczewski
-    orcid:
-  - affil:
-      - Caltech-Astro
+    orcid: null
+  kuj:
+    affil:
+    - SLAC
+    altaffil: []
+    initials: John
+    name: Ku
+    orcid: null
+  kulkarnis:
+    affil:
+    - Caltech-Astro
     altaffil: []
     initials: Shri
     name: Kulkarni
     orcid: 0000-0001-5390-8563
-  - affil:
-      - SLAC
-    altaffil: []
-    initials: John
-    name: Ku
-    orcid:
-  - affil:
-      - SLAC
+  kuritanr:
+    affil:
+    - SLAC
     altaffil: []
     initials: Nadine R.
     name: Kurita
-    orcid:
-  - affil:
-      - UCDavis
+    orcid: null
+  lagecs:
+    affil:
+    - UCDavis
     altaffil: []
     initials: Craig S.
     name: Lage
-    orcid:
-  - affil:
-      - LSST
-      - CTIO
+    orcid: null
+  lambertr:
+    affil:
+    - LSST
+    - CTIO
     altaffil: []
     initials: Ron
     name: Lambert
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  langet:
+    affil:
+    - SLAC
     altaffil: []
     initials: Travis
     name: Lange
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  langtonjb:
+    affil:
+    - SLAC
     altaffil: []
     initials: J. Brian
     name: Langton
-    orcid:
-  - affil:
-      - Paris-UPMC
-      - Paris-LPNHE
+    orcid: null
+  leguilloul:
+    affil:
+    - Paris-UPMC
+    - Paris-LPNHE
     altaffil: []
     initials: Laurent
-    name: 'Le Guillou'
-    orcid:
-  - affil:
-      - IPAC
+    name: Le Guillou
+    orcid: null
+  levined:
+    affil:
+    - IPAC
     altaffil: []
     initials: Deborah
     name: Levine
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  liangm:
+    affil:
+    - LSST
     altaffil: []
     initials: Ming
     name: Liang
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  limk:
+    affil:
+    - SLAC
     altaffil: []
     initials: Kian-Tat
     name: Lim
     orcid: 0000-0002-6338-6516
-  - affil:
-      - Oxford
+  lintottcj:
+    affil:
+    - Oxford
     altaffil: []
     initials: Chris J.
     name: Lintott
     orcid: 0000-0001-5578-359X
-  - affil:
-      - Longhorn
+  longke:
+    affil:
+    - Longhorn
     altaffil: []
     initials: Kevin E.
     name: Long
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  lopezm:
+    affil:
+    - SLAC
     altaffil: []
     initials: Margaux
     name: Lopez
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  lotzpj:
+    affil:
+    - LSST
     altaffil: []
     initials: Paul J.
     name: Lotz
-    orcid:
-  - affil:
-      - Princeton-Astro
+    orcid: null
+  luptonrh:
+    affil:
+    - Princeton-Astro
     altaffil: []
     initials: Robert H.
     name: Lupton
     orcid: 0000-0003-1666-0962
-  - affil:
-      - Princeton-Astro
+  lustnb:
+    affil:
+    - Princeton-Astro
     altaffil: []
     initials: Nate B.
     name: Lust
     orcid: 0000-0002-4122-9384
-  - affil:
-      - Princeton-Astro
+  macarthurla:
+    affil:
+    - Princeton-Astro
     altaffil: []
     initials: Lauren A.
     name: MacArthur
-    orcid:
-  - affil:
-      - Caltech-Astro
+    orcid: null
+  mahabala:
+    affil:
+    - Caltech-Astro
     altaffil: []
     initials: Ashish
     name: Mahabal
-    orcid:
-  - affil:
-      - CMU
+    orcid: null
+  mandelbaumr:
+    affil:
+    - CMU
     altaffil: []
     initials: Rachel
     name: Mandelbaum
     orcid: 0000-0003-2271-1527
-  - affil:
-      - SLAC
+  markiewicztw:
+    affil:
+    - SLAC
     altaffil: []
     initials: Thomas W.
     name: Markiewicz
     orcid: 0000-0003-3646-8724
-  - affil:
-      - SLAC
-    altaffil: []
-    initials: Darren S.
-    name: Marsh
-    orcid:
-  - affil:
-      - SLAC-Kavli
+  marshallpj:
+    affil:
+    - SLAC-Kavli
     altaffil: []
     initials: Philip J.
     name: Marshall
-    orcid:
-  - affil:
-      - SLAC-Kavli
+    orcid: null
+  marshalls:
+    affil:
+    - SLAC-Kavli
     altaffil: []
     initials: Stuart
     name: Marshall
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  marshds:
+    affil:
+    - SLAC
+    altaffil: []
+    initials: Darren S.
+    name: Marsh
+    orcid: null
+  maym:
+    affil:
+    - BNL
     altaffil: []
     initials: Morgan
     name: May
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  mckercherr:
+    affil:
+    - LSST
     altaffil: []
     initials: Robert
     name: McKercher
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  mcqueenm:
+    affil:
+    - BNL
     altaffil: []
     initials: Michelle
     name: McQueen
-    orcid:
-  - affil:
-      - Princeton-Astro
+    orcid: null
+  meyersj:
+    affil:
+    - Princeton-Astro
     altaffil: []
     initials: Joshua
     name: Meyers
     orcid: 0000-0002-2308-4230
-  - affil:
-      - Grenoble-LPSC
+  migliorem:
+    affil:
+    - Grenoble-LPSC
     altaffil: []
     initials: Myriam
     name: Migliore
-    orcid:
-  - affil:
-      - NOAO
+    orcid: null
+  millerm:
+    affil:
+    - NOAO
     altaffil: []
     initials: Michelle
     name: Miller
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  millsdj:
+    affil:
+    - LSST
     altaffil: []
     initials: David J.
     name: Mills
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  miravalc:
+    affil:
+    - BNL
     altaffil: []
     initials: Connor
     name: Miraval
-    orcid:
-  - affil:
-      - Washington
+    orcid: null
+  moeyensj:
+    affil:
+    - Washington
     altaffil: []
     initials: Joachim
     name: Moeyens
     orcid: 0000-0001-5820-3925
-  - affil:
-      - Rider
-      - Princeton-Astro
+  monetdg:
+    affil:
+    - USNO
+    altaffil: []
+    initials: David G.
+    name: Monet
+    orcid: null
+  moniezm:
+    affil:
+    - Paris-LAL
+    altaffil: []
+    initials: Marc
+    name: Moniez
+    orcid: null
+  monkewitzs:
+    affil:
+    - IPAC
+    altaffil: []
+    initials: Serge
+    name: Monkewitz
+    orcid: null
+  montgomeryc:
+    affil:
+    - LSST
+    altaffil: []
+    initials: Christopher
+    name: Montgomery
+    orcid: null
+  moolekampfe:
+    affil:
+    - Rider
+    - Princeton-Astro
     altaffil: []
     initials: Fred E.
     name: Moolekamp
     orcid: 0000-0003-0093-4279
-  - affil:
-      - USNO
-    altaffil: []
-    initials: David G.
-    name: Monet
-    orcid:
-  - affil:
-      - Paris-LAL
-    altaffil: []
-    initials: Marc
-    name: Moniez
-    orcid:
-  - affil:
-      - IPAC
-    altaffil: []
-    initials: Serge
-    name: Monkewitz
-    orcid:
-  - affil:
-      - LSST
-    altaffil: []
-    initials: Christopher
-    name: Montgomery
-    orcid:
-  - affil:
-      - Washington
+  morrisoncb:
+    affil:
+    - Washington
     altaffil: []
     initials: Christopher B.
     name: Morrison
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  muellerf:
+    affil:
+    - SLAC
     altaffil: []
     initials: Fritz
     name: Mueller
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  mullergp:
+    affil:
+    - LSST
     altaffil: []
     initials: Gary P.
     name: Muller
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  munozarancibiaf:
+    affil:
+    - LSST
     altaffil: []
     initials: Freddy
     name: Mu\~noz Arancibia
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  neilldr:
+    affil:
+    - LSST
     altaffil: []
     initials: Douglas R.
     name: Neill
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  newbrysp:
+    affil:
+    - SLAC
     altaffil: []
     initials: Scott P.
     name: Newbry
-    orcid:
-  - affil:
-      - Lyon-CC-IN2P3
+    orcid: null
+  niefj:
+    affil:
+    - Lyon-CC-IN2P3
     altaffil: []
     initials: Jean-Yves
     name: Nief
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  nomerotskia:
+    affil:
+    - BNL
     altaffil: []
     initials: Andrei
     name: Nomerotski
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  nordbym:
+    affil:
+    - SLAC
     altaffil: []
     initials: Martin
     name: Nordby
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  oconnorp:
+    affil:
+    - BNL
     altaffil: []
     initials: Paul
     name: O'Connor
-    orcid:
-  - affil:
-      - Harvard-Physics
-      - Harvard-Astro
+    orcid: null
+  oliverj:
+    affil:
+    - Harvard-Physics
+    - Harvard-Astro
     altaffil: []
     initials: John
     name: Oliver
-    orcid:
-  - affil:
-      - LLNL
+    orcid: null
+  olivierss:
+    affil:
+    - LLNL
     altaffil: []
     initials: Scot S.
     name: Olivier
-    orcid:
-  - affil:
-      - NOAO
+    orcid: null
+  olsenk:
+    affil:
+    - NOAO
     altaffil: []
     initials: Knut
     name: Olsen
     orcid: 0000-0002-7134-8296
-  - affil:
-      - LSST
+  omullanew:
+    affil:
+    - LSST
     altaffil: []
     initials: William
     name: O'Mullane
     orcid: 0000-0003-4141-6195
-  - affil:
-      - LSST
+  ortizs:
+    affil:
+    - LSST
     altaffil: []
     initials: Sandra
     name: Ortiz
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  osiers:
+    affil:
+    - SLAC
     altaffil: []
     initials: Shawn
     name: Osier
-    orcid:
-  - affil:
-      - Washington
+    orcid: null
+  owenre:
+    affil:
+    - Washington
     altaffil: []
     initials: Russell E.
     name: Owen
-    orcid:
-  - affil:
-      - Paris-LPNHE
+    orcid: null
+  painr:
+    affil:
+    - Paris-LPNHE
     altaffil: []
     initials: Reynald
     name: Pain
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  palecekpe:
+    affil:
+    - BNL
     altaffil: []
     initials: Paul E.
     name: Palecek
-    orcid:
-  - affil:
-      - Washington
+    orcid: null
+  parejkojk:
+    affil:
+    - Washington
     altaffil: []
     initials: John K.
     name: Parejko
-    orcid:
-  - affil:
-      - NCSA
+    orcid: null
+  parsonsjb:
+    affil:
+    - NCSA
     altaffil: []
     initials: James B.
     name: Parsons
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  peasenm:
+    affil:
+    - SLAC
     altaffil: []
     initials: Nathan M.
     name: Pease
     orcid: 0000-0002-9701-5975
-  - affil:
-      - LSST
+  petersonjm:
+    affil:
+    - LSST
     altaffil: []
     initials: J. Matt
     name: Peterson
     orcid: 0000-0002-6564-6246
-  - affil:
-      - Purdue-Astro
+  petersonjr:
+    affil:
+    - Purdue-Astro
     altaffil: []
     initials: John R.
     name: Peterson
     orcid: 0000-0001-5471-9609
-  - affil:
-      - NCSA
+  petravickdl:
+    affil:
+    - NCSA
     altaffil: []
     initials: Donald L.
     name: Petravick
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  petrickml:
+    affil:
+    - LSST
     altaffil: []
     initials: M.E. Libby
     name: Petrick
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  petryce:
+    affil:
+    - LSST
     altaffil: []
     initials: Cathy E.
     name: Petry
-    orcid:
-  - affil:
-      - IRAM
+    orcid: null
+  pierfedericif:
+    affil:
+    - IRAM
     altaffil: []
     initials: Francesco
     name: Pierfederici
-    orcid:
-  - affil:
-      - NCSA
+    orcid: null
+  pietrowiczs:
+    affil:
+    - NCSA
     altaffil: []
     initials: Stephen
     name: Pietrowicz
-    orcid:
-  - affil:
-      - Google
+    orcid: null
+  piker:
+    affil:
+    - Google
     altaffil: []
     initials: Rob
     name: Pike
-    orcid:
-  - affil:
-      - UA-Steward
+    orcid: null
+  pintopa:
+    affil:
+    - UA-Steward
     altaffil: []
     initials: Philip A.
     name: Pinto
-    orcid:
-  - affil:
-      - NCSA
+    orcid: null
+  planter:
+    affil:
+    - NCSA
     altaffil: []
     initials: Raymond
     name: Plante
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  plates:
+    affil:
+    - BNL
     altaffil: []
     initials: Stephen
     name: Plate
-    orcid:
-  - affil:
-      - NCSA
+    orcid: null
+  plutchakjp:
+    affil:
+    - NCSA
     altaffil: []
     initials: Joel P.
     name: Plutchak
     orcid: 0000-0002-1501-825X
-  - affil:
-      - Princeton-Astro
+  pricepa:
+    affil:
+    - Princeton-Astro
     altaffil: []
     initials: Paul A.
     name: Price
-    orcid:
-  - affil:
-      - Praha-ASCR
+    orcid: null
+  prouzam:
+    affil:
+    - Praha-ASCR
     altaffil: []
     initials: Michael
     name: Prouza
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  radekav:
+    affil:
+    - BNL
     altaffil: []
     initials: Veljko
     name: Radeka
-    orcid:
-  - affil:
-      - NOAO
+    orcid: null
+  rajagopalj:
+    affil:
+    - NOAO
     altaffil: []
     initials: Jayadev
     name: Rajagopal
-    orcid:
-  - affil:
-      - Purdue-Astro
+    orcid: null
+  rasmussenap:
+    affil:
+    - Purdue-Astro
     altaffil: []
     initials: Andrew P.
     name: Rasmussen
-    orcid:
-  - affil:
-      - Paris-LPNHE
+    orcid: null
+  regnaultn:
+    affil:
+    - Paris-LPNHE
     altaffil: []
     initials: Nicolas
     name: Regnault
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  reilka:
+    affil:
+    - SLAC
     altaffil: []
     initials: Kevin A.
     name: Reil
-    orcid:
-  - affil:
-      - Washington
+    orcid: null
+  reissdj:
+    affil:
+    - Washington
     altaffil: []
     initials: David J.
     name: Reiss
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  reuterma:
+    affil:
+    - LSST
     altaffil: []
     initials: Michael A.
     name: Reuter
     orcid: 0000-0003-3881-8310
-  - affil:
-      - NOAO
+  ridgwayst:
+    affil:
+    - NOAO
     altaffil: []
     initials: Stephen T.
     name: Ridgway
     orcid: 0000-0003-2557-7132
-  - affil:
-      - LLNL
+  riotvj:
+    affil:
+    - LLNL
     altaffil: []
     initials: Vincent J.
     name: Riot
-    orcid:
-  - affil:
-      - UCSC
+    orcid: null
+  ritzs:
+    affil:
+    - UCSC
     altaffil: []
     initials: Steve
     name: Ritz
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  robinsons:
+    affil:
+    - BNL
     altaffil: []
     initials: Sean
     name: Robinson
-    orcid:
-  - affil:
-      - IPAC
+    orcid: null
+  robyw:
+    affil:
+    - IPAC
     altaffil: []
     initials: William
     name: Roby
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  roodmana:
+    affil:
+    - SLAC
     altaffil: []
     initials: Aaron
     name: Roodman
     orcid: 0000-0001-5326-3486
-  - affil:
-      - CUMBRES
+  rosingw:
+    affil:
+    - CUMBRES
     altaffil: []
     initials: Wayne
     name: Rosing
-    orcid:
-  - affil:
-      - Paris-APC
+    orcid: null
+  roucellec:
+    affil:
+    - Paris-APC
     altaffil: []
     initials: Cecille
     name: Roucelle
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  rumoremr:
+    affil:
+    - BNL
     altaffil: []
     initials: Matthew R.
     name: Rumore
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  russos:
+    affil:
+    - SLAC
     altaffil: []
     initials: Stefano
     name: Russo
-    orcid:
-  - affil:
-      - NOAO
+    orcid: null
+  sahaa:
+    affil:
+    - NOAO
     altaffil: []
     initials: Abhijit
     name: Saha
     orcid: 0000-0002-5091-0470
-  - affil:
-      - Lyon-LMA-IN2P3
+  sassolasb:
+    affil:
+    - Lyon-LMA-IN2P3
     altaffil: []
     initials: Benoit
     name: Sassolas
-    orcid:
-  - affil:
-      - UCSC
+    orcid: null
+  schalktl:
+    affil:
+    - UCSC
     altaffil: []
     initials: Terry L.
     name: Schalk
-    orcid:
-  - affil:
-      - Princeton-Astro
-      - Radboud-Astro
+    orcid: null
+  schellartp:
+    affil:
+    - Princeton-Astro
+    - Radboud-Astro
     altaffil: []
     initials: Pim
     name: Schellart
     orcid: 0000-0002-8324-0880
-  - affil:
-      - SLAC-Kavli
+  schindlerrh:
+    affil:
+    - SLAC-Kavli
     altaffil: []
     initials: Rafe H.
     name: Schindler
-    orcid:
-  - affil:
-      - UCDavis
+    orcid: null
+  schmidts:
+    affil:
+    - UCDavis
     altaffil: []
     initials: Samuel
     name: Schmidt
-    orcid:
-  - affil:
-      - PSU
+    orcid: null
+  schneiderdp:
+    affil:
+    - PSU
     altaffil: []
     initials: Donald P.
     name: Schneider
-    orcid:
-  - affil:
-      - LLNL
+    orcid: null
+  schneidermd:
+    affil:
+    - LLNL
     altaffil: []
     initials: Michael D.
     name: Schneider
     orcid: 0000-0002-8505-7094
-  - affil:
-      - LSST
+  schoeningw:
+    affil:
+    - LSST
     altaffil: []
     initials: William
     name: Schoening
-    orcid:
-  - affil:
-      - LSST
-      - CTIO
+    orcid: null
+  schumacherg:
+    affil:
+    - LSST
+    - CTIO
     altaffil: []
     initials: German
     name: Schumacher
-    orcid:
-  - affil:
-      - GeminiN
+    orcid: null
+  schwambme:
+    affil:
+    - GeminiN
     altaffil: []
     initials: Megan E.
     name: Schwamb
     orcid: 0000-0003-4365-1455
-  - affil:
-      - LSST
+  sebagj:
+    affil:
+    - LSST
     altaffil: []
     initials: Jacques
     name: Sebag
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  selvyb:
+    affil:
+    - LSST
     altaffil: []
     initials: Brian
     name: Selvy
-    orcid:
-  - affil:
-      - Purdue-Astro
+    orcid: null
+  sembroskigh:
+    affil:
+    - Purdue-Astro
     altaffil: []
     initials: Glenn H.
     name: Sembroski
-    orcid:
-  - affil:
-      - LLNL
+    orcid: null
+  seppalalg:
+    affil:
+    - LLNL
     altaffil: []
     initials: Lynn G.
     name: Seppala
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  serioa:
+    affil:
+    - LSST
     altaffil: []
     initials: Andrew
     name: Serio
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  serranoe:
+    affil:
+    - LSST
     altaffil: []
     initials: Eduardo
     name: Serrano
-    orcid:
-  - affil:
-      - STScI
+    orcid: null
+  shawra:
+    affil:
+    - STScI
     altaffil: []
     initials: Richard A.
     name: Shaw
-    orcid:
-  - affil:
-      - Oxford
+    orcid: null
+  shipseyi:
+    affil:
+    - Oxford
     altaffil: []
     initials: Ian
     name: Shipsey
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  sickj:
+    affil:
+    - LSST
     altaffil: []
     initials: Jonathan
     name: Sick
     orcid: 0000-0003-3001-676X
-  - affil:
-      - Washington
+  silvestrin:
+    affil:
+    - Washington
     altaffil: []
     initials: Nicole
     name: Silvestri
-    orcid:
-  - affil:
-      - Washington
+    orcid: null
+  slaterct:
+    affil:
+    - Washington
     altaffil: []
     initials: Colin T.
     name: Slater
     orcid: 0000-0002-0558-0521
-  - affil:
-      - Peay
+  smithja:
+    affil:
+    - Peay
     altaffil: []
     initials: J. Allyn
     name: Smith
-    orcid:
-  - affil:
-      - CTIO
+    orcid: null
+  smithrc:
+    affil:
+    - CTIO
     altaffil: []
     initials: R. Chris
     name: Smith
-    orcid:
-  - affil:
-      - Belldex
+    orcid: null
+  sobhanis:
+    affil:
+    - Belldex
     altaffil: []
     initials: Shahram
     name: Sobhani
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  soldahlc:
+    affil:
+    - SLAC
     altaffil: []
     initials: Christine
     name: Soldahl
-    orcid:
-  - affil:
-      - IPAC
+    orcid: null
+  storrielombardil:
+    affil:
+    - IPAC
     altaffil: []
     initials: Lisa
     name: Storrie-Lombardi
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  stovere:
+    affil:
+    - LSST
     altaffil: []
     initials: Edward
     name: Stover
-    orcid:
-  - affil:
-      - Princeton-Astro
+    orcid: null
+  straussma:
+    affil:
+    - Princeton-Astro
     altaffil: []
     initials: Michael A.
     name: Strauss
     orcid: 0000-0002-0106-7755
-  - affil:
-      - CUMBRES
+  streetra:
+    affil:
+    - CUMBRES
     altaffil: []
     initials: Rachel A.
     name: Street
     orcid: 0000-0001-6279-0552
-  - affil:
-      - Harvard-Physics
-      - Harvard-Astro
+  stubbscw:
+    affil:
+    - Harvard-Physics
+    - Harvard-Astro
     altaffil: []
     initials: Christopher W.
     name: Stubbs
     orcid: 0000-0003-0347-1724
-  - affil:
-      - Washington
+  sullivanis:
+    affil:
+    - Washington
     altaffil: []
     initials: Ian S.
     name: Sullivan
     orcid: 0000-0001-8708-251X
-  - affil:
-      - LSST
+  sweeneyd:
+    affil:
+    - LSST
     altaffil: []
     initials: Donald
     name: Sweeney
-    orcid:
-  - affil:
-      - Washington
-      - Princeton-Astro
+    orcid: null
+  swinbankjd:
+    affil:
+    - Washington
+    - Princeton-Astro
     altaffil: []
     initials: John D.
     name: Swinbank
     orcid: 0000-0001-9445-1846
-  - affil:
-      - JHU
+  szalaya:
+    affil:
+    - JHU
     altaffil: []
     initials: Alexander
     name: Szalay
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  takacsp:
+    affil:
+    - BNL
     altaffil: []
     initials: Peter
     name: Takacs
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  tethersa:
+    affil:
+    - SLAC
     altaffil: []
     initials: Stephen A.
     name: Tether
-    orcid:
-  - affil:
-      - Illinois
+    orcid: null
+  thalerjj:
+    affil:
+    - Illinois
     altaffil: []
     initials: Jon J.
     name: Thaler
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  thayerjg:
+    affil:
+    - SLAC
     altaffil: []
     initials: John Gregg
     name: Thayer
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  thomass:
+    affil:
+    - LSST
     altaffil: []
     initials: Sandrine
     name: Thomas
     orcid: 0000-0002-9121-3436
-  - affil:
-      - LSST
+  thorntonaj:
+    affil:
+    - LSST
     altaffil: []
     initials: Adam J.
     name: Thornton
     orcid: 0000-0001-9342-6032
-  - affil:
-      - SLAC
+  thukralv:
+    affil:
+    - SLAC
     altaffil: []
     initials: Vaikunth
     name: Thukral
-    orcid:
-  - affil:
-      - SLAC
+    orcid: null
+  ticej:
+    affil:
+    - SLAC
     altaffil: []
     initials: Jeffrey
     name: Tice
-    orcid:
-  - affil:
-      - NAU
+    orcid: null
+  trillingde:
+    affil:
+    - NAU
     altaffil: []
     initials: David E.
     name: Trilling
     orcid: 0000-0003-4580-3790
-  - affil:
-      - SLAC
+  turrim:
+    affil:
+    - SLAC
     altaffil: []
     initials: Max
     name: Turri
-    orcid:
-  - affil:
-      - SLAC
-      - UPenn
+    orcid: null
+  tysonja:
+    affil:
+    - UCDavis
+    altaffil: []
+    initials: J. Anthony
+    name: Tyson
+    orcid: 0000-0002-9242-8797
+  vanbergr:
+    affil:
+    - SLAC
+    - UPenn
     altaffil: []
     initials: Richard
-    name: 'Van Berg'
-    orcid:
-  - affil:
-      - SVC
+    name: Van Berg
+    orcid: null
+  vandenberkd:
+    affil:
+    - SVC
     altaffil: []
     initials: Daniel
-    name: 'Vanden Berk'
-    orcid:
-  - affil:
-      - BNL
+    name: Vanden Berk
+    orcid: null
+  vetterk:
+    affil:
+    - BNL
     altaffil: []
     initials: Kurt
     name: Vetter
-    orcid:
-  - affil:
-      - Paris-APC
+    orcid: null
+  virieuxf:
+    affil:
+    - Paris-APC
     altaffil: []
     initials: Francoise
     name: Virieux
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  vucinat:
+    affil:
+    - LSST
     altaffil: []
     initials: Tomislav
     name: Vucina
-    orcid:
-  - affil:
-      - BNL
+    orcid: null
+  wahlw:
+    affil:
+    - BNL
     altaffil: []
     initials: William
     name: Wahl
-    orcid:
-  - affil:
-      - LOC
-      - Adler
+    orcid: null
+  walkowiczl:
+    affil:
+    - LOC
+    - Adler
     altaffil: []
     initials: Lucianne
     name: Walkowicz
     orcid: 0000-0003-2918-8687
-  - affil:
-      - BNL
+  walshb:
+    affil:
+    - BNL
     altaffil: []
     initials: Brian
     name: Walsh
     orcid: 0000-0001-7426-5413
-  - affil:
-      - Duke
+  waltercw:
+    affil:
+    - Duke
     altaffil: []
     initials: Christopher W.
     name: Walter
     orcid: 0000-0003-2035-2380
-  - affil:
-      - SLAC
+  wangdl:
+    affil:
+    - SLAC
     altaffil: []
     initials: Daniel L.
     name: Wang
-    orcid:
-  - affil:
-      - IPAC
+    orcid: null
+  wangs:
+    affil:
+    - IPAC
     altaffil: []
     initials: Shin-Yawn
     name: Wang
-    orcid:
-  - affil:
-      - CTIO
+    orcid: null
+  warnerm:
+    affil:
+    - CTIO
     altaffil: []
     initials: Michael
     name: Warner
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  wiechao:
+    affil:
+    - LSST
     altaffil: []
     initials: Oliver
     name: Wiecha
-    orcid:
-  - affil:
-      - LSST
-      - UA-Steward
+    orcid: null
+  willmanb:
+    affil:
+    - LSST
+    - UA-Steward
     altaffil: []
     initials: Beth
     name: Willman
     orcid: 0000-0003-2892-9906
-  - affil:
-      - LLNL
+  wintersse:
+    affil:
+    - LLNL
     altaffil: []
     initials: Scott E.
     name: Winters
-    orcid:
-  - affil:
-      - UCDavis
+    orcid: null
+  wittmand:
+    affil:
+    - UCDavis
     altaffil: []
     initials: David
     name: Wittman
     orcid: 0000-0002-0813-5888
-  - affil:
-      - LSST
+  wolffsc:
+    affil:
+    - LSST
     altaffil: []
     initials: Sidney C.
     name: Wolff
-    orcid:
-  - affil:
-      - Pitts
+    orcid: null
+  woodvaseywm:
+    affil:
+    - Pitts
     altaffil: []
     initials: W. Michael
     name: Wood-Vasey
     orcid: 0000-0001-7113-1233
-  - affil:
-      - IPAC
+  wux:
+    affil:
+    - IPAC
     altaffil: []
     initials: Xiuqin
     name: Wu
-    orcid:
-  - affil:
-      - LSST
+    orcid: null
+  xinb:
+    affil:
+    - LSST
     altaffil: []
     initials: Bo
     name: Xin
     orcid: 0000-0002-9171-4046
-  - affil:
-      - Washington
+  yoachimp:
+    affil:
+    - Washington
     altaffil: []
     initials: Peter
     name: Yoachim
     orcid: 0000-0003-2874-6464
-  - affil:
-      - KLOA
+  zhanh:
+    affil:
+    - KLOA
     altaffil: []
     initials: Hu
     name: Zhan
-    orcid:
+    orcid: null
