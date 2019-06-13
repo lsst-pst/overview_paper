@@ -22,10 +22,15 @@ or
 ```
 
 The author list is generated from a YAML database file.
-Please make changes to authors by editing `support/authordb.yaml` and then running:
+The list of authors is defined in `authors.yaml` in the root directory.
+This file contains a list of author IDs in the order in which they appear in this paper.
+The author IDs must match those found in the `lsst-texmf/etc/authordb.yaml` file.
+If a new author is added to the paper, a corresponding entry must be created in [lsst-texmf](https://github.com/lsst/lsst-texmf).
+A new authors tex file can then be created by running:
 ```
-% python support/db2authors.py > authors.tex
+% python3 lsst-texmf/bin/db2authors.py > authors.tex
 ```
-This can use Python 2 or Python 3, but the `yaml` python module must be installed.
+If a submodule is used then remember to update the `lsst-texmf` submodule with the newest version of the database.
+The `yaml` python module must be installed.
 
 Please send questions and comments to Zeljko Ivezic (ivezic@astro.washington.edu)
